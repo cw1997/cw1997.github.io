@@ -5,20 +5,20 @@
   
 
   
-  <title>how-to-create-a-blog-site-by-hexo | 昌维的博客</title>
+  <title>使用Hexo快速构建一个博客网站 | 昌维的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用Hexo快速构建一个博客网站首先安装好node.js，然后跟着我敲命令就对了。 我以macOS为例，Windows用户推荐使用bash shell  npm install -g hexo-cli # 安裝hexo命令行工具，安装之后就可以直接使用hexo命令了。因为node自动设置了PATH环境变量，你输入hexo命令，操作系统会自动在node包目录下寻找到对应的node.js脚本执行 he">
+  <meta name="description" content="本地构建首先安装好node.js，然后跟着我敲命令就对了。 我以macOS为例，Windows用户推荐使用bash shell  npm install -g hexo-cli # 安裝hexo命令行工具，安装之后就可以直接使用hexo命令了。因为node自动设置了PATH环境变量，你输入hexo命令，操作系统会自动在node包目录下寻找到对应的node.js脚本执行 hexo init blog">
 <meta name="keywords" content="blog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="how-to-create-a-blog-site-by-hexo">
+<meta property="og:title" content="使用Hexo快速构建一个博客网站">
 <meta property="og:url" content="http://blog.changwei.me/2018/11/22/how-to-create-a-blog-site-by-hexo/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="使用Hexo快速构建一个博客网站首先安装好node.js，然后跟着我敲命令就对了。 我以macOS为例，Windows用户推荐使用bash shell  npm install -g hexo-cli # 安裝hexo命令行工具，安装之后就可以直接使用hexo命令了。因为node自动设置了PATH环境变量，你输入hexo命令，操作系统会自动在node包目录下寻找到对应的node.js脚本执行 he">
+<meta property="og:description" content="本地构建首先安装好node.js，然后跟着我敲命令就对了。 我以macOS为例，Windows用户推荐使用bash shell  npm install -g hexo-cli # 安裝hexo命令行工具，安装之后就可以直接使用hexo命令了。因为node自动设置了PATH环境变量，你输入hexo命令，操作系统会自动在node包目录下寻找到对应的node.js脚本执行 hexo init blog">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-11-21T17:12:36.785Z">
+<meta property="og:updated_time" content="2018-11-21T17:20:30.067Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="how-to-create-a-blog-site-by-hexo">
-<meta name="twitter:description" content="使用Hexo快速构建一个博客网站首先安装好node.js，然后跟着我敲命令就对了。 我以macOS为例，Windows用户推荐使用bash shell  npm install -g hexo-cli # 安裝hexo命令行工具，安装之后就可以直接使用hexo命令了。因为node自动设置了PATH环境变量，你输入hexo命令，操作系统会自动在node包目录下寻找到对应的node.js脚本执行 he">
+<meta name="twitter:title" content="使用Hexo快速构建一个博客网站">
+<meta name="twitter:description" content="本地构建首先安装好node.js，然后跟着我敲命令就对了。 我以macOS为例，Windows用户推荐使用bash shell  npm install -g hexo-cli # 安裝hexo命令行工具，安装之后就可以直接使用hexo命令了。因为node自动设置了PATH环境变量，你输入hexo命令，操作系统会自动在node包目录下寻找到对应的node.js脚本执行 hexo init blog">
   
     <link rel="alternate" href="/atom.xml" title="昌维的博客" type="application/atom+xml">
   
@@ -83,7 +83,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      how-to-create-a-blog-site-by-hexo
+      使用Hexo快速构建一个博客网站
     </h1>
   
 
@@ -91,7 +91,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="使用Hexo快速构建一个博客网站"><a href="#使用Hexo快速构建一个博客网站" class="headerlink" title="使用Hexo快速构建一个博客网站"></a>使用Hexo快速构建一个博客网站</h1><p>首先安装好node.js，然后跟着我敲命令就对了。</p>
+        <h1 id="本地构建"><a href="#本地构建" class="headerlink" title="本地构建"></a>本地构建</h1><p>首先安装好node.js，然后跟着我敲命令就对了。</p>
 <p>我以macOS为例，Windows用户推荐使用bash shell</p>
 <ul>
 <li><code>npm install -g hexo-cli # 安裝hexo命令行工具，安装之后就可以直接使用hexo命令了。因为node自动设置了PATH环境变量，你输入hexo命令，操作系统会自动在node包目录下寻找到对应的node.js脚本执行</code></li>
@@ -125,14 +125,13 @@ drwxr-xr-x    3 changwei  staff      96 11 22 00:15 themes
 <li>themes.folder 文件夹。存储博客主题。可以认为是游戏中的skin，皮肤，或者界面样式。内含数个文件夹，每个文件夹为一个主题。文件夹名字为主题名字。除非需要手动修改主题，否则一般情况下不要随意修改。</li>
 <li>public.folder 文件夹。整个博客站点对外发布的目录。整个目录就是web目录，在这个目录下的文件都会被发布到web站点上。都可以被所有用户访问。一般情况下，他会通过hexo内建的脚本自动生成，不需要我们手动修改。</li>
 </ul>
-<p>接着执行如下操作，将该博客站点发布到GitHub Pages上。</p>
-<p>安装git客户端</p>
+<h1 id="将该博客站点发布到GitHub-Pages"><a href="#将该博客站点发布到GitHub-Pages" class="headerlink" title="将该博客站点发布到GitHub Pages"></a>将该博客站点发布到GitHub Pages</h1><p>安装git客户端</p>
 <ul>
 <li><code>git config --global user.name &quot;cw1997&quot; # 设置git的全局用户名，为你github的用户名，请根据你的信息修改，不要照抄我的。</code></li>
 <li><code>git config --global user.email &quot;867597730@qq.com&quot; # 设置git的全局email为你github的注册邮箱，请根据你的信息修改，不要照抄我的。</code></li>
 <li><p><code>npm install hexo-deployer-git --save # 保证当前目录为blog（使用pwd检查），然后执行该命令安装hexo发布到git的一个依赖包。</code></p>
 </li>
-<li><p>在web界面登陆你的github账号，创建一个名字为 <code>你的github用户名.github.io.git</code> 的仓库</p>
+<li><p>在web界面登陆你的github账号，创建一个名字为 <code>{你的github用户名}.github.io.git</code> 的仓库</p>
 </li>
 </ul>
 <p>修改_config.yml，将 deploy 配置项修改为：</p>
@@ -142,14 +141,21 @@ drwxr-xr-x    3 changwei  staff      96 11 22 00:15 themes
   branch: master
 </code></pre><p>其中repo后面记得修改为你自己的github用户名，不要照抄我的 “cw1997”</p>
 <ul>
+<li><code>hexo generate # 执行构建操作，构建public目录</code></li>
 <li><code>hexo deploy # 执行发布操作，会提示输入用户名密码，记得输入你的github用户名和github登陆密码</code></li>
-<li>打开 <code>你的github用户名.github.io.git</code> 欣赏的博客</li>
+<li>打开 <code>{你的github用户名}.github.io.git</code> 欣赏的博客</li>
+</ul>
+<h1 id="给博客设置一个独立域名"><a href="#给博客设置一个独立域名" class="headerlink" title="给博客设置一个独立域名"></a>给博客设置一个独立域名</h1><ul>
+<li>首先购买一个域名，并且知道如何访问域名控制面板进行域名解析操作</li>
+<li>进入你的github仓库设置页面，URL为 <code>https://github.com/{你的github用户名}/{你的github用户名}.github.io/settings</code></li>
+<li>在下面找到  <code>Custom domain</code> ，将他设置为你自己的网站域名之后点 SAVE 按钮保存</li>
+<li>进入域名解析面板，新增一条解析记录，类型为 CNAME ，记录名字为你想要的博客的二级域名，例如你想要<code>www.changwei.me</code>访问，那么记录名字就是<code>www</code>。记录值为<code>{你的github用户名}.github.io.git</code>。然后保存即可，等待一段时间，待DNS解析生效后即可使用自己的域名访问了。</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.changwei.me/2018/11/22/how-to-create-a-blog-site-by-hexo/" data-id="cjorff4pa0000cj01p7xn249k" class="article-share-link">Share</a>
+      <a data-url="http://blog.changwei.me/2018/11/22/how-to-create-a-blog-site-by-hexo/" data-id="cjorfoz9e0001ek01u9nczcia" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
@@ -214,7 +220,7 @@ drwxr-xr-x    3 changwei  staff      96 11 22 00:15 themes
       <ul>
         
           <li>
-            <a href="/2018/11/22/how-to-create-a-blog-site-by-hexo/">how-to-create-a-blog-site-by-hexo</a>
+            <a href="/2018/11/22/how-to-create-a-blog-site-by-hexo/">使用Hexo快速构建一个博客网站</a>
           </li>
         
           <li>
