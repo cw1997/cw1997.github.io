@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-11-24T12:02:23.634Z</updated>
+  <updated>2018-11-24T14:12:24.381Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基尔霍夫电压定律（KVL）</title>
+    <link href="http://blog.changwei.me/2018/11/24/%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E7%94%B5%E5%8E%8B%E5%AE%9A%E5%BE%8B%EF%BC%88KVL%EF%BC%89/"/>
+    <id>http://blog.changwei.me/2018/11/24/基尔霍夫电压定律（KVL）/</id>
+    <published>2018-11-24T14:00:04.000Z</published>
+    <updated>2018-11-24T14:12:24.381Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;在集中参数电路中，任一时刻沿着任一回路各支路电压的代数和等于0。&lt;/p&gt;
+&lt;h1 id=&quot;参考方向&quot;&gt;&lt;a href=&quot;#参考方向&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>基尔霍夫电流定律（KCL）</title>
+    <link href="http://blog.changwei.me/2018/11/24/%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E7%94%B5%E6%B5%81%E5%AE%9A%E5%BE%8B%EF%BC%88KCL%EF%BC%89/"/>
+    <id>http://blog.changwei.me/2018/11/24/基尔霍夫电流定律（KCL）/</id>
+    <published>2018-11-24T13:49:02.000Z</published>
+    <updated>2018-11-24T14:00:18.531Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;在集中参数电路中，任一时刻流出（或流入）任一节点的支路电流代数和等于0。&lt;/p&gt;
+&lt;h1 id=&quot;参考方向&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>如何在博客中插入数学公式</title>

@@ -3,6 +3,40 @@
   
     
     <entry>
+      <title>基尔霍夫电压定律（KVL）</title>
+      <link href="/2018/11/24/%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E7%94%B5%E5%8E%8B%E5%AE%9A%E5%BE%8B%EF%BC%88KVL%EF%BC%89/"/>
+      <url>/2018/11/24/%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E7%94%B5%E5%8E%8B%E5%AE%9A%E5%BE%8B%EF%BC%88KVL%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>在集中参数电路中，任一时刻沿着任一回路各支路电压的代数和等于0。</p><h1 id="参考方向"><a href="#参考方向" class="headerlink" title="参考方向"></a>参考方向</h1><p>参考方向和回路方向相同时，<code>u</code>取<code>+</code>，否则取<code>-</code>。</p><h1 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h1><p>沿着任一回路，各支路电压降的代数和等于电压升的代数和。</p><p>任意两点的电压为确定值，和计算路径无关。</p><p>网孔上的KVL方程是一组独立方程。（也就是说每个网孔都可以列一个独立方程，有几个网孔就可以列几个独立方程）</p><p>电路的网孔数（KVL独立方程个数）等于<code>b-(n-1)</code>。</p><h1 id="选取独立回路的方法"><a href="#选取独立回路的方法" class="headerlink" title="选取独立回路的方法"></a>选取独立回路的方法</h1><ul><li>选网孔。</li><li>新选的回路中要包含已选回路中没有的支路（这样列出来的方程才是独立的，才可能解出来）。也就是同一条支路不能选两次。</li></ul><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653683&amp;cid=1005912471" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653683&amp;cid=1005912471</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>基尔霍夫电流定律（KCL）</title>
+      <link href="/2018/11/24/%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E7%94%B5%E6%B5%81%E5%AE%9A%E5%BE%8B%EF%BC%88KCL%EF%BC%89/"/>
+      <url>/2018/11/24/%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E7%94%B5%E6%B5%81%E5%AE%9A%E5%BE%8B%EF%BC%88KCL%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>在集中参数电路中，任一时刻流出（或流入）任一节点的支路电流代数和等于0。</p><h1 id="参考方向"><a href="#参考方向" class="headerlink" title="参考方向"></a>参考方向</h1><p>通常规定：流出为<code>+</code>，流入为<code>-</code>。</p><h1 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h1><p>任一时刻，流出任一节点（或闭合边界）电流的代数和等于流入该节点（或闭合边界）电流的代数和。</p><p>借助该推论，在解题的时候，可以直接在闭合电路上画一个圈，圈的边界所有接触到的支路流入电流和流出电流代数和为0。</p><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>在含有<code>n</code>个节点的电路中，任一<code>n-1</code>个节点的KCL方程是一组独立方程，这些节点称为独立节点。</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653680&amp;cid=1005912465" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653680&amp;cid=1005912465</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>如何在博客中插入数学公式</title>
       <link href="/2018/11/24/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
       <url>/2018/11/24/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
