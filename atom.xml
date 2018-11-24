@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>昌维的博客</title>
+  
+  <subtitle>changwei&#39;s blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.changwei.me/"/>
+  <updated>2018-11-24T11:44:16.711Z</updated>
+  <id>http://blog.changwei.me/</id>
+  
+  <author>
+    <name>昌维</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在博客中插入数学公式</title>
+    <link href="http://blog.changwei.me/2018/11/24/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    <id>http://blog.changwei.me/2018/11/24/如何在博客中插入数学公式/</id>
+    <published>2018-11-24T10:33:43.000Z</published>
+    <updated>2018-11-24T11:44:16.711Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我们在写理工科的博客或者笔记的时候经常需要插入公式。在word中我们可以使用公式编辑器。但是在 markdown
+        
+      
+    
+    </summary>
+    
+      <category term="blog" scheme="http://blog.changwei.me/categories/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电路元器件之电容器</title>
+    <link href="http://blog.changwei.me/2018/11/24/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E5%AE%B9%E5%99%A8/"/>
+    <id>http://blog.changwei.me/2018/11/24/电路元器件之电容器/</id>
+    <published>2018-11-24T04:35:56.000Z</published>
+    <updated>2018-11-24T11:07:17.825Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;电容器的组成&quot;&gt;&lt;a href=&quot;#电容器的组成&quot; class=&quot;headerlink&quot; title=&quot;电容器的组成&quot;&gt;&lt;/a&gt;电容器的组成&lt;/h1&gt;&lt;img src=&quot;/2018/11/24/电路元器件之电容器/capacitor.png&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电路元器件之电感器</title>
+    <link href="http://blog.changwei.me/2018/11/24/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E6%84%9F%E5%99%A8/"/>
+    <id>http://blog.changwei.me/2018/11/24/电路元器件之电感器/</id>
+    <published>2018-11-24T03:41:03.000Z</published>
+    <updated>2018-11-24T04:52:58.732Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;电感器的组成&quot;&gt;&lt;a href=&quot;#电感器的组成&quot; class=&quot;headerlink&quot; title=&quot;电感器的组成&quot;&gt;&lt;/a&gt;电感器的组成&lt;/h1&gt;&lt;p&gt;电感器本质上就是一个绕组，绕组是指具有规定功能的一组线圈。&lt;/p&gt;
+&lt;h1 id=&quot;电感器工作原理&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电与磁的关系</title>
+    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E4%B8%8E%E7%A3%81%E7%9A%84%E5%85%B3%E7%B3%BB/"/>
+    <id>http://blog.changwei.me/2018/11/22/电与磁的关系/</id>
+    <published>2018-11-21T19:03:43.000Z</published>
+    <updated>2018-11-24T04:51:43.445Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电路元器件之电阻器</title>
+    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E9%98%BB%E5%99%A8/"/>
+    <id>http://blog.changwei.me/2018/11/22/电路元器件之电阻器/</id>
+    <published>2018-11-21T18:57:53.000Z</published>
+    <updated>2018-11-21T19:37:34.257Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;对电流有阻碍作用的电路元件。&lt;/p&gt;
+&lt;p&gt;单位：欧姆（Ω Ohm）&lt;/p&gt;
+&lt;h1 id=&quot;欧姆定律&quot;&gt;&lt;a href=&quot;#欧姆定律&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电路基本物理量之电功率和电能</title>
+    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E5%8A%9F%E7%8E%87%E5%92%8C%E7%94%B5%E8%83%BD/"/>
+    <id>http://blog.changwei.me/2018/11/22/电路基本物理量之电功率和电能/</id>
+    <published>2018-11-21T18:51:38.000Z</published>
+    <updated>2018-11-21T19:37:14.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;电功率&quot;&gt;&lt;a href=&quot;#电功率&quot; class=&quot;headerlink&quot; title=&quot;电功率&quot;&gt;&lt;/a&gt;电功率&lt;/h1&gt;&lt;p&gt;衡量电能转换或者传输速率的物理量&lt;/p&gt;
+&lt;h1 id=&quot;电功率的定义&quot;&gt;&lt;a href=&quot;#电功率的定义&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电路基本物理量之电位和电动势</title>
+    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E4%BD%8D%E5%92%8C%E7%94%B5%E5%8A%A8%E5%8A%BF/"/>
+    <id>http://blog.changwei.me/2018/11/22/电路基本物理量之电位和电动势/</id>
+    <published>2018-11-21T18:41:43.000Z</published>
+    <updated>2018-11-21T19:36:52.471Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;电位&quot;&gt;&lt;a href=&quot;#电位&quot; class=&quot;headerlink&quot; title=&quot;电位&quot;&gt;&lt;/a&gt;电位&lt;/h1&gt;&lt;p&gt;任选一个点 p
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电路基本物理量之电压</title>
+    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E5%8E%8B/"/>
+    <id>http://blog.changwei.me/2018/11/22/电路基本物理量之电压/</id>
+    <published>2018-11-21T18:18:15.000Z</published>
+    <updated>2018-11-22T11:56:29.508Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;电场&quot;&gt;&lt;a href=&quot;#电场&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电路基本物理量之电流</title>
+    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E6%B5%81/"/>
+    <id>http://blog.changwei.me/2018/11/22/电路基本物理量之电流/</id>
+    <published>2018-11-21T18:06:27.000Z</published>
+    <updated>2018-11-22T12:22:46.588Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;电流的定义&quot;&gt;&lt;a href=&quot;#电流的定义&quot; class=&quot;headerlink&quot; title=&quot;电流的定义&quot;&gt;&lt;/a&gt;电流的定义&lt;/h1&gt;&lt;p&gt;单位时间段 dt 内，通过某界面的电荷量的代数和为 dq。&lt;br&gt;则电流为 dq/dt
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电路基本概念与分类</title>
+    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/"/>
+    <id>http://blog.changwei.me/2018/11/22/电路基本概念与分类/</id>
+    <published>2018-11-21T17:43:31.000Z</published>
+    <updated>2018-11-21T19:36:40.647Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;电路的定义&quot;&gt;&lt;a href=&quot;#电路的定义&quot; class=&quot;headerlink&quot; title=&quot;电路的定义&quot;&gt;&lt;/a&gt;电路的定义&lt;/h1&gt;&lt;p&gt;有电器件互联而成的电流的通路。&lt;/p&gt;
+&lt;h1 id=&quot;组成电路的电器件&quot;&gt;&lt;a href=&quot;#组成电路的电器件&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用Hexo快速构建一个博客网站</title>
+    <link href="http://blog.changwei.me/2018/11/22/%E4%BD%BF%E7%94%A8Hexo%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"/>
+    <id>http://blog.changwei.me/2018/11/22/使用Hexo快速构建一个博客网站/</id>
+    <published>2018-11-21T16:42:02.000Z</published>
+    <updated>2018-11-21T19:38:40.753Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;本地构建&quot;&gt;&lt;a href=&quot;#本地构建&quot; class=&quot;headerlink&quot; title=&quot;本地构建&quot;&gt;&lt;/a&gt;本地构建&lt;/h1&gt;&lt;p&gt;首先安装好node.js，然后跟着我敲命令就对了。&lt;/p&gt;
+&lt;p&gt;我以macOS为例，Windows用户推荐使用bash
+        
+      
+    
+    </summary>
+    
+      <category term="blog" scheme="http://blog.changwei.me/categories/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.changwei.me/2018/11/22/hello-world/"/>
+    <id>http://blog.changwei.me/2018/11/22/hello-world/</id>
+    <published>2018-11-21T16:15:40.030Z</published>
+    <updated>2018-11-21T16:15:40.030Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
