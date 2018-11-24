@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>电路元器件之电容器</title>
+      <link href="/2018/11/24/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E5%AE%B9%E5%99%A8/"/>
+      <url>/2018/11/24/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E5%AE%B9%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>电路元器件之电感器</title>
+      <link href="/2018/11/24/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E6%84%9F%E5%99%A8/"/>
+      <url>/2018/11/24/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E6%84%9F%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="电感器的组成"><a href="#电感器的组成" class="headerlink" title="电感器的组成"></a>电感器的组成</h1><p>电感器本质上就是一个绕组，绕组是指具有规定功能的一组线圈。</p><h1 id="电感器工作原理"><a href="#电感器工作原理" class="headerlink" title="电感器工作原理"></a>电感器工作原理</h1><p><img src="/Users/changwei/project/blog/source/_posts/电路元器件之电感器/coil.png" alt="coil"></p><p>而电感中流过交变电流，产生的磁场就是交变磁场，变化的磁场产生电场，线圈上就有感应电动势，产生感应电流。</p><p>根据<a href="https://baike.baidu.com/item/%E6%B3%95%E6%8B%89%E7%AC%AC%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E5%AE%9A%E5%BE%8B" target="_blank" rel="noopener">法拉第电磁感应定律</a>—磁生电来分析，变化的磁力线在线圈两端会产生感应<a href="https://baike.baidu.com/item/%E7%94%B5%E5%8A%BF" target="_blank" rel="noopener">电势</a>，此感应电势相当于一个“新电源”。</p><p>电流的变化分为两种情况：</p><ul><li>电流变大时：磁场变强，磁场变化的方向与原磁场方向相同。根据左手定则，产生的感应电流与原电流方向相反，电感电流减小；</li><li>电流变小时：磁场变弱，磁场变化的方向与原磁场方向相反。根据左手定则，产生的感应电流与原电流方向相同，电感电流变大。</li></ul><p><strong>可以从中看出，无论电流是变大还是变小，感应电流都和电流的变化趋势相反，在抗拒电流的变化。</strong></p><p>以上就是楞次定律，最终效果就是电感会阻碍流过的电流产生变化，就是电感对交变电流呈高阻抗。同样的电感，电流变化率越高，产生的感应电流越大，那么电感呈现的阻抗就越高；如果同样的电流变化率，不同的电感，如果产生的感应电流越大，那么电感呈现的阻抗就越高。</p><p>所以，电感的阻抗于两个因素有关：一是频率；二是电感的固有属性，也就电感的值，也称为电感。</p><h1 id="电感"><a href="#电感" class="headerlink" title="电感"></a>电感</h1><p>电感的值描述了一个电感器本身的感抗性质。描述的是通过一定交变电流的情况下，它对于电流的抵抗强度。</p><p>电感的单位为 <strong>亨利（H）</strong> ，符号为 <strong>L</strong> 。</p><p>电感是一个比值单位。他是通过电感的伏安特性计算得到。类似情况还有：电阻是通过电阻的伏安特性和欧姆定律得到。</p><h1 id="韦安特性"><a href="#韦安特性" class="headerlink" title="韦安特性"></a>韦安特性</h1><p>电感周围会产生磁场，磁场强度的单位为 <strong>韦伯（Wb）</strong>，符号为 <strong>Ψ</strong>，读作 <strong>普塞</strong> ，他也叫 <strong>磁链</strong> ，或者 <strong>磁通量</strong>。</p><p>$Ψ = Li$</p><p>也就是说，电感固定的情况下，电流与磁通量成正比关系。</p><h1 id="伏安特性"><a href="#伏安特性" class="headerlink" title="伏安特性"></a>伏安特性</h1><p>根据电磁感应定律和楞次定律，当电压、电流的方向如下图所示，并且电流与磁通的参考方向遵循右螺旋法则时，端口电压u和感应电动势e的关系如下：</p><p>$u=-e=\frac{dΨ}{dt}$ ，又因为  $Ψ = Li$ ，所以 $u=-e=\frac{dΨ}{dt}=L \frac{di}{dt}$</p><h1 id="电感器的性质"><a href="#电感器的性质" class="headerlink" title="电感器的性质"></a>电感器的性质</h1><ul><li><p>从上面的伏安特性公式中可以看出：同一个电感器两端的电压，取决于一定时间内，电流（i）的变化率。</p></li><li><p>电流变化越快，电感两端的电压越大。即使此时此刻电流为0，电感两端也有可能有电压。</p><p>因为在电流变化到0的前一个瞬间，变化率仍然存在，电感器产生的电磁场也还存在，会在电感两端产生电势差。</p></li><li><p>当电感电流为恒定直流的时候，电感两端电压为0。此时电感视为短路。</p><p>因为恒定直流的时候，流过电感器的电流产生恒定不变的磁场。该磁场不变，根据楞次定律，将不会产生一个抵抗电流变化的电势差，而是产生一个恒定方向的磁场。根据这个原理，可以制造出电磁铁，电磁继电器。</p></li><li><p>若任意时刻电感电压为有限值，电流 i 不能跃变。</p><p>从数学角度上来理解上面的伏安特性公式，当 L 和 u 不变，那么当 dt 为一个常数时， di 也一定为另一个常数，表示 i 的变化是均匀连续的。</p></li></ul><h1 id="电感器的用途"><a href="#电感器的用途" class="headerlink" title="电感器的用途"></a>电感器的用途</h1><p>电感器在通入直流电的时候相当于短路，因此无阻抗作用。但是其磁场强度强，可以做电磁铁。</p><p>电感器在通入交流电时将会抵抗部分电流变化，可以作为滤波器，过滤电路中的部分交流分量。</p><p>d</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://zhuanlan.zhihu.com/p/21835930" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/21835930</a></li><li><a href="https://forum.mianbaoban.cn/topic/57210_1_1.html" target="_blank" rel="noopener">https://forum.mianbaoban.cn/topic/57210_1_1.html</a></li><li><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653689&amp;cid=1005912479" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653689&amp;cid=1005912479</a></li></ul><p># </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>电与磁的关系</title>
+      <link href="/2018/11/22/%E7%94%B5%E4%B8%8E%E7%A3%81%E7%9A%84%E5%85%B3%E7%B3%BB/"/>
+      <url>/2018/11/22/%E7%94%B5%E4%B8%8E%E7%A3%81%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们在中学阶段研究的电路都是通过干电池作为电源组成的直流电路。而实际电路中还有交变电流流过。</p><p>我们会发现，某些<strong>纯电阻</strong>用电器，例如白炽灯，<strong>白炽灯的电路模型可以抽象成一个电阻</strong>，构成这个电阻的材料是钨丝。<strong>白炽灯无论通过交流电，还是直流电，都能发光发热，并且都能正常工作</strong>。</p><p>而某些电路元件，例如<strong>电容器</strong>，<strong>电感器</strong>。<strong>它们在流过直流电流和交变电流的时候，会产生不一样的现象</strong>。</p><p>下面我们就来谈就这些现象，以及产生这种现象的原因。</p><h1 id="电与磁"><a href="#电与磁" class="headerlink" title="电与磁"></a>电与磁</h1><p>首先需要了解</p><p><a href="https://www.zhihu.com/question/55815003" target="_blank" rel="noopener">https://www.zhihu.com/question/55815003</a></p><h1 id="线圈"><a href="#线圈" class="headerlink" title="线圈"></a>线圈</h1><p>电路中经常能看到一些由线圈组成的元器件。</p><p>例如：</p><ul><li>变压器</li><li>电感器</li><li>继电器</li><li>电磁铁</li></ul><p>线圈本质上就是将导线按照螺旋形状缠绕起来，部分线圈可能使用的是带有一定电阻的漆包线。</p><p>有的线圈的螺旋洞中间会插入一个铁芯，有的不会。</p><p>通常元器件应该都要对电路产生一定的影响。例如电阻会阻碍电流流过，使得电路上的电流量变小。电池会持续在正负极性两端提供电势差，产生电压，使得电路上两个点的电位不同。</p><p>为什么把导线按照螺旋状缠绕起来就能组成一种新的元器件呢？换句话说，通电的导线究竟含有什么性质，使得他按照螺旋状缠绕以后，会对电路产生一定影响？</p><p>下面我们就来研究这个问题。</p><h1 id="电生磁（奥斯特实验）"><a href="#电生磁（奥斯特实验）" class="headerlink" title="电生磁（奥斯特实验）"></a>电生磁（奥斯特实验）</h1><p>如果在直导线附近（导线需要南北放置），放置一枚小磁针，则当导线中有电流通过时，磁针将发生偏转。</p><h1 id="通恒定电流导线周围产生的磁场"><a href="#通恒定电流导线周围产生的磁场" class="headerlink" title="通恒定电流导线周围产生的磁场"></a>通恒定电流导线周围产生的磁场</h1><p>导线通入恒定电流，会在周围产生一个磁场。磁场的方向可以通过<strong>安培定则</strong>（<strong>右手螺旋定则</strong>）</p><h1 id="右手定则（安培定则）"><a href="#右手定则（安培定则）" class="headerlink" title="右手定则（安培定则）"></a>右手定则（安培定则）</h1><blockquote><p>安培定则是表示<a href="https://baike.baidu.com/item/%E7%94%B5%E6%B5%81/268192" target="_blank" rel="noopener">电流</a>和电流激发<a href="https://baike.baidu.com/item/%E7%A3%81%E5%9C%BA/63505" target="_blank" rel="noopener">磁场</a>的磁感线方向间关系的定则。</p><ul><li><p>通电直导线中的安培定则（安培定则一）：用右手握住通电直导线，让大拇指指向电流的方向，那么四指指向就是磁感线的环绕方向</p></li><li><p><a href="https://baike.baidu.com/item/%E9%80%9A%E7%94%B5%E8%9E%BA%E7%BA%BF%E7%AE%A1/1081222" target="_blank" rel="noopener">通电螺线管</a>中的安培定则（安培定则二）：用右手握住通电螺线管，让四指指向电流的方向，那么大拇指所指的那一端是通电螺线管的N极。</p></li></ul></blockquote><p><img src="/Users/changwei/project/blog/source/_posts/%E7%94%B5%E4%B8%8E%E7%A3%81%E7%9A%84%E5%85%B3%E7%B3%BB/%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%88%99.png" alt="img"></p><h1 id="磁生电"><a href="#磁生电" class="headerlink" title="磁生电"></a>磁生电</h1><p>将导体放在磁场中，做切割磁感线（由磁场N极通往S极的有向线）运动，会在导体两端产生电势差。将导体相连，会产生电流，这种电流叫做感应电流。</p><h1 id="电磁感应现象"><a href="#电磁感应现象" class="headerlink" title="电磁感应现象"></a>电磁感应现象</h1><blockquote><p><strong>电磁感应</strong>（<strong>英语：</strong>Electromagnetic induction），是指放在变化<a href="https://zh.wikipedia.org/wiki/%E7%A3%81%E9%80%9A%E9%87%8F" target="_blank" rel="noopener">磁通量</a>中的<a href="https://zh.wikipedia.org/wiki/%E5%B0%8E%E9%AB%94" target="_blank" rel="noopener">导体</a>，会产生<a href="https://zh.wikipedia.org/wiki/%E7%94%B5%E5%8A%A8%E5%8A%BF" target="_blank" rel="noopener">电动势</a>。此电动势称为<strong>感应电动势</strong>或<strong>感生电动势</strong>，若将此导体闭合成一回路，则该电动势会驱使<a href="https://zh.wikipedia.org/wiki/%E7%94%B5%E5%AD%90" target="_blank" rel="noopener">电子</a>流动，形成<strong>感应电流</strong>（<strong>感生电流</strong>）。</p></blockquote><blockquote><p>闭合回路在原磁场内产生的磁场阻碍原磁场磁通量发生变化的电流叫做感应电流。</p><p>是指放在变化磁通量中的导体闭合成一回路，则该电动势会驱使电子流动，形成感应电流（感生电流）。</p><p>通俗的讲，当闭合回路的一部份导体在磁场中作切割磁感线运动时，此闭合回路中的磁通量一定会发生变化，在闭合回路中就产生了感应电动势，从而产生了电流，这种电流称为感应电流。</p></blockquote><p>磁通量的变化是相对的。例如导体处于静止状态，磁场本身在不停的变化，那么通过导体的磁通量也就发生了变化。或者磁场本身不变，导体在磁场中做切割磁感线运动。</p><p>导体放在<strong>磁通量变化</strong>的场中，会产生<strong>感生电动势</strong>。如果用导线把这个导体闭合，将会形成<strong>感应电流</strong>。</p><h1 id="动生电动势"><a href="#动生电动势" class="headerlink" title="动生电动势"></a>动生电动势</h1><blockquote><p>导体以垂直于磁感线的方向在磁场中运动，在同时垂直于磁场和运动方向的两端产生的电动势，称为动生电动势。</p><p>动生电动势是由于导体中载流子在磁场中运动受到垂直于磁场和运动方向的<a href="https://zh.wikipedia.org/wiki/%E6%B4%9B%E4%BB%91%E5%85%B9%E5%8A%9B" target="_blank" rel="noopener">洛仑兹力</a>的作用，在导体内移动的结果。</p></blockquote><p>理解动生电动势的两端位置，关键是要建立三维立体坐标的概念。</p><p><strong>同时垂直于磁场和运动方向的两端产生的电动势</strong>，为<strong>动生电动势</strong>。</p><h1 id="楞次定律"><a href="#楞次定律" class="headerlink" title="楞次定律"></a>楞次定律</h1><blockquote><p>由于磁通量的改变而产生的感应电流，其方向为抗拒磁通量改变的方向。</p></blockquote><h1 id="磁场方向"><a href="#磁场方向" class="headerlink" title="磁场方向"></a>磁场方向</h1><p>N 到 S</p><h1 id="左手定则"><a href="#左手定则" class="headerlink" title="左手定则"></a>左手定则</h1><blockquote><p>左手定则，是英国电机工程师约翰.安布罗斯.弗莱明（JohnAmbroseFleming,1849~1945）提出的。1885年，弗莱明担任英国伦敦大学电机工程学教授，由于学生经常弄错磁场，电流和受力的方向。于是，他想用一个简单的方法帮助学生记忆。“左手定则”由此诞生了。</p></blockquote><p>左手定则是张开左手，让手心对着磁极N，让磁感线垂直穿过手心，大拇指与其余4指在同一<a href="http://www.baike.com/wiki/%E5%B9%B3%E9%9D%A2" target="_blank" rel="noopener">平面</a>垂直，4根手指方向是电流方向，此时大拇指所指的方向就是该通电导体在磁场中的运动方向。发电机就是应用左手定则，还可以研究电导体在磁场中的运动方向。</p><h1 id="通变化电流导线周围产生的磁场"><a href="#通变化电流导线周围产生的磁场" class="headerlink" title="通变化电流导线周围产生的磁场"></a>通变化电流导线周围产生的磁场</h1><p><img src="/Users/changwei/project/blog/source/_posts/电路元器件之电感器/coil.png" alt="img"></p><p>给一个导线通入恒定电流，将会在导线周围产生磁场。根据楞次定律和右手定则，磁场方向为红色箭头所指的<strong>向左</strong>。</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://baike.baidu.com/item/%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%88%99/10784798?fromtitle=%E5%8F%B3%E6%89%8B%E8%9E%BA%E6%97%8B%E5%AE%9A%E5%88%99&amp;fromid=2948936" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%88%99/10784798?fromtitle=%E5%8F%B3%E6%89%8B%E8%9E%BA%E6%97%8B%E5%AE%9A%E5%88%99&amp;fromid=2948936</a></li><li><a href="https://zh.wikipedia.org/wiki/%E6%A5%9E%E6%AC%A1%E5%AE%9A%E5%BE%8B" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/%E6%A5%9E%E6%AC%A1%E5%AE%9A%E5%BE%8B</a></li><li><a href="https://zhuanlan.zhihu.com/p/29304601" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/29304601</a></li><li><a href="https://baike.baidu.com/item/%E7%94%B5%E6%84%9F/98570" target="_blank" rel="noopener">https://baike.baidu.com/item/%E7%94%B5%E6%84%9F/98570</a></li><li><a href="https://baike.baidu.com/item/%E6%84%9F%E5%BA%94%E7%94%B5%E6%B5%81" target="_blank" rel="noopener">https://baike.baidu.com/item/%E6%84%9F%E5%BA%94%E7%94%B5%E6%B5%81</a></li><li><a href="https://www.zhihu.com/question/28517426" target="_blank" rel="noopener">https://www.zhihu.com/question/28517426</a></li><li><a href="https://www.zhihu.com/question/38670547" target="_blank" rel="noopener">https://www.zhihu.com/question/38670547</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>电路元器件之电阻器</title>
+      <link href="/2018/11/22/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E9%98%BB%E5%99%A8/"/>
+      <url>/2018/11/22/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E9%98%BB%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>对电流有阻碍作用的电路元件。</p><p>单位：欧姆（Ω Ohm）</p><h1 id="欧姆定律"><a href="#欧姆定律" class="headerlink" title="欧姆定律"></a>欧姆定律</h1><p>$i = \frac{u}{R}$</p><p>对于线性二端电阻，其端口电压与电流之间成正比关系</p><h1 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h1><p>将流过相同电流的两个端子称为一个端口（port）</p><h1 id="电导"><a href="#电导" class="headerlink" title="电导"></a>电导</h1><p>电阻的倒数，单位：西门子（S）</p><h1 id="非线性电阻"><a href="#非线性电阻" class="headerlink" title="非线性电阻"></a>非线性电阻</h1><p>伏安特性曲线不是过 u-i 平面原点的直线</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653687&amp;cid=1005912477" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653687&amp;cid=1005912477</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>电路基本物理量之电功率和电能</title>
+      <link href="/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E5%8A%9F%E7%8E%87%E5%92%8C%E7%94%B5%E8%83%BD/"/>
+      <url>/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E5%8A%9F%E7%8E%87%E5%92%8C%E7%94%B5%E8%83%BD/</url>
+      
+        <content type="html"><![CDATA[<h1 id="电功率"><a href="#电功率" class="headerlink" title="电功率"></a>电功率</h1><p>衡量电能转换或者传输速率的物理量</p><h1 id="电功率的定义"><a href="#电功率的定义" class="headerlink" title="电功率的定义"></a>电功率的定义</h1><p>设 dt 时间内传输的电能为 dw。</p><p>$p = \frac{dW}{dt}$</p><h1 id="电能"><a href="#电能" class="headerlink" title="电能"></a>电能</h1><p>t0 到 t 时间内，电路吸收或者发出的能量</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653677&amp;cid=1005912461" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653677&amp;cid=1005912461</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>电路基本物理量之电位和电动势</title>
+      <link href="/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E4%BD%8D%E5%92%8C%E7%94%B5%E5%8A%A8%E5%8A%BF/"/>
+      <url>/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E4%BD%8D%E5%92%8C%E7%94%B5%E5%8A%A8%E5%8A%BF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="电位"><a href="#电位" class="headerlink" title="电位"></a>电位</h1><p>任选一个点 p 作为参考点，电路中某点与参考点之间的电压称为该点的电位，用φ（fai）表示。</p><p>两点之间的电压，等于两点之间的电位差。</p><h1 id="电动势"><a href="#电动势" class="headerlink" title="电动势"></a>电动势</h1><p>单位正电荷在局外电场和感应电场的作用下从 a 点沿路线 l 移动到 b 点这些力所做的功称为从 a 到 b 沿路线 l 的电动势。</p><p>电动势是外力做功的结果，而不是电场力。所以方向是低电位指向高电位，它与电压的实际方向相反。</p><p>电动势本质上是外力抵抗电场力做功的结果。</p><p>$W(t) = \int_a^b p(t)dt $</p><p>单位：焦耳（J）</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653676&amp;cid=1005912459" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653676&amp;cid=1005912459</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>电路基本物理量之电压</title>
+      <link href="/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E5%8E%8B/"/>
+      <url>/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E5%8E%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="电场"><a href="#电场" class="headerlink" title="电场"></a>电场</h1><p>在空间中，放置一个正电荷和一个负电荷，正负电荷之间则会产生电场。</p><p>电场方向为从正电荷到负电荷。</p><p>电场中如果放置一个电荷，将会被产生电场的电荷（位于电场的两端）作用产生库仑力。库仑力具体的大小需要通过库仑定律求得。</p><p>将这个电荷在电场中移动，需要一个力来做功。</p><h1 id="电压的定义"><a href="#电压的定义" class="headerlink" title="电压的定义"></a>电压的定义</h1><p>$u_{ab} = \int_a^b E<em>d</em>l$</p><p>$W = E <em> q </em> d <em> l = F </em> d * l$</p><p>指的是单位正电荷在电场力的作用下，由 a 点沿着路线 l 移动到 b 点所做的功，为 a  b 两点间的电压。</p><p>$u = \frac{dW}{dq}$</p><p>单位：伏特（V）</p><h1 id="电压的方向"><a href="#电压的方向" class="headerlink" title="电压的方向"></a>电压的方向</h1><p>电压的方向是相对的。</p><p>正极为高电位，负极为低电位。</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653675&amp;cid=1005912457" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653675&amp;cid=1005912457</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>电路基本物理量之电流</title>
+      <link href="/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E6%B5%81/"/>
+      <url>/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E6%B5%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="电流的定义"><a href="#电流的定义" class="headerlink" title="电流的定义"></a>电流的定义</h1><p>单位时间段 dt 内，通过某界面的电荷量的代数和为 dq。<br>则电流为 dq/dt 。</p><p>单位：安培（A）</p><p>符号：I</p><h1 id="电流的方向"><a href="#电流的方向" class="headerlink" title="电流的方向"></a>电流的方向</h1><p>电流的方向是相对的。</p><p>我们首先需要任意定义一个参考方向。所有与参考方向相反的电流都是负的。（这里虽然说参考方向可以任意定义，但是还是需要根据实际情况，选择最方便解题的参考方向。）</p><p>Iab表示从a流入，从b流出的电流。a也是参考方向的正极，b为参考方向的负极。</p><h1 id="电流分类"><a href="#电流分类" class="headerlink" title="电流分类"></a>电流分类</h1><h2 id="直流（DC-Direct-Current）"><a href="#直流（DC-Direct-Current）" class="headerlink" title="直流（DC Direct Current）"></a>直流（DC Direct Current）</h2><p>direct adj. 直接的</p><p>i的量值和方向不随时间变化的电流，用 I 表示。</p><h2 id="交流（AC-Alternating-Current）"><a href="#交流（AC-Alternating-Current）" class="headerlink" title="交流（AC Alternating Current）"></a>交流（AC Alternating Current）</h2><p>alternate adj. 交替的</p><p>i的量值和方向随时间周期变化切且平均值为0的电流称为交流，用 i(t) 表示。</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653674&amp;cid=1005912455" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653674&amp;cid=1005912455</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>电路基本概念与分类</title>
+      <link href="/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/"/>
+      <url>/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="电路的定义"><a href="#电路的定义" class="headerlink" title="电路的定义"></a>电路的定义</h1><p>有电器件互联而成的电流的通路。</p><h1 id="组成电路的电器件"><a href="#组成电路的电器件" class="headerlink" title="组成电路的电器件"></a>组成电路的电器件</h1><ul><li>电阻器</li><li>电容器</li><li>电感器（线圈）</li><li>电源（激励）</li><li>晶体管</li></ul><h1 id="各种电器件介绍"><a href="#各种电器件介绍" class="headerlink" title="各种电器件介绍"></a>各种电器件介绍</h1><h2 id="电源"><a href="#电源" class="headerlink" title="电源"></a>电源</h2><p>提供电能和电信号的装置</p><h2 id="负载"><a href="#负载" class="headerlink" title="负载"></a>负载</h2><p>吸收电能或电信号的装置</p><h2 id="中间环节"><a href="#中间环节" class="headerlink" title="中间环节"></a>中间环节</h2><p>连接电源和负债，并对电路的工作状态进行控制。<br>例如传输线，继电器，变压器。</p><h1 id="电路的作用"><a href="#电路的作用" class="headerlink" title="电路的作用"></a>电路的作用</h1><p>实现电能或者电信号的传输，处理和存储</p><h1 id="电路模型和理想化电路"><a href="#电路模型和理想化电路" class="headerlink" title="电路模型和理想化电路"></a>电路模型和理想化电路</h1><p>由于物理环境的影响，实际的电路有许多无法计算和预料的变量，而这些变量对于电路影响较小。在理想化电路中，我们把这些影响较小的变量排除，得到理想化电路。</p><p>例如实际导线是有电阻的，但是该电阻较小，在一定场景下对我们研究的问题没有太大影响，直接忽略。</p><p>但是某些场景下，例如研究电源内阻问题的时候，内阻会对我们的问题产生影响，我们不能把它忽略。</p><p>所以，理想化电路究竟该把哪些变量影响剔除，也需要和实际问题相结合来判断。</p><h1 id="电路分类"><a href="#电路分类" class="headerlink" title="电路分类"></a>电路分类</h1><p>任何分类都需要有一个标准，因此下面按照不同的标准可以将电路分为好几类。</p><h2 id="线性电路-amp-非线性电路"><a href="#线性电路-amp-非线性电路" class="headerlink" title="线性电路&amp;非线性电路"></a>线性电路&amp;非线性电路</h2><h3 id="线性电路"><a href="#线性电路" class="headerlink" title="线性电路"></a>线性电路</h3><p>全部由线性元件构成的电路（线性电阻）</p><h3 id="非线性电路"><a href="#非线性电路" class="headerlink" title="非线性电路"></a>非线性电路</h3><p>具有非线性电路的元件（二极管）</p><h2 id="时变电路-amp-非时变电路"><a href="#时变电路-amp-非时变电路" class="headerlink" title="时变电路&amp;非时变电路"></a>时变电路&amp;非时变电路</h2><h3 id="时变电路"><a href="#时变电路" class="headerlink" title="时变电路"></a>时变电路</h3><p>具有时变元件的电路</p><h3 id="非时变电路"><a href="#非时变电路" class="headerlink" title="非时变电路"></a>非时变电路</h3><p>全部由非时变元件构成的电路</p><h2 id="集中参数电路-amp-分布参数电路"><a href="#集中参数电路-amp-分布参数电路" class="headerlink" title="集中参数电路&amp;分布参数电路"></a>集中参数电路&amp;分布参数电路</h2><h3 id="集中参数元件"><a href="#集中参数元件" class="headerlink" title="集中参数元件"></a>集中参数元件</h3><p>当元件的几何尺寸远小于电磁量工作频率所对应的电磁波波长，而无需考虑电磁量的空间分布时，这种元件称为集中参数元件。</p><h3 id="集中参数电路"><a href="#集中参数电路" class="headerlink" title="集中参数电路"></a>集中参数电路</h3><p>全部由集中参数元件构成的电路</p><h3 id="分布参数电路"><a href="#分布参数电路" class="headerlink" title="分布参数电路"></a>分布参数电路</h3><p>具有分布参数元件构成的电路</p><p><strong>注意具有和全部的区别。全部的约束性更强。线性电路要求全部都是线性元件。但是只要线性电路中包含一个非线性元件，那么整个电路就是非线性电路。线性电路的约束性更强。</strong></p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><p><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653672&amp;cid=1005912451" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653672&amp;cid=1005912451</a></p></li><li><p><a href="https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653673&amp;cid=1005912453" target="_blank" rel="noopener">https://www.icourse163.org/learn/HIT-1001998008?tid=1003308024#/learn/content?type=detail&amp;id=1004653673&amp;cid=1005912453</a></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> electric </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>使用Hexo快速构建一个博客网站</title>
+      <link href="/2018/11/22/%E4%BD%BF%E7%94%A8Hexo%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"/>
+      <url>/2018/11/22/%E4%BD%BF%E7%94%A8Hexo%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</url>
+      
+        <content type="html"><![CDATA[<h1 id="本地构建"><a href="#本地构建" class="headerlink" title="本地构建"></a>本地构建</h1><p>首先安装好node.js，然后跟着我敲命令就对了。</p><p>我以macOS为例，Windows用户推荐使用bash shell</p><ul><li><code>npm install -g hexo-cli # 安裝hexo命令行工具，安装之后就可以直接使用hexo命令了。因为node自动设置了PATH环境变量，你输入hexo命令，操作系统会自动在node包目录下寻找到对应的node.js脚本执行</code></li><li><code>hexo init blog # 在当前目录下创建一个名为blog的目录，并且把blog目录作为整个博客站点的web目录，然后初在该目录下始化生成npm的依赖关系脚本</code></li><li><code>cd blog # 进入blog目录，这里cd是change directory的意思，可不是“给你一张过去的CD”</code></li><li><code>npm install # 根据之前生成的npm依赖关系声明文件package.json，自动下载并且安装对应的依赖库文件。这些依赖库文件构成了hexo的核心程序代码。（据我测试，在新版本的hexo-cli下，使用hexo init blog命令其实是会自动下载并且安装好hexo的相关依赖和核心程序代码，所以这一步在新版本上是否有必要是指的怀疑的。不过为了保险起见，重复install一次也没什么影响。）</code></li><li><code>hexo generate # 执行后，自动根据配置文件和已有的博客内容构建public目录。</code> </li><li><code>hexo server # 执行后，会自动在本地的4000端口上开启一个web服务器，请在浏览器地址栏输入 http://127.0.0.1:4000/ 访问，如果成功显示博客站点，则表示无问题。</code> </li></ul><p>安装好一户的目录结构如下</p><pre><code>masaweideMacBook-Pro:blog changwei$ ls -altotal 320drwxr-xr-x   13 changwei  staff     416 11 22 00:26 .drwxr-xr-x    8 changwei  staff     256 11 22 00:15 ..drwxr-xr-x    9 changwei  staff     288 11 22 00:26 .deploy_git-rw-r--r--    1 changwei  staff      65 11 22 00:15 .gitignore-rw-r--r--@   1 changwei  staff    1954 11 22 00:31 _config.yml-rw-r--r--    1 changwei  staff     174 11 22 00:42 db.jsondrwxr-xr-x  303 changwei  staff    9696 11 22 00:17 node_modules-rw-r--r--    1 changwei  staff  146130 11 22 00:17 package-lock.json-rw-r--r--    1 changwei  staff     482 11 22 00:19 package.jsondrwxr-xr-x    8 changwei  staff     256 11 22 00:26 publicdrwxr-xr-x    5 changwei  staff     160 11 22 00:15 scaffoldsdrwxr-xr-x    3 changwei  staff      96 11 22 00:15 sourcedrwxr-xr-x    3 changwei  staff      96 11 22 00:15 themes</code></pre><ul><li>_config.yml yml格式。配置文件。</li><li>package.json json格式。hexo程序代码依赖关系声明文件，被npm所用，除非需要自行安装或者修改插件，否则一般不要随意修改。</li><li>scaffolds.folder 文件夹。里面有数个md文件，定义了每次新建一个文章的时候，默认包含的内容。</li><li>source.folder 文件夹。除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。</li><li>themes.folder 文件夹。存储博客主题。可以认为是游戏中的skin，皮肤，或者界面样式。内含数个文件夹，每个文件夹为一个主题。文件夹名字为主题名字。除非需要手动修改主题，否则一般情况下不要随意修改。</li><li>public.folder 文件夹。整个博客站点对外发布的目录。整个目录就是web目录，在这个目录下的文件都会被发布到web站点上。都可以被所有用户访问。一般情况下，他会通过hexo内建的脚本自动生成，不需要我们手动修改。</li></ul><h1 id="将该博客站点发布到GitHub-Pages"><a href="#将该博客站点发布到GitHub-Pages" class="headerlink" title="将该博客站点发布到GitHub Pages"></a>将该博客站点发布到GitHub Pages</h1><p>安装git客户端</p><ul><li><code>git config --global user.name &quot;cw1997&quot; # 设置git的全局用户名，为你github的用户名，请根据你的信息修改，不要照抄我的。</code></li><li><code>git config --global user.email &quot;867597730@qq.com&quot; # 设置git的全局email为你github的注册邮箱，请根据你的信息修改，不要照抄我的。</code></li><li><p><code>npm install hexo-deployer-git --save # 保证当前目录为blog（使用pwd检查），然后执行该命令安装hexo发布到git的一个依赖包。</code></p></li><li><p>在web界面登陆你的github账号，创建一个名字为 <code>{你的github用户名}.github.io.git</code> 的仓库</p></li></ul><p>修改_config.yml，将 deploy 配置项修改为：</p><pre><code>deploy:  type: git  repo: https://github.com/cw1997/cw1997.github.io.git  branch: master</code></pre><p>其中repo后面记得修改为你自己的github用户名，不要照抄我的 “cw1997”</p><ul><li><code>hexo generate # 执行构建操作，构建public目录</code></li><li><code>hexo deploy # 执行发布操作，会提示输入用户名密码，记得输入你的github用户名和github登陆密码</code></li><li>打开 <code>{你的github用户名}.github.io.git</code> 欣赏的博客</li></ul><h1 id="给博客设置一个独立域名"><a href="#给博客设置一个独立域名" class="headerlink" title="给博客设置一个独立域名"></a>给博客设置一个独立域名</h1><ul><li>首先购买一个域名，并且知道如何访问域名控制面板进行域名解析操作</li><li>进入你的github仓库设置页面，URL为 <code>https://github.com/{你的github用户名}/{你的github用户名}.github.io/settings</code></li><li>在下面找到  <code>Custom domain</code> ，将他设置为你自己的网站域名之后点 SAVE 按钮保存</li><li>进入域名解析面板，新增一条解析记录，类型为 CNAME ，记录名字为你想要的博客的二级域名，例如你想要<code>www.changwei.me</code>访问，那么记录名字就是<code>www</code>。记录值为<code>{你的github用户名}.github.io.git</code>。然后保存即可，等待一段时间，待DNS解析生效后即可使用自己的域名访问了。</li></ul><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/index.html</a></li><li><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26625249</a></li><li><a href="https://haoshuai6.github.io/2016-11-25-Hexo-github-cname.html" target="_blank" rel="noopener">https://haoshuai6.github.io/2016-11-25-Hexo-github-cname.html</a></li><li><a href="https://blog.amaork.me/2017/10/28/Hexo-%E7%BB%91%E5%AE%9A%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D/" target="_blank" rel="noopener">https://blog.amaork.me/2017/10/28/Hexo-%E7%BB%91%E5%AE%9A%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D/</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> blog </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/11/22/hello-world/"/>
+      <url>/2018/11/22/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+  
+  
+</search>
