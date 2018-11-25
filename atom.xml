@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-11-24T14:12:24.381Z</updated>
+  <updated>2018-11-25T07:50:48.630Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数学归纳法</title>
+    <link href="http://blog.changwei.me/2018/11/25/%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95/"/>
+    <id>http://blog.changwei.me/2018/11/25/数学归纳法/</id>
+    <published>2018-11-25T07:43:57.000Z</published>
+    <updated>2018-11-25T07:50:48.630Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;数学归纳法&lt;/strong&gt;（&lt;strong&gt;Mathematical
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数学叙述</title>
+    <link href="http://blog.changwei.me/2018/11/25/%E6%95%B0%E5%AD%A6%E5%8F%99%E8%BF%B0/"/>
+    <id>http://blog.changwei.me/2018/11/25/数学叙述/</id>
+    <published>2018-11-25T04:35:57.000Z</published>
+    <updated>2018-11-25T07:33:39.243Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;分类&quot;&gt;&lt;a href=&quot;#分类&quot; class=&quot;headerlink&quot; title=&quot;分类&quot;&gt;&lt;/a&gt;分类&lt;/h1&gt;&lt;p&gt;数学叙述是对一些道理，结论的描述。主要有如下几种形式的分类：&lt;/p&gt;
+&lt;h2 id=&quot;公理&quot;&gt;&lt;a href=&quot;#公理&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>基尔霍夫电压定律（KVL）</title>
