@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="定义在软件工程中，设计模式（design pattern）是对软件设计中普遍存在（反复出现）的各种问题，所提出的解决方案。这个术语是由埃里希·伽玛（Erich Gamma）等人在1990年代从建筑设计领域引入到计算机科学的。 作用优化代码的修改和版本迭代。以增强软件设计面对并适应变化的能力。使得在软件需求不断变化的时候，仍然能够更加高效地在编程代码中实现。 起源在 1994 年，由 Erich G">
+<meta name="description" content="定义在软件工程中，设计模式（design pattern）是对软件设计中普遍存在（反复出现）的各种问题，所提出的解决方案。这个术语是由埃里希·伽玛（Erich Gamma）等人在1990年代从建筑设计领域引入到计算机科学的。 作用优化代码的修改和版本迭代。以增强软件设计面对并适应变化的能力。使得在软件需求不断变化的时候，仍然能够更加高效地在编程代码中实现。 增加代码的重用性和可维护性。使得在增加或">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式总结">
 <meta property="og:url" content="http://blog.changwei.me/2018/11/26/设计模式总结/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="定义在软件工程中，设计模式（design pattern）是对软件设计中普遍存在（反复出现）的各种问题，所提出的解决方案。这个术语是由埃里希·伽玛（Erich Gamma）等人在1990年代从建筑设计领域引入到计算机科学的。 作用优化代码的修改和版本迭代。以增强软件设计面对并适应变化的能力。使得在软件需求不断变化的时候，仍然能够更加高效地在编程代码中实现。 起源在 1994 年，由 Erich G">
+<meta property="og:description" content="定义在软件工程中，设计模式（design pattern）是对软件设计中普遍存在（反复出现）的各种问题，所提出的解决方案。这个术语是由埃里希·伽玛（Erich Gamma）等人在1990年代从建筑设计领域引入到计算机科学的。 作用优化代码的修改和版本迭代。以增强软件设计面对并适应变化的能力。使得在软件需求不断变化的时候，仍然能够更加高效地在编程代码中实现。 增加代码的重用性和可维护性。使得在增加或">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-11-26T09:26:30.632Z">
+<meta property="og:updated_time" content="2018-11-26T12:45:05.619Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计模式总结">
-<meta name="twitter:description" content="定义在软件工程中，设计模式（design pattern）是对软件设计中普遍存在（反复出现）的各种问题，所提出的解决方案。这个术语是由埃里希·伽玛（Erich Gamma）等人在1990年代从建筑设计领域引入到计算机科学的。 作用优化代码的修改和版本迭代。以增强软件设计面对并适应变化的能力。使得在软件需求不断变化的时候，仍然能够更加高效地在编程代码中实现。 起源在 1994 年，由 Erich G">
+<meta name="twitter:description" content="定义在软件工程中，设计模式（design pattern）是对软件设计中普遍存在（反复出现）的各种问题，所提出的解决方案。这个术语是由埃里希·伽玛（Erich Gamma）等人在1990年代从建筑设计领域引入到计算机科学的。 作用优化代码的修改和版本迭代。以增强软件设计面对并适应变化的能力。使得在软件需求不断变化的时候，仍然能够更加高效地在编程代码中实现。 增加代码的重用性和可维护性。使得在增加或">
 
 
 
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-26T17:26:30+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-26T20:45:05+08:00">
                 2018-11-26
               </time>
             
@@ -460,6 +460,7 @@
       
         <h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>在<a href="https://zh.wikipedia.org/wiki/%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B" target="_blank" rel="noopener">软件工程</a>中，<strong>设计模式</strong>（design pattern）是对<a href="https://zh.wikipedia.org/wiki/%E8%BB%9F%E4%BB%B6%E8%A8%AD%E8%A8%88" target="_blank" rel="noopener">软件设计</a>中普遍存在（反复出现）的各种问题，所提出的解决方案。这个术语是由<a href="https://zh.wikipedia.org/wiki/%E5%9F%83%E9%87%8C%E5%B8%8C%C2%B7%E4%BC%BD%E7%91%AA" target="_blank" rel="noopener">埃里希·伽玛</a>（Erich Gamma）等人在1990年代从<a href="https://zh.wikipedia.org/wiki/%E5%BB%BA%E7%AD%91%E8%AE%BE%E8%AE%A1" target="_blank" rel="noopener">建筑设计</a>领域引入到<a href="https://zh.wikipedia.org/wiki/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8" target="_blank" rel="noopener">计算机科学</a>的。</p>
 <h1 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h1><p>优化代码的修改和版本迭代。以增强软件设计面对并适应变化的能力。使得在软件需求不断变化的时候，仍然能够更加高效地在编程代码中实现。</p>
+<p>增加代码的重用性和可维护性。使得在增加或者修改新功能的时候，可以不用大幅度修改原有的代码，而是可以复用以前的老代码，或者仅仅是简单的修改一些参数和配置。</p>
 <h1 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h1><p>在 1994 年，由 Erich Gamma、Richard Helm、Ralph Johnson 和 John Vlissides 四人合著出版了一本名为 Design Patterns - Elements of Reusable Object-Oriented Software（中文译名：设计模式 - 可复用的面向对象软件元素）的书，该书首次提到了软件开发中设计模式的概念。</p>
 <h1 id="面向对象设计原则"><a href="#面向对象设计原则" class="headerlink" title="面向对象设计原则"></a>面向对象设计原则</h1><p>四位作者合称 GOF（四人帮，全拼 Gang of Four）。他们所提出的设计模式主要是基于以下的面向对象设计原则。</p>
 <p><strong>对接口编程而不是对实现编程。</strong></p>
@@ -589,6 +590,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/11/26/函数/" rel="prev" title="函数">
+                函数 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -709,7 +714,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

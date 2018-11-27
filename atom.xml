@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-11-26T09:26:30.632Z</updated>
+  <updated>2018-11-26T13:04:04.161Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>函数与极限</title>
+    <link href="http://blog.changwei.me/2018/11/26/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/"/>
+    <id>http://blog.changwei.me/2018/11/26/函数与极限/</id>
+    <published>2018-11-26T11:42:11.000Z</published>
+    <updated>2018-11-26T13:04:04.161Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;极限&quot;&gt;&lt;a href=&quot;#极限&quot; class=&quot;headerlink&quot; title=&quot;极限&quot;&gt;&lt;/a&gt;极限&lt;/h1&gt;&lt;p&gt;$\lim\limits_{n \to \infty }{x_n=a}$ ，即$\lim\limits_{n \to \infty
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>函数</title>
+    <link href="http://blog.changwei.me/2018/11/26/%E5%87%BD%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2018/11/26/函数/</id>
+    <published>2018-11-26T10:42:02.000Z</published>
+    <updated>2018-11-26T11:50:33.670Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;设数集$D \subset R$, 如果对D中每个数x，变量 y 按照一定法则在 R 中有唯一确定的数值与之对应， &lt;/p&gt;
+&lt;p&gt;则称
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>设计模式总结</title>
     <link href="http://blog.changwei.me/2018/11/26/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/"/>
     <id>http://blog.changwei.me/2018/11/26/设计模式总结/</id>
     <published>2018-11-26T06:23:05.000Z</published>
-    <updated>2018-11-26T09:26:30.632Z</updated>
+    <updated>2018-11-26T12:45:05.619Z</updated>
     
     <summary type="html">
     
