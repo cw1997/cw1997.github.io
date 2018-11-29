@@ -89,6 +89,31 @@
   </entry>
   
   <entry>
+    <title>单调有界数列收敛准则</title>
+    <link href="http://blog.changwei.me/2018/11/28/%E5%8D%95%E8%B0%83%E6%9C%89%E7%95%8C%E6%95%B0%E5%88%97%E6%94%B6%E6%95%9B%E5%87%86%E5%88%99/"/>
+    <id>http://blog.changwei.me/2018/11/28/单调有界数列收敛准则/</id>
+    <published>2018-11-28T03:23:53.000Z</published>
+    <updated>2018-11-29T16:00:25.783Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;准则&quot;&gt;&lt;a href=&quot;#准则&quot; class=&quot;headerlink&quot; title=&quot;准则&quot;&gt;&lt;/a&gt;准则&lt;/h1&gt;&lt;p&gt;单调有界数列必有极限&lt;/p&gt;
+&lt;h1 id=&quot;解释&quot;&gt;&lt;a href=&quot;#解释&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>利用夹逼准则证明函数极限</title>
     <link href="http://blog.changwei.me/2018/11/28/%E5%88%A9%E7%94%A8%E5%A4%B9%E9%80%BC%E5%87%86%E5%88%99%E8%AF%81%E6%98%8E%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/"/>
     <id>http://blog.changwei.me/2018/11/28/利用夹逼准则证明函数极限/</id>
@@ -476,31 +501,6 @@
           &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;对电流有阻碍作用的电路元件。&lt;/p&gt;
 &lt;p&gt;单位：欧姆（Ω Ohm）&lt;/p&gt;
 &lt;h1 id=&quot;欧姆定律&quot;&gt;&lt;a href=&quot;#欧姆定律&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>电路基本物理量之电功率和电能</title>
-    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E8%B7%AF%E5%9F%BA%E6%9C%AC%E7%89%A9%E7%90%86%E9%87%8F%E4%B9%8B%E7%94%B5%E5%8A%9F%E7%8E%87%E5%92%8C%E7%94%B5%E8%83%BD/"/>
-    <id>http://blog.changwei.me/2018/11/22/电路基本物理量之电功率和电能/</id>
-    <published>2018-11-21T18:51:38.000Z</published>
-    <updated>2018-11-21T19:37:14.900Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;电功率&quot;&gt;&lt;a href=&quot;#电功率&quot; class=&quot;headerlink&quot; title=&quot;电功率&quot;&gt;&lt;/a&gt;电功率&lt;/h1&gt;&lt;p&gt;衡量电能转换或者传输速率的物理量&lt;/p&gt;
-&lt;h1 id=&quot;电功率的定义&quot;&gt;&lt;a href=&quot;#电功率的定义&quot;
         
       
     
