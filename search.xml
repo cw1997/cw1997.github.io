@@ -3,6 +3,74 @@
   
     
     <entry>
+      <title>介值定理</title>
+      <link href="/2018/11/30/%E4%BB%8B%E5%80%BC%E5%AE%9A%E7%90%86/"/>
+      <url>/2018/11/30/%E4%BB%8B%E5%80%BC%E5%AE%9A%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>设<code>f(x)</code>在<code>闭区间[a,b]</code>上连续，则对于<code>f(a)</code>和<code>f(b)</code>之间的任一<code>常数C</code>，在<code>开区间(a,b)</code>至少存在一点<code>x0</code>，使得<code>f(x0)=C</code></p><h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><p>在<code>闭区间[a,b]</code>上连续的曲线面积肯定和这个范围内的一个直线<code>y=C</code>相交</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>零点定理</title>
+      <link href="/2018/11/30/%E9%9B%B6%E7%82%B9%E5%AE%9A%E7%90%86/"/>
+      <url>/2018/11/30/%E9%9B%B6%E7%82%B9%E5%AE%9A%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>方程f(x)=0的根称作函数f(x)的零点</p><h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>如果某个函数在区间[a,b]上连续，且f(a)f(b)&lt;0，则在(a,b)区间上至少存在一点x0使得f(x0)=0</p><h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><p>因为一条连续的曲线，如果他的一头在x轴下方，另一头在x轴上方，那么它肯定和x轴相交，交点也可能不止一个</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>有界性定理</title>
+      <link href="/2018/11/30/%E6%9C%89%E7%95%8C%E6%80%A7%E5%AE%9A%E7%90%86/"/>
+      <url>/2018/11/30/%E6%9C%89%E7%95%8C%E6%80%A7%E5%AE%9A%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>闭区间上连续的函数在该区间上必有界限</p><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>如果函数仅仅在开区间连续，或者在闭区间上不连续，则函数不一定存在最大或者最小值，也不一定有界。</p><p>例如tan x函数，虽然在定义域连续，但是无界，也不存在最大最小值。</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>最大值与最小值定理</title>
+      <link href="/2018/11/30/%E6%9C%80%E5%A4%A7%E5%80%BC%E4%B8%8E%E6%9C%80%E5%B0%8F%E5%80%BC%E5%AE%9A%E7%90%86/"/>
+      <url>/2018/11/30/%E6%9C%80%E5%A4%A7%E5%80%BC%E4%B8%8E%E6%9C%80%E5%B0%8F%E5%80%BC%E5%AE%9A%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>设函数在区间<code>I</code>上有定义，存在<code>x0∈I</code>，使得对任一<code>x∈I</code>，均有<br>$$<br>f(x)&lt;=f(x_0), (f(x)&gt;=f(x_0))<br>$$<br>则称f(x0)是函数f(x)在区间I上的最大值（最小值）</p><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>如果一个函数的最大值与最小值相等，则该函数一定是常数函数</p><h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><p>如果存在一个数，f(x)中任何取值都比这个数大或者小，那么这个数就是f(x)的上限或者下限，而且这个数x0一定在定义域内</p><h1 id="最大值最小值定理"><a href="#最大值最小值定理" class="headerlink" title="最大值最小值定理"></a>最大值最小值定理</h1><p>闭区间上连续函数在该区间上一定存在它的最大值和最小值</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>函数的间断点</title>
       <link href="/2018/11/28/%E5%87%BD%E6%95%B0%E7%9A%84%E9%97%B4%E6%96%AD%E7%82%B9/"/>
       <url>/2018/11/28/%E5%87%BD%E6%95%B0%E7%9A%84%E9%97%B4%E6%96%AD%E7%82%B9/</url>

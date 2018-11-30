@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-11-29T15:16:40.614Z</updated>
+  <updated>2018-11-30T07:09:26.263Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,104 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>介值定理</title>
+    <link href="http://blog.changwei.me/2018/11/30/%E4%BB%8B%E5%80%BC%E5%AE%9A%E7%90%86/"/>
+    <id>http://blog.changwei.me/2018/11/30/介值定理/</id>
+    <published>2018-11-30T07:07:17.000Z</published>
+    <updated>2018-11-30T07:09:26.263Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定理&quot;&gt;&lt;a href=&quot;#定理&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>零点定理</title>
+    <link href="http://blog.changwei.me/2018/11/30/%E9%9B%B6%E7%82%B9%E5%AE%9A%E7%90%86/"/>
+    <id>http://blog.changwei.me/2018/11/30/零点定理/</id>
+    <published>2018-11-30T07:04:07.000Z</published>
+    <updated>2018-11-30T07:07:26.849Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;方程f(x)=0的根称作函数f(x)的零点&lt;/p&gt;
+&lt;h1 id=&quot;定理&quot;&gt;&lt;a href=&quot;#定理&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>有界性定理</title>
+    <link href="http://blog.changwei.me/2018/11/30/%E6%9C%89%E7%95%8C%E6%80%A7%E5%AE%9A%E7%90%86/"/>
+    <id>http://blog.changwei.me/2018/11/30/有界性定理/</id>
+    <published>2018-11-30T06:34:26.000Z</published>
+    <updated>2018-11-30T06:39:32.640Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定理&quot;&gt;&lt;a href=&quot;#定理&quot; class=&quot;headerlink&quot; title=&quot;定理&quot;&gt;&lt;/a&gt;定理&lt;/h1&gt;&lt;p&gt;闭区间上连续的函数在该区间上必有界限&lt;/p&gt;
+&lt;h1 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>最大值与最小值定理</title>
+    <link href="http://blog.changwei.me/2018/11/30/%E6%9C%80%E5%A4%A7%E5%80%BC%E4%B8%8E%E6%9C%80%E5%B0%8F%E5%80%BC%E5%AE%9A%E7%90%86/"/>
+    <id>http://blog.changwei.me/2018/11/30/最大值与最小值定理/</id>
+    <published>2018-11-30T06:22:56.000Z</published>
+    <updated>2018-11-30T06:34:02.165Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>函数的间断点</title>
@@ -408,105 +506,6 @@
     </summary>
     
       <category term="blog" scheme="http://blog.changwei.me/categories/blog/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>电路元器件之电容器</title>
-    <link href="http://blog.changwei.me/2018/11/24/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E5%AE%B9%E5%99%A8/"/>
-    <id>http://blog.changwei.me/2018/11/24/电路元器件之电容器/</id>
-    <published>2018-11-24T04:35:56.000Z</published>
-    <updated>2018-11-24T11:07:17.825Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;电容器的组成&quot;&gt;&lt;a href=&quot;#电容器的组成&quot; class=&quot;headerlink&quot; title=&quot;电容器的组成&quot;&gt;&lt;/a&gt;电容器的组成&lt;/h1&gt;&lt;img src=&quot;/2018/11/24/电路元器件之电容器/capacitor.png&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>电路元器件之电感器</title>
-    <link href="http://blog.changwei.me/2018/11/24/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E6%84%9F%E5%99%A8/"/>
-    <id>http://blog.changwei.me/2018/11/24/电路元器件之电感器/</id>
-    <published>2018-11-24T03:41:03.000Z</published>
-    <updated>2018-11-24T04:52:58.732Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;电感器的组成&quot;&gt;&lt;a href=&quot;#电感器的组成&quot; class=&quot;headerlink&quot; title=&quot;电感器的组成&quot;&gt;&lt;/a&gt;电感器的组成&lt;/h1&gt;&lt;p&gt;电感器本质上就是一个绕组，绕组是指具有规定功能的一组线圈。&lt;/p&gt;
-&lt;h1 id=&quot;电感器工作原理&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>电与磁的关系</title>
-    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E4%B8%8E%E7%A3%81%E7%9A%84%E5%85%B3%E7%B3%BB/"/>
-    <id>http://blog.changwei.me/2018/11/22/电与磁的关系/</id>
-    <published>2018-11-21T19:03:43.000Z</published>
-    <updated>2018-11-24T12:03:26.207Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>电路元器件之电阻器</title>
-    <link href="http://blog.changwei.me/2018/11/22/%E7%94%B5%E8%B7%AF%E5%85%83%E5%99%A8%E4%BB%B6%E4%B9%8B%E7%94%B5%E9%98%BB%E5%99%A8/"/>
-    <id>http://blog.changwei.me/2018/11/22/电路元器件之电阻器/</id>
-    <published>2018-11-21T18:57:53.000Z</published>
-    <updated>2018-11-21T19:37:34.257Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;对电流有阻碍作用的电路元件。&lt;/p&gt;
-&lt;p&gt;单位：欧姆（Ω Ohm）&lt;/p&gt;
-&lt;h1 id=&quot;欧姆定律&quot;&gt;&lt;a href=&quot;#欧姆定律&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
     
     
   </entry>
