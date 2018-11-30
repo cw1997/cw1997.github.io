@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-11-30T18:09:04.552Z</updated>
+  <updated>2018-11-30T19:09:47.385Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>由参数方程所确定的函数的导数</title>
+    <link href="http://blog.changwei.me/2018/12/01/%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2018/12/01/由参数方程所确定的函数的导数/</id>
+    <published>2018-11-30T18:33:34.000Z</published>
+    <updated>2018-11-30T19:09:47.385Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;参数方程&quot;&gt;&lt;a href=&quot;#参数方程&quot; class=&quot;headerlink&quot; title=&quot;参数方程&quot;&gt;&lt;/a&gt;参数方程&lt;/h1&gt;&lt;p&gt;$$&lt;br&gt;\left{&lt;br&gt;\begin{array}{rcl}&lt;br&gt;x=acos\ t &amp;amp; &amp;amp;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>隐函数的导数</title>
+    <link href="http://blog.changwei.me/2018/12/01/%E9%9A%90%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2018/12/01/隐函数的导数/</id>
+    <published>2018-11-30T18:10:05.000Z</published>
+    <updated>2018-11-30T18:33:11.364Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;显函数&quot;&gt;&lt;a href=&quot;#显函数&quot; class=&quot;headerlink&quot; title=&quot;显函数&quot;&gt;&lt;/a&gt;显函数&lt;/h1&gt;&lt;p&gt;例如 $y=sin\ x+1$
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>导数</title>
     <link href="http://blog.changwei.me/2018/11/30/%E5%AF%BC%E6%95%B0/"/>
     <id>http://blog.changwei.me/2018/11/30/导数/</id>
     <published>2018-11-30T12:54:41.000Z</published>
-    <updated>2018-11-30T18:09:04.552Z</updated>
+    <updated>2018-11-30T18:09:42.239Z</updated>
     
     <summary type="html">
     
@@ -456,56 +504,6 @@
     </summary>
     
       <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>基尔霍夫电压定律（KVL）</title>
-    <link href="http://blog.changwei.me/2018/11/24/%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E7%94%B5%E5%8E%8B%E5%AE%9A%E5%BE%8B%EF%BC%88KVL%EF%BC%89/"/>
-    <id>http://blog.changwei.me/2018/11/24/基尔霍夫电压定律（KVL）/</id>
-    <published>2018-11-24T14:00:04.000Z</published>
-    <updated>2018-11-24T14:12:24.381Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;在集中参数电路中，任一时刻沿着任一回路各支路电压的代数和等于0。&lt;/p&gt;
-&lt;h1 id=&quot;参考方向&quot;&gt;&lt;a href=&quot;#参考方向&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>基尔霍夫电流定律（KCL）</title>
-    <link href="http://blog.changwei.me/2018/11/24/%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E7%94%B5%E6%B5%81%E5%AE%9A%E5%BE%8B%EF%BC%88KCL%EF%BC%89/"/>
-    <id>http://blog.changwei.me/2018/11/24/基尔霍夫电流定律（KCL）/</id>
-    <published>2018-11-24T13:49:02.000Z</published>
-    <updated>2018-11-24T14:00:18.531Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;在集中参数电路中，任一时刻流出（或流入）任一节点的支路电流代数和等于0。&lt;/p&gt;
-&lt;h1 id=&quot;参考方向&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
     
     
   </entry>
