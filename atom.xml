@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-11-30T07:09:26.263Z</updated>
+  <updated>2018-11-30T18:09:04.552Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>导数</title>
+    <link href="http://blog.changwei.me/2018/11/30/%E5%AF%BC%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2018/11/30/导数/</id>
+    <published>2018-11-30T12:54:41.000Z</published>
+    <updated>2018-11-30T18:09:04.552Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;切线的定义&quot;&gt;&lt;a href=&quot;#切线的定义&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>介值定理</title>
     <link href="http://blog.changwei.me/2018/11/30/%E4%BB%8B%E5%80%BC%E5%AE%9A%E7%90%86/"/>
     <id>http://blog.changwei.me/2018/11/30/介值定理/</id>
     <published>2018-11-30T07:07:17.000Z</published>
-    <updated>2018-11-30T07:09:26.263Z</updated>
+    <updated>2018-11-30T12:54:07.475Z</updated>
     
     <summary type="html">
     
@@ -482,30 +506,6 @@
     </summary>
     
       <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何在博客中插入数学公式</title>
-    <link href="http://blog.changwei.me/2018/11/24/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
-    <id>http://blog.changwei.me/2018/11/24/如何在博客中插入数学公式/</id>
-    <published>2018-11-24T10:33:43.000Z</published>
-    <updated>2018-11-27T13:48:39.839Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我们在写理工科的博客或者笔记的时候经常需要插入公式。在word中我们可以使用公式编辑器。但是在 markdown
-        
-      
-    
-    </summary>
-    
-      <category term="blog" scheme="http://blog.changwei.me/categories/blog/"/>
     
     
   </entry>
