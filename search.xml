@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>微分</title>
+      <link href="/2018/12/01/%E5%BE%AE%E5%88%86/"/>
+      <url>/2018/12/01/%E5%BE%AE%E5%88%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>函数 <code>y=f(x)</code> 在某区间内有定义，x0以及x0+△x在这个区间内，如果函数增量<br>$$<br>△y=f(x_0+△x)-f(x_0)<br>$$<br>可以表示为（o表示高阶，由于△x趋向于0的时候，高阶无穷小相对来说很小，可以忽略不计）<br>$$<br>△y=A△x+o(△x)<br>$$<br>其中<code>A</code>是不依赖<code>△x</code>的<strong>常数</strong>，那么称函数在<code>点x0</code>处△，而<code>A△x</code>叫做函数在<code>点x0</code>相应于<code>自变量增量△x</code>的<strong>微分</strong>，记作<code>dy</code>，也就是<code>dy=A△x</code></p><h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p><code>函数f(x)</code>在<code>点x0</code><strong>可微</strong> &lt;=&gt;函数在<code>点x0</code><strong>可导</strong></p><p>且<code>函数f(x)</code>在<code>点x0</code><strong>可微</strong>，<strong>微分</strong>一定是<br>$$<br>dy=f’(x_0)△x<br>$$</p><h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><ul><li><code>函数f(x)</code>在<code>任意点x</code>的<strong>微分</strong>称为<strong>函数的微分</strong>，记作<code>dy</code>或者<code>df(x)</code>，即 $dy=f’(x)△x$</li><li>自变量的<code>增量 △x</code> 称为<strong>自变量的微分</strong>，记作<code>dx</code>，即 $dx=△x$ </li></ul><p>$$<br>dy=f’(x)dx,\frac{dy}{dx}=f’(x)<br>$$</p><p>导数又称<strong>“微商”</strong></p><h1 id="几何意义"><a href="#几何意义" class="headerlink" title="几何意义"></a>几何意义</h1><p>对于一段连续的曲线中的部分一小段，我们可以使用这一小段中某点的切线来近似代替这一小段曲线</p><h1 id="微分运算法则"><a href="#微分运算法则" class="headerlink" title="微分运算法则"></a>微分运算法则</h1><p>将导数的和差积商的公式中的导数符号<code>&#39;</code>改写成<code>d</code>，表示 delta △ 的意思</p><h1 id="复合函数微分法则"><a href="#复合函数微分法则" class="headerlink" title="复合函数微分法则"></a>复合函数微分法则</h1><p>y=f(u),u=g(x)都可导，则 $y=f[g(x)]$ 的微分为<br>$$<br>dy=f’(u)g’(x)dx<br>$$<br>另外<br>$$<br>g’(x)dx=du<br>$$<br>所以<br>$$<br>dy=f’(u)du<br>$$</p><h1 id="微分形式的不变性"><a href="#微分形式的不变性" class="headerlink" title="微分形式的不变性"></a>微分形式的不变性</h1><p>无论 <code>u</code> 是自变量还是中间变量，上述微分形式保持不变</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549525&amp;cid=1005705844" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549525&amp;cid=1005705844</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>由参数方程所确定的函数的导数</title>
       <link href="/2018/12/01/%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0/"/>
       <url>/2018/12/01/%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0/</url>
