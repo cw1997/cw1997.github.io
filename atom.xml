@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-01T08:11:31.207Z</updated>
+  <updated>2018-12-02T15:25:12.541Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微分中值定理</title>
+    <link href="http://blog.changwei.me/2018/12/01/%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/"/>
+    <id>http://blog.changwei.me/2018/12/01/微分中值定理/</id>
+    <published>2018-12-01T08:19:18.000Z</published>
+    <updated>2018-12-02T15:25:12.541Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;罗尔（Rolle）定理&quot;&gt;&lt;a href=&quot;#罗尔（Rolle）定理&quot; class=&quot;headerlink&quot; title=&quot;罗尔（Rolle）定理&quot;&gt;&lt;/a&gt;罗尔（Rolle）定理&lt;/h1&gt;&lt;h2 id=&quot;解释&quot;&gt;&lt;a href=&quot;#解释&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>微分</title>
@@ -478,31 +502,6 @@
     </summary>
     
       <category term="program" scheme="http://blog.changwei.me/categories/program/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>数学归纳法</title>
-    <link href="http://blog.changwei.me/2018/11/25/%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95/"/>
-    <id>http://blog.changwei.me/2018/11/25/数学归纳法/</id>
-    <published>2018-11-25T07:43:57.000Z</published>
-    <updated>2018-11-25T07:50:48.630Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;数学归纳法&lt;/strong&gt;（&lt;strong&gt;Mathematical
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
     
     
   </entry>
