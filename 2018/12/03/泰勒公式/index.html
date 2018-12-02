@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="使用多项式近似表达函数我们可以近似将函数f(x)在某个点的导数值乘以自变量x的微分，来求得函数f(x)的微分。 因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值） 然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x)近似取值的时候就是去x0处的导">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-02T19:47:49.777Z">
+<meta property="og:updated_time" content="2018-12-02T20:01:40.854Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="泰勒公式">
 <meta name="twitter:description" content="使用多项式近似表达函数我们可以近似将函数f(x)在某个点的导数值乘以自变量x的微分，来求得函数f(x)的微分。 因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值） 然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x)近似取值的时候就是去x0处的导">
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T03:47:49+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T04:01:40+08:00">
                 2018-12-03
               </time>
             
@@ -462,9 +462,18 @@
 <p>因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值）</p>
 <p>然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x)近似取值的时候就是去x0处的导数为近似增长率。<br>$$<br>\delta y ≈ dy = f’(x_0)\delta x \<br>f(x) - f(x_0) ≈ f’(x_0)(x-x_0) \<br>f(x) ≈ f(x_0)+f’(x_0)(x-x_0) = P_1(x) \<br>P_1(x_0) = f(x_0), P’_1(x_0) = f’(x_0)<br>$$<br>误差：<br>$$<br>f(x) - P_1(x) = o(x-x_0)<br>$$<br>他们的误差是x-x0的一个高阶数</p>
 <h1 id="寻找这个多项式"><a href="#寻找这个多项式" class="headerlink" title="寻找这个多项式"></a>寻找这个多项式</h1><p>$$<br>P_n(x) = a_0(x-x_0)^0 + a_1(x-x_0)^1 + a_2(x-x_0)^2 + … + a_n(x-x_0)^n<br>$$</p>
-<p>要求<br>$$<br>f(x) - P_n(x) = o((x-x_0)^n)<br>$$</p>
-<p>假设<br>$$<br>P_n(x_0) = f(x_0), P_n’(x_0) = f’(x_0), P_n’’(x_0) = f’’(x_0), P_n^{(n)}(x_0) = f^{(n)}(x_0),<br>$$<br>根据 $P_n(x_0) = a_0$ 得到 $a_0 = f(x_0)$ </p>
-<p>然后对Pn求导，得到如下式子<br>$$<br>P_n’(x) = 1a_1(x-x_0)^0 + 2a_2(x-x_0)^1 + 3a_3(x-x_0)^2 + … + na_n(x-x_0)^{n-1}<br>$$<br>  因此<br>$$<br>P_n’(x_0) = 1<em>a_1(x-x_0)^0 = a_1, a_1 = f’(x_0)<br>$$<br>再次求导得到Pn的二阶导数<br>$$<br>P_n’’(x) = 1</em>2a_1(x-x_0)^0 + 2<em>3a_1(x-x_0)^1 + … + (n-1)na_n(x-x_0)^{n-2}<br>$$<br>因此<br>$$<br>P_n’’(x) = 1</em>2a_1(x-x_0)^0 = 2!a_1<br>$$<br>也就是<br>$$<br>a_2 = \frac{1}{2!}f’’(x_0), … , a_n = \frac{1}{n!}f^{n}(x_0)<br>$$<br>最终得出该多项式为<br>$$<br>P_n(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n<br>$$</p>
+<p>要求<br>$$<br>f(x) - P_n(x) = o((x-x_0)^n)<br>$$<br>假设<br>$$<br>P_n(x_0) = f(x_0), P_n’(x_0) = f’(x_0), P_n’’(x_0) = f’’(x_0), P_n^{(n)}(x_0) = f^{(n)}(x_0),<br>$$<br>根据 $P_n(x_0) = a_0$ 得到 $a_0 = f(x_0)$ </p>
+<p>然后对Pn求导，得到如下式子<br>$$<br>P_n’(x) = 1a_1(x-x_0)^0 + 2a_2(x-x_0)^1 + 3a_3(x-x_0)^2 + … + na_n(x-x_0)^{n-1}<br>$$</p>
+<p>因此</p>
+<p>$$<br>P_n’(x_0) = 1*a_1(x-x_0)^0 = a_1, a_1 = f’(x_0)<br>$$</p>
+<p>再次求导得到Pn的二阶导数</p>
+<p>$$<br>P_n’’(x) = 1<em>2a_1(x-x_0)^0 + 2</em>3a_1(x-x_0)^1 + … + (n-1)na_n(x-x_0)^{n-2}<br>$$</p>
+<p>因此</p>
+<p>$$<br>P_n’’(x) = 1*2a_1(x-x_0)^0 = 2!a_1<br>$$</p>
+<p>也就是</p>
+<p>$$<br>a_2 = \frac{1}{2!}f’’(x_0), … , a_n = \frac{1}{n!}f^{n}(x_0)<br>$$</p>
+<p>最终得出该多项式为</p>
+<p>$$<br>P_n(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n<br>$$</p>
 <h1 id="泰勒中值定理1"><a href="#泰勒中值定理1" class="headerlink" title="泰勒中值定理1"></a>泰勒中值定理1</h1><p>如果函数f(x)在x0处有n阶导数，则存在x0的一个领域，对于该领域内任一x，有<br>$$<br>f(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)<br>$$<br>其中 $ R_n(x) = o((x-x_0)^n) $</p>
 <p>则称<br>$$<br>P_n(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n<br>$$<br>为<code>f(x)</code>在<code>x0</code>处按<code>x-x0</code>的冥展开的<strong>n次泰勒多项式</strong></p>
 <p>而<br>$$<br>f(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)<br>$$<br>称为<code>f(x)</code>在<code>x0</code>处或按<code>x-x0</code>的幂展开的带有佩亚诺 (Peano)余项的 n 阶泰勒公式</p>
