@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="定义设函数在区间I上有定义，存在x0∈I，使得对任一x∈I，均有$$f(x)&amp;lt;=f(x_0), (f(x)&amp;gt;=f(x_0))$$则称f(x0)是函数f(x)在区间I上的最大值（最小值） 注意如果一个函数的最大值与最小值相等，则该函数一定是常数函数 理解如果存在一个数，f(x)中任何取值都比这个数大或者小，那么这个数就是f(x)的上限或者下限，而且这个数x0一定在定义域内 最大值最小值定">
+<meta name="description" content="前言上一个博客我们提到了如何使用MATLAB求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路多的电路，普通工程计算器甚至都无法完成，这个时候就需要强大的MATLAB的solve函数来帮我妈解方程组了。 solve输入help获取solve函数的函数原型和参数意义 123456789101112">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="最大值与最小值定理">
-<meta property="og:url" content="http://blog.changwei.me/2018/11/30/最大值与最小值定理/index.html">
+<meta property="og:title" content="使用MATLAB解方程">
+<meta property="og:url" content="http://blog.changwei.me/2018/12/03/使用MATLAB解方程/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="定义设函数在区间I上有定义，存在x0∈I，使得对任一x∈I，均有$$f(x)&amp;lt;=f(x_0), (f(x)&amp;gt;=f(x_0))$$则称f(x0)是函数f(x)在区间I上的最大值（最小值） 注意如果一个函数的最大值与最小值相等，则该函数一定是常数函数 理解如果存在一个数，f(x)中任何取值都比这个数大或者小，那么这个数就是f(x)的上限或者下限，而且这个数x0一定在定义域内 最大值最小值定">
+<meta property="og:description" content="前言上一个博客我们提到了如何使用MATLAB求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路多的电路，普通工程计算器甚至都无法完成，这个时候就需要强大的MATLAB的solve函数来帮我妈解方程组了。 solve输入help获取solve函数的函数原型和参数意义 123456789101112">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-11-30T06:34:02.165Z">
+<meta property="og:updated_time" content="2018-12-02T16:28:26.697Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="最大值与最小值定理">
-<meta name="twitter:description" content="定义设函数在区间I上有定义，存在x0∈I，使得对任一x∈I，均有$$f(x)&amp;lt;=f(x_0), (f(x)&amp;gt;=f(x_0))$$则称f(x0)是函数f(x)在区间I上的最大值（最小值） 注意如果一个函数的最大值与最小值相等，则该函数一定是常数函数 理解如果存在一个数，f(x)中任何取值都比这个数大或者小，那么这个数就是f(x)的上限或者下限，而且这个数x0一定在定义域内 最大值最小值定">
+<meta name="twitter:title" content="使用MATLAB解方程">
+<meta name="twitter:description" content="前言上一个博客我们提到了如何使用MATLAB求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路多的电路，普通工程计算器甚至都无法完成，这个时候就需要强大的MATLAB的solve函数来帮我妈解方程组了。 solve输入help获取solve函数的函数原型和参数意义 123456789101112">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/2018/11/30/最大值与最小值定理/">
+  <link rel="canonical" href="http://blog.changwei.me/2018/12/03/使用MATLAB解方程/">
 
 
 
 
 
-  <title>最大值与最小值定理 | 昌维的博客</title>
+  <title>使用MATLAB解方程 | 昌维的博客</title>
   
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/11/30/最大值与最小值定理/">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/03/使用MATLAB解方程/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="昌维">
@@ -334,7 +334,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">最大值与最小值定理</h2>
+          <h2 class="post-title" itemprop="name headline">使用MATLAB解方程</h2>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T14:22:56+08:00">
-                2018-11-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-03T00:19:31+08:00">
+                2018-12-03
               </time>
             
 
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-30T14:34:02+08:00">
-                2018-11-30
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T00:28:26+08:00">
+                2018-12-03
               </time>
             
           </span>
@@ -399,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/30/最大值与最小值定理/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/30/最大值与最小值定理/" itemprop="commentCount"></span>
+                <a href="/2018/12/03/使用MATLAB解方程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/03/使用MATLAB解方程/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2018/11/30/最大值与最小值定理/" class="leancloud_visitors" data-flag-title="最大值与最小值定理">
+             <span id="/2018/12/03/使用MATLAB解方程/" class="leancloud_visitors" data-flag-title="使用MATLAB解方程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -458,13 +458,19 @@
       
 
       
-        <h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>设函数在区间<code>I</code>上有定义，存在<code>x0∈I</code>，使得对任一<code>x∈I</code>，均有<br>$$<br>f(x)&lt;=f(x_0), (f(x)&gt;=f(x_0))<br>$$<br>则称f(x0)是函数f(x)在区间I上的最大值（最小值）</p>
-<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>如果一个函数的最大值与最小值相等，则该函数一定是常数函数</p>
-<h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><p>如果存在一个数，f(x)中任何取值都比这个数大或者小，那么这个数就是f(x)的上限或者下限，而且这个数x0一定在定义域内</p>
-<h1 id="最大值最小值定理"><a href="#最大值最小值定理" class="headerlink" title="最大值最小值定理"></a>最大值最小值定理</h1><p>闭区间上连续函数在该区间上一定存在它的最大值和最小值</p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-53004?tid=1003173009#/learn/content?type=detail&amp;id=1004549518&amp;cid=1005705817</a></li>
-</ul>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上一个博客我们提到了如何使用MATLAB求极限值。</p>
+<p>这篇文章我们将讲解如何使用MATLAB解方程。</p>
+<p>我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。</p>
+<p>碰到回路多的电路，普通工程计算器甚至都无法完成，这个时候就需要强大的MATLAB的solve函数来帮我妈解方程组了。</p>
+<h1 id="solve"><a href="#solve" class="headerlink" title="solve"></a>solve</h1><p>输入help获取solve函数的函数原型和参数意义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; help solve</span><br><span class="line">solve - Equations and systems solver</span><br><span class="line"></span><br><span class="line">    This MATLAB function solves the equation eqn for the variable var.</span><br><span class="line"></span><br><span class="line">    S = solve(eqn,var)</span><br><span class="line">    S = solve(eqn,var,Name,Value)</span><br><span class="line">    Y = solve(eqns,vars)</span><br><span class="line">    Y = solve(eqns,vars,Name,Value)</span><br><span class="line">    [y1,...,yN] = solve(eqns,vars)</span><br><span class="line">    [y1,...,yN] = solve(eqns,vars,Name,Value)</span><br><span class="line">    [y1,...,yN,parameters,conditions] = solve(eqns,vars,&apos;ReturnConditions&apos;,true)</span><br><span class="line"></span><br><span class="line">    另请参阅 dsolve, isolate, linsolve, root, subs, symvar, vpasolve</span><br><span class="line"></span><br><span class="line">    solve 的参考页</span><br></pre></td></tr></table></figure>
+<p>这里要着重注意，solve如果求解的是多元方程组，返回的则是一个struct结构体类型（类似于python中的list），也就是包含多个值得数据类型，所以有几个未知数，我们就要使用syms声明多少个未知数，并且需要让solve赋值给由这些未知数组成的struct（类似于python中的list）</p>
+<p>然后eqns就是方程组了，也要使用方括号包裹起来，类似于python中的list，vars是未知数，也要写成struct类型并且使用方括号包裹起来。实际测试发现不用包裹也可以，当然推荐还是写成struct类型，比较规范。</p>
+<p>还有一个要注意的地方，就是在MATLAB中，单等于号<code>=</code>是赋值作用，而双等于号<code>==</code>才是相等，和C系列编程语言一样。</p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p>求解一个七元一次方程</p>
+<p>首先使用clear命令清除环境中已经存在的变量，防止被干扰，然后输入如下命令即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; clear</span><br><span class="line">&gt;&gt; syms i1 i2 i3 i4 i5 i6 vx</span><br><span class="line">&gt;&gt;  [i1,i2,i3,i4,i5,i6,vx] = solve([12+(2*i1-i4)*1000==0,12+(2*i2-i3-i5)*1000==0,2*vx+(2*i4-i1+i5)*1000==0,i3==6/1000,(2*i5-i2+i4)*1000==vx+(i6+i3)*1000,i5+i6==2*(i4+i5),i6*1000==vx],[i1,i2,i3,i4,i5,i6,vx])</span><br><span class="line"> </span><br><span class="line">i1 =</span><br><span class="line"> </span><br><span class="line">-81/12500</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">i2 =</span><br><span class="line"> </span><br><span class="line">-39/12500</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">i3 =</span><br><span class="line"> </span><br><span class="line">3/500</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">i4 =</span><br><span class="line"> </span><br><span class="line">-3/3125</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">i5 =</span><br><span class="line"> </span><br><span class="line">-3/12500</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">i6 =</span><br><span class="line"> </span><br><span class="line">-27/12500</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">vx =</span><br><span class="line"> </span><br><span class="line">-54/25</span><br><span class="line"> </span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>可以看到七个元分别被正确求出</p>
 
       
     </div>
@@ -485,7 +491,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://blog.changwei.me/2018/11/30/最大值与最小值定理/" title="最大值与最小值定理">http://blog.changwei.me/2018/11/30/最大值与最小值定理/</a>
+    <a href="http://blog.changwei.me/2018/12/03/使用MATLAB解方程/" title="使用MATLAB解方程">http://blog.changwei.me/2018/12/03/使用MATLAB解方程/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -507,8 +513,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/28/函数的间断点/" rel="next" title="函数的间断点">
-                <i class="fa fa-chevron-left"></i> 函数的间断点
+              <a href="/2018/12/03/使用MATLAB求极限值/" rel="next" title="使用MATLAB求极限值">
+                <i class="fa fa-chevron-left"></i> 使用MATLAB求极限值
               </a>
             
           </div>
@@ -516,10 +522,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/30/有界性定理/" rel="prev" title="有界性定理">
-                有界性定理 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -772,7 +774,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">2.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#理解"><span class="nav-number">3.</span> <span class="nav-text">理解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最大值最小值定理"><span class="nav-number">4.</span> <span class="nav-text">最大值最小值定理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#solve"><span class="nav-number">2.</span> <span class="nav-text">solve</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实例"><span class="nav-number">3.</span> <span class="nav-text">实例</span></a></li></ol></div>
             
 
           </div>

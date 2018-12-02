@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-02T16:12:46.644Z</updated>
+  <updated>2018-12-02T16:28:26.697Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用MATLAB解方程</title>
+    <link href="http://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E8%A7%A3%E6%96%B9%E7%A8%8B/"/>
+    <id>http://blog.changwei.me/2018/12/03/使用MATLAB解方程/</id>
+    <published>2018-12-02T16:19:31.000Z</published>
+    <updated>2018-12-02T16:28:26.697Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>使用MATLAB求极限值</title>
@@ -472,30 +496,6 @@
         
         
           &lt;h1 id=&quot;无穷小&quot;&gt;&lt;a href=&quot;#无穷小&quot; class=&quot;headerlink&quot; title=&quot;无穷小&quot;&gt;&lt;/a&gt;无穷小&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>函数与极限</title>
-    <link href="http://blog.changwei.me/2018/11/26/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/"/>
-    <id>http://blog.changwei.me/2018/11/26/函数与极限/</id>
-    <published>2018-11-26T11:42:11.000Z</published>
-    <updated>2018-11-26T13:04:04.161Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;极限&quot;&gt;&lt;a href=&quot;#极限&quot; class=&quot;headerlink&quot; title=&quot;极限&quot;&gt;&lt;/a&gt;极限&lt;/h1&gt;&lt;p&gt;$\lim\limits_{n \to \infty }{x_n=a}$ ，即$\lim\limits_{n \to \infty
         
       
     
