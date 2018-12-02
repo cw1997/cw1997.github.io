@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="前言我们在做高等数学题目时，需要验证自己答案的正确性，我们可以使用MATLAB来自动化求解极限值 syms首先要使用 syms 定义一个符号变量，你也可以理解为数学中的一些未知数，例如x。 limit这是求极限的函数，我们可以输入 help limit 来查看它的函数原型和参数意义 1234567891011121314151617181920212223&amp;gt;&amp;gt; help limit--">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-02T16:30:17.779Z">
+<meta property="og:updated_time" content="2018-12-02T16:32:50.091Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用MATLAB求极限值">
 <meta name="twitter:description" content="前言我们在做高等数学题目时，需要验证自己答案的正确性，我们可以使用MATLAB来自动化求解极限值 syms首先要使用 syms 定义一个符号变量，你也可以理解为数学中的一些未知数，例如x。 limit这是求极限的函数，我们可以输入 help limit 来查看它的函数原型和参数意义 1234567891011121314151617181920212223&amp;gt;&amp;gt; help limit--">
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T00:30:17+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T00:32:50+08:00">
                 2018-12-03
               </time>
             
@@ -458,15 +458,15 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们在做高等数学题目时，需要验证自己答案的正确性，我们可以使用MATLAB来自动化求解极限值</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们在做高等数学题目时，需要验证自己答案的正确性，我们可以使用<code>MATLAB</code>来自动化求解极限值</p>
 <h1 id="syms"><a href="#syms" class="headerlink" title="syms"></a>syms</h1><p>首先要使用 <code>syms</code> 定义一个符号变量，你也可以理解为数学中的一些未知数，例如x。</p>
 <h1 id="limit"><a href="#limit" class="headerlink" title="limit"></a>limit</h1><p>这是求极限的函数，我们可以输入 <code>help limit</code> 来查看它的函数原型和参数意义</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; help limit</span><br><span class="line">--- sym/limit 的帮助 ---</span><br><span class="line"></span><br><span class="line"> limit    Limit of an expression.</span><br><span class="line">    limit(F,x,a) takes the limit of the symbolic expression F as x -&gt; a.</span><br><span class="line">    limit(F,a) uses symvar(F) as the independent variable.</span><br><span class="line">    limit(F) uses a = <span class="number">0</span> as the limit point.</span><br><span class="line">    limit(F,x,a,<span class="string">'right'</span>) or limit(F,x,a,<span class="string">'left'</span>) specify the direction</span><br><span class="line">    of a one-sided limit.</span><br><span class="line"> </span><br><span class="line">    Examples:</span><br><span class="line">      syms x a t h;</span><br><span class="line"> </span><br><span class="line">      limit(<span class="built_in">sin</span>(x)/x)                 returns   <span class="number">1</span></span><br><span class="line">      limit((x<span class="number">-2</span>)/(x^<span class="number">2</span><span class="number">-4</span>),<span class="number">2</span>)          returns   <span class="number">1</span>/<span class="number">4</span></span><br><span class="line">      limit((<span class="number">1</span>+<span class="number">2</span>*t/x)^(<span class="number">3</span>*x),x,<span class="built_in">inf</span>)    returns   <span class="built_in">exp</span>(<span class="number">6</span>*t)</span><br><span class="line">      limit(<span class="number">1</span>/x,x,<span class="number">0</span>,<span class="string">'right'</span>)          returns   <span class="built_in">inf</span></span><br><span class="line">      limit(<span class="number">1</span>/x,x,<span class="number">0</span>,<span class="string">'left'</span>)           returns   -<span class="built_in">inf</span></span><br><span class="line">      limit((<span class="built_in">sin</span>(x+h)-<span class="built_in">sin</span>(x))/h,h,<span class="number">0</span>)  returns   <span class="built_in">cos</span>(x)</span><br><span class="line">      v = [(<span class="number">1</span> + a/x)^x, <span class="built_in">exp</span>(-x)];</span><br><span class="line">      limit(v,x,<span class="built_in">inf</span>,<span class="string">'left'</span>)           returns   [<span class="built_in">exp</span>(a),  <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">    sym/limit 的参考页</span><br></pre></td></tr></table></figure>
 <p>可以看到</p>
 <p><code>limit(F,x,a) takes the limit of the symbolic expression F as x -&gt; a.</code></p>
-<p>F表示要求极限的函数，x表示自变量，a表示自变量x趋向于的值，可以为任意数，或者无穷，但是无穷要使用<code>inf</code>来代替</p>
+<p><code>F</code>表示要求极限的函数，<code>x</code>表示自变量，<code>a</code>表示自变量<code>x</code>趋向于的值，可以为任意数，或者无穷，但是无穷要使用<code>inf</code>来代替</p>
 <p><code>limit(F,x,a,&#39;right&#39;) or limit(F,x,a,&#39;left&#39;) specify the direction of a one-sided limit.</code></p>
-<p>而第四个参数如果输入<code>&#39;left&#39;</code>或者<code>&#39;right&#39;</code>，则表示求<strong>左极限</strong>或者<strong>右极限</strong>。这里要注意参数类型是string，有单引号包裹起来。</p>
+<p>而第四个参数如果输入<code>&#39;left&#39;</code>或者<code>&#39;right&#39;</code>，则表示求<strong>左极限</strong>或者<strong>右极限</strong>。<strong>这里要注意参数类型是string，要用单引号包裹起来。</strong></p>
 <h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p>例如我求 $\lim\limits_{n \to \infty }{\frac{x-sin\ x}{x}} $ 的极限，可以这样操作</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; syms x</span><br><span class="line">&gt;&gt; limit((x-sin(x))/x,x,inf)</span><br><span class="line"> </span><br><span class="line">ans =</span><br><span class="line"> </span><br><span class="line">1</span><br></pre></td></tr></table></figure>
 <p>首先声明<code>符号变量x</code>，然后执行<code>limit</code>即可得到极限值为<code>1</code></p>
