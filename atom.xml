@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-02T16:36:10.768Z</updated>
+  <updated>2018-12-02T19:36:08.294Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>泰勒公式</title>
+    <link href="http://blog.changwei.me/2018/12/03/%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F/"/>
+    <id>http://blog.changwei.me/2018/12/03/泰勒公式/</id>
+    <published>2018-12-02T18:52:29.000Z</published>
+    <updated>2018-12-02T19:36:08.294Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用多项式近似表达函数&quot;&gt;&lt;a href=&quot;#使用多项式近似表达函数&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>使用MATLAB解方程</title>
@@ -142,7 +166,7 @@
     <link href="http://blog.changwei.me/2018/12/01/%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0/"/>
     <id>http://blog.changwei.me/2018/12/01/由参数方程所确定的函数的导数/</id>
     <published>2018-11-30T18:33:34.000Z</published>
-    <updated>2018-12-01T06:22:19.556Z</updated>
+    <updated>2018-12-02T19:44:03.488Z</updated>
     
     <summary type="html">
     
@@ -472,30 +496,6 @@
 &lt;li&gt;有界函数与无穷小的乘积是无穷小&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;推论&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>无穷小与无穷大</title>
-    <link href="http://blog.changwei.me/2018/11/27/%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%A4%A7/"/>
-    <id>http://blog.changwei.me/2018/11/27/无穷小与无穷大/</id>
-    <published>2018-11-27T10:28:22.000Z</published>
-    <updated>2018-11-28T02:31:27.003Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;无穷小&quot;&gt;&lt;a href=&quot;#无穷小&quot; class=&quot;headerlink&quot; title=&quot;无穷小&quot;&gt;&lt;/a&gt;无穷小&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot;
         
       
     

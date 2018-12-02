@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta name="description" content="使用多项式近似表达函数我们可以近似将函数f(x)在某个点的导数值乘以自变量x的微分，来求得函数f(x)的微分。 因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值） 然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x)近似取值的时候就是去x0处的导">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
-<meta property="og:type" content="website">
-<meta property="og:title" content="昌维的博客">
-<meta property="og:url" content="http://blog.changwei.me/archives/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="泰勒公式">
+<meta property="og:url" content="http://blog.changwei.me/2018/12/03/泰勒公式/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta property="og:description" content="使用多项式近似表达函数我们可以近似将函数f(x)在某个点的导数值乘以自变量x的微分，来求得函数f(x)的微分。 因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值） 然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x)近似取值的时候就是去x0处的导">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2018-12-02T19:36:08.294Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="昌维的博客">
-<meta name="twitter:description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta name="twitter:title" content="泰勒公式">
+<meta name="twitter:description" content="使用多项式近似表达函数我们可以近似将函数f(x)在某个点的导数值乘以自变量x的微分，来求得函数f(x)的微分。 因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值） 然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x)近似取值的时候就是去x0处的导">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/archives/">
+  <link rel="canonical" href="http://blog.changwei.me/2018/12/03/泰勒公式/">
 
 
 
 
 
-  <title>Archive | 昌维的博客</title>
+  <title>泰勒公式 | 昌维的博客</title>
   
 
 
@@ -156,7 +157,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-archive">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -302,740 +303,285 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
-        
-        
-         
-        
-        OK! 40 posts in total. Keep on posting.
-      </span>
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/03/泰勒公式/">
 
-      
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="昌维">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="昌维的博客">
+    </span>
+
+    
+      <header class="post-header">
 
         
         
+          <h2 class="post-title" itemprop="name headline">泰勒公式</h2>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-03T02:52:29+08:00">
+                2018-12-03
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T03:36:08+08:00">
+                2018-12-03
+              </time>
+            
+          </span>
+
           
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2018">2018</h2>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/03/泰勒公式/" itemprop="url">
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="name">泰勒公式</span>
+                <span class="post-meta-item-text">In</span>
               
-            </a>
-        
-      </h3>
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/math/" itemprop="url" rel="index">
+                    <span itemprop="name">math</span>
+                  </a>
+                </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-03T02:52:29+08:00" content="2018-12-03">
-          12-03
-        </time>
-      </div>
+                
+                
+              
+            </span>
+          
 
-    </header>
-  </article>
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/03/泰勒公式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/03/泰勒公式/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
+          
+          
+             <span id="/2018/12/03/泰勒公式/" class="leancloud_visitors" data-flag-title="泰勒公式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/03/使用MATLAB解方程/" itemprop="url">
-              
-                <span itemprop="name">使用MATLAB解方程</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-03T00:19:31+08:00" content="2018-12-03">
-          12-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/03/使用MATLAB求极限值/" itemprop="url">
-              
-                <span itemprop="name">使用MATLAB求极限值</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-03T00:05:45+08:00" content="2018-12-03">
-          12-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="使用多项式近似表达函数"><a href="#使用多项式近似表达函数" class="headerlink" title="使用多项式近似表达函数"></a>使用多项式近似表达函数</h1><p>我们可以近似将函数f(x)在某个点的导数值乘以自变量x的微分，来求得函数f(x)的微分。</p>
+<p>因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值）</p>
+<p>然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x)近似取值的时候就是去x0处的导数为近似增长率。<br>$$<br>\delta y ≈ dy = f’(x_0)\delta x \<br>f(x) - f(x_0) ≈ f’(x_0)(x-x_0) \<br>f(x) ≈ f(x_0)+f’(x_0)(x-x_0) = P_1(x) \<br>P_1(x_0) = f(x_0), P’_1(x_0) = f’(x_0)<br>$$<br>误差：<br>$$<br>f(x) - P_1(x) = o(x-x_0)<br>$$<br>他们的误差是x-x0的一个高阶数</p>
+<h1 id="寻找这个多项式"><a href="#寻找这个多项式" class="headerlink" title="寻找这个多项式"></a>寻找这个多项式</h1><p>$$<br>P_n(x) = a_0(x-x_0)^0 + a_1(x-x_0)^1 + a_2(x-x_0)^2 + … + a_n(x-x_0)^n<br>$$</p>
+<p>要求<br>$$<br>f(x) - P_n(x) = o((x-x_0)^n)<br>$$</p>
+<p>假设<br>$$<br>P_n(x_0) = f(x_0), P_n’(x_0) = f’(x_0), P_n’’(x_0) = f’’(x_0), P_n^{(n)}(x_0) = f^{(n)}(x_0),<br>$$<br>根据 $P_n(x_0) = a_0$ 得到 $a_0 = f(x_0)$ </p>
+<p>然后对Pn求导，得到如下式子<br>$$<br>P_n’(x) = 1a_1(x-x_0)^0 + 2a_2(x-x_0)^1 + 3a_3(x-x_0)^2 + … + na_n(x-x_0)^{n-1}<br>$$<br>  因此<br>$$<br>P_n’(x_0) = 1<em>a_1(x-x_0)^0 = a_1, a_1 = f’(x_0)<br>$$<br>再次求导得到Pn的二阶导数<br>$$<br>P_n’’(x) = 1</em>2a_1(x-x_0)^0 + 2<em>3a_1(x-x_0)^1 + … + (n-1)na_n(x-x_0)^{n-2}<br>$$<br>因此<br>$$<br>P_n’’(x) = 1</em>2a_1(x-x_0)^0 = 2!a_1<br>$$<br>也就是<br>$$<br>a_2 = \frac{1}{2!}f’’(x_0), … , a_n = \frac{1}{n!}f^{n}(x_0)<br>$$<br>最终得出该多项式为<br>$$<br>P_n(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n<br>$$</p>
+<h1 id="泰勒中值定理1"><a href="#泰勒中值定理1" class="headerlink" title="泰勒中值定理1"></a>泰勒中值定理1</h1><p>如果函数f(x)在x0处有n阶导数，则存在x0的一个领域，对于该领域内任一x，有<br>$$<br>f(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)<br>$$<br>其中 $ R_n(x) = o((x-x_0)^n) $</p>
+<p>则称<br>$$<br>P_n(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n<br>$$<br>为<code>f(x)</code>在<code>x0</code>处按<code>x-x0</code>的冥展开的<strong>n次泰勒多项式</strong></p>
+<p>而<br>$$<br>f(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)<br>$$<br>称为<code>f(x)</code>在<code>x0</code>处或按<code>x-x0</code>的幂展开的带有佩亚诺 (Peano)余项的 n 阶泰勒公式</p>
+<p>上面余项的表达式称为佩亚诺余项</p>
+<h1 id="泰勒中值定理2"><a href="#泰勒中值定理2" class="headerlink" title="泰勒中值定理2"></a>泰勒中值定理2</h1><p>如果函数f(x)在x0的某领域内具有直到n+1阶的导数，那么对任一属于x0领域的x，有<br>$$<br>f(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)<br>$$<br>其中（拉格朗日余项）<br>$$<br>R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{(n+1)}, \xi ∈ (x_0,x)<br>$$<br>称<br>$$<br>f(x) = f(x_0) + f’(x_0)(x-x_0) + \frac{1}{2!}f’’(x_0) + … + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)<br>$$<br>为f(x)在x0处或按照x-x0的冥展开的<strong>带有拉格朗日余项</strong>的 <strong>n 阶泰勒公式</strong></p>
+<p>当n=0时，泰勒公式为<br>$$<br>f(x) = f)x_0 + f’(\xi)(x-x_0), \xi ∈ (x_0,x)<br>$$</p>
+<h1 id="带有佩亚诺余项的麦克劳林-Maclaurin-公式"><a href="#带有佩亚诺余项的麦克劳林-Maclaurin-公式" class="headerlink" title="带有佩亚诺余项的麦克劳林(Maclaurin)公式"></a>带有佩亚诺余项的麦克劳林(Maclaurin)公式</h1><p>$$<br>f(x) = f(0)x^0 + f’(0)x^1 + \frac{f’’(x_0)}{2!}x^2 + … + \frac{f^{(n)}(0)}{n!}x^n + o(x^n)<br>$$</p>
+<h1 id="带有拉格朗日余项的麦克劳林公式"><a href="#带有拉格朗日余项的麦克劳林公式" class="headerlink" title="带有拉格朗日余项的麦克劳林公式"></a>带有拉格朗日余项的麦克劳林公式</h1><p>$$<br>f(x) = f(0)x^0 + f’(0)x^1 + \frac{f’’(x_0)}{2!}x^2 + … + \frac{f^{(n)}(0)}{n!}x^n +  \frac{f^{(n+1)}(\theta x)}{(n+1)!}x^{n+1}, ( 0 &lt; \theta &lt; 1 )<br>$$</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/02/洛必达法则/" itemprop="url">
-              
-                <span itemprop="name">洛必达法则</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-02T23:26:06+08:00" content="2018-12-02">
-          12-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/01/微分中值定理/" itemprop="url">
-              
-                <span itemprop="name">微分中值定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-01T16:19:18+08:00" content="2018-12-01">
-          12-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/01/微分/" itemprop="url">
-              
-                <span itemprop="name">微分</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-01T15:43:41+08:00" content="2018-12-01">
-          12-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/01/由参数方程所确定的函数的导数/" itemprop="url">
-              
-                <span itemprop="name">由参数方程所确定的函数的导数</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-01T02:33:34+08:00" content="2018-12-01">
-          12-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/01/隐函数的导数/" itemprop="url">
-              
-                <span itemprop="name">隐函数的导数</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-01T02:10:05+08:00" content="2018-12-01">
-          12-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/导数/" itemprop="url">
-              
-                <span itemprop="name">导数</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T20:54:41+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/介值定理/" itemprop="url">
-              
-                <span itemprop="name">介值定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T15:07:17+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/零点定理/" itemprop="url">
-              
-                <span itemprop="name">零点定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T15:04:07+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/有界性定理/" itemprop="url">
-              
-                <span itemprop="name">有界性定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T14:34:26+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/最大值与最小值定理/" itemprop="url">
-              
-                <span itemprop="name">最大值与最小值定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T14:22:56+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/函数的间断点/" itemprop="url">
-              
-                <span itemprop="name">函数的间断点</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T17:09:42+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/函数的连续性/" itemprop="url">
-              
-                <span itemprop="name">函数的连续性</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T16:34:21+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/无穷小的比较/" itemprop="url">
-              
-                <span itemprop="name">无穷小的比较</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T12:52:33+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/单调有界数列收敛准则/" itemprop="url">
-              
-                <span itemprop="name">单调有界数列收敛准则</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T11:23:53+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/利用夹逼准则证明函数极限/" itemprop="url">
-              
-                <span itemprop="name">利用夹逼准则证明函数极限</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T10:46:08+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/27/夹逼准则/" itemprop="url">
-              
-                <span itemprop="name">夹逼准则</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-27T22:33:44+08:00" content="2018-11-27">
-          11-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/27/极限的运算法则/" itemprop="url">
-              
-                <span itemprop="name">极限的运算法则</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-27T20:38:18+08:00" content="2018-11-27">
-          11-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    昌维
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://blog.changwei.me/2018/12/03/泰勒公式/" title="泰勒公式">http://blog.changwei.me/2018/12/03/泰勒公式/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/03/使用MATLAB解方程/" rel="next" title="使用MATLAB解方程">
+                <i class="fa fa-chevron-left"></i> 使用MATLAB解方程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1043,6 +589,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1065,8 +620,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -1202,6 +766,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用多项式近似表达函数"><span class="nav-number">1.</span> <span class="nav-text">使用多项式近似表达函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#寻找这个多项式"><span class="nav-number">2.</span> <span class="nav-text">寻找这个多项式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#泰勒中值定理1"><span class="nav-number">3.</span> <span class="nav-text">泰勒中值定理1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#泰勒中值定理2"><span class="nav-number">4.</span> <span class="nav-text">泰勒中值定理2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#带有佩亚诺余项的麦克劳林-Maclaurin-公式"><span class="nav-number">5.</span> <span class="nav-text">带有佩亚诺余项的麦克劳林(Maclaurin)公式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#带有拉格朗日余项的麦克劳林公式"><span class="nav-number">6.</span> <span class="nav-text">带有拉格朗日余项的麦克劳林公式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1359,6 +939,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
