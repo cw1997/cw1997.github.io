@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="前言上一个博客（https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/）我们提到了如何使用`MATLAB`求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路">
+<meta name="description" content="前言上一个博客（ https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/ ）我们提到了如何使用MATLAB求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用MATLAB解方程">
 <meta property="og:url" content="http://blog.changwei.me/2018/12/03/使用MATLAB解方程/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="前言上一个博客（https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/）我们提到了如何使用`MATLAB`求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路">
+<meta property="og:description" content="前言上一个博客（ https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/ ）我们提到了如何使用MATLAB求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-02T16:33:09.723Z">
+<meta property="og:updated_time" content="2018-12-02T16:34:03.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用MATLAB解方程">
-<meta name="twitter:description" content="前言上一个博客（https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/）我们提到了如何使用`MATLAB`求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路">
+<meta name="twitter:description" content="前言上一个博客（ https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/ ）我们提到了如何使用MATLAB求极限值。 这篇文章我们将讲解如何使用MATLAB解方程。 我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。 碰到回路">
 
 
 
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T00:33:09+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T00:34:03+08:00">
                 2018-12-03
               </time>
             
@@ -458,7 +458,7 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上一个博客（<a href="https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/）我们提到了如何使用`MATLAB`求极限值。">https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/）我们提到了如何使用`MATLAB`求极限值。</a></p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上一个博客（ <a href="https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/">https://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E6%B1%82%E6%9E%81%E9%99%90%E5%80%BC/</a> ）我们提到了如何使用<code>MATLAB</code>求极限值。</p>
 <p>这篇文章我们将讲解如何使用<code>MATLAB</code>解方程。</p>
 <p>我们平时做物理题，使用回路电流法求电路的电压电流时，有多少个回路就要列写多少个方程。</p>
 <p>碰到回路多的电路，普通工程计算器甚至都无法完成，这个时候就需要强大的<code>MATLAB</code>的<code>solve</code>函数来帮我解方程组了。</p>
