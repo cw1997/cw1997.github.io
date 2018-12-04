@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-04T05:41:59.104Z</updated>
+  <updated>2018-12-04T12:24:01.546Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>不定积分求解</title>
+    <link href="http://blog.changwei.me/2018/12/04/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E6%B1%82%E8%A7%A3/"/>
+    <id>http://blog.changwei.me/2018/12/04/不定积分求解/</id>
+    <published>2018-12-04T05:43:41.000Z</published>
+    <updated>2018-12-04T12:24:01.546Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;查表法&quot;&gt;&lt;a href=&quot;#查表法&quot; class=&quot;headerlink&quot; title=&quot;查表法&quot;&gt;&lt;/a&gt;查表法&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>不定积分</title>
     <link href="http://blog.changwei.me/2018/12/04/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/"/>
     <id>http://blog.changwei.me/2018/12/04/不定积分/</id>
     <published>2018-12-04T05:13:22.000Z</published>
-    <updated>2018-12-04T05:41:59.104Z</updated>
+    <updated>2018-12-04T10:39:30.435Z</updated>
     
     <summary type="html">
     
@@ -467,30 +491,6 @@
         
           &lt;h1 id=&quot;准则&quot;&gt;&lt;a href=&quot;#准则&quot; class=&quot;headerlink&quot; title=&quot;准则&quot;&gt;&lt;/a&gt;准则&lt;/h1&gt;&lt;p&gt;单调有界数列必有极限&lt;/p&gt;
 &lt;h1 id=&quot;解释&quot;&gt;&lt;a href=&quot;#解释&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>利用夹逼准则证明函数极限</title>
-    <link href="http://blog.changwei.me/2018/11/28/%E5%88%A9%E7%94%A8%E5%A4%B9%E9%80%BC%E5%87%86%E5%88%99%E8%AF%81%E6%98%8E%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/"/>
-    <id>http://blog.changwei.me/2018/11/28/利用夹逼准则证明函数极限/</id>
-    <published>2018-11-28T02:46:08.000Z</published>
-    <updated>2018-11-28T03:30:03.278Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;利用夹逼准则证明函数极限&quot;&gt;&lt;a href=&quot;#利用夹逼准则证明函数极限&quot; class=&quot;headerlink&quot; title=&quot;利用夹逼准则证明函数极限&quot;&gt;&lt;/a&gt;利用夹逼准则证明函数极限&lt;/h1&gt;&lt;h2 id=&quot;命题&quot;&gt;&lt;a href=&quot;#命题&quot;
         
       
     
