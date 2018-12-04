@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-04T05:08:53.742Z</updated>
+  <updated>2018-12-04T05:41:59.104Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>不定积分</title>
+    <link href="http://blog.changwei.me/2018/12/04/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/"/>
+    <id>http://blog.changwei.me/2018/12/04/不定积分/</id>
+    <published>2018-12-04T05:13:22.000Z</published>
+    <updated>2018-12-04T05:41:59.104Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;求导运算&quot;&gt;&lt;a href=&quot;#求导运算&quot; class=&quot;headerlink&quot; title=&quot;求导运算&quot;&gt;&lt;/a&gt;求导运算&lt;/h1&gt;&lt;p&gt;已知F(x)，求F’(x)，导函数f(x)=F’(x)&lt;/p&gt;
+&lt;h1 id=&quot;积分运算&quot;&gt;&lt;a href=&quot;#积分运算&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>曲率</title>
@@ -238,7 +263,7 @@
     <link href="http://blog.changwei.me/2018/11/30/%E5%AF%BC%E6%95%B0/"/>
     <id>http://blog.changwei.me/2018/11/30/导数/</id>
     <published>2018-11-30T12:54:41.000Z</published>
-    <updated>2018-11-30T18:09:42.239Z</updated>
+    <updated>2018-12-04T05:23:30.802Z</updated>
     
     <summary type="html">
     
@@ -466,32 +491,6 @@
         
         
           &lt;h1 id=&quot;利用夹逼准则证明函数极限&quot;&gt;&lt;a href=&quot;#利用夹逼准则证明函数极限&quot; class=&quot;headerlink&quot; title=&quot;利用夹逼准则证明函数极限&quot;&gt;&lt;/a&gt;利用夹逼准则证明函数极限&lt;/h1&gt;&lt;h2 id=&quot;命题&quot;&gt;&lt;a href=&quot;#命题&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>夹逼准则</title>
-    <link href="http://blog.changwei.me/2018/11/27/%E5%A4%B9%E9%80%BC%E5%87%86%E5%88%99/"/>
-    <id>http://blog.changwei.me/2018/11/27/夹逼准则/</id>
-    <published>2018-11-27T14:33:44.000Z</published>
-    <updated>2018-11-28T03:30:15.149Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;设数列 ${x_n},{y_n},{z_n}$ 满足：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;存在某个正整数 $n_0$ ，当 $n&amp;gt;n_0$
         
       
     
