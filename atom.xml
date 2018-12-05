@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-04T12:24:01.546Z</updated>
+  <updated>2018-12-05T05:45:23.482Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>有理函数的不定积分</title>
+    <link href="http://blog.changwei.me/2018/12/05/%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/"/>
+    <id>http://blog.changwei.me/2018/12/05/有理函数的不定积分/</id>
+    <published>2018-12-05T05:25:39.000Z</published>
+    <updated>2018-12-05T05:45:23.482Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;有理函数&quot;&gt;&lt;a href=&quot;#有理函数&quot; class=&quot;headerlink&quot; title=&quot;有理函数&quot;&gt;&lt;/a&gt;有理函数&lt;/h1&gt;&lt;p&gt;有理函数(或有理分式)是指由两个多项式的商所表示的函数，
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>不定积分求解</title>
     <link href="http://blog.changwei.me/2018/12/04/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E6%B1%82%E8%A7%A3/"/>
     <id>http://blog.changwei.me/2018/12/04/不定积分求解/</id>
     <published>2018-12-04T05:43:41.000Z</published>
-    <updated>2018-12-04T12:24:01.546Z</updated>
+    <updated>2018-12-05T03:22:34.806Z</updated>
     
     <summary type="html">
     
@@ -466,31 +490,6 @@
         
         
           &lt;h1 id=&quot;无穷小的比较&quot;&gt;&lt;a href=&quot;#无穷小的比较&quot; class=&quot;headerlink&quot; title=&quot;无穷小的比较&quot;&gt;&lt;/a&gt;无穷小的比较&lt;/h1&gt;&lt;p&gt;虽然当x趋于0的时候，x，sin
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>单调有界数列收敛准则</title>
-    <link href="http://blog.changwei.me/2018/11/28/%E5%8D%95%E8%B0%83%E6%9C%89%E7%95%8C%E6%95%B0%E5%88%97%E6%94%B6%E6%95%9B%E5%87%86%E5%88%99/"/>
-    <id>http://blog.changwei.me/2018/11/28/单调有界数列收敛准则/</id>
-    <published>2018-11-28T03:23:53.000Z</published>
-    <updated>2018-11-29T16:00:25.783Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;准则&quot;&gt;&lt;a href=&quot;#准则&quot; class=&quot;headerlink&quot; title=&quot;准则&quot;&gt;&lt;/a&gt;准则&lt;/h1&gt;&lt;p&gt;单调有界数列必有极限&lt;/p&gt;
-&lt;h1 id=&quot;解释&quot;&gt;&lt;a href=&quot;#解释&quot; class=&quot;headerlink&quot;
         
       
     

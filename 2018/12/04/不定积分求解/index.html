@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://blog.changwei.me/Users/changwei/project/blog/source/_posts/不定积分求解/table.png">
 <meta property="og:image" content="http://blog.changwei.me/2018/12/04/不定积分求解/table.png">
-<meta property="og:updated_time" content="2018-12-04T12:24:01.546Z">
+<meta property="og:updated_time" content="2018-12-05T03:22:34.806Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="不定积分求解">
 <meta name="twitter:description" content="查表法  第一类换元法换元公式$$\int f[g(x)]g’(x)dx = F[g(x)] + C = \int f(u)du|_{u=g(x))}$$ 证明因为函数f(u)有原函数F(u)，也就是$$F’(u) = f(u), \int f(u)du = F(u) + C$$根据复合函数求导法则，得到$$\frac{dF[g(x)]}{dx} = F’[g(x)]g’(x) = f[g(x)]">
@@ -365,8 +365,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-04T20:24:01+08:00">
-                2018-12-04
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-05T11:22:34+08:00">
+                2018-12-05
               </time>
             
           </span>
@@ -465,7 +465,32 @@
 <img src="/2018/12/04/不定积分求解/table.png" title="不定积分表">
 <h1 id="第一类换元法"><a href="#第一类换元法" class="headerlink" title="第一类换元法"></a>第一类换元法</h1><h2 id="换元公式"><a href="#换元公式" class="headerlink" title="换元公式"></a>换元公式</h2><p>$$<br>\int f[g(x)]g’(x)dx = F[g(x)] + C = \int f(u)du|_{u=g(x))}<br>$$</p>
 <h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>因为函数f(u)有原函数F(u)，也就是<br>$$<br>F’(u) = f(u), \int f(u)du = F(u) + C<br>$$<br>根据复合函数求导法则，得到<br>$$<br>\frac{dF[g(x)]}{dx} = F’[g(x)]g’(x) = f[g(x)]g’(x)<br>$$<br>所以<br>$$<br>\int f[g(x)]g’(x)dx = F[g(x)] + C<br>$$</p>
-<h1 id="第二类换元法"><a href="#第二类换元法" class="headerlink" title="第二类换元法"></a>第二类换元法</h1>
+<h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p>通过将原函数转换成由一个函数f(g(x))和另一个函数g’x的乘积，相当于是凑成一个复合函数的导数，然后再把gx换元成u，由于现在只剩u了，求原函数会很方便。求出原函数之后，把u所指代的gx替换原先的x即可。</p>
+<h1 id="第二类换元法"><a href="#第二类换元法" class="headerlink" title="第二类换元法"></a>第二类换元法</h1><h2 id="换元公式-1"><a href="#换元公式-1" class="headerlink" title="换元公式"></a>换元公式</h2><p>$$<br>\int f(x)dx = \int f[g(u)]g’(u)du|_{u=g^{-1}(x))}<br>$$</p>
+<p>$$<br>f(x)dx |_{x=g(u))} = f[g(u)]d[g(u)] = f[g(u)]g’(u)du<br>$$</p>
+<h2 id="理解-1"><a href="#理解-1" class="headerlink" title="理解"></a>理解</h2><p>先将原始函数 f(x) 分解成由两个函数复合的形式，然后 把dx中的x换成函数g(u)，求出他的不定积分之后，将g(u)带入回去即可</p>
+<h2 id="三角代换法"><a href="#三角代换法" class="headerlink" title="三角代换法"></a>三角代换法</h2><ul>
+<li>含 $\sqrt{a^2-x^2}$ 的可令 x=a sin t </li>
+<li>含 $\sqrt{a^2+x^2}$ 的可令 x=a tan t </li>
+<li>含 $\sqrt{x^2-a^2}$ 的可令 x=a sec t </li>
+</ul>
+<h1 id="分部积分法"><a href="#分部积分法" class="headerlink" title="分部积分法"></a>分部积分法</h1><h2 id="分部积分公式"><a href="#分部积分公式" class="headerlink" title="分部积分公式"></a>分部积分公式</h2><p>根据导数乘积法则，然后移项，得到如下公式<br>$$<br>(uv)’ = u’v + uv’, u’v = (uv)’ - uv’<br>$$</p>
+<p>$$<br>\int u’v dx = \int (uv)’ dx - \int uv’ dx = uv - \int uv’ dx<br>$$<br>关键是要选择适当的u和v函数，使得u’v比uv’更容易求得<br>$$<br>\int udv = uv - \int vdu<br>$$</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>一般可以按照如下顺序选择u：</p>
+<ul>
+<li>反三角函数</li>
+<li>对数函数</li>
+<li>冥函数</li>
+<li>三角函数</li>
+<li>指数函数</li>
+</ul>
+<h2 id="理解-2"><a href="#理解-2" class="headerlink" title="理解"></a>理解</h2><p>通常用来求解乘积组成的积分。将一个函数视为一个原函数和一个导函数的乘积，然后通过根据导数乘积法则，分别对其求不定积分。</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265587" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265587</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265588" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265588</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265589" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265589</a></li>
+</ul>
+
       
     </div>
     
@@ -516,6 +541,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/05/有理函数的不定积分/" rel="prev" title="有理函数的不定积分">
+                有理函数的不定积分 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -637,7 +666,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">43</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -768,7 +797,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#查表法"><span class="nav-number">1.</span> <span class="nav-text">查表法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一类换元法"><span class="nav-number">2.</span> <span class="nav-text">第一类换元法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#换元公式"><span class="nav-number">2.1.</span> <span class="nav-text">换元公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">2.2.</span> <span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二类换元法"><span class="nav-number">3.</span> <span class="nav-text">第二类换元法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#查表法"><span class="nav-number">1.</span> <span class="nav-text">查表法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一类换元法"><span class="nav-number">2.</span> <span class="nav-text">第一类换元法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#换元公式"><span class="nav-number">2.1.</span> <span class="nav-text">换元公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">2.2.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解"><span class="nav-number">2.3.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二类换元法"><span class="nav-number">3.</span> <span class="nav-text">第二类换元法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#换元公式-1"><span class="nav-number">3.1.</span> <span class="nav-text">换元公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解-1"><span class="nav-number">3.2.</span> <span class="nav-text">理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三角代换法"><span class="nav-number">3.3.</span> <span class="nav-text">三角代换法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分部积分法"><span class="nav-number">4.</span> <span class="nav-text">分部积分法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分部积分公式"><span class="nav-number">4.1.</span> <span class="nav-text">分部积分公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意"><span class="nav-number">4.2.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解-2"><span class="nav-number">4.3.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
