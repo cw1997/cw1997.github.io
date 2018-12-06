@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-06T14:07:42.676Z</updated>
+  <updated>2018-12-06T14:55:35.628Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>牛顿莱布尼茨公式</title>
+    <link href="http://blog.changwei.me/2018/12/06/%E7%89%9B%E9%A1%BF%E8%8E%B1%E5%B8%83%E5%B0%BC%E8%8C%A8%E5%85%AC%E5%BC%8F/"/>
+    <id>http://blog.changwei.me/2018/12/06/牛顿莱布尼茨公式/</id>
+    <published>2018-12-06T14:29:53.000Z</published>
+    <updated>2018-12-06T14:55:35.628Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;积分上限函数&quot;&gt;&lt;a href=&quot;#积分上限函数&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>定积分</title>
@@ -466,30 +490,6 @@
         
         
           &lt;h1 id=&quot;不连续的情况&quot;&gt;&lt;a href=&quot;#不连续的情况&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>函数的连续性</title>
-    <link href="http://blog.changwei.me/2018/11/28/%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/"/>
-    <id>http://blog.changwei.me/2018/11/28/函数的连续性/</id>
-    <published>2018-11-28T08:34:21.000Z</published>
-    <updated>2018-11-29T15:11:17.268Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;函数连续性定义1&quot;&gt;&lt;a href=&quot;#函数连续性定义1&quot; class=&quot;headerlink&quot;
         
       
     

@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>牛顿莱布尼茨公式</title>
+      <link href="/2018/12/06/%E7%89%9B%E9%A1%BF%E8%8E%B1%E5%B8%83%E5%B0%BC%E8%8C%A8%E5%85%AC%E5%BC%8F/"/>
+      <url>/2018/12/06/%E7%89%9B%E9%A1%BF%E8%8E%B1%E5%B8%83%E5%B0%BC%E8%8C%A8%E5%85%AC%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="积分上限函数"><a href="#积分上限函数" class="headerlink" title="积分上限函数"></a>积分上限函数</h1><p>函数f(x)∈C[a,b]，则对任意属于x∈[a,b]，f(x)在[a,x]上可积，由此定义了一个函数<br>$$<br>y(x) = \int_a^x f(x)dx,  x∈[a,b]<br>$$<br>这个函数指的是以a为起点，x为终点，这段区间内，由x=a和x=x，以及f(x)和x轴围成的图形面积</p><p>称为 <strong>积分上限函数</strong> 或 <strong>变上限积分函数</strong></p><p>x表示积分变量，同时也是积分上限</p><h1 id="积分上限函数的导数"><a href="#积分上限函数的导数" class="headerlink" title="积分上限函数的导数"></a>积分上限函数的导数</h1><p>积分上限函数在[a,b]上可导，并且其导函数为<br>$$<br>y’(x) = \frac{d {\int_a^x f(t)dt} }{dx}, (a&lt;=x&lt;=b)<br>$$<br>证明过程请查看参考资料</p><h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>如果函数f ∈ C[a,b] 则积分上限函数 $y(x) = \int_a^x f(t)dt$ 就是f(x)在[a,b]上的一个原函数</p><h1 id="牛顿莱布尼茨公式"><a href="#牛顿莱布尼茨公式" class="headerlink" title="牛顿莱布尼茨公式"></a>牛顿莱布尼茨公式</h1><p>如果函数在[a,b]上有定义，函数F(x)是f(x)在[a,b]上的一个原函数，则有<br>$$<br>\int f(x)dx = F(b) - F(a)<br>$$</p><h1 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h1><p>因为F(x)和积分上限函数都是f(x)的原函数，则有<br>$$<br>F(x) = y(x) + C_0<br>$$<br>于是<br>$$<br>F(b)-F(a) = y(b) - y(a) = \int_a^b f(x)dx - \int_a^a f(x)dx = \int_a^b f(x)dx<br>$$</p><h1 id="微积分基本公式"><a href="#微积分基本公式" class="headerlink" title="微积分基本公式"></a>微积分基本公式</h1><p>牛顿-莱布尼茨公式提供了计算定积分的一个重要方法， 同时还建立了定积分与原函数之间的关系. 因此，也被称为<strong>微积分基本公式</strong> </p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><p><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936320&amp;cid=1006265608" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936320&amp;cid=1006265608</a></p></li><li><p><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936323&amp;cid=1006265619" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936323&amp;cid=1006265619</a></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>定积分</title>
       <link href="/2018/12/05/%E5%AE%9A%E7%A7%AF%E5%88%86/"/>
       <url>/2018/12/05/%E5%AE%9A%E7%A7%AF%E5%88%86/</url>
