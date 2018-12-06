@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="定义函数f(x)在[a,b]上有界，将这一段划分为无数个dx，以每个dx中的一个函数值为高度，乘以dx，然后把每个小段都这样做并且相加，当dx趋于0的时候，这些小段相加的和，就是这个函数在区间内的定积分了。 符号$$\int_a^b f(x)dx \ [a,b]$$ 性质 当积分上下限一样的时候，积分为0 当a&amp;gt;b时， $\int_a^b f(x)dx = - \int_b^a f(x)dx">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-06T14:07:42.676Z">
+<meta property="og:updated_time" content="2018-12-06T16:02:38.847Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="定积分">
 <meta name="twitter:description" content="定义函数f(x)在[a,b]上有界，将这一段划分为无数个dx，以每个dx中的一个函数值为高度，乘以dx，然后把每个小段都这样做并且相加，当dx趋于0的时候，这些小段相加的和，就是这个函数在区间内的定积分了。 符号$$\int_a^b f(x)dx \ [a,b]$$ 性质 当积分上下限一样的时候，积分为0 当a&amp;gt;b时， $\int_a^b f(x)dx = - \int_b^a f(x)dx">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-06T22:07:42+08:00">
-                2018-12-06
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-07T00:02:38+08:00">
+                2018-12-07
               </time>
             
           </span>
@@ -475,9 +475,24 @@
 <li>若f属于[a,b]，则f(x)在[a,b]上可积</li>
 <li>f(x)在[a,b]上有界且只有有限个间断点，则f(x)在[a,b]上可积</li>
 </ul>
+<h1 id="求解方法"><a href="#求解方法" class="headerlink" title="求解方法"></a>求解方法</h1><h2 id="定积分表"><a href="#定积分表" class="headerlink" title="定积分表"></a>定积分表</h2><p>通过定积分表，寻找原函数，带入定积分上下限求解</p>
+<h2 id="换元法"><a href="#换元法" class="headerlink" title="换元法"></a>换元法</h2><h3 id="定积分换元积分公式"><a href="#定积分换元积分公式" class="headerlink" title="定积分换元积分公式"></a>定积分换元积分公式</h3><p>设f(x)∈C[a,b]，如果x=g(t)满足</p>
+<ul>
+<li>g(m)=a, g(n)=b</li>
+<li>g’ ∈ C[m,n] 或 g’ ∈ C[n,m] ，且g([m,n]) 或 g([n,m]) 等于 [a,b]</li>
+</ul>
+<p>则有如下公式<br>$$<br>\int_a^b f(x)dx = \int_m^n f[g(t)]g’(t)dt<br>$$<br>上述公式为 <strong>定积分的换元积分公式</strong> </p>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>设F(x)为f(x)的一个原函数，根据牛顿莱布尼茨公式<br>$$<br>\int f(x)dx = F(b) - F(a)<br>$$<br>又<br>$$<br>\int f[g(t)]g’(t)dt = \int f[g(t)]d[g(t)] = F[g(t)] + C<br>$$</p>
+<p>则 $F[g(t)]$ 是 $f[g(t)]g’(t)$ 的一个原函数，所以有<br>$$<br>\int_m^n f[g(t)]g’(t)dt = F[g(n)] - F[g(m)] = \int_a^b f(x)dx<br>$$</p>
+<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>令 $x = g(t)$ ，则 $ \int_a^b f(x)dx = \int_m^n f[g(t)]g’(t)dt $ ，其中 $g(m) = a, g(n) = b$ </p>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>当求解一些难解的定积分，可以使用换元法，换成其他更容易求解的定积分和定积分上下限</p>
+<h2 id="分部积分法"><a href="#分部积分法" class="headerlink" title="分部积分法"></a>分部积分法</h2><p>u(x), v(x) 在区间 [a,b] 上有连续导数，则<br>$$<br>(uv)’ = uv’ + u’v<br>$$<br>因此<br>$$<br>\int_a^b uv’ dx = \int_a^b (uv)’ dx - \int_a^b u’v dx = uv|_a^b - \int_a^b u’v dx<br>$$</p>
+<p>### </p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
 <li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936320&amp;cid=1006265606" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936320&amp;cid=1006265606</a></li>
 <li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936320&amp;cid=1006265607" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936320&amp;cid=1006265607</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936323&amp;cid=1006265620" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936323&amp;cid=1006265620</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936323&amp;cid=1006265621" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936323&amp;cid=1006265621</a></li>
 </ul>
 
       
@@ -786,7 +801,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#符号"><span class="nav-number">2.</span> <span class="nav-text">符号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#性质"><span class="nav-number">3.</span> <span class="nav-text">性质</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几何意义"><span class="nav-number">4.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定积分中值定理"><span class="nav-number">5.</span> <span class="nav-text">定积分中值定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#性质-1"><span class="nav-number">5.1.</span> <span class="nav-text">性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定积分中值定理-1"><span class="nav-number">5.2.</span> <span class="nav-text">定积分中值定理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#存在条件"><span class="nav-number">6.</span> <span class="nav-text">存在条件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">7.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#符号"><span class="nav-number">2.</span> <span class="nav-text">符号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#性质"><span class="nav-number">3.</span> <span class="nav-text">性质</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几何意义"><span class="nav-number">4.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定积分中值定理"><span class="nav-number">5.</span> <span class="nav-text">定积分中值定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#性质-1"><span class="nav-number">5.1.</span> <span class="nav-text">性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定积分中值定理-1"><span class="nav-number">5.2.</span> <span class="nav-text">定积分中值定理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#存在条件"><span class="nav-number">6.</span> <span class="nav-text">存在条件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#求解方法"><span class="nav-number">7.</span> <span class="nav-text">求解方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定积分表"><span class="nav-number">7.1.</span> <span class="nav-text">定积分表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#换元法"><span class="nav-number">7.2.</span> <span class="nav-text">换元法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定积分换元积分公式"><span class="nav-number">7.2.1.</span> <span class="nav-text">定积分换元积分公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#证明"><span class="nav-number">7.2.2.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公式"><span class="nav-number">7.2.3.</span> <span class="nav-text">公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用"><span class="nav-number">7.2.4.</span> <span class="nav-text">应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分部积分法"><span class="nav-number">7.3.</span> <span class="nav-text">分部积分法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">8.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
