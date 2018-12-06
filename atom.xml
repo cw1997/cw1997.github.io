@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-05T05:45:23.482Z</updated>
+  <updated>2018-12-06T14:07:42.676Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>定积分</title>
+    <link href="http://blog.changwei.me/2018/12/05/%E5%AE%9A%E7%A7%AF%E5%88%86/"/>
+    <id>http://blog.changwei.me/2018/12/05/定积分/</id>
+    <published>2018-12-05T05:46:05.000Z</published>
+    <updated>2018-12-06T14:07:42.676Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>有理函数的不定积分</title>
@@ -466,30 +490,6 @@
         
         
           &lt;h1 id=&quot;函数连续性定义1&quot;&gt;&lt;a href=&quot;#函数连续性定义1&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>无穷小的比较</title>
-    <link href="http://blog.changwei.me/2018/11/28/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/"/>
-    <id>http://blog.changwei.me/2018/11/28/无穷小的比较/</id>
-    <published>2018-11-28T04:52:33.000Z</published>
-    <updated>2018-11-28T05:37:42.871Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;无穷小的比较&quot;&gt;&lt;a href=&quot;#无穷小的比较&quot; class=&quot;headerlink&quot; title=&quot;无穷小的比较&quot;&gt;&lt;/a&gt;无穷小的比较&lt;/h1&gt;&lt;p&gt;虽然当x趋于0的时候，x，sin
         
       
     
