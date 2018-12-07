@@ -81,21 +81,18 @@
 
 
 
-<meta name="description" content="查表法  第一类换元法换元公式$$\int f[g(x)]g’(x)dx = F[g(x)] + C = \int f(u)du|_{u=g(x))}$$ 证明因为函数f(u)有原函数F(u)，也就是$$F’(u) = f(u), \int f(u)du = F(u) + C$$根据复合函数求导法则，得到$$\frac{dF[g(x)]}{dx} = F’[g(x)]g’(x) = f[g(x)]">
+<meta name="description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="不定积分求解">
-<meta property="og:url" content="http://blog.changwei.me/2018/12/04/不定积分求解/index.html">
+<meta property="og:title" content="微分方程">
+<meta property="og:url" content="http://blog.changwei.me/2018/12/07/微分方程/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="查表法  第一类换元法换元公式$$\int f[g(x)]g’(x)dx = F[g(x)] + C = \int f(u)du|_{u=g(x))}$$ 证明因为函数f(u)有原函数F(u)，也就是$$F’(u) = f(u), \int f(u)du = F(u) + C$$根据复合函数求导法则，得到$$\frac{dF[g(x)]}{dx} = F’[g(x)]g’(x) = f[g(x)]">
+<meta property="og:description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="http://blog.changwei.me/Users/changwei/project/blog/source/_posts/不定积分求解/table.png">
-<meta property="og:image" content="http://blog.changwei.me/2018/12/04/不定积分求解/table.png">
-<meta property="og:updated_time" content="2018-12-06T15:59:27.595Z">
+<meta property="og:updated_time" content="2018-12-07T10:59:55.306Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不定积分求解">
-<meta name="twitter:description" content="查表法  第一类换元法换元公式$$\int f[g(x)]g’(x)dx = F[g(x)] + C = \int f(u)du|_{u=g(x))}$$ 证明因为函数f(u)有原函数F(u)，也就是$$F’(u) = f(u), \int f(u)du = F(u) + C$$根据复合函数求导法则，得到$$\frac{dF[g(x)]}{dx} = F’[g(x)]g’(x) = f[g(x)]">
-<meta name="twitter:image" content="http://blog.changwei.me/Users/changwei/project/blog/source/_posts/不定积分求解/table.png">
+<meta name="twitter:title" content="微分方程">
+<meta name="twitter:description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
 
 
 
@@ -125,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/2018/12/04/不定积分求解/">
+  <link rel="canonical" href="http://blog.changwei.me/2018/12/07/微分方程/">
 
 
 
 
 
-  <title>不定积分求解 | 昌维的博客</title>
+  <title>微分方程 | 昌维的博客</title>
   
 
 
@@ -320,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/04/不定积分求解/">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/07/微分方程/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="昌维">
@@ -337,7 +334,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">不定积分求解</h2>
+          <h2 class="post-title" itemprop="name headline">微分方程</h2>
         
 
         <div class="post-meta">
@@ -349,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-04T13:43:41+08:00">
-                2018-12-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-07T13:54:26+08:00">
+                2018-12-07
               </time>
             
 
@@ -365,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-06T23:59:27+08:00">
-                2018-12-06
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-07T18:59:55+08:00">
+                2018-12-07
               </time>
             
           </span>
@@ -402,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/04/不定积分求解/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/04/不定积分求解/" itemprop="commentCount"></span>
+                <a href="/2018/12/07/微分方程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/07/微分方程/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -411,7 +408,7 @@
 
           
           
-             <span id="/2018/12/04/不定积分求解/" class="leancloud_visitors" data-flag-title="不定积分求解">
+             <span id="/2018/12/07/微分方程/" class="leancloud_visitors" data-flag-title="微分方程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -461,34 +458,19 @@
       
 
       
-        <h1 id="查表法"><a href="#查表法" class="headerlink" title="查表法"></a>查表法</h1><p><img src="/Users/changwei/project/blog/source/_posts/不定积分求解/table.png" alt="image-20181204134354524"></p>
-<img src="/2018/12/04/不定积分求解/table.png" title="不定积分表">
-<h1 id="第一类换元法"><a href="#第一类换元法" class="headerlink" title="第一类换元法"></a>第一类换元法</h1><h2 id="换元公式"><a href="#换元公式" class="headerlink" title="换元公式"></a>换元公式</h2><p>$$<br>\int f[g(x)]g’(x)dx = F[g(x)] + C = \int f(u)du|_{u=g(x))}<br>$$</p>
-<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>因为函数f(u)有原函数F(u)，也就是<br>$$<br>F’(u) = f(u), \int f(u)du = F(u) + C<br>$$<br>根据复合函数求导法则，得到<br>$$<br>\frac{dF[g(x)]}{dx} = F’[g(x)]g’(x) = f[g(x)]g’(x)<br>$$<br>所以<br>$$<br>\int f[g(x)]g’(x)dx = F[g(x)] + C<br>$$</p>
-<h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p>通过将原函数转换成由一个函数f(g(x))和另一个函数g’x的乘积，相当于是凑成一个复合函数的导数，然后再把gx换元成u，由于现在只剩u了，求原函数会很方便。求出原函数之后，把u所指代的gx替换原先的x即可。</p>
-<h1 id="第二类换元法"><a href="#第二类换元法" class="headerlink" title="第二类换元法"></a>第二类换元法</h1><h2 id="换元公式-1"><a href="#换元公式-1" class="headerlink" title="换元公式"></a>换元公式</h2><p>$$<br>\int f(x)dx = \int f[g(u)]g’(u)du|_{u=g^{-1}(x))}<br>$$</p>
-<p>$$<br>f(x)dx |_{x=g(u))} = f[g(u)]d[g(u)] = f[g(u)]g’(u)du<br>$$</p>
-<h2 id="理解-1"><a href="#理解-1" class="headerlink" title="理解"></a>理解</h2><p>先将原始函数 f(x) 分解成由两个函数复合的形式，然后 把dx中的x换成函数g(u)，求出他的不定积分之后，将g(u)带入回去即可</p>
-<h2 id="三角代换法"><a href="#三角代换法" class="headerlink" title="三角代换法"></a>三角代换法</h2><ul>
-<li>含 $\sqrt{a^2-x^2}$ 的可令 x=a sin t </li>
-<li>含 $\sqrt{a^2+x^2}$ 的可令 x=a tan t </li>
-<li>含 $\sqrt{x^2-a^2}$ 的可令 x=a sec t </li>
-</ul>
-<h1 id="分部积分法"><a href="#分部积分法" class="headerlink" title="分部积分法"></a>分部积分法</h1><h2 id="分部积分公式"><a href="#分部积分公式" class="headerlink" title="分部积分公式"></a>分部积分公式</h2><p>根据导数乘积法则，然后移项，得到如下公式<br>$$<br>(uv)’ = u’v + uv’, u’v = (uv)’ - uv’<br>$$</p>
-<p>$$<br>\int u’v dx = \int (uv)’ dx - \int uv’ dx = uv - \int uv’ dx<br>$$<br>关键是要选择适当的u和v函数，使得u’v比uv’更容易求得<br>$$<br>\int udv = uv - \int vdu<br>$$</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>一般可以按照如下顺序选择u：</p>
-<ul>
-<li>反三角函数</li>
-<li>对数函数</li>
-<li>冥函数</li>
-<li>三角函数</li>
-<li>指数函数</li>
-</ul>
-<h2 id="理解-2"><a href="#理解-2" class="headerlink" title="理解"></a>理解</h2><p>通常用来求解乘积组成的积分。将一个函数视为一个原函数和一个导函数的乘积，然后通过根据导数乘积法则，分别对其求不定积分。</p>
+        <h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>表示位子函数、未知函数的导数与自变量关系之间的方程就是<strong>微分方程</strong></p>
+<p>n阶微分方程的形式为<br>$$<br>F(x,y,y’,y’’,…,y^{(n)}) = 0 \\<br>y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})<br>$$</p>
+<h1 id="微分方程的阶"><a href="#微分方程的阶" class="headerlink" title="微分方程的阶"></a>微分方程的阶</h1><p>微分方程中所出现的未知函数的最高阶导数的阶数</p>
+<h1 id="微分方程的解"><a href="#微分方程的解" class="headerlink" title="微分方程的解"></a>微分方程的解</h1><h2 id="解"><a href="#解" class="headerlink" title="解"></a>解</h2><p>设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有<br>$$<br>F[x,g(x),g’(x),g’’(x),…,g^{n(x)}] = 0<br>$$<br>则函数y=g(x)就叫做微分方程在区间I上的解</p>
+<h2 id="通解"><a href="#通解" class="headerlink" title="通解"></a>通解</h2><p>如果微分方程的解中含有相互独立的任意常数，且任意常数的个数与微分方程的阶数相同，这样的解叫做微分方程的通解 </p>
+<h2 id="特解"><a href="#特解" class="headerlink" title="特解"></a>特解</h2><p>确定了通解中的任意常数以后，就得到微分方程的特解</p>
+<h2 id="初值条件"><a href="#初值条件" class="headerlink" title="初值条件"></a>初值条件</h2><p>用来确定通解中的任意常数的附加条件称为<strong>初值条件</strong></p>
+<h1 id="几何意义"><a href="#几何意义" class="headerlink" title="几何意义"></a>几何意义</h1><p>通常一个微分方程通解对应的是在一个二维平面内曲率或者变化率相同，但是高度不同的曲线。求通解就是根据题目中的已知条件求得这个变化率是多少。求具体高度，就是根据初值条件求特解。</p>
+<h1 id="可分离变量的微分方程"><a href="#可分离变量的微分方程" class="headerlink" title="可分离变量的微分方程"></a>可分离变量的微分方程</h1><p>如果一个一阶微分方程能写成<br>$$<br>g(y)dy = f(x)dx<br>$$<br>则原方程就是<strong>可分离变量</strong>的微分方程</p>
+<p>假设方程中的 g(y) 和 f(x) 是连续的，设 y=h(x) 是原方程的解，导入原方程得到<br>$$<br>g[h(x)]h’(x)dx = f(x)dx \\<br>\int g[h(x)]h’(x)dx = \int f(x)dx<br>$$<br>通过 g(y) 引入变量 y 得到<br>$$<br>\int g(y)dy = \int f(x)dx<br>$$<br>设 G(y) 及 F(x) 依次为 g(y) 及 f(x) 的原函数，于是就有<br>$$<br>G(y) = F(x) + C<br>$$<br>反之，如果 y=h(x) 是 G(y) = F(x) + C 确定的隐函数（可以通过y=h(x)确定C为多少，也就是确定了这个隐函数的方程），则在 g(y)≠0 的条件下<br>$$<br>h’(x) = \frac{F’(x)}{G’(y)} = \frac{f(x)}{g(y)}<br>$$<br>这表示，函数 y=h(x) 满足方程 g(y)dy = f(x)dx </p>
+<p>则隐式通解为<br>$$<br>G(y) = F(x) + C<br>$$</p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265587" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265587</a></li>
-<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265588" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265588</a></li>
-<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265589" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936316&amp;cid=1006265589</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667051" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667051</a></li>
 </ul>
 
       
@@ -510,7 +492,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://blog.changwei.me/2018/12/04/不定积分求解/" title="不定积分求解">http://blog.changwei.me/2018/12/04/不定积分求解/</a>
+    <a href="http://blog.changwei.me/2018/12/07/微分方程/" title="微分方程">http://blog.changwei.me/2018/12/07/微分方程/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -532,8 +514,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/04/不定积分/" rel="next" title="不定积分">
-                <i class="fa fa-chevron-left"></i> 不定积分
+              <a href="/2018/12/07/反常积分/" rel="next" title="反常积分">
+                <i class="fa fa-chevron-left"></i> 反常积分
               </a>
             
           </div>
@@ -541,10 +523,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/05/有理函数的不定积分/" rel="prev" title="有理函数的不定积分">
-                有理函数的不定积分 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -797,7 +775,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#查表法"><span class="nav-number">1.</span> <span class="nav-text">查表法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一类换元法"><span class="nav-number">2.</span> <span class="nav-text">第一类换元法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#换元公式"><span class="nav-number">2.1.</span> <span class="nav-text">换元公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">2.2.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解"><span class="nav-number">2.3.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二类换元法"><span class="nav-number">3.</span> <span class="nav-text">第二类换元法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#换元公式-1"><span class="nav-number">3.1.</span> <span class="nav-text">换元公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解-1"><span class="nav-number">3.2.</span> <span class="nav-text">理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三角代换法"><span class="nav-number">3.3.</span> <span class="nav-text">三角代换法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分部积分法"><span class="nav-number">4.</span> <span class="nav-text">分部积分法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分部积分公式"><span class="nav-number">4.1.</span> <span class="nav-text">分部积分公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意"><span class="nav-number">4.2.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解-2"><span class="nav-number">4.3.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的阶"><span class="nav-number">2.</span> <span class="nav-text">微分方程的阶</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的解"><span class="nav-number">3.</span> <span class="nav-text">微分方程的解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解"><span class="nav-number">3.1.</span> <span class="nav-text">解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通解"><span class="nav-number">3.2.</span> <span class="nav-text">通解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特解"><span class="nav-number">3.3.</span> <span class="nav-text">特解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初值条件"><span class="nav-number">3.4.</span> <span class="nav-text">初值条件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几何意义"><span class="nav-number">4.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可分离变量的微分方程"><span class="nav-number">5.</span> <span class="nav-text">可分离变量的微分方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">6.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
