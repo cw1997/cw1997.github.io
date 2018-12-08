@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-07T10:59:55.306Z">
+<meta property="og:updated_time" content="2018-12-08T05:03:30.352Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微分方程">
 <meta name="twitter:description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-07T18:59:55+08:00">
-                2018-12-07
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-08T13:03:30+08:00">
+                2018-12-08
               </time>
             
           </span>
@@ -469,8 +469,30 @@
 <h1 id="可分离变量的微分方程"><a href="#可分离变量的微分方程" class="headerlink" title="可分离变量的微分方程"></a>可分离变量的微分方程</h1><p>如果一个一阶微分方程能写成<br>$$<br>g(y)dy = f(x)dx<br>$$<br>则原方程就是<strong>可分离变量</strong>的微分方程</p>
 <p>假设方程中的 g(y) 和 f(x) 是连续的，设 y=h(x) 是原方程的解，导入原方程得到<br>$$<br>g[h(x)]h’(x)dx = f(x)dx \\<br>\int g[h(x)]h’(x)dx = \int f(x)dx<br>$$<br>通过 g(y) 引入变量 y 得到<br>$$<br>\int g(y)dy = \int f(x)dx<br>$$<br>设 G(y) 及 F(x) 依次为 g(y) 及 f(x) 的原函数，于是就有<br>$$<br>G(y) = F(x) + C<br>$$<br>反之，如果 y=h(x) 是 G(y) = F(x) + C 确定的隐函数（可以通过y=h(x)确定C为多少，也就是确定了这个隐函数的方程），则在 g(y)≠0 的条件下<br>$$<br>h’(x) = \frac{F’(x)}{G’(y)} = \frac{f(x)}{g(y)}<br>$$<br>这表示，函数 y=h(x) 满足方程 g(y)dy = f(x)dx </p>
 <p>则隐式通解为<br>$$<br>G(y) = F(x) + C<br>$$</p>
+<h1 id="齐次方程"><a href="#齐次方程" class="headerlink" title="齐次方程"></a>齐次方程</h1><p>类似于<br>$$<br>\frac{dy}{dx} = h(\frac{y}{x})<br>$$<br>的一阶微分方程称为<strong>其次微分方程</strong>，简称<strong>齐次方程</strong></p>
+<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><p>对于<br>$$<br>\frac{dy}{dx} = h(\frac{y}{x})<br>$$<br>令 $ u = \frac{y}{x}$ 则有 $y = ux$ ，根据导数的乘法运算法则有<br>$$<br>y’(x) = \frac{dy}{dx} , \frac{dy}{dx} = ux’ + u’x = u + x\frac{du}{dx}<br>$$<br> 带入原方程之后得到<br>$$<br>u + x\frac{du}{dx} = h(u), 移项得 x\frac{du}{dx} = h(u) - u<br>$$<br>两边同时积分得<br>$$<br>\int \frac{du}{h(u) - u} = \frac{dx}{x}<br>$$<br>求出积分之后再用 $\frac{y}{x}$ 代替 u </p>
+<p>最终解出该齐次微分方程</p>
+<h1 id="可化为齐次的方程"><a href="#可化为齐次的方程" class="headerlink" title="可化为齐次的方程"></a>可化为齐次的方程</h1><p>$$<br>\frac{dy}{dx} = \frac{ax+by+c}{a_1x+b_1y+c_1}<br>$$</p>
+<p>当 $c=c1=0$ 时，是其次的，否则不是其次的（在没有c和c1常数项的时候，可以通过两边同时除以x来转换成齐次方程，有则无法转换）</p>
+<p>在非齐次的情形下，我们可以令 $x=X+h$，$y=Y+k$，其中 h 及 k 是待定的常数，于是 dx=dX，dy=dY<br>$$<br>\frac{dY}{dX} = \frac{a(X+h)+b(Y+k)+c}{a_1(X+h)+b_1(Y+k)+c_1} = \frac{aX+bY+ah+bk+c}{a_1X+b_1Y+a_1h+b_1k+c_1}<br>$$<br>如果我们精心选择 h 和 k 这两个待定常数，可以令 $ah+bk+c=0,a_1h+b_1k+c_1=0$</p>
+<p>如果 $\frac{a_1}{a} ≠ \frac{b_1}{b}$ 则可以唯一确定h，k这两个数，使他们满足上述方程组</p>
+<p>求出这个齐次方程的通解之后，在用 $x-h$ 代替X， $y-k$ 代替 Y ，解得原方程的通解。</p>
+<p>如果 $\frac{a_1}{a} = \frac{b_1}{b}$ 时，令 $\frac{a_1}{a} = \frac{b_1}{b} = \lambda $ ，原方程可以写成<br>$$<br>\frac{dy}{dx} = \frac{ax+by+c}{\lambda (ax+by)+c_1}<br>$$<br>令 $v=ax+by$  ，则 $\frac{dv}{dx} = a+b \frac{dy}{dx}$ ，推导出 $\frac{1}{b}(\frac{dv}{dx}-a) = \frac{v+c}{\lambda v + c_1}$ </p>
+<p>这样就成功分离了变量，化为了可分离变量的微分方程</p>
+<p>实际上，对于任何14式所代表的方程都可以这样转化然后求解</p>
+<h1 id="一阶线性微分方程"><a href="#一阶线性微分方程" class="headerlink" title="一阶线性微分方程"></a>一阶线性微分方程</h1><p>$$<br>y’=\frac{dy}{dx}=Q(x)-P(x)y<br>$$</p>
+<p>移项之后<br>$$<br>\frac{dy}{dx}+P(x)y=Q(x)<br>$$<br>形如上述的方程称为 <strong>一阶线性微分方程</strong> </p>
+<h2 id="齐次与非齐次"><a href="#齐次与非齐次" class="headerlink" title="齐次与非齐次"></a>齐次与非齐次</h2><p>如果 $Q(x) = 0$ 则方程是<strong>齐次方程</strong></p>
+<p>如果 $Q(x) ≠ 0$ 则方程是<strong>非齐次方程</strong></p>
+<h3 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h3><p>$$<br>\frac{dy}{dx}+P(x)y=0,\frac{dy}{dx}=-P(x)y=h(\frac{y}{x})<br>$$</p>
+<h2 id="对应于非齐次线性方程的齐次线性方程"><a href="#对应于非齐次线性方程的齐次线性方程" class="headerlink" title="对应于非齐次线性方程的齐次线性方程"></a>对应于非齐次线性方程的齐次线性方程</h2><p>对应于非齐次线性方程，把右边的Q(x) 视为0之后得到的新方程，视为是对应于非齐次线性方程的齐次线性方程，是可分离变量的，因为我们可以将上式中的 <code>y</code> 和 <code>-P(x)</code> 移项得到<br>$$<br>\frac{dy}{dx}=-P(x)y,\frac{dy}{y} = -P(x)dx<br>$$<br>对这个式子两端同时积分后得到<br>$$<br>ln|y| = - \int P(x)dx +C_1<br>$$<br>把 y 解出来得到（可以将 $e^C$ 直接视为一个常数C）<br>$$<br>y = e^{-P(x)dx + C_1} = e^{-P(x)dx} e^{C_1} = Ce^{-P(x)dx}<br>$$</p>
+<h2 id="常数易变法"><a href="#常数易变法" class="headerlink" title="常数易变法"></a>常数易变法</h2><p>对于一阶线性微分方程 $\frac{dy}{dx}+P(x)y=Q(x)$ 来说，我们可以把上述解出来的 y 中的常数，用 u(x) 来替代，也就是将常数异变为 u(x) ，这也就是标题 <strong>常数易变法</strong> 的来历。</p>
+<p>易变之后得到<br>$$<br>y = u(x)e^{-P(x)dx}<br>$$<br>两边同时求导，根据导数的乘法运算法以及复合函数求导法则得到<br>$$<br>y’ = \frac{dy}{dx} = u’e^{-P(x)dx} + u(-P(x)e^{-P(x)dx})<br>$$<br>把 y 和 y’ 带入原方程后化简得到<br>$$<br>u’(x) = Q(x)e^{P(x)dx}<br>$$<br>积分求得原函数为<br>$$<br>u = \int Q(x)e^{P(x)dx}dx+C<br>$$<br>带入把 u 带入原方程中替换常数项 C 得到<br>$$<br>y = e^{-P(x)dx}(\int Q(x)e^{P(x)dx}dx+C) = Ce^{-P(x)dx} + e^{-P(x)dx}\int Q(x)e^{P(x)dx}dx<br>$$<br>对于这个式子<br>$$<br>y = Ce^{-P(x)dx} + e^{-P(x)dx}\int Q(x)e^{P(x)dx}dx<br>$$<br>左边为齐次线性方程的通解，右边为非齐次线性方程的一个特解</p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
 <li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667051" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667051</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667052" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667052</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667053" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667053</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667054" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667054</a></li>
 </ul>
 
       
@@ -775,7 +797,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的阶"><span class="nav-number">2.</span> <span class="nav-text">微分方程的阶</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的解"><span class="nav-number">3.</span> <span class="nav-text">微分方程的解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解"><span class="nav-number">3.1.</span> <span class="nav-text">解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通解"><span class="nav-number">3.2.</span> <span class="nav-text">通解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特解"><span class="nav-number">3.3.</span> <span class="nav-text">特解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初值条件"><span class="nav-number">3.4.</span> <span class="nav-text">初值条件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几何意义"><span class="nav-number">4.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可分离变量的微分方程"><span class="nav-number">5.</span> <span class="nav-text">可分离变量的微分方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">6.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的阶"><span class="nav-number">2.</span> <span class="nav-text">微分方程的阶</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的解"><span class="nav-number">3.</span> <span class="nav-text">微分方程的解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解"><span class="nav-number">3.1.</span> <span class="nav-text">解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通解"><span class="nav-number">3.2.</span> <span class="nav-text">通解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特解"><span class="nav-number">3.3.</span> <span class="nav-text">特解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初值条件"><span class="nav-number">3.4.</span> <span class="nav-text">初值条件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几何意义"><span class="nav-number">4.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可分离变量的微分方程"><span class="nav-number">5.</span> <span class="nav-text">可分离变量的微分方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#齐次方程"><span class="nav-number">6.</span> <span class="nav-text">齐次方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解法"><span class="nav-number">6.1.</span> <span class="nav-text">解法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可化为齐次的方程"><span class="nav-number">7.</span> <span class="nav-text">可化为齐次的方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一阶线性微分方程"><span class="nav-number">8.</span> <span class="nav-text">一阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#齐次与非齐次"><span class="nav-number">8.1.</span> <span class="nav-text">齐次与非齐次</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解"><span class="nav-number">8.1.1.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对应于非齐次线性方程的齐次线性方程"><span class="nav-number">8.2.</span> <span class="nav-text">对应于非齐次线性方程的齐次线性方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常数易变法"><span class="nav-number">8.3.</span> <span class="nav-text">常数易变法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">9.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
