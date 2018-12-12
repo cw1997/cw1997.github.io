@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="使用多项式近似表达函数我们可以近似将函数f(x)在某个点的导数值乘以自变量x的微分，来求得函数f(x)的微分。 因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值） 然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x0)近似取值的时候就是取x0处的">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-12T08:50:17.500Z">
+<meta property="og:updated_time" content="2018-12-12T08:50:46.216Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="泰勒公式">
 <meta name="twitter:description" content="使用多项式近似表达函数我们可以近似将函数f(x)在某个点的导数值乘以自变量x的微分，来求得函数f(x)的微分。 因为当dx足够小的时候，可以近似认为dx区域内的增长率为x0处的增长率（事实上增长率应该是是f(x)的导数，是一个随着x变化的动态值） 然后我们可以将这个近似f(x)的值定义为一个新的函数P1(x)，对于x0来说，P1(x)的导数和他本身相等，因为P1(x0)近似取值的时候就是取x0处的">
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-12T16:50:17+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-12T16:50:46+08:00">
                 2018-12-12
               </time>
             
@@ -460,7 +460,7 @@
       
         <h1 id="使用多项式近似表达函数"><a href="#使用多项式近似表达函数" class="headerlink" title="使用多项式近似表达函数"></a>使用多项式近似表达函数</h1><p>我们可以近似将函数f(x)在某个点的导数值乘以<code>自变量x</code>的微分，来求得<code>函数f(x)</code>的微分。</p>
 <p>因为当<code>dx</code>足够小的时候，可以近似认为<code>dx</code>区域内的增长率为<code>x0</code>处的增长率（事实上增长率应该是是f(x)的导数，是一个随着<code>x</code>变化的动态值）</p>
-<p>然后我们可以将这个近似<code>f(x)</code>的值定义为一个新的<code>函数P1(x)</code>，对于<code>x0</code>来说，<code>P1(x)</code>的导数和他本身相等，因为<code>P1(x0)</code>近似取值的时候就是取<code>x0</code>处的导数为近似增长率。<br>$$<br>\delta y ≈ dy = f’(x_0)\delta x \<br>f(x) - f(x_0) ≈ f’(x_0)(x-x_0) \<br>f(x) ≈ f(x_0)+f’(x_0)(x-x_0) = P_1(x) \<br>P_1(x_0) = f(x_0), P’_1(x_0) = f’(x_0)<br>$$<br>误差：<br>$$<br>f(x) - P_1(x) = o(x-x_0)<br>$$<br>他们的误差是<code>x-x0</code>的一个高阶数</p>
+<p>然后我们可以将这个近似<code>f(x)</code>的值定义为一个新的<code>函数P1(x)</code>，对于<code>x0</code>来说，<code>P1(x)</code>的导数和他本身相等，因为<code>P1(x0)</code>近似取值的时候就是取<code>x0</code>处的导数为近似增长率。<br>$$<br>\delta y ≈ dy = f’(x_0)\delta x \\<br>f(x) - f(x_0) ≈ f’(x_0)(x-x_0) \\<br>f(x) ≈ f(x_0)+f’(x_0)(x-x_0) = P_1(x) \\<br>P_1(x_0) = f(x_0), P’_1(x_0) = f’(x_0)<br>$$<br>误差：<br>$$<br>f(x) - P_1(x) = o(x-x_0)<br>$$<br>他们的误差是<code>x-x0</code>的一个高阶数</p>
 <h1 id="寻找这个多项式"><a href="#寻找这个多项式" class="headerlink" title="寻找这个多项式"></a>寻找这个多项式</h1><p>$$<br>P_n(x) = a_0(x-x_0)^0 + a_1(x-x_0)^1 + a_2(x-x_0)^2 + … + a_n(x-x_0)^n<br>$$</p>
 <p>要求<br>$$<br>f(x) - P_n(x) = o((x-x_0)^n)<br>$$<br>假设<br>$$<br>P_n(x_0) = f(x_0), P_n’(x_0) = f’(x_0), P_n’’(x_0) = f’’(x_0), P_n^{(n)}(x_0) = f^{(n)}(x_0),<br>$$<br>根据 $P_n(x_0) = a_0$ 得到 $a_0 = f(x_0)$ </p>
 <p>然后对<code>Pn</code>求导，得到如下式子<br>$$<br>P_n’(x) = 1a_1(x-x_0)^0 + 2a_2(x-x_0)^1 + 3a_3(x-x_0)^2 + … + na_n(x-x_0)^{n-1}<br>$$</p>
