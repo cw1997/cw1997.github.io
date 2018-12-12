@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-12T08:24:31.902Z">
+<meta property="og:updated_time" content="2018-12-12T08:31:59.527Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微分方程">
 <meta name="twitter:description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-12T16:24:31+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-12T16:31:59+08:00">
                 2018-12-12
               </time>
             
@@ -527,8 +527,8 @@
 <h2 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h2><p>如果y1和y2是<strong>二阶齐次线性方程</strong>的两个<strong>线性无关的特解</strong>，则<br>$$<br>y = C_1y_1(x)+C_2y_2(x)<br>$$<br>就是这个方程的通解</p>
 <h2 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h2><p>如果 y1,y2,y3,…,yn 是<strong>n阶齐次线性方程</strong>的n个<strong>线性无关</strong>的解，则此方程的通解为<br>$$<br>y = C_1y_1(x)+C_2y_2(x)+…+C_ny_n(x)<br>$$<br>其中的C1,C2,Cn为任意常数</p>
 <h1 id="非齐次线性微分方程的解的结构"><a href="#非齐次线性微分方程的解的结构" class="headerlink" title="非齐次线性微分方程的解的结构"></a>非齐次线性微分方程的解的结构</h1><p>非齐次方程<br>$$<br>y’’+P(x)y’+Q(x)y=f(x)<br>$$<br>与非齐次方程对应的齐次方程<br>$$<br>y’’+P(x)y’+Q(x)y=0<br>$$</p>
-<h2 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h2><p>设y<em>是二阶非齐次线性方程(46)的一个特解，Y(x)是与(46)对应的齐次方程(47)的通解，则<br>$$<br>y=Y(x)+y</em>(x)<br>$$<br>是二阶非齐次线性微分方程(46)的通解</p>
-<h2 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h2><p>假设 下列结论成立<br>$$<br>y=Y(x)+y<em>(x)<br>$$<br>则根据导数相加原则，有<br>$$<br>y’ = Y’(x) + y</em>‘ \\<br>y’’ = Y’’(x) + y<em>‘’<br>$$<br>把y,y’,y’’全部带入方程左端得到<br>$$<br>(Y’’+y</em>‘’)+P(x)(Y’+y<em>‘)+Q(x)(Y+y</em>) = f(x)<br>$$<br>通过加法结合律，可以转换为<br>$$<br>[y’’+P(x)Y’+Q(x)Y] + [y<em>‘’+P(x)y</em>‘+Q(x)y<em>] = 0+f(x) = f(x)<br>$$<br>由于下列式子中也含有两个任意常数<br>$$<br>y=Y+y</em><br>$$<br>从而它就是二阶非齐次线性方程的通解</p>
+<h2 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h2><p>设y*是二阶非齐次线性方程(46)的一个特解，Y(x)是与(46)对应的齐次方程(47)的通解，则<br>$$<br>y=Y(x)+y\ast(x)<br>$$<br>是二阶非齐次线性微分方程(46)的通解</p>
+<h2 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h2><p>假设 下列结论成立<br>$$<br>y=Y(x)+y\ast(x)<br>$$<br>则根据导数相加原则，有<br>$$<br>y’ = Y’(x) + y\ast’ \\<br>y’’ = Y’’(x) + y\ast’’<br>$$<br>把y,y’,y’’全部带入方程左端得到<br>$$<br>(Y’’+y<em>‘’)+P(x)(Y’+y</em>‘)+Q(x)(Y+y*) = f(x)<br>$$<br>通过加法结合律，可以转换为<br>$$<br>[y’’+P(x)Y’+Q(x)Y] + [y \ast’’+P(x)y \ast’+Q(x)y \ast] = 0+f(x) = f(x)<br>$$<br>由于下列式子中也含有两个任意常数<br>$$<br>y=Y+y\ast<br>$$<br>从而它就是二阶非齐次线性方程的通解</p>
 <h1 id="解的叠加原理"><a href="#解的叠加原理" class="headerlink" title="解的叠加原理"></a>解的叠加原理</h1><h2 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h2><p>设非齐次线性方程的右端f(x)是两个函数之和</p>
 <p>也就是有如下公式<br>$$<br>y’’+P(x)y’+Q(x)y=f(x)=f_1(x)+f_2(x)<br>$$<br>如果</p>
 <ul>
@@ -537,7 +537,7 @@
 <li><p><code>y2*(x)</code> 是 $y’’+P(x)y’+Q(x)y=f_2(x)$的特解 </p>
 </li>
 </ul>
-<p>则 $y1<em>(x)+y2</em>(x)$  就是原方程的特解</p>
+<p>则 $y1\ast(x)+y2\ast(x)$  就是原方程的特解</p>
 <h2 id="证明-2"><a href="#证明-2" class="headerlink" title="证明"></a>证明</h2><p>对于上述定理中的式子，有</p>
 <p>$$<br>y = y1<em>(x)+y2</em>(x)<br>$$</p>
 <p>将上述式子带入方程左端，得到</p>
