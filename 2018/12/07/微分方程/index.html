@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-12T08:45:36.000Z">
+<meta property="og:updated_time" content="2018-12-12T16:15:13.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微分方程">
 <meta name="twitter:description" content="定义表示位子函数、未知函数的导数与自变量关系之间的方程就是微分方程 n阶微分方程的形式为$$F(x,y,y’,y’’,…,y^{(n)}) = 0 \\y^{(n)} = F(x,y,y’,y’’,…,y^{(n-1)})$$ 微分方程的阶微分方程中所出现的未知函数的最高阶导数的阶数 微分方程的解解设函数在y=g(x)在区间I上有n阶连续导数，如果在区间I上有$$F[x,g(x),g’(x),g’">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-12T16:45:36+08:00">
-                2018-12-12
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-13T00:15:13+08:00">
+                2018-12-13
               </time>
             
           </span>
@@ -545,6 +545,34 @@
 <p>通过加法结合律和乘法分配律，可以转换为</p>
 <p>$$<br>[y_1 \ast’’+P(x)y_1 \ast’+Q(x)y_1 \ast] + [y_2 \ast’’+P(x)y_2 \ast’+Q(x)y_2 \ast] = f_1(x)+f_2(x)<br>$$</p>
 <p>所以定理成立</p>
+<h1 id="常系数齐次线性微分方程"><a href="#常系数齐次线性微分方程" class="headerlink" title="常系数齐次线性微分方程"></a>常系数齐次线性微分方程</h1><p>前面我们有了解到，二阶齐次线性微分方程的一般形式为<br>$$<br>y’’+P(x)y’+Q(x)y=0<br>$$<br>如果这里面的 P(x) Q(x) 都为常数，也就是如下形式<br>$$<br>y’’ + py’ + qy = 0<br>$$<br>则这类方程称为 <strong>二阶常系数齐次线性微分方程</strong> </p>
+<p>如果这里 p q 不全为常数，则是 <strong>二阶变系数齐次线性微分方程</strong></p>
+<p>由此可见，这里面的<strong>常系数</strong>和<strong>变系数</strong>的区别就在这里</p>
+<h2 id="特征方程"><a href="#特征方程" class="headerlink" title="特征方程"></a>特征方程</h2><p>解这一类微分方程，也就是寻找到他们的通解，需要一些特殊的技巧</p>
+<p>首先先看这个指数函数<br>$$<br>y = e ^ {rx}<br>$$<br>根据导数表得知，所有以工程常数 e 为底数的指数函数，它的导数都为它本身，所以选取以工程常数 e 为底数的指数函数来分析数学问题会很方便</p>
+<p>根据复合函数求导法则可以得到</p>
+<p>$$<br>y’ = (e^{rx})’ = (e^{rx})’ + (rx)’ = re^{rx}<br>$$</p>
+<p>$$<br>y’’ = (re^{rx})’ = r’e^{rx} + r(e^{rx})’ = r(re^{rx}) = r^2e^{rx}<br>$$</p>
+<p>$$<br>y^{(n)} = r^{(n)}e^{rx}<br>$$</p>
+<p>由此可以看出 r 为常数时，y 的各阶导数都只相差一个常数因子，所以我们可以通过 $y = e ^ {rx}$ 来尝试，试试看能否找到一个适当的常数，使得对于 y’ 来说，满足二阶常系数齐次线性微分方程 $y’’ + py’ + qy = 0$ </p>
+<p>具体解法就是把 y y’ y’’ 分别带入方程，得到<br>$$<br>(r^2+pr+q=0)e^{rx} = 0<br>$$<br>由于 e 是一个不等于0的常数，所以 $e^{rx}$ 不可能等于0，所以上述式子可以两边同时除以 $e^{rx}$ 消去这一项得到<br>$$<br>r^2+pr+q=0<br>$$<br>由于是常系数的齐次线性微分方程，所以p和q为常数，这就是一个关于未知数r的一元二次方程，我们把它叫做<strong>特征方程</strong></p>
+<p>r 就是这个方程根，求出 r 之后，带入 $e^{rx}$ 之后就求得了 y </p>
+<p>但是根据一元二次方程解的特性来看，实际上 r 可能无解，也有可能只有一个解，或者有两个解<br>$$<br>r_{1,2} = \frac{-p±\sqrt{p^2-4q}}{2}<br>$$<br>也就是说，当 $p^2-4q$ 的值与0的关系在不同的情况下会有不同的解法</p>
+<p>下面分情况来讨论：</p>
+<ul>
+<li><p>$p^2-4q&gt;0$  </p>
+<p>这种情况存在两个实根</p>
+<p>然后再根据前面学过的 <strong>齐次线性微分方程的解的结构</strong> ：</p>
+<p>如果求出的两个 y 是线性无关（也就是满足这个关系 $\frac{y_1(x)}{y_2(x)}= \frac{e^{r_1x}}{e^{r_2x}} =h(x)= e^{(r_1-r_2)x} $ 其中h(x)不为常数，而是一个与x相关的指数函数 ）则方程通解的结构为<br>$$<br>y=C_1y_1(x)+C_2y_2(x)= C_1e^{r_1x} + C_2e^{r_2x}<br>$$</p>
+</li>
+<li><p>$p^2-4q=0$</p>
+<p>这种情况存在两个相等的实根 $r_1 = r_2 = -\frac{p}{2}$ </p>
+<p>得到一个解 $y_1=e^{r_1x}$ ，根据前面学过的 <strong>齐次线性微分方程的解的结构</strong> 得知，我们还需要另一个解 y2，并且 y2 要满足关系 $\frac{y_1(x)}{y_2(x)} =h(x)$ </p>
+<p>则我们设 $y_2 = u(x)e^{r_1x}$ 对y2求导数得<br>$$<br>y_2’ = e^{r_1x}(u’+r_1u) \\<br>y_2’’ = e^{r_1x}(u’’+2r_1u’+r_1^2u)<br>$$<br>带入方程<br>$$</p>
+<p>$$<br>由于 $e^{rx} ≠ 0$ 所以可以消去它，得到<br>$$<br>u’’+(2r_1+p)u’+(r_1^2+pr_1+q)u=0<br>$$<br>因为 r1 是特征方程的二重根，所以<br>$$<br>2r_1+p=r_1^2+pr_1+q=0<br>$$</p>
+</li>
+<li></li>
+</ul>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
 <li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667051" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667051</a></li>
 <li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667052" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667052</a></li>
@@ -835,6 +863,30 @@
                     <a href="https://freeleox.github.io" title="Leo's Blog" target="_blank">Leo's Blog</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="http://largeq.cn" title="largeq's Blog" target="_blank">largeq's Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wupengpig.top" title="wupengpig" target="_blank">wupengpig</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://matchablog.top" title="matcha Blog" target="_blank">matcha Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://cyto.top" title="Cytosine's Blog" target="_blank">Cytosine's Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://zhangguanzhang.github.io" title="张馆长's Blog" target="_blank">张馆长's Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://vicicode.com" title="猫叔's Blog" target="_blank">猫叔's Blog</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -854,7 +906,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的阶"><span class="nav-number">2.</span> <span class="nav-text">微分方程的阶</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的解"><span class="nav-number">3.</span> <span class="nav-text">微分方程的解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解"><span class="nav-number">3.1.</span> <span class="nav-text">解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通解"><span class="nav-number">3.2.</span> <span class="nav-text">通解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特解"><span class="nav-number">3.3.</span> <span class="nav-text">特解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初值条件"><span class="nav-number">3.4.</span> <span class="nav-text">初值条件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几何意义"><span class="nav-number">4.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可分离变量的微分方程"><span class="nav-number">5.</span> <span class="nav-text">可分离变量的微分方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#齐次方程"><span class="nav-number">6.</span> <span class="nav-text">齐次方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解法"><span class="nav-number">6.1.</span> <span class="nav-text">解法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可化为齐次的方程"><span class="nav-number">7.</span> <span class="nav-text">可化为齐次的方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一阶线性微分方程"><span class="nav-number">8.</span> <span class="nav-text">一阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#齐次与非齐次"><span class="nav-number">8.1.</span> <span class="nav-text">齐次与非齐次</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解"><span class="nav-number">8.1.1.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对应于非齐次线性方程的齐次线性方程"><span class="nav-number">8.2.</span> <span class="nav-text">对应于非齐次线性方程的齐次线性方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常数易变法"><span class="nav-number">8.3.</span> <span class="nav-text">常数易变法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伯努利方程"><span class="nav-number">8.4.</span> <span class="nav-text">伯努利方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#伯努利方程转换为线性方程"><span class="nav-number">8.4.1.</span> <span class="nav-text">伯努利方程转换为线性方程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二阶线性微分方程"><span class="nav-number">9.</span> <span class="nav-text">二阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#y-n-f-x"><span class="nav-number">9.1.</span> <span class="nav-text">$y^{(n)}=f(x)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#y’’-f-x-y’"><span class="nav-number">9.2.</span> <span class="nav-text">$y’’=f(x,y’)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#y’’-f-y-y’"><span class="nav-number">9.3.</span> <span class="nav-text">$y’’=f(y,y’)$</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#高阶线性微分方程"><span class="nav-number">10.</span> <span class="nav-text">高阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数组的线性相关与线性无关"><span class="nav-number">10.1.</span> <span class="nav-text">函数组的线性相关与线性无关</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#线性微分方程的一般形式"><span class="nav-number">11.</span> <span class="nav-text">线性微分方程的一般形式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#齐次线性微分方程的解的结构"><span class="nav-number">12.</span> <span class="nav-text">齐次线性微分方程的解的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">12.1.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意"><span class="nav-number">12.2.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定理"><span class="nav-number">12.3.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推论"><span class="nav-number">12.4.</span> <span class="nav-text">推论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#非齐次线性微分方程的解的结构"><span class="nav-number">13.</span> <span class="nav-text">非齐次线性微分方程的解的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定理-1"><span class="nav-number">13.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明-1"><span class="nav-number">13.2.</span> <span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解的叠加原理"><span class="nav-number">14.</span> <span class="nav-text">解的叠加原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定理-2"><span class="nav-number">14.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明-2"><span class="nav-number">14.2.</span> <span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">15.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的阶"><span class="nav-number">2.</span> <span class="nav-text">微分方程的阶</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#微分方程的解"><span class="nav-number">3.</span> <span class="nav-text">微分方程的解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解"><span class="nav-number">3.1.</span> <span class="nav-text">解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通解"><span class="nav-number">3.2.</span> <span class="nav-text">通解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特解"><span class="nav-number">3.3.</span> <span class="nav-text">特解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初值条件"><span class="nav-number">3.4.</span> <span class="nav-text">初值条件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几何意义"><span class="nav-number">4.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可分离变量的微分方程"><span class="nav-number">5.</span> <span class="nav-text">可分离变量的微分方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#齐次方程"><span class="nav-number">6.</span> <span class="nav-text">齐次方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解法"><span class="nav-number">6.1.</span> <span class="nav-text">解法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可化为齐次的方程"><span class="nav-number">7.</span> <span class="nav-text">可化为齐次的方程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一阶线性微分方程"><span class="nav-number">8.</span> <span class="nav-text">一阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#齐次与非齐次"><span class="nav-number">8.1.</span> <span class="nav-text">齐次与非齐次</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解"><span class="nav-number">8.1.1.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对应于非齐次线性方程的齐次线性方程"><span class="nav-number">8.2.</span> <span class="nav-text">对应于非齐次线性方程的齐次线性方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常数易变法"><span class="nav-number">8.3.</span> <span class="nav-text">常数易变法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伯努利方程"><span class="nav-number">8.4.</span> <span class="nav-text">伯努利方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#伯努利方程转换为线性方程"><span class="nav-number">8.4.1.</span> <span class="nav-text">伯努利方程转换为线性方程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二阶线性微分方程"><span class="nav-number">9.</span> <span class="nav-text">二阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#y-n-f-x"><span class="nav-number">9.1.</span> <span class="nav-text">$y^{(n)}=f(x)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#y’’-f-x-y’"><span class="nav-number">9.2.</span> <span class="nav-text">$y’’=f(x,y’)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#y’’-f-y-y’"><span class="nav-number">9.3.</span> <span class="nav-text">$y’’=f(y,y’)$</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#高阶线性微分方程"><span class="nav-number">10.</span> <span class="nav-text">高阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数组的线性相关与线性无关"><span class="nav-number">10.1.</span> <span class="nav-text">函数组的线性相关与线性无关</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#线性微分方程的一般形式"><span class="nav-number">11.</span> <span class="nav-text">线性微分方程的一般形式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#齐次线性微分方程的解的结构"><span class="nav-number">12.</span> <span class="nav-text">齐次线性微分方程的解的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">12.1.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意"><span class="nav-number">12.2.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定理"><span class="nav-number">12.3.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推论"><span class="nav-number">12.4.</span> <span class="nav-text">推论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#非齐次线性微分方程的解的结构"><span class="nav-number">13.</span> <span class="nav-text">非齐次线性微分方程的解的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定理-1"><span class="nav-number">13.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明-1"><span class="nav-number">13.2.</span> <span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解的叠加原理"><span class="nav-number">14.</span> <span class="nav-text">解的叠加原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定理-2"><span class="nav-number">14.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明-2"><span class="nav-number">14.2.</span> <span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常系数齐次线性微分方程"><span class="nav-number">15.</span> <span class="nav-text">常系数齐次线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#特征方程"><span class="nav-number">15.1.</span> <span class="nav-text">特征方程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">16.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
