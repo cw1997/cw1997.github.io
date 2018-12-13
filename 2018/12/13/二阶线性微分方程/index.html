@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="求导运算已知F(x)，求F’(x)，导函数f(x)=F’(x) 积分运算已知f(x)，求F(x)，满足F’(x)=f(x) 定义如果F(x)在区间上可导，对于任一属于该区间的x，都有$$F’(x) = f(x) 或 dF(x) = f(x)dx$$ 原函数个数如果F(x)是f(x)的一个原函数，则F(x)+C也是f(x)的原函数，其中C为任意常数 原函数存在时不唯一 两个原函数之间至多差一个常数">
+<meta name="description" content="二阶线性微分方程有三种类型的多阶微分方程  $y^{(n)}=f(x)$ $y’’=f(x,y’)$ $y’’=f(y,y’)$  $y^{(n)}=f(x)$这类方程解法简单暴力，有多少次阶，就求多少次原函数，最终将会求出一个和阶数量相等的常数个数的通解。例如n阶方程将会解出含有n个任意常数的通解$$y^{(n)}=f(x) =&amp;gt; \frac{dy^{(n-1)}}{dx} = f(x)">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="不定积分">
-<meta property="og:url" content="http://blog.changwei.me/2018/12/04/不定积分/index.html">
+<meta property="og:title" content="二阶线性微分方程">
+<meta property="og:url" content="http://blog.changwei.me/2018/12/13/二阶线性微分方程/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="求导运算已知F(x)，求F’(x)，导函数f(x)=F’(x) 积分运算已知f(x)，求F(x)，满足F’(x)=f(x) 定义如果F(x)在区间上可导，对于任一属于该区间的x，都有$$F’(x) = f(x) 或 dF(x) = f(x)dx$$ 原函数个数如果F(x)是f(x)的一个原函数，则F(x)+C也是f(x)的原函数，其中C为任意常数 原函数存在时不唯一 两个原函数之间至多差一个常数">
+<meta property="og:description" content="二阶线性微分方程有三种类型的多阶微分方程  $y^{(n)}=f(x)$ $y’’=f(x,y’)$ $y’’=f(y,y’)$  $y^{(n)}=f(x)$这类方程解法简单暴力，有多少次阶，就求多少次原函数，最终将会求出一个和阶数量相等的常数个数的通解。例如n阶方程将会解出含有n个任意常数的通解$$y^{(n)}=f(x) =&amp;gt; \frac{dy^{(n-1)}}{dx} = f(x)">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-04T10:39:30.435Z">
+<meta property="og:updated_time" content="2018-12-13T13:15:23.739Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不定积分">
-<meta name="twitter:description" content="求导运算已知F(x)，求F’(x)，导函数f(x)=F’(x) 积分运算已知f(x)，求F(x)，满足F’(x)=f(x) 定义如果F(x)在区间上可导，对于任一属于该区间的x，都有$$F’(x) = f(x) 或 dF(x) = f(x)dx$$ 原函数个数如果F(x)是f(x)的一个原函数，则F(x)+C也是f(x)的原函数，其中C为任意常数 原函数存在时不唯一 两个原函数之间至多差一个常数">
+<meta name="twitter:title" content="二阶线性微分方程">
+<meta name="twitter:description" content="二阶线性微分方程有三种类型的多阶微分方程  $y^{(n)}=f(x)$ $y’’=f(x,y’)$ $y’’=f(y,y’)$  $y^{(n)}=f(x)$这类方程解法简单暴力，有多少次阶，就求多少次原函数，最终将会求出一个和阶数量相等的常数个数的通解。例如n阶方程将会解出含有n个任意常数的通解$$y^{(n)}=f(x) =&amp;gt; \frac{dy^{(n-1)}}{dx} = f(x)">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/2018/12/04/不定积分/">
+  <link rel="canonical" href="http://blog.changwei.me/2018/12/13/二阶线性微分方程/">
 
 
 
 
 
-  <title>不定积分 | 昌维的博客</title>
+  <title>二阶线性微分方程 | 昌维的博客</title>
   
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/04/不定积分/">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/13/二阶线性微分方程/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="昌维">
@@ -334,7 +334,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">不定积分</h2>
+          <h2 class="post-title" itemprop="name headline">二阶线性微分方程</h2>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-04T13:13:22+08:00">
-                2018-12-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-13T21:15:03+08:00">
+                2018-12-13
               </time>
             
 
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-04T18:39:30+08:00">
-                2018-12-04
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-13T21:15:23+08:00">
+                2018-12-13
               </time>
             
           </span>
@@ -399,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/04/不定积分/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/04/不定积分/" itemprop="commentCount"></span>
+                <a href="/2018/12/13/二阶线性微分方程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/13/二阶线性微分方程/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2018/12/04/不定积分/" class="leancloud_visitors" data-flag-title="不定积分">
+             <span id="/2018/12/13/二阶线性微分方程/" class="leancloud_visitors" data-flag-title="二阶线性微分方程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -458,24 +458,24 @@
       
 
       
-        <h1 id="求导运算"><a href="#求导运算" class="headerlink" title="求导运算"></a>求导运算</h1><p>已知F(x)，求F’(x)，导函数f(x)=F’(x)</p>
-<h1 id="积分运算"><a href="#积分运算" class="headerlink" title="积分运算"></a>积分运算</h1><p>已知f(x)，求F(x)，满足F’(x)=f(x)</p>
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>如果F(x)在区间上可导，对于任一属于该区间的x，都有<br>$$<br>F’(x) = f(x) 或 dF(x) = f(x)dx<br>$$</p>
-<h1 id="原函数个数"><a href="#原函数个数" class="headerlink" title="原函数个数"></a>原函数个数</h1><p>如果F(x)是f(x)的一个原函数，则F(x)+C也是f(x)的原函数，其中C为任意常数</p>
-<p><strong>原函数存在时不唯一</strong></p>
-<p><strong>两个原函数之间至多差一个常数</strong></p>
-<p>使用拉格朗日中值定理的推论</p>
-<h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><p>因为导数反映的仅仅是函数的变化率，而不是函数的绝对位置（高度）。所以同一个导数会有很多个原函数，所以叫做不定积分。</p>
-<h1 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h1><p>$$<br>\int f(x)dx = F(x)+C<br>$$</p>
-<p><strong>不定积分是原函数的一般表达式</strong></p>
-<p>也可以把常数项移项写成如下形式<br>$$<br>\int f(x)dx + C = F(x)<br>$$<br>积分符号右侧写的是导函数</p>
-<h1 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h1><h2 id="逆运算"><a href="#逆运算" class="headerlink" title="逆运算"></a>逆运算</h2><p>$$<br>\frac{d[\int f(x)dx]}{dx} = f(x), \int f’(x)dx = f(x) + C<br>$$</p>
-<p><strong>可以看出积分和微分互为逆运算</strong></p>
-<h2 id="运算性质"><a href="#运算性质" class="headerlink" title="运算性质"></a>运算性质</h2><p>$$<br>\int [f(x)±g(x)]dx = \int f(x)dx ± \int g(x)dx<br>$$</p>
-<p>$$<br>\int kf(x)dx = k\int f(x)dx (k&lt;&gt;0,k!=0)<br>$$</p>
+        <h1 id="二阶线性微分方程"><a href="#二阶线性微分方程" class="headerlink" title="二阶线性微分方程"></a>二阶线性微分方程</h1><p>有三种类型的多阶微分方程</p>
+<ul>
+<li>$y^{(n)}=f(x)$</li>
+<li>$y’’=f(x,y’)$</li>
+<li>$y’’=f(y,y’)$</li>
+</ul>
+<h2 id="y-n-f-x"><a href="#y-n-f-x" class="headerlink" title="$y^{(n)}=f(x)$"></a>$y^{(n)}=f(x)$</h2><p>这类方程解法简单暴力，有多少次阶，就求多少次原函数，最终将会求出一个和阶数量相等的常数个数的通解。例如n阶方程将会解出含有n个任意常数的通解<br>$$<br>y^{(n)}=f(x) =&gt; \frac{dy^{(n-1)}}{dx} = f(x) =&gt; y^{(n-1)} = \int f(x)dx + C_1 \\<br>y^{(n-2)} = \int [\int f(x)dx + C_1]dx + C_2<br>$$<br>以此类推解下去即可</p>
+<h2 id="y’’-f-x-y’"><a href="#y’’-f-x-y’" class="headerlink" title="$y’’=f(x,y’)$"></a>$y’’=f(x,y’)$</h2><p>这类方程由于右端不显示含有未知数y，所以我们要用换元法</p>
+<p>令 $y’=p$ ，则 $y’’=\frac{dp}{dx}=p’$</p>
+<p>则原方程变换为<br>$$<br>p’ = f(x,p)<br>$$<br>这样就成了普通的一阶微分方程，先把p求出来，然后p就是y的导数，再对y积分即可</p>
+<p>设通解为 $p=y’=h(x,C_1), y=\int h(x,C_1)dx + C_2$ </p>
+<h2 id="y’’-f-y-y’"><a href="#y’’-f-y-y’" class="headerlink" title="$y’’=f(y,y’)$"></a>$y’’=f(y,y’)$</h2><p>这类方程右端不明显地含有自变量x，所以也要使用换元法，同时借助复合函数求导法则。</p>
+<p>我们使用换元法，令 $y’=p$ </p>
+<p>由于这里y为隐函数，所以可以认为y=y(x)，所以y’’也就是p’也就是对p求导，同时p是y(x)和p(y)复合而成，根据复合函数求导法则有如下</p>
+<p> $y’’=\frac{dp}{dx}=\frac{dp}{dy}\frac{dy}{dx} = p\frac{dp}{dy} = f(y,p)$</p>
+<p>设他的通解为<br>$$<br>y’=p=h(y,C_1)<br>$$<br>则求出原方程通解为<br>$$<br>\int \frac{dy}{h(y,C_1)} = x + C_2<br>$$</p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936315&amp;cid=1006265578" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936315&amp;cid=1006265578</a></li>
-<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936315&amp;cid=1006265579" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936315&amp;cid=1006265579</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098873&amp;cid=1003667067" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098873&amp;cid=1003667067</a></li>
 </ul>
 
       
@@ -497,7 +497,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://blog.changwei.me/2018/12/04/不定积分/" title="不定积分">http://blog.changwei.me/2018/12/04/不定积分/</a>
+    <a href="http://blog.changwei.me/2018/12/13/二阶线性微分方程/" title="二阶线性微分方程">http://blog.changwei.me/2018/12/13/二阶线性微分方程/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -519,8 +519,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/04/曲率/" rel="next" title="曲率">
-                <i class="fa fa-chevron-left"></i> 曲率
+              <a href="/2018/12/13/一阶线性微分方程/" rel="next" title="一阶线性微分方程">
+                <i class="fa fa-chevron-left"></i> 一阶线性微分方程
               </a>
             
           </div>
@@ -529,8 +529,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/04/不定积分求解/" rel="prev" title="不定积分求解">
-                不定积分求解 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/13/高阶线性微分方程/" rel="prev" title="高阶线性微分方程">
+                高阶线性微分方程 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -808,7 +808,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#求导运算"><span class="nav-number">1.</span> <span class="nav-text">求导运算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#积分运算"><span class="nav-number">2.</span> <span class="nav-text">积分运算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">3.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原函数个数"><span class="nav-number">4.</span> <span class="nav-text">原函数个数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#理解"><span class="nav-number">5.</span> <span class="nav-text">理解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表达式"><span class="nav-number">6.</span> <span class="nav-text">表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#性质"><span class="nav-number">7.</span> <span class="nav-text">性质</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#逆运算"><span class="nav-number">7.1.</span> <span class="nav-text">逆运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算性质"><span class="nav-number">7.2.</span> <span class="nav-text">运算性质</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">8.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#二阶线性微分方程"><span class="nav-number">1.</span> <span class="nav-text">二阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#y-n-f-x"><span class="nav-number">1.1.</span> <span class="nav-text">$y^{(n)}=f(x)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#y’’-f-x-y’"><span class="nav-number">1.2.</span> <span class="nav-text">$y’’=f(x,y’)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#y’’-f-y-y’"><span class="nav-number">1.3.</span> <span class="nav-text">$y’’=f(y,y’)$</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">2.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>

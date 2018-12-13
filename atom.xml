@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-12T16:15:13.653Z</updated>
+  <updated>2018-12-13T13:16:55.937Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,83 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>高阶线性微分方程</title>
+    <link href="http://blog.changwei.me/2018/12/13/%E9%AB%98%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
+    <id>http://blog.changwei.me/2018/12/13/高阶线性微分方程/</id>
+    <published>2018-12-13T13:16:16.000Z</published>
+    <updated>2018-12-13T13:16:55.937Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;高阶线性微分方程&quot;&gt;&lt;a href=&quot;#高阶线性微分方程&quot; class=&quot;headerlink&quot; title=&quot;高阶线性微分方程&quot;&gt;&lt;/a&gt;高阶线性微分方程&lt;/h1&gt;&lt;h2 id=&quot;函数组的线性相关与线性无关&quot;&gt;&lt;a href=&quot;#函数组的线性相关与线性无关&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>二阶线性微分方程</title>
+    <link href="http://blog.changwei.me/2018/12/13/%E4%BA%8C%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
+    <id>http://blog.changwei.me/2018/12/13/二阶线性微分方程/</id>
+    <published>2018-12-13T13:15:03.000Z</published>
+    <updated>2018-12-13T13:15:23.739Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;二阶线性微分方程&quot;&gt;&lt;a href=&quot;#二阶线性微分方程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一阶线性微分方程</title>
+    <link href="http://blog.changwei.me/2018/12/13/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
+    <id>http://blog.changwei.me/2018/12/13/一阶线性微分方程/</id>
+    <published>2018-12-13T13:12:49.000Z</published>
+    <updated>2018-12-13T13:14:30.176Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一阶线性微分方程&quot;&gt;&lt;a href=&quot;#一阶线性微分方程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>微分方程</title>
     <link href="http://blog.changwei.me/2018/12/07/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
     <id>http://blog.changwei.me/2018/12/07/微分方程/</id>
     <published>2018-12-07T05:54:26.000Z</published>
-    <updated>2018-12-12T16:15:13.653Z</updated>
+    <updated>2018-12-13T13:16:11.447Z</updated>
     
     <summary type="html">
     
@@ -416,80 +488,6 @@
         
         
           &lt;h1 id=&quot;切线的定义&quot;&gt;&lt;a href=&quot;#切线的定义&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>介值定理</title>
-    <link href="http://blog.changwei.me/2018/11/30/%E4%BB%8B%E5%80%BC%E5%AE%9A%E7%90%86/"/>
-    <id>http://blog.changwei.me/2018/11/30/介值定理/</id>
-    <published>2018-11-30T07:07:17.000Z</published>
-    <updated>2018-11-30T12:54:07.475Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定理&quot;&gt;&lt;a href=&quot;#定理&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>零点定理</title>
-    <link href="http://blog.changwei.me/2018/11/30/%E9%9B%B6%E7%82%B9%E5%AE%9A%E7%90%86/"/>
-    <id>http://blog.changwei.me/2018/11/30/零点定理/</id>
-    <published>2018-11-30T07:04:07.000Z</published>
-    <updated>2018-11-30T07:07:26.849Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;方程f(x)=0的根称作函数f(x)的零点&lt;/p&gt;
-&lt;h1 id=&quot;定理&quot;&gt;&lt;a href=&quot;#定理&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>有界性定理</title>
-    <link href="http://blog.changwei.me/2018/11/30/%E6%9C%89%E7%95%8C%E6%80%A7%E5%AE%9A%E7%90%86/"/>
-    <id>http://blog.changwei.me/2018/11/30/有界性定理/</id>
-    <published>2018-11-30T06:34:26.000Z</published>
-    <updated>2018-11-30T06:39:32.640Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定理&quot;&gt;&lt;a href=&quot;#定理&quot; class=&quot;headerlink&quot; title=&quot;定理&quot;&gt;&lt;/a&gt;定理&lt;/h1&gt;&lt;p&gt;闭区间上连续的函数在该区间上必有界限&lt;/p&gt;
-&lt;h1 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot;
         
       
     

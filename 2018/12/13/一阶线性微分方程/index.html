@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="求导运算已知F(x)，求F’(x)，导函数f(x)=F’(x) 积分运算已知f(x)，求F(x)，满足F’(x)=f(x) 定义如果F(x)在区间上可导，对于任一属于该区间的x，都有$$F’(x) = f(x) 或 dF(x) = f(x)dx$$ 原函数个数如果F(x)是f(x)的一个原函数，则F(x)+C也是f(x)的原函数，其中C为任意常数 原函数存在时不唯一 两个原函数之间至多差一个常数">
+<meta name="description" content="一阶线性微分方程$$y’=\frac{dy}{dx}=Q(x)-P(x)y$$ 移项之后$$\frac{dy}{dx}+P(x)y=Q(x)$$形如上述的方程称为 一阶线性微分方程  齐次与非齐次如果 $Q(x) = 0$ 则方程是齐次方程 如果 $Q(x) ≠ 0$ 则方程是非齐次方程 理解$$\frac{dy}{dx}+P(x)y=0,\frac{dy}{dx}=-P(x)y=h(\frac{">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="不定积分">
-<meta property="og:url" content="http://blog.changwei.me/2018/12/04/不定积分/index.html">
+<meta property="og:title" content="一阶线性微分方程">
+<meta property="og:url" content="http://blog.changwei.me/2018/12/13/一阶线性微分方程/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="求导运算已知F(x)，求F’(x)，导函数f(x)=F’(x) 积分运算已知f(x)，求F(x)，满足F’(x)=f(x) 定义如果F(x)在区间上可导，对于任一属于该区间的x，都有$$F’(x) = f(x) 或 dF(x) = f(x)dx$$ 原函数个数如果F(x)是f(x)的一个原函数，则F(x)+C也是f(x)的原函数，其中C为任意常数 原函数存在时不唯一 两个原函数之间至多差一个常数">
+<meta property="og:description" content="一阶线性微分方程$$y’=\frac{dy}{dx}=Q(x)-P(x)y$$ 移项之后$$\frac{dy}{dx}+P(x)y=Q(x)$$形如上述的方程称为 一阶线性微分方程  齐次与非齐次如果 $Q(x) = 0$ 则方程是齐次方程 如果 $Q(x) ≠ 0$ 则方程是非齐次方程 理解$$\frac{dy}{dx}+P(x)y=0,\frac{dy}{dx}=-P(x)y=h(\frac{">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-04T10:39:30.435Z">
+<meta property="og:updated_time" content="2018-12-13T13:14:30.176Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不定积分">
-<meta name="twitter:description" content="求导运算已知F(x)，求F’(x)，导函数f(x)=F’(x) 积分运算已知f(x)，求F(x)，满足F’(x)=f(x) 定义如果F(x)在区间上可导，对于任一属于该区间的x，都有$$F’(x) = f(x) 或 dF(x) = f(x)dx$$ 原函数个数如果F(x)是f(x)的一个原函数，则F(x)+C也是f(x)的原函数，其中C为任意常数 原函数存在时不唯一 两个原函数之间至多差一个常数">
+<meta name="twitter:title" content="一阶线性微分方程">
+<meta name="twitter:description" content="一阶线性微分方程$$y’=\frac{dy}{dx}=Q(x)-P(x)y$$ 移项之后$$\frac{dy}{dx}+P(x)y=Q(x)$$形如上述的方程称为 一阶线性微分方程  齐次与非齐次如果 $Q(x) = 0$ 则方程是齐次方程 如果 $Q(x) ≠ 0$ 则方程是非齐次方程 理解$$\frac{dy}{dx}+P(x)y=0,\frac{dy}{dx}=-P(x)y=h(\frac{">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/2018/12/04/不定积分/">
+  <link rel="canonical" href="http://blog.changwei.me/2018/12/13/一阶线性微分方程/">
 
 
 
 
 
-  <title>不定积分 | 昌维的博客</title>
+  <title>一阶线性微分方程 | 昌维的博客</title>
   
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/04/不定积分/">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/13/一阶线性微分方程/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="昌维">
@@ -334,7 +334,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">不定积分</h2>
+          <h2 class="post-title" itemprop="name headline">一阶线性微分方程</h2>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-04T13:13:22+08:00">
-                2018-12-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-13T21:12:49+08:00">
+                2018-12-13
               </time>
             
 
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-04T18:39:30+08:00">
-                2018-12-04
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-13T21:14:30+08:00">
+                2018-12-13
               </time>
             
           </span>
@@ -399,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/04/不定积分/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/04/不定积分/" itemprop="commentCount"></span>
+                <a href="/2018/12/13/一阶线性微分方程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/13/一阶线性微分方程/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2018/12/04/不定积分/" class="leancloud_visitors" data-flag-title="不定积分">
+             <span id="/2018/12/13/一阶线性微分方程/" class="leancloud_visitors" data-flag-title="一阶线性微分方程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -458,24 +458,24 @@
       
 
       
-        <h1 id="求导运算"><a href="#求导运算" class="headerlink" title="求导运算"></a>求导运算</h1><p>已知F(x)，求F’(x)，导函数f(x)=F’(x)</p>
-<h1 id="积分运算"><a href="#积分运算" class="headerlink" title="积分运算"></a>积分运算</h1><p>已知f(x)，求F(x)，满足F’(x)=f(x)</p>
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>如果F(x)在区间上可导，对于任一属于该区间的x，都有<br>$$<br>F’(x) = f(x) 或 dF(x) = f(x)dx<br>$$</p>
-<h1 id="原函数个数"><a href="#原函数个数" class="headerlink" title="原函数个数"></a>原函数个数</h1><p>如果F(x)是f(x)的一个原函数，则F(x)+C也是f(x)的原函数，其中C为任意常数</p>
-<p><strong>原函数存在时不唯一</strong></p>
-<p><strong>两个原函数之间至多差一个常数</strong></p>
-<p>使用拉格朗日中值定理的推论</p>
-<h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><p>因为导数反映的仅仅是函数的变化率，而不是函数的绝对位置（高度）。所以同一个导数会有很多个原函数，所以叫做不定积分。</p>
-<h1 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h1><p>$$<br>\int f(x)dx = F(x)+C<br>$$</p>
-<p><strong>不定积分是原函数的一般表达式</strong></p>
-<p>也可以把常数项移项写成如下形式<br>$$<br>\int f(x)dx + C = F(x)<br>$$<br>积分符号右侧写的是导函数</p>
-<h1 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h1><h2 id="逆运算"><a href="#逆运算" class="headerlink" title="逆运算"></a>逆运算</h2><p>$$<br>\frac{d[\int f(x)dx]}{dx} = f(x), \int f’(x)dx = f(x) + C<br>$$</p>
-<p><strong>可以看出积分和微分互为逆运算</strong></p>
-<h2 id="运算性质"><a href="#运算性质" class="headerlink" title="运算性质"></a>运算性质</h2><p>$$<br>\int [f(x)±g(x)]dx = \int f(x)dx ± \int g(x)dx<br>$$</p>
-<p>$$<br>\int kf(x)dx = k\int f(x)dx (k&lt;&gt;0,k!=0)<br>$$</p>
+        <h1 id="一阶线性微分方程"><a href="#一阶线性微分方程" class="headerlink" title="一阶线性微分方程"></a>一阶线性微分方程</h1><p>$$<br>y’=\frac{dy}{dx}=Q(x)-P(x)y<br>$$</p>
+<p>移项之后<br>$$<br>\frac{dy}{dx}+P(x)y=Q(x)<br>$$<br>形如上述的方程称为 <strong>一阶线性微分方程</strong> </p>
+<h2 id="齐次与非齐次"><a href="#齐次与非齐次" class="headerlink" title="齐次与非齐次"></a>齐次与非齐次</h2><p>如果 $Q(x) = 0$ 则方程是<strong>齐次方程</strong></p>
+<p>如果 $Q(x) ≠ 0$ 则方程是<strong>非齐次方程</strong></p>
+<h3 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h3><p>$$<br>\frac{dy}{dx}+P(x)y=0,\frac{dy}{dx}=-P(x)y=h(\frac{y}{x})<br>$$</p>
+<h2 id="对应于非齐次线性方程的齐次线性方程"><a href="#对应于非齐次线性方程的齐次线性方程" class="headerlink" title="对应于非齐次线性方程的齐次线性方程"></a>对应于非齐次线性方程的齐次线性方程</h2><p>对应于非齐次线性方程，把右边的Q(x) 视为0之后得到的新方程，视为是对应于非齐次线性方程的齐次线性方程，是可分离变量的，因为我们可以将上式中的 <code>y</code> 和 <code>-P(x)</code> 移项得到<br>$$<br>\frac{dy}{dx}=-P(x)y,\frac{dy}{y} = -P(x)dx<br>$$<br>对这个式子两端同时积分后得到<br>$$<br>ln|y| = - \int P(x)dx +C_1<br>$$<br>把 y 解出来得到（可以将 $e^C$ 直接视为一个常数C）<br>$$<br>y = e^{-P(x)dx + C_1} = e^{-P(x)dx} e^{C_1} = Ce^{-P(x)dx}<br>$$</p>
+<h2 id="常数易变法"><a href="#常数易变法" class="headerlink" title="常数易变法"></a>常数易变法</h2><p>对于一阶线性微分方程 $\frac{dy}{dx}+P(x)y=Q(x)$ 来说，我们可以把上述解出来的 y 中的常数，用 u(x) 来替代，也就是将常数异变为 u(x) ，这也就是标题 <strong>常数易变法</strong> 的来历。</p>
+<p>易变之后得到<br>$$<br>y = u(x)e^{-P(x)dx}<br>$$<br>两边同时求导，根据导数的乘法运算法以及复合函数求导法则得到<br>$$<br>y’ = \frac{dy}{dx} = u’e^{-P(x)dx} + u(-P(x)e^{-P(x)dx})<br>$$<br>把 y 和 y’ 带入原方程后化简得到<br>$$<br>u’(x) = Q(x)e^{P(x)dx}<br>$$<br>积分求得原函数为<br>$$<br>u = \int Q(x)e^{P(x)dx}dx+C<br>$$<br>带入把 u 带入原方程中替换常数项 C 得到<br>$$<br>y = e^{-P(x)dx}(\int Q(x)e^{P(x)dx}dx+C) = Ce^{-P(x)dx} + e^{-P(x)dx}\int Q(x)e^{P(x)dx}dx<br>$$<br>对于这个式子<br>$$<br>y = Ce^{-P(x)dx} + e^{-P(x)dx}\int Q(x)e^{P(x)dx}dx<br>$$<br>左边为齐次线性方程的通解，右边为非齐次线性方程的一个特解</p>
+<h2 id="伯努利方程"><a href="#伯努利方程" class="headerlink" title="伯努利方程"></a>伯努利方程</h2><p>$$<br>\frac{dy}{dx}+P(x)y=Q(x)y^n<br>$$</p>
+<p>这样的方程就是<strong>伯努利方程</strong></p>
+<p>当n=0或1时，这是线性微分方程，否则就是非线性的。</p>
+<p>但是可以通过变量代换，转换成线性方程。</p>
+<h3 id="伯努利方程转换为线性方程"><a href="#伯努利方程转换为线性方程" class="headerlink" title="伯努利方程转换为线性方程"></a>伯努利方程转换为线性方程</h3><p>方程两端同时除以 $y^n$ ，得到<br>$$<br>y^{-n}\frac{dy}{dx} + P(x)y^{1-n} = Q(x)<br>$$</p>
+<p>$$<br>\frac{d(y^{1-n})}{dx} = (1-n)y^{-n} \frac{dy}{dx}<br>$$</p>
+<p>令 $z=y^{1-n}$ ，$\frac{dz}{dx} = (1-n)y^{-n} \frac{dy}{dx}$</p>
+<p>则化为了线性方程<br>$$<br>\frac{dz}{dx} + (1-n)P(x)z = (1-n)Q(x)<br>$$<br>求出通解之后，把z代入，得到伯努利方程的通解</p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936315&amp;cid=1006265578" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936315&amp;cid=1006265578</a></li>
-<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936315&amp;cid=1006265579" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936315&amp;cid=1006265579</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667054" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098871&amp;cid=1003667054</a></li>
 </ul>
 
       
@@ -497,7 +497,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://blog.changwei.me/2018/12/04/不定积分/" title="不定积分">http://blog.changwei.me/2018/12/04/不定积分/</a>
+    <a href="http://blog.changwei.me/2018/12/13/一阶线性微分方程/" title="一阶线性微分方程">http://blog.changwei.me/2018/12/13/一阶线性微分方程/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -519,8 +519,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/04/曲率/" rel="next" title="曲率">
-                <i class="fa fa-chevron-left"></i> 曲率
+              <a href="/2018/12/07/微分方程/" rel="next" title="微分方程">
+                <i class="fa fa-chevron-left"></i> 微分方程
               </a>
             
           </div>
@@ -529,8 +529,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/04/不定积分求解/" rel="prev" title="不定积分求解">
-                不定积分求解 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/13/二阶线性微分方程/" rel="prev" title="二阶线性微分方程">
+                二阶线性微分方程 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -808,7 +808,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#求导运算"><span class="nav-number">1.</span> <span class="nav-text">求导运算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#积分运算"><span class="nav-number">2.</span> <span class="nav-text">积分运算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">3.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原函数个数"><span class="nav-number">4.</span> <span class="nav-text">原函数个数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#理解"><span class="nav-number">5.</span> <span class="nav-text">理解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表达式"><span class="nav-number">6.</span> <span class="nav-text">表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#性质"><span class="nav-number">7.</span> <span class="nav-text">性质</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#逆运算"><span class="nav-number">7.1.</span> <span class="nav-text">逆运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算性质"><span class="nav-number">7.2.</span> <span class="nav-text">运算性质</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">8.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一阶线性微分方程"><span class="nav-number">1.</span> <span class="nav-text">一阶线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#齐次与非齐次"><span class="nav-number">1.1.</span> <span class="nav-text">齐次与非齐次</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解"><span class="nav-number">1.1.1.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对应于非齐次线性方程的齐次线性方程"><span class="nav-number">1.2.</span> <span class="nav-text">对应于非齐次线性方程的齐次线性方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常数易变法"><span class="nav-number">1.3.</span> <span class="nav-text">常数易变法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伯努利方程"><span class="nav-number">1.4.</span> <span class="nav-text">伯努利方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#伯努利方程转换为线性方程"><span class="nav-number">1.4.1.</span> <span class="nav-text">伯努利方程转换为线性方程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">2.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
