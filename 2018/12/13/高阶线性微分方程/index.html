@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="高阶线性微分方程函数组的线性相关与线性无关假设有一组函数 $y_1,y_2,y_3,…,,y_n(x)$ 为定义在区间I上的n个函数，如果存在n个不全为0的常数 $k_1,k_2,..,k_n$，使得x属于I时有下列恒等式成立$$k_1y_1+k_2y_2+…+k_ny_n = 0$$ 就称这一组n个函数在区间I上线性相关，否则就是线性无关。 注意这里是不全为0，也就是说可以部分为0，也可以全部不">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-13T14:39:53.728Z">
+<meta property="og:updated_time" content="2018-12-13T19:29:33.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高阶线性微分方程">
 <meta name="twitter:description" content="高阶线性微分方程函数组的线性相关与线性无关假设有一组函数 $y_1,y_2,y_3,…,,y_n(x)$ 为定义在区间I上的n个函数，如果存在n个不全为0的常数 $k_1,k_2,..,k_n$，使得x属于I时有下列恒等式成立$$k_1y_1+k_2y_2+…+k_ny_n = 0$$ 就称这一组n个函数在区间I上线性相关，否则就是线性无关。 注意这里是不全为0，也就是说可以部分为0，也可以全部不">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-13T22:39:53+08:00">
-                2018-12-13
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-14T03:29:33+08:00">
+                2018-12-14
               </time>
             
           </span>
@@ -466,14 +466,22 @@
 <h1 id="线性微分方程的一般形式"><a href="#线性微分方程的一般形式" class="headerlink" title="线性微分方程的一般形式"></a>线性微分方程的一般形式</h1><p><strong>n阶线性微分方程的一般形式</strong>如下<br>$$<br>y^{(n)}+a_1(x)y^{(n-1)}+…+a_{n-1}(x)y’+a_n(x)y = f(x)<br>$$<br>则二阶线性微分方程的一般形式就是如下<br>$$<br>y’’+P(x)y’+Q(x)y = f(x) = \frac{d^2y}{dx^2}+P(x)\frac{dy}{dx}+Q(x)y<br>$$<br>当方程右端的f(x)=0时，上诉方程叫做齐次方程，否则为非齐次</p>
 <h1 id="齐次线性微分方程的解的结构"><a href="#齐次线性微分方程的解的结构" class="headerlink" title="齐次线性微分方程的解的结构"></a>齐次线性微分方程的解的结构</h1><p>对于二阶齐次线性方程来说</p>
 <p>如果y1和y2分别是<strong>二阶齐次线性方程</strong>的两个解，则<br>$$<br>y=C_1y_1(x)+C_2y_2(x)<br>$$<br>也是这个<strong>二阶齐次线性方程</strong>的解，其中C1和C2是任意常数</p>
-<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>因为y1和y2是<strong>二阶齐次线性方程</strong>的两个解，所以<br>$$<br>y_1’’+P(x)y_1’+Q(x)y_1 = 0 \\ y_2’’+P(x)y_2’+Q(x)y_2 = 0<br>$$<br>然后把 $y,y’,y’’$ 带入这个<strong>二阶齐次线性方程</strong>左端得到如下<br>$$<br>y=0=C_1y_1(x)+C_2y_2(x) = 0 = 0C_1+0C_2 = 0<br>$$<br>证毕</p>
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>因为y1和y2是<strong>二阶齐次线性方程</strong>的两个解，所以<br>$$<br>y_1’’+P(x)y_1’+Q(x)y_1 = 0 \\ y_2’’+P(x)y_2’+Q(x)y_2 = 0<br>$$</p>
+<p>然后把 $y,y’,y’’$ 带入这个<strong>二阶齐次线性方程</strong>左端得到如下<br>$$<br>y=0=C_1y_1(x)+C_2y_2(x) = 0 = 0C_1+0C_2 = 0<br>$$</p>
+<p>证毕</p>
 <h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>从形式上来看，上述解虽然含有C1和C2两个常数，但是他不一定是这个<strong>二阶齐次线性方程</strong>的通解</p>
 <p>假设 $y1$ 是这个方程的一个解，则 $y2=2y1$ 也可以认为是该方程的一个解<br>$$<br>y=C_1y_1(x) + 2C_2y_1(x) = (C_1+2C_2)y_1(x) = Cy_1(x)<br>$$</p>
 <h2 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h2><p>如果y1和y2是<strong>二阶齐次线性方程</strong>的两个<strong>线性无关的特解</strong>，则<br>$$<br>y = C_1y_1(x)+C_2y_2(x)<br>$$<br>就是这个方程的通解</p>
 <h2 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h2><p>如果 y1,y2,y3,…,yn 是<strong>n阶齐次线性方程</strong>的n个<strong>线性无关</strong>的解，则此方程的通解为<br>$$<br>y = C_1y_1(x)+C_2y_2(x)+…+C_ny_n(x)<br>$$<br>其中的C1,C2,Cn为任意常数</p>
 <h1 id="非齐次线性微分方程的解的结构"><a href="#非齐次线性微分方程的解的结构" class="headerlink" title="非齐次线性微分方程的解的结构"></a>非齐次线性微分方程的解的结构</h1><p>非齐次方程<br>$$<br>y’’+P(x)y’+Q(x)y=f(x)<br>$$<br>与非齐次方程对应的齐次方程<br>$$<br>y’’+P(x)y’+Q(x)y=0<br>$$</p>
 <h2 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h2><p>设 $y\ast$ 是二阶非齐次线性方程(46)的一个特解，Y(x)是与(46)对应的齐次方程(47)的通解，则<br>$$<br>y=Y(x)+y\ast(x)<br>$$<br>是二阶非齐次线性微分方程(46)的通解</p>
-<h2 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h2><p>假设 下列结论成立<br>$$<br>y=Y(x)+y\ast(x)<br>$$<br>则根据导数相加原则，有<br>$$<br>y’ = Y’(x) + y\ast’ \\<br>y’’ = Y’’(x) + y\ast’’<br>$$<br>把y,y’,y’’全部带入方程左端得到<br>$$<br>(Y’’+y<em>‘’)+P(x)(Y’+y</em>‘)+Q(x)(Y+y*) = f(x)<br>$$<br>通过加法结合律，可以转换为<br>$$<br>[y’’+P(x)Y’+Q(x)Y] + [y \ast’’+P(x)y \ast’+Q(x)y \ast] = 0+f(x) = f(x)<br>$$<br>由于下列式子中也含有两个任意常数<br>$$<br>y=Y+y\ast<br>$$<br>从而它就是二阶非齐次线性方程的通解</p>
+<h2 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h2><p>假设 下列结论成立<br>$$<br>y=Y(x)+y\ast(x)<br>$$<br>则根据导数相加原则，有</p>
+<p>$$<br>y’ = Y’(x) + y\ast’ \\<br>y’’ = Y’’(x) + y\ast’’<br>$$</p>
+<p>把y,y’,y’’全部带入方程左端得到</p>
+<p>$$<br>(Y’’+y<em>‘’)+P(x)(Y’+y</em>‘)+Q(x)(Y+y*) = f(x)<br>$$</p>
+<p>通过加法结合律，可以转换为</p>
+<p>$$<br>[y’’+P(x)Y’+Q(x)Y] + [y \ast’’+P(x)y \ast’+Q(x)y \ast] = 0+f(x) = f(x)<br>$$</p>
+<p>由于下列式子中也含有两个任意常数<br>$$<br>y=Y+y\ast<br>$$<br>从而它就是二阶非齐次线性方程的通解</p>
 <h1 id="解的叠加原理"><a href="#解的叠加原理" class="headerlink" title="解的叠加原理"></a>解的叠加原理</h1><h2 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h2><p>设非齐次线性方程的右端f(x)是两个函数之和</p>
 <p>也就是有如下公式<br>$$<br>y’’+P(x)y’+Q(x)y=f(x)=f_1(x)+f_2(x)<br>$$<br>如果</p>
 <ul>
