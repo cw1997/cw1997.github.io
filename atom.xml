@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-13T13:16:55.937Z</updated>
+  <updated>2018-12-13T15:09:44.058Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>常系数非齐次线性微分方程</title>
+    <link href="http://blog.changwei.me/2018/12/13/%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%9D%9E%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
+    <id>http://blog.changwei.me/2018/12/13/常系数非齐次线性微分方程/</id>
+    <published>2018-12-13T14:31:16.000Z</published>
+    <updated>2018-12-13T15:09:44.058Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;二阶常系数非齐次线性微分方程&quot;&gt;&lt;a href=&quot;#二阶常系数非齐次线性微分方程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>常系数齐次线性微分方程</title>
+    <link href="http://blog.changwei.me/2018/12/13/%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
+    <id>http://blog.changwei.me/2018/12/13/常系数齐次线性微分方程/</id>
+    <published>2018-12-13T14:28:41.000Z</published>
+    <updated>2018-12-13T15:10:53.294Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;常系数齐次线性微分方程&quot;&gt;&lt;a href=&quot;#常系数齐次线性微分方程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>高阶线性微分方程</title>
     <link href="http://blog.changwei.me/2018/12/13/%E9%AB%98%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
     <id>http://blog.changwei.me/2018/12/13/高阶线性微分方程/</id>
     <published>2018-12-13T13:16:16.000Z</published>
-    <updated>2018-12-13T13:16:55.937Z</updated>
+    <updated>2018-12-13T14:39:53.728Z</updated>
     
     <summary type="html">
     
@@ -93,7 +141,7 @@
     <link href="http://blog.changwei.me/2018/12/07/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
     <id>http://blog.changwei.me/2018/12/07/微分方程/</id>
     <published>2018-12-07T05:54:26.000Z</published>
-    <updated>2018-12-13T13:16:11.447Z</updated>
+    <updated>2018-12-13T13:17:29.732Z</updated>
     
     <summary type="html">
     
@@ -440,54 +488,6 @@
         
         
           &lt;h1 id=&quot;参数方程&quot;&gt;&lt;a href=&quot;#参数方程&quot; class=&quot;headerlink&quot; title=&quot;参数方程&quot;&gt;&lt;/a&gt;参数方程&lt;/h1&gt;&lt;p&gt;$$&lt;br&gt;\left{&lt;br&gt;\begin{array}{rcl}&lt;br&gt;x=acos\ t &amp;amp; &amp;amp;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>隐函数的导数</title>
-    <link href="http://blog.changwei.me/2018/12/01/%E9%9A%90%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0/"/>
-    <id>http://blog.changwei.me/2018/12/01/隐函数的导数/</id>
-    <published>2018-11-30T18:10:05.000Z</published>
-    <updated>2018-11-30T18:33:11.364Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;显函数&quot;&gt;&lt;a href=&quot;#显函数&quot; class=&quot;headerlink&quot; title=&quot;显函数&quot;&gt;&lt;/a&gt;显函数&lt;/h1&gt;&lt;p&gt;例如 $y=sin\ x+1$
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>导数</title>
-    <link href="http://blog.changwei.me/2018/11/30/%E5%AF%BC%E6%95%B0/"/>
-    <id>http://blog.changwei.me/2018/11/30/导数/</id>
-    <published>2018-11-30T12:54:41.000Z</published>
-    <updated>2018-12-04T05:23:30.802Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;切线的定义&quot;&gt;&lt;a href=&quot;#切线的定义&quot; class=&quot;headerlink&quot;
         
       
     
