@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-14T09:50:39.631Z</updated>
+  <updated>2018-12-14T12:14:39.440Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>向量</title>
+    <link href="http://blog.changwei.me/2018/12/14/%E5%90%91%E9%87%8F/"/>
+    <id>http://blog.changwei.me/2018/12/14/向量/</id>
+    <published>2018-12-14T12:09:40.000Z</published>
+    <updated>2018-12-14T12:14:39.440Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;h1 id=&quot;夹角&quot;&gt;&lt;a href=&quot;#夹角&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>常系数非齐次线性微分方程</title>
@@ -464,30 +488,6 @@
         
         
           &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;函数 &lt;code&gt;y=f(x)&lt;/code&gt;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>由参数方程所确定的函数的导数</title>
-    <link href="http://blog.changwei.me/2018/12/01/%E7%94%B1%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E6%89%80%E7%A1%AE%E5%AE%9A%E7%9A%84%E5%87%BD%E6%95%B0%E7%9A%84%E5%AF%BC%E6%95%B0/"/>
-    <id>http://blog.changwei.me/2018/12/01/由参数方程所确定的函数的导数/</id>
-    <published>2018-11-30T18:33:34.000Z</published>
-    <updated>2018-12-03T04:31:38.210Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;参数方程&quot;&gt;&lt;a href=&quot;#参数方程&quot; class=&quot;headerlink&quot; title=&quot;参数方程&quot;&gt;&lt;/a&gt;参数方程&lt;/h1&gt;&lt;p&gt;$$&lt;br&gt;\left{&lt;br&gt;\begin{array}{rcl}&lt;br&gt;x=acos\ t &amp;amp; &amp;amp;
         
       
     
