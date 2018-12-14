@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="二阶常系数非齐次线性微分方程前面我们提到过二阶常系数非齐次线性微分方程中，方程右端为0，而二阶常系数非齐次线性微分方程的右端不为0，我们讨论右端为下列两种情况时，此类微分方程的解法  $f(x)=e^{\lambda x}P_m(x)$ $f(x)=e^{\lambda x}[P_l(x) cos \ \omega x + Q_n(x) sin \ \omega x ]$    待定系数法先假设一">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-13T15:09:44.058Z">
+<meta property="og:updated_time" content="2018-12-14T09:50:39.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常系数非齐次线性微分方程">
 <meta name="twitter:description" content="二阶常系数非齐次线性微分方程前面我们提到过二阶常系数非齐次线性微分方程中，方程右端为0，而二阶常系数非齐次线性微分方程的右端不为0，我们讨论右端为下列两种情况时，此类微分方程的解法  $f(x)=e^{\lambda x}P_m(x)$ $f(x)=e^{\lambda x}[P_l(x) cos \ \omega x + Q_n(x) sin \ \omega x ]$    待定系数法先假设一">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-13T23:09:44+08:00">
-                2018-12-13
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-14T17:50:39+08:00">
+                2018-12-14
               </time>
             
           </span>
@@ -466,8 +466,41 @@
 <h1 id="待定系数法"><a href="#待定系数法" class="headerlink" title="待定系数法"></a>待定系数法</h1><p>先假设一个解的形式，然后把这个形式解带入方程，定出解中包含的常数的值</p>
 <p>这种方法不用积分就可以求出y的特解</p>
 <h1 id="f-x-e-lambda-x-P-m-x"><a href="#f-x-e-lambda-x-P-m-x" class="headerlink" title="$f(x)=e^{\lambda x}P_m(x)$"></a>$f(x)=e^{\lambda x}P_m(x)$</h1><p>对于下列类型的二阶常系数非齐次线性微分方程<br>$$<br>y’’+py’+qy=e^{\lambda x}P_m(x)<br>$$<br>我们推测<br>$$<br>y\ast = R(x)e^{\lambda x}<br>$$<br>可能是方程的特解（$R(x)$是某个多项式）</p>
-<p>分别求出 y* 的一阶和二阶导数<br>$$<br>y\ast = R(x)e^{\lambda x} \\<br>y\ast’ = e^{\lambda x}[\lambda R(x) + R’(x)] \\<br>y\ast’’ = e^{\lambda x}[\lambda ^2 R(x) + 2\lambda R’(x) + R’’(x)]<br>$$<br>然后带入原方程，并且两边同时消去 $e^{\lambda x}$  （因为它不可能等于0，这下知道为什么我们选择那个待定系数了吧）<br>$$<br>R’’(x) + (2\lambda + p)R’(x) + (\lambda ^2 + p\lambda + q)R(x) = P_m(x)<br>$$</p>
-<h1 id="f-x-e-lambda-x-P-l-x-cos-omega-x-Q-n-x-sin-omega-x"><a href="#f-x-e-lambda-x-P-l-x-cos-omega-x-Q-n-x-sin-omega-x" class="headerlink" title="$f(x)=e^{\lambda x}[P_l(x) cos \ \omega x + Q_n(x) sin \ \omega x ]$"></a>$f(x)=e^{\lambda x}[P_l(x) cos \ \omega x + Q_n(x) sin \ \omega x ]$</h1><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<p>分别求出 y* 的一阶和二阶导数<br>$$<br>y\ast = R(x)e^{\lambda x} \\<br>y\ast’ = e^{\lambda x}[\lambda R(x) + R’(x)] \\<br>y\ast’’ = e^{\lambda x}[\lambda ^2 R(x) + 2\lambda R’(x) + R’’(x)]<br>$$<br>然后带入原方程，并且两边同时消去 $e^{\lambda x}$  （因为它不可能等于0，这下知道为什么我们选择那个待定系数了吧）</p>
+<p>$$<br>R’’(x) + (2\lambda + p)R’(x) + (\lambda ^2 + p\lambda + q)R(x) = P_m(x)<br>$$</p>
+<p>对于这个式子，右边 $P_m(x)$ 为 m 次多项式，左边根据 $\lambda $ 取值的不同，次数也会不同</p>
+<p>而通过求导法则可以得知，某个数的导数一定比它当前次数要低，所以 $\lambda $ 取值的不同，意味着R或者R的导数会为m次</p>
+<p>所以我们要对 $\lambda$ 不同取值情况分别讨论</p>
+<p>也就是当 $\lambda$ 满足不同方程式的情况下，如何求出常系数非齐次线性微分方程的特解</p>
+<ul>
+<li><p>$\lambda ^2 + p\lambda + q ≠ 0$ </p>
+<p>这种情况下， $R(x)$ 是 m 次，写成多项式形式为<br>$$<br>R(x) = R_m(x) = b_0x^m + b_1^{m-1} + … + b_{m-1}x + b_m<br>$$<br>然后把 $R(x)$ 的展开式带入原方程，比较等式两端不同 x 次数的系数，可以确定 b 的值是多少，然后把 b 的值全部带入，再根据<br>$$<br>y\ast = R_m(x)e^{\lambda x}<br>$$<br>则求出特解</p>
+</li>
+<li><p>$\lambda ^2 + p\lambda + q = 0 \  and \  2\lambda + p ≠ 0 $</p>
+<p>同上情况， $R’(x)$ 为 m 次多项式 </p>
+<p>可以令（因为带 x 系数的式子，求导之后 x 会被消去）<br>$$<br>R(x) = R’_m(x) = xR_m(x) = x(b_0x^m + b_1^{m-1} + … + b_{m-1}x + b_m)<br>$$<br>用同样的方法确定 $R_m(x)$ 的系数，根据<br>$$<br>y\ast = xR_m(x)e^{\lambda x}<br>$$<br>则求出特解</p>
+</li>
+<li><p>$\lambda ^2 + p\lambda + q = 0 \  and \  2\lambda + p = 0 $ </p>
+<p>同上情况， $R’’(x)$ 为 m 次多项式 </p>
+<p>可以令（因为带 $x^2$ 系数的式子，求导之后 x 会被消去）<br>$$<br>R(x) = R’’_m(x) = x^2R_m(x) = x^2(b_0x^m + b_1^{m-1} + … + b_{m-1}x + b_m)<br>$$<br>用同样的方法确定 $R_m(x)$ 的系数，根据<br>$$<br>y\ast = x^2R_m(x)e^{\lambda x}<br>$$<br>则求出特解</p>
+</li>
+</ul>
+<h1 id="f-x-e-lambda-x-P-l-x-cos-omega-x-Q-n-x-sin-omega-x"><a href="#f-x-e-lambda-x-P-l-x-cos-omega-x-Q-n-x-sin-omega-x" class="headerlink" title="$f(x)=e^{\lambda x}[P_l(x) cos \ \omega x + Q_n(x) sin \ \omega x ]$"></a>$f(x)=e^{\lambda x}[P_l(x) cos \ \omega x + Q_n(x) sin \ \omega x ]$</h1><p>类似于这样的方程，我们也可以求出它的特解</p>
+<p>应用欧拉公式得到</p>
+<p>$$<br>cos \ \theta = \frac{e^{i \theta }+e^{-i \theta }}{2}<br>$$</p>
+<p>$$<br>sin \ \theta = \frac{e^{i \theta }-e^{-i \theta }}{2i}<br>$$</p>
+<p>则</p>
+<p>$$<br>f(x) = e^{\lambda x}[P_l(x)cos \ \omega x + Q_n(x)sin \ \omega x] \\<br>= e^{\lambda x}[P_l(x)\frac{e^{\omega xi}+e^{-\omega xi}}{2} + Q_n(x)\frac{e^{\omega xi}-e^{-\omega xi}}{2i}] \\<br>= [\frac{P_l(x)}{2}+\frac{Q_n(x)}{2i}]e^{(\lambda + \omega i)x} + [\frac{P_l(x)}{2}-\frac{Q_n(x)}{2i}]e^{(\lambda - \omega i)x}<br>$$</p>
+<p>其中</p>
+<p>$$<br>P(x) = \frac{P_l(x)}{2}+\frac{Q_n(x)}{2i} = \frac{P_l(x)}{2}-\frac{Q_n(x)}{2}i<br>$$</p>
+<p>$$<br>\overline P(x) = \frac{P_l(x)}{2}-\frac{Q_n(x)}{2i} = \frac{P_l(x)}{2}+\frac{Q_n(x)}{2}i<br>$$</p>
+<p>上述两个式子互为共轭m次多项式，m为 l 和 n 中最大的一个</p>
+<p>则<br>$$<br>y’’ + py’ + qy = P(x)e^{(\lambda + \omega i)x}<br>$$<br>y 有两个解<br>$$<br>y_1\ast = x^kR_m(x)e^{(\lambda + \omega i)x}<br>$$</p>
+<p>$$<br>y_2\ast = x^k \overline R_m(x)e^{(\lambda - \omega i)x}<br>$$</p>
+<p>他的特解形式为</p>
+<p>$$<br>y_1\ast + y_2\ast = x^kR_m(x)e^{(\lambda + \omega i)x} + x^k \overline R_m(x)e^{(\lambda - \omega i)x} \\<br>= x^ke^{\lambda x}[R_m(x)e^{\omega xi}+\overline R_m(x)e^{\omega xi}] \\<br>= x^ke^{\lambda x}[R_m(x)(cos \ \omega x+isin \ \ \omega x) + \overline R_m(x)(cos \ \omega x-isin \ \ \omega x)] \\<br>= x^ke^{\lambda x}[R_m^{(1)}(x)cos \ \omega x + R_m^{(2)}(x)sin \ \omega x]<br>$$</p>
+<p>根据实际情况，把 $R_m$ 这个 m 次多项式的系数确定后即可</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
 <li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098873&amp;cid=1003667070" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1002321010&amp;from=study#/learn/content?type=detail&amp;id=1003098873&amp;cid=1003667070</a></li>
 </ul>
 
