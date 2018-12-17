@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-15T18:27:30.957Z</updated>
+  <updated>2018-12-17T07:14:13.846Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>曲面</title>
+    <link href="http://blog.changwei.me/2018/12/17/%E6%9B%B2%E9%9D%A2/"/>
+    <id>http://blog.changwei.me/2018/12/17/曲面/</id>
+    <published>2018-12-17T04:33:55.000Z</published>
+    <updated>2018-12-17T07:14:13.846Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h1&gt;&lt;p&gt;空间中一个面上的点，由 x，y，z 三个坐标组成，所以这个曲面的方程一定是关于 x，y，z
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>空间直线及其方程</title>
+    <link href="http://blog.changwei.me/2018/12/16/%E7%A9%BA%E9%97%B4%E7%9B%B4%E7%BA%BF%E5%8F%8A%E5%85%B6%E6%96%B9%E7%A8%8B/"/>
+    <id>http://blog.changwei.me/2018/12/16/空间直线及其方程/</id>
+    <published>2018-12-16T08:03:55.000Z</published>
+    <updated>2018-12-17T04:46:52.977Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;空间直线一般方程&quot;&gt;&lt;a href=&quot;#空间直线一般方程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>平面及其方程</title>
@@ -443,54 +491,6 @@
         
         
           &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;设曲线C 是光滑的，在曲线C 上选定一点M0作为度量弧 s 的基点.设曲线上点 M 对应于弧 s ，在点M处切线的倾角为 $\alpha
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>泰勒公式</title>
-    <link href="http://blog.changwei.me/2018/12/03/%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F/"/>
-    <id>http://blog.changwei.me/2018/12/03/泰勒公式/</id>
-    <published>2018-12-02T18:52:29.000Z</published>
-    <updated>2018-12-12T08:50:46.216Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;使用多项式近似表达函数&quot;&gt;&lt;a href=&quot;#使用多项式近似表达函数&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>使用MATLAB解方程</title>
-    <link href="http://blog.changwei.me/2018/12/03/%E4%BD%BF%E7%94%A8MATLAB%E8%A7%A3%E6%96%B9%E7%A8%8B/"/>
-    <id>http://blog.changwei.me/2018/12/03/使用MATLAB解方程/</id>
-    <published>2018-12-02T16:19:31.000Z</published>
-    <updated>2018-12-02T16:36:10.768Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;上一个博客（ &lt;a
         
       
     
