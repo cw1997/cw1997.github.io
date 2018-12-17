@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-17T14:00:50.369Z</updated>
+  <updated>2018-12-17T14:03:45.126Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>空间曲线</title>
+    <link href="http://blog.changwei.me/2018/12/17/%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%BA%BF/"/>
+    <id>http://blog.changwei.me/2018/12/17/空间曲线/</id>
+    <published>2018-12-17T14:03:45.000Z</published>
+    <updated>2018-12-17T14:03:45.126Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>曲面</title>
@@ -42,10 +56,10 @@
   
   <entry>
     <title>空间直线及其方程</title>
-    <link href="http://blog.changwei.me/2018/12/16/%E7%A9%BA%E9%97%B4%E7%9B%B4%E7%BA%BF%E5%8F%8A%E5%85%B6%E6%96%B9%E7%A8%8B/"/>
-    <id>http://blog.changwei.me/2018/12/16/空间直线及其方程/</id>
+    <link href="http://blog.changwei.me/2018/12/16/%E7%A9%BA%E9%97%B4%E7%9B%B4%E7%BA%BF/"/>
+    <id>http://blog.changwei.me/2018/12/16/空间直线/</id>
     <published>2018-12-16T08:03:55.000Z</published>
-    <updated>2018-12-17T04:46:52.977Z</updated>
+    <updated>2018-12-17T14:03:20.951Z</updated>
     
     <summary type="html">
     
@@ -467,30 +481,6 @@
         
           &lt;h1 id=&quot;求导运算&quot;&gt;&lt;a href=&quot;#求导运算&quot; class=&quot;headerlink&quot; title=&quot;求导运算&quot;&gt;&lt;/a&gt;求导运算&lt;/h1&gt;&lt;p&gt;已知F(x)，求F’(x)，导函数f(x)=F’(x)&lt;/p&gt;
 &lt;h1 id=&quot;积分运算&quot;&gt;&lt;a href=&quot;#积分运算&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>曲率</title>
-    <link href="http://blog.changwei.me/2018/12/04/%E6%9B%B2%E7%8E%87/"/>
-    <id>http://blog.changwei.me/2018/12/04/曲率/</id>
-    <published>2018-12-04T04:57:10.000Z</published>
-    <updated>2018-12-04T05:08:53.742Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;设曲线C 是光滑的，在曲线C 上选定一点M0作为度量弧 s 的基点.设曲线上点 M 对应于弧 s ，在点M处切线的倾角为 $\alpha
         
       
     
