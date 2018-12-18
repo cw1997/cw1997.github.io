@@ -3,6 +3,40 @@
   
     
     <entry>
+      <title>多元函数</title>
+      <link href="/2018/12/18/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0/"/>
+      <url>/2018/12/18/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>设 D 是 R^2 的一个非空子集</p><p>如果对于 D 内的任一点 (x,y)，按照某种法则都有唯一确定的实数z与之对应， </p><p>则称 f 是 D 上的二元函数，记作<br>$$<br>z=f(x,y),(x,y)∈D 或 z=f(P),P∈D<br>$$<br>点集 D 称为该函数的定义域, x 和 y 称为自变量, z 称为因变量</p><h1 id="值域"><a href="#值域" class="headerlink" title="值域"></a>值域</h1><p>数值 $f ( x, y)$ 的全体所构成的集合称为函数 $f$ 的值域，记作 $f(D)$，即<br>$$<br>f(D)= {z|z= f(x,y),(x,y)∈D }<br>$$</p><h1 id="定义域"><a href="#定义域" class="headerlink" title="定义域"></a>定义域</h1><p>如果一个用算式表示的函数没有明确指出定义域，则该函数的定义域理解为使算式有意义的所有点 $(x, y)$ 所成的集合, 称为<strong>自然定义域</strong> </p><h1 id="图形"><a href="#图形" class="headerlink" title="图形"></a>图形</h1><p>设函数 $z= f(x,y)$ 的定义域为 D</p><p>对于任意取定的 $P(x,y)∈D$ ，对应的函数值为 $z= f(x,y)$ </p><p>这样，以 x 为横坐标、 y 为纵坐标、 z 为竖坐标在空间就确定一点 $M ( x , y , z )$ </p><p>当 $(x , y)$ 取遍 D 上所有点时，得一个空间点集<br>$$<br>{(x,y,z)|z = f(x,y),(x,y)∈D}<br>$$<br>这个点集称为二元函数 $z=f(x,y)$ 的图形 </p><p><strong>二元函数的图形通常是一张曲面</strong></p><h1 id="推广到多元函数"><a href="#推广到多元函数" class="headerlink" title="推广到多元函数"></a>推广到多元函数</h1><p>类似地, 可定义三元及三元以上的函数. </p><p>当 $n &gt;= 2$ 时, n 元函数统称为<strong>多元函数</strong> </p><h1 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h1><p>设函数 $f(P)=(x,y)$ 的定义域为 D，$P(x_0,y_0)$ 是 D 的聚点，如果存在常数 A ，对于任意给定的正数 $\epsilon$ ， 总存在正数 $\delta$ ，使得当点 $P(x,y)∈D \cap U(P_0, \delta )$ 时有下面的式子成立<br>$$<br>|f(P)-A|=|f(x,y)-A|&lt;\epsilon<br>$$<br> 则称 A 为函数 $f(x,y)$ 当 $(x,y) \rightarrow (x_0,y_0)$ 时的极限</p><p>记作<br>$$<br>\lim\limits_{(x,y) \to (x_0,y_0)}f(x,y)=A<br>$$<br>或者<br>$$<br>f(x,y)\rightarrow A,((x,y) \rightarrow (x_0,y_0))<br>$$<br>或者<br>$$<br>\lim\limits_{P \to P_0}f(P)=A<br>$$<br>或者<br>$$<br>f(P)\rightarrow A,(P \rightarrow P_0)<br>$$<br>我们把二元函数的极限叫做<strong>二重极限</strong><br>类似地 可定义 n 元函数的极限概念</p><h1 id="极限的存在"><a href="#极限的存在" class="headerlink" title="极限的存在"></a>极限的存在</h1><p><strong>二重极限存在</strong>是指 $P(x, y)$ 以任何方式趋于 $P (x , y )$ 时， $f(x,y)$ 都无限接近于 A </p><h2 id="确定极限不存在的常用方法"><a href="#确定极限不存在的常用方法" class="headerlink" title="确定极限不存在的常用方法"></a>确定极限不存在的常用方法</h2><p>找到两种趋近方式，使得在这两种趋近方式下二元函数的极限存在，但是不相等，由此可以断言 $f(x,y)$ 在点 $P_0(x_0,y_0)$ 处极限不存在</p><h1 id="连续性"><a href="#连续性" class="headerlink" title="连续性"></a>连续性</h1><p>设函数 $f(P)=(x,y)$ 的定义域为 D，$P(x_0,y_0)$ 是 D 的聚点，且 $P_0∈D$ ，如果<br>$$<br>\lim\limits_{(x,y) \to (x_0,y_0)}f(x,y)=f(x_0,y_0)<br>$$<br>则称函数 $f(x,y)$ 在点 $P_0(x_0,y_0)$ 处的连续，如果函数 $f(x,y)$ 在点 $P_0(x_0,y_0)$ 处不连续，则称点 $P_0(x_0,y_0)$ 是函数 $f(x,y)$ 的<strong>间断点</strong></p><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul><li><p>多元连续函数经过四则运算和复合运算后仍为连续函数</p></li><li><p>由常数及具有不同自变量的一元基本初等函数，经过有限次的四则运算和复合所构成的可用一个式子表示的多元函数称为多元初等函数 </p></li><li><p>一切多元初等函数在其定义区域内是连续的</p></li><li><p>所谓定义区域是指包含在定义域内的区域或闭区域 </p></li></ul><h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><h3 id="最大值和最小值定理"><a href="#最大值和最小值定理" class="headerlink" title="最大值和最小值定理"></a>最大值和最小值定理</h3><p>在有界闭区域 D 上的多元连续函数，必定在 D 上有界，且能取得它的最大值和最小值 </p><h3 id="介值定理"><a href="#介值定理" class="headerlink" title="介值定理"></a>介值定理</h3><p>在有界闭区域 D 上的多元连续函数，必取得介于最大值和最小值之间的任何值</p><h3 id="一致连续性定理"><a href="#一致连续性定理" class="headerlink" title="一致连续性定理"></a>一致连续性定理</h3><p>在有界闭区域 D 上的多元连续函数必定在 D 上一致连续</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019&amp;from=study#/learn/content?type=detail&amp;id=1003801018&amp;cid=1004551061" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019&amp;from=study#/learn/content?type=detail&amp;id=1003801018&amp;cid=1004551061</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>多元函数</title>
+      <link href="/2018/12/18/%E5%B9%B3%E9%9D%A2%E7%82%B9%E9%9B%86/"/>
+      <url>/2018/12/18/%E5%B9%B3%E9%9D%A2%E7%82%B9%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="坐标平面"><a href="#坐标平面" class="headerlink" title="坐标平面"></a>坐标平面</h1><p>建立了直角坐标系的平面称为坐标平面，记作<br>$$<br>R^2=R \times R = { (x,y)|x,y ∈ R }<br>$$<br>坐标平面表示一个由全体实数构成的平面点集，它是一个横坐标和纵坐标都为 R 实数的点的集合</p><h1 id="平面点集"><a href="#平面点集" class="headerlink" title="平面点集"></a>平面点集</h1><p>坐标平面上具有某种性质 P 的点的集合，称为平面点集，记作<br>$$<br>E={ (x,y)|(x,y)具有某种性质 }<br>$$</p><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>设 $P(x,y)$ 是 $xOy$ 平面上的一个点，  $\delta$ 是某一正数，与点 $P(x ,y)$ 距离小于 $\delta$ 的点 $P(x,y)$ 的全体，称为 点 P 的邻域，记为 $U(P ,\delta)$<br>$$<br>U(P_0,\delta)={ P| |PP_0|&lt;\delta } = { (x,y)|\sqrt{(x-x_0)^2+(y-y_0)^2}&lt;\delta }<br>$$<br>它表示是是以 $P_0$ 为圆心， 以 $\delta$ 为半径的圆内的所有点的集合</p><h1 id="点的分类"><a href="#点的分类" class="headerlink" title="点的分类"></a>点的分类</h1><p>根据点和点集的位置关系来分类，有如下三类：（通常我们描述点与点集的位置关系，是以点的某一个邻域与点集的位置关系来判断）</p><ul><li>内点：设 E 是平面上的一个点集，P 是平面上的一个点，如果存在点 P 的某一个邻域 $U(P)∈E$  ，则 P 称为 E 的外点</li><li>外点：如果存在点 P 的某一个邻域 $U(P) ∈ E$ ，则 P 称为 E 的外点</li><li>边界点：如果点 P 的任一邻域既含有属于 E 的点，又含有不属于 E 的点，则 P 称为 E 的边界点</li></ul><p>E 的边界点称为 E 的边界，记作 $\delta E$ </p><h1 id="聚点"><a href="#聚点" class="headerlink" title="聚点"></a>聚点</h1><p>如果对于任意给定的 $\delta &gt; 0$ ，点 P 的去心邻域 $U∈(P,\delta )$ 内总含有属于 E 的点，则 P 称为 E 的聚点</p><p>点集 E 的聚点可能属于 E ，也可能不属于 E</p><h1 id="重要的平面点集"><a href="#重要的平面点集" class="headerlink" title="重要的平面点集"></a>重要的平面点集</h1><ul><li>如果点集 E 的点都是 E 的内点，则称 E 为<strong>开集</strong></li><li>如果点集E的边界 $\delta E ∈ E$，则称E为<strong>闭集</strong></li><li>如果点集 E 内任何两点，都可用折线联接起来，且该折线上的点都属于 E ，则称 E 为<strong>连通集</strong></li><li>连通的开集称为<strong>区域</strong>或<strong>开区域</strong></li><li>开区域连同它的边界一起构成的点集称为<strong>闭区域</strong></li><li>如果存在某一个正数r，使得 $E∈U(O,r)$ ，其中 O 是坐标原点，则称 E 为<strong>有界集</strong>.否则，称之为<strong>无界集</strong>. </li></ul><h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><h2 id="有界集"><a href="#有界集" class="headerlink" title="有界集"></a>有界集</h2><p>$$<br>{ (x,y)|1&lt;=x^2+y^2&lt;=4 }<br>$$</p><p>它表示的是一个圆环</p><h2 id="无界集"><a href="#无界集" class="headerlink" title="无界集"></a>无界集</h2><p>$$<br>{ (x,y)|x+y&gt;0 }<br>$$</p><p>它表示的是一条直线右上角的所有点集</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019&amp;from=study#/learn/content?type=detail&amp;id=1003801018&amp;cid=1004551061" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019&amp;from=study#/learn/content?type=detail&amp;id=1003801018&amp;cid=1004551061</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>空间曲线</title>
       <link href="/2018/12/17/%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%BA%BF/"/>
       <url>/2018/12/17/%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%BA%BF/</url>

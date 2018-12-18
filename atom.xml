@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-17T14:24:32.104Z</updated>
+  <updated>2018-12-18T18:25:20.606Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>多元函数</title>
+    <link href="http://blog.changwei.me/2018/12/18/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2018/12/18/多元函数/</id>
+    <published>2018-12-18T12:58:57.000Z</published>
+    <updated>2018-12-18T18:25:20.606Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;设 D 是 R^2 的一个非空子集&lt;/p&gt;
+&lt;p&gt;如果对于 D 内的任一点 (x,y)，按照某种法则都有唯一确定的实数z与之对应，
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>多元函数</title>
+    <link href="http://blog.changwei.me/2018/12/18/%E5%B9%B3%E9%9D%A2%E7%82%B9%E9%9B%86/"/>
+    <id>http://blog.changwei.me/2018/12/18/平面点集/</id>
+    <published>2018-12-18T11:27:15.000Z</published>
+    <updated>2018-12-18T13:10:30.565Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;坐标平面&quot;&gt;&lt;a href=&quot;#坐标平面&quot; class=&quot;headerlink&quot; title=&quot;坐标平面&quot;&gt;&lt;/a&gt;坐标平面&lt;/h1&gt;&lt;p&gt;建立了直角坐标系的平面称为坐标平面，记作&lt;br&gt;$$&lt;br&gt;R^2=R \times R = { (x,y)|x,y ∈
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>空间曲线</title>
     <link href="http://blog.changwei.me/2018/12/17/%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%BA%BF/"/>
     <id>http://blog.changwei.me/2018/12/17/空间曲线/</id>
     <published>2018-12-17T14:03:45.000Z</published>
-    <updated>2018-12-17T14:24:32.104Z</updated>
+    <updated>2018-12-18T11:25:22.706Z</updated>
     
     <summary type="html">
     
@@ -362,7 +411,7 @@
     <link href="http://blog.changwei.me/2018/12/07/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86/"/>
     <id>http://blog.changwei.me/2018/12/07/反常积分/</id>
     <published>2018-12-06T16:10:04.000Z</published>
-    <updated>2018-12-06T16:15:02.401Z</updated>
+    <updated>2018-12-18T18:12:06.157Z</updated>
     
     <summary type="html">
     
@@ -443,55 +492,6 @@
         
         
           &lt;h1 id=&quot;有理函数&quot;&gt;&lt;a href=&quot;#有理函数&quot; class=&quot;headerlink&quot; title=&quot;有理函数&quot;&gt;&lt;/a&gt;有理函数&lt;/h1&gt;&lt;p&gt;有理函数(或有理分式)是指由两个多项式的商所表示的函数，
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>不定积分求解</title>
-    <link href="http://blog.changwei.me/2018/12/04/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E6%B1%82%E8%A7%A3/"/>
-    <id>http://blog.changwei.me/2018/12/04/不定积分求解/</id>
-    <published>2018-12-04T05:43:41.000Z</published>
-    <updated>2018-12-06T15:59:27.595Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;查表法&quot;&gt;&lt;a href=&quot;#查表法&quot; class=&quot;headerlink&quot; title=&quot;查表法&quot;&gt;&lt;/a&gt;查表法&lt;/h1&gt;&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>不定积分</title>
-    <link href="http://blog.changwei.me/2018/12/04/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/"/>
-    <id>http://blog.changwei.me/2018/12/04/不定积分/</id>
-    <published>2018-12-04T05:13:22.000Z</published>
-    <updated>2018-12-04T10:39:30.435Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;求导运算&quot;&gt;&lt;a href=&quot;#求导运算&quot; class=&quot;headerlink&quot; title=&quot;求导运算&quot;&gt;&lt;/a&gt;求导运算&lt;/h1&gt;&lt;p&gt;已知F(x)，求F’(x)，导函数f(x)=F’(x)&lt;/p&gt;
-&lt;h1 id=&quot;积分运算&quot;&gt;&lt;a href=&quot;#积分运算&quot;
         
       
     
