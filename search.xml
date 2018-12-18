@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>偏导数</title>
+      <link href="/2018/12/19/%E5%81%8F%E5%AF%BC%E6%95%B0/"/>
+      <url>/2018/12/19/%E5%81%8F%E5%AF%BC%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们在学习一元函数的时候了解过，一元函数的导数其实就是这个函数在某个点上的变化率，或者切线的斜率。</p><p>如果这个点是 x 轴上的一系列动点并且还连续，则我们把这个连续变化的斜率视为一个函数，就叫做这个一元函数的导函数，简称导数</p><p>推广到多元函数</p><p>由于多元函数有多个自变量，我们只讨论其中一个自变量变化时，因变量的变化率为多少，则这个变化率关于自变量的函数叫做<strong>偏导函数</strong>，简称<strong>偏导数</strong>，这里 <strong>偏</strong> 的意思指的是偏向于某一个自变量的导数</p><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>设函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 某一邻域内有定义，当 y 固定在 y_0 而 x 在 x_0 处有增量 dx 时</p><p>相应的函数有增量<br>$$<br>f(x_0+dx,y_0)-f(x_0,y_0)<br>$$<br>如果<br>$$<br>\lim\limits_{dx \to 0}\frac{f(x_0+dx,y_0)-f(x_0,y_0)}{dx}<br>$$<br>存在</p><p>则称此极限为函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 处对 x 的<strong>偏导数</strong> </p><p>记作<br>$$<br>\frac{\partial z}{\partial x} |_{x=x_0,y=y_0}, \frac{\partial f}{\partial x} |_{x=x_0,y=y_0}, z_x|^{x=x_0}_{y=y_0}, f_x(x_0,y_0)<br>$$<br> 类似地，函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 处对 y 的<strong>偏导数</strong><br>$$<br>\lim\limits_{dy \to 0}\frac{f(x_0,y_0+dy)-f(x_0,y_0)}{dy}<br>$$<br>记作<br>$$<br>\frac{\partial z}{\partial y} |_{x=x_0,y=y_0}, \frac{\partial f}{\partial y} |_{x=x_0,y=y_0}, z_y|^{x=x_0}_{y=y_0}, f_y(x_0,y_0)<br>$$</p><h1 id="偏导函数"><a href="#偏导函数" class="headerlink" title="偏导函数"></a>偏导函数</h1><p>如果函数 $f(x,y)$ 在区域 $D$ 内任一点 $(x,y)$ 对 $x$ 的偏导数都存在, 则这个偏导数就是 $x 、 y$ 的函数， </p><p>它就称为函数 $z=f(x,y)$ 对 $x$ 的偏导函数</p><p>记作<br>$$<br>\frac{\partial z}{\partial x}, \frac{\partial f}{\partial x}, z_x, f_x(x,y)<br>$$<br>类似地，可定义函数 $z=f(x,y)$ 对 $y$ 的偏导函数<br>$$<br>\frac{\partial z}{\partial y}, \frac{\partial f}{\partial y}, z_y, f_y(x,y)<br>$$<br><strong>多元函数的偏导函数可简称为偏导数</strong></p><h1 id="几何意义"><a href="#几何意义" class="headerlink" title="几何意义"></a>几何意义</h1><p>一元函数的导数在几何上可表示平面曲线在一点处切线的斜率</p><p>二元函数 $f(x,y)$ 的偏导数 $f_y(x_0 , y_0)$ 就是曲面被平面 $x=x_0$ 所截 </p><p>得的曲线在点 $M_0$ 处的切线 $M_0T_y$ 对 $y$ 轴的斜率 </p><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>对多元函数而言，即使函数的各个偏导数存在，也不能保证函数在该点连续</p><h1 id="二阶偏导数"><a href="#二阶偏导数" class="headerlink" title="二阶偏导数"></a>二阶偏导数</h1><p>设函数 $f(x,y)$ 在区域 $D​$ 内具有偏导数<br>$$<br>\frac{\partial z}{\partial y}=f_x(x,y), \frac{\partial f}{\partial y}=f_y(x,y)<br>$$</p><p>则在 D 内 $f_x(x,y)$ 、 $f_y(x,y)$ 都是 $x、y$ 的函数. </p><p>如果这两个函数的偏导数也存在, 则称它们是函数 $z=f(x,y)$ 的<strong>二阶偏导数</strong> </p><p>按照对变量求导次序的不同（例如我们可以先求关于 x 的偏导数，或者先求 y 的偏导数，或者先求关于 x 的偏导数再求关于 y 的偏导数），共有下列四个二阶偏导数<br>$$<br>\frac{\partial \frac{\partial z}{\partial x} }{\partial x}= \frac{\partial ^2 z}{\partial x^2 } =f_{xx}(x,y)<br>$$</p><p>$$<br>\frac{\partial \frac{\partial z}{\partial x} }{\partial y}= \frac{\partial ^2 z}{\partial x \partial y} =f_{xy}(x,y)<br>$$</p><p>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y)<br>$$</p><p>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial y}= \frac{\partial ^2 z}{\partial y^2 } =f_{yy}(x,y)<br>$$</p><p>其中第二、第三两个偏导称为<strong>混合偏导数</strong></p><h1 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h1><p>类似地,可以定义三阶、四阶…以及 n 阶偏导数</p><p>我们把二阶及二阶以上的偏导数统称为<strong>高阶偏导数</strong></p><h1 id="注意-1"><a href="#注意-1" class="headerlink" title="注意"></a>注意</h1><p>如果函数 $f ( x, y)$ 的两个二阶混合偏导数<br>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y)<br>$$</p><p>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y)<br>$$</p><p>在区域D 内连续，则在该区域内有<br>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y) =<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y)<br>$$<br>高阶混合偏导数在偏导数连续的条件下与求偏导的<strong>次序无关</strong></p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801018&amp;cid=1004551065" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801018&amp;cid=1004551065</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>多元函数</title>
       <link href="/2018/12/18/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0/"/>
       <url>/2018/12/18/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0/</url>

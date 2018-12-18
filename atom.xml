@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-18T18:25:20.606Z</updated>
+  <updated>2018-12-18T22:53:58.158Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>偏导数</title>
+    <link href="http://blog.changwei.me/2018/12/19/%E5%81%8F%E5%AF%BC%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2018/12/19/偏导数/</id>
+    <published>2018-12-18T18:27:19.000Z</published>
+    <updated>2018-12-18T22:53:58.158Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我们在学习一元函数的时候了解过，一元函数的导数其实就是这个函数在某个点上的变化率，或者切线的斜率。&lt;/p&gt;
+&lt;p&gt;如果这个点是 x
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>多元函数</title>
     <link href="http://blog.changwei.me/2018/12/18/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0/"/>
     <id>http://blog.changwei.me/2018/12/18/多元函数/</id>
     <published>2018-12-18T12:58:57.000Z</published>
-    <updated>2018-12-18T18:25:20.606Z</updated>
+    <updated>2018-12-18T19:08:09.845Z</updated>
     
     <summary type="html">
     
@@ -468,30 +493,6 @@
         
         
           &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>有理函数的不定积分</title>
-    <link href="http://blog.changwei.me/2018/12/05/%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/"/>
-    <id>http://blog.changwei.me/2018/12/05/有理函数的不定积分/</id>
-    <published>2018-12-05T05:25:39.000Z</published>
-    <updated>2018-12-05T05:45:23.482Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;有理函数&quot;&gt;&lt;a href=&quot;#有理函数&quot; class=&quot;headerlink&quot; title=&quot;有理函数&quot;&gt;&lt;/a&gt;有理函数&lt;/h1&gt;&lt;p&gt;有理函数(或有理分式)是指由两个多项式的商所表示的函数，
         
       
     

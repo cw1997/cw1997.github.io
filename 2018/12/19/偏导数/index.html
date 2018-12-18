@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="有理函数有理函数(或有理分式)是指由两个多项式的商所表示的函数， 即具有如下形式的函数$$\frac{P(x)}{Q(x)} = \frac{a_0x^{n-0} + a_1x^{n-1} + a_2x^{n-2} + … + a_{n-1}x^{n-(n-1)} + a_{m-0}x^{m-m} }{ b_0x^{m-0} + b_1x^{m-1} + b_2x^{m-2} + … + b_{m">
+<meta name="description" content="前言我们在学习一元函数的时候了解过，一元函数的导数其实就是这个函数在某个点上的变化率，或者切线的斜率。 如果这个点是 x 轴上的一系列动点并且还连续，则我们把这个连续变化的斜率视为一个函数，就叫做这个一元函数的导函数，简称导数 推广到多元函数 由于多元函数有多个自变量，我们只讨论其中一个自变量变化时，因变量的变化率为多少，则这个变化率关于自变量的函数叫做偏导函数，简称偏导数，这里 偏 的意思指的是">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="有理函数的不定积分">
-<meta property="og:url" content="http://blog.changwei.me/2018/12/05/有理函数的不定积分/index.html">
+<meta property="og:title" content="偏导数">
+<meta property="og:url" content="http://blog.changwei.me/2018/12/19/偏导数/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="有理函数有理函数(或有理分式)是指由两个多项式的商所表示的函数， 即具有如下形式的函数$$\frac{P(x)}{Q(x)} = \frac{a_0x^{n-0} + a_1x^{n-1} + a_2x^{n-2} + … + a_{n-1}x^{n-(n-1)} + a_{m-0}x^{m-m} }{ b_0x^{m-0} + b_1x^{m-1} + b_2x^{m-2} + … + b_{m">
+<meta property="og:description" content="前言我们在学习一元函数的时候了解过，一元函数的导数其实就是这个函数在某个点上的变化率，或者切线的斜率。 如果这个点是 x 轴上的一系列动点并且还连续，则我们把这个连续变化的斜率视为一个函数，就叫做这个一元函数的导函数，简称导数 推广到多元函数 由于多元函数有多个自变量，我们只讨论其中一个自变量变化时，因变量的变化率为多少，则这个变化率关于自变量的函数叫做偏导函数，简称偏导数，这里 偏 的意思指的是">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-05T05:45:23.482Z">
+<meta property="og:updated_time" content="2018-12-18T22:53:58.158Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="有理函数的不定积分">
-<meta name="twitter:description" content="有理函数有理函数(或有理分式)是指由两个多项式的商所表示的函数， 即具有如下形式的函数$$\frac{P(x)}{Q(x)} = \frac{a_0x^{n-0} + a_1x^{n-1} + a_2x^{n-2} + … + a_{n-1}x^{n-(n-1)} + a_{m-0}x^{m-m} }{ b_0x^{m-0} + b_1x^{m-1} + b_2x^{m-2} + … + b_{m">
+<meta name="twitter:title" content="偏导数">
+<meta name="twitter:description" content="前言我们在学习一元函数的时候了解过，一元函数的导数其实就是这个函数在某个点上的变化率，或者切线的斜率。 如果这个点是 x 轴上的一系列动点并且还连续，则我们把这个连续变化的斜率视为一个函数，就叫做这个一元函数的导函数，简称导数 推广到多元函数 由于多元函数有多个自变量，我们只讨论其中一个自变量变化时，因变量的变化率为多少，则这个变化率关于自变量的函数叫做偏导函数，简称偏导数，这里 偏 的意思指的是">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/2018/12/05/有理函数的不定积分/">
+  <link rel="canonical" href="http://blog.changwei.me/2018/12/19/偏导数/">
 
 
 
 
 
-  <title>有理函数的不定积分 | 昌维的博客</title>
+  <title>偏导数 | 昌维的博客</title>
   
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/05/有理函数的不定积分/">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/19/偏导数/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="昌维">
@@ -334,7 +334,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">有理函数的不定积分</h2>
+          <h2 class="post-title" itemprop="name headline">偏导数</h2>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-05T13:25:39+08:00">
-                2018-12-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-19T02:27:19+08:00">
+                2018-12-19
               </time>
             
 
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-05T13:45:23+08:00">
-                2018-12-05
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-19T06:53:58+08:00">
+                2018-12-19
               </time>
             
           </span>
@@ -399,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/05/有理函数的不定积分/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/05/有理函数的不定积分/" itemprop="commentCount"></span>
+                <a href="/2018/12/19/偏导数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/19/偏导数/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2018/12/05/有理函数的不定积分/" class="leancloud_visitors" data-flag-title="有理函数的不定积分">
+             <span id="/2018/12/19/偏导数/" class="leancloud_visitors" data-flag-title="偏导数">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -458,16 +458,36 @@
       
 
       
-        <h1 id="有理函数"><a href="#有理函数" class="headerlink" title="有理函数"></a>有理函数</h1><p>有理函数(或有理分式)是指由两个多项式的商所表示的函数， 即具有如下形式的函数<br>$$<br>\frac{P(x)}{Q(x)} = \frac{a_0x^{n-0} + a_1x^{n-1} + a_2x^{n-2} + … + a_{n-1}x^{n-(n-1)} + a_{m-0}x^{m-m} }{ b_0x^{m-0} + b_1x^{m-1} + b_2x^{m-2} + … + b_{m-1}x^{m-(m-1)} + b_{m-0}x^{m-m} }<br>$$<br>其中m和n为非0证书，ai，bj都是实数，且a0b0≠0</p>
-<h1 id="真分式"><a href="#真分式" class="headerlink" title="真分式"></a>真分式</h1><p>分子 P(x)的次数小于分母Q(x)的次数</p>
-<h1 id="假分式"><a href="#假分式" class="headerlink" title="假分式"></a>假分式</h1><p>分子 P(x)的次数大于或等于分母Q(x)的次数 </p>
-<h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>任一假分式总可写成一个多项式与一个真分式之和</p>
-<h1 id="真分式的分解"><a href="#真分式的分解" class="headerlink" title="真分式的分解"></a>真分式的分解</h1><p>对于真分式 $\frac{P(x)}{Q(x)}$ 当P(x),Q(x)之间没有公因式</p>
-<p>多项式Q(x)课分解为若干个一次多项式的乘积以及若干个判别式小于零的二次多项式的乘积</p>
-<p>如果Q(x)=Q1(x)Q2(x)，其中Q1(x),Q2(x)之间没有公因式，则<br>$$<br>\frac{P(x)}{Q(x)} = \frac{P_1(x)}{Q_1(x)} + \frac{P_2(x)}{Q_2(x)}<br>$$</p>
-<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><p>我们在处理有理函数的积分，可以通过上述结论将这些函数分解成多个式子，分别积分</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们在学习一元函数的时候了解过，一元函数的导数其实就是这个函数在某个点上的变化率，或者切线的斜率。</p>
+<p>如果这个点是 x 轴上的一系列动点并且还连续，则我们把这个连续变化的斜率视为一个函数，就叫做这个一元函数的导函数，简称导数</p>
+<p>推广到多元函数</p>
+<p>由于多元函数有多个自变量，我们只讨论其中一个自变量变化时，因变量的变化率为多少，则这个变化率关于自变量的函数叫做<strong>偏导函数</strong>，简称<strong>偏导数</strong>，这里 <strong>偏</strong> 的意思指的是偏向于某一个自变量的导数</p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>设函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 某一邻域内有定义，当 y 固定在 y_0 而 x 在 x_0 处有增量 dx 时</p>
+<p>相应的函数有增量<br>$$<br>f(x_0+dx,y_0)-f(x_0,y_0)<br>$$<br>如果<br>$$<br>\lim\limits_{dx \to 0}\frac{f(x_0+dx,y_0)-f(x_0,y_0)}{dx}<br>$$<br>存在</p>
+<p>则称此极限为函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 处对 x 的<strong>偏导数</strong> </p>
+<p>记作<br>$$<br>\frac{\partial z}{\partial x} |_{x=x_0,y=y_0}, \frac{\partial f}{\partial x} |_{x=x_0,y=y_0}, z_x|^{x=x_0}_{y=y_0}, f_x(x_0,y_0)<br>$$<br> 类似地，函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 处对 y 的<strong>偏导数</strong><br>$$<br>\lim\limits_{dy \to 0}\frac{f(x_0,y_0+dy)-f(x_0,y_0)}{dy}<br>$$<br>记作<br>$$<br>\frac{\partial z}{\partial y} |_{x=x_0,y=y_0}, \frac{\partial f}{\partial y} |_{x=x_0,y=y_0}, z_y|^{x=x_0}_{y=y_0}, f_y(x_0,y_0)<br>$$</p>
+<h1 id="偏导函数"><a href="#偏导函数" class="headerlink" title="偏导函数"></a>偏导函数</h1><p>如果函数 $f(x,y)$ 在区域 $D$ 内任一点 $(x,y)$ 对 $x$ 的偏导数都存在, 则这个偏导数就是 $x 、 y$ 的函数， </p>
+<p>它就称为函数 $z=f(x,y)$ 对 $x$ 的偏导函数</p>
+<p>记作<br>$$<br>\frac{\partial z}{\partial x}, \frac{\partial f}{\partial x}, z_x, f_x(x,y)<br>$$<br>类似地，可定义函数 $z=f(x,y)$ 对 $y$ 的偏导函数<br>$$<br>\frac{\partial z}{\partial y}, \frac{\partial f}{\partial y}, z_y, f_y(x,y)<br>$$<br><strong>多元函数的偏导函数可简称为偏导数</strong></p>
+<h1 id="几何意义"><a href="#几何意义" class="headerlink" title="几何意义"></a>几何意义</h1><p>一元函数的导数在几何上可表示平面曲线在一点处切线的斜率</p>
+<p>二元函数 $f(x,y)$ 的偏导数 $f_y(x_0 , y_0)$ 就是曲面被平面 $x=x_0$ 所截 </p>
+<p>得的曲线在点 $M_0$ 处的切线 $M_0T_y$ 对 $y$ 轴的斜率 </p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>对多元函数而言，即使函数的各个偏导数存在，也不能保证函数在该点连续</p>
+<h1 id="二阶偏导数"><a href="#二阶偏导数" class="headerlink" title="二阶偏导数"></a>二阶偏导数</h1><p>设函数 $f(x,y)$ 在区域 $D​$ 内具有偏导数<br>$$<br>\frac{\partial z}{\partial y}=f_x(x,y), \frac{\partial f}{\partial y}=f_y(x,y)<br>$$</p>
+<p>则在 D 内 $f_x(x,y)$ 、 $f_y(x,y)$ 都是 $x、y$ 的函数. </p>
+<p>如果这两个函数的偏导数也存在, 则称它们是函数 $z=f(x,y)$ 的<strong>二阶偏导数</strong> </p>
+<p>按照对变量求导次序的不同（例如我们可以先求关于 x 的偏导数，或者先求 y 的偏导数，或者先求关于 x 的偏导数再求关于 y 的偏导数），共有下列四个二阶偏导数<br>$$<br>\frac{\partial \frac{\partial z}{\partial x} }{\partial x}= \frac{\partial ^2 z}{\partial x^2 } =f_{xx}(x,y)<br>$$</p>
+<p>$$<br>\frac{\partial \frac{\partial z}{\partial x} }{\partial y}= \frac{\partial ^2 z}{\partial x \partial y} =f_{xy}(x,y)<br>$$</p>
+<p>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y)<br>$$</p>
+<p>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial y}= \frac{\partial ^2 z}{\partial y^2 } =f_{yy}(x,y)<br>$$</p>
+<p>其中第二、第三两个偏导称为<strong>混合偏导数</strong></p>
+<h1 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h1><p>类似地,可以定义三阶、四阶…以及 n 阶偏导数</p>
+<p>我们把二阶及二阶以上的偏导数统称为<strong>高阶偏导数</strong></p>
+<h1 id="注意-1"><a href="#注意-1" class="headerlink" title="注意"></a>注意</h1><p>如果函数 $f ( x, y)$ 的两个二阶混合偏导数<br>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y)<br>$$</p>
+<p>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y)<br>$$</p>
+<p>在区域D 内连续，则在该区域内有<br>$$<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y) =<br>\frac{\partial \frac{\partial z}{\partial y} }{\partial x}= \frac{\partial ^2 z}{\partial y \partial x} =f_{yx}(x,y)<br>$$<br>高阶混合偏导数在偏导数连续的条件下与求偏导的<strong>次序无关</strong></p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936319&amp;cid=1006265595" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-217012?tid=1003485022#/learn/content?type=detail&amp;id=1004936319&amp;cid=1006265595</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801018&amp;cid=1004551065" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801018&amp;cid=1004551065</a></li>
 </ul>
 
       
@@ -489,7 +509,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://blog.changwei.me/2018/12/05/有理函数的不定积分/" title="有理函数的不定积分">http://blog.changwei.me/2018/12/05/有理函数的不定积分/</a>
+    <a href="http://blog.changwei.me/2018/12/19/偏导数/" title="偏导数">http://blog.changwei.me/2018/12/19/偏导数/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -511,8 +531,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/04/不定积分求解/" rel="next" title="不定积分求解">
-                <i class="fa fa-chevron-left"></i> 不定积分求解
+              <a href="/2018/12/18/多元函数/" rel="next" title="多元函数">
+                <i class="fa fa-chevron-left"></i> 多元函数
               </a>
             
           </div>
@@ -520,10 +540,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/05/定积分/" rel="prev" title="定积分">
-                定积分 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -820,7 +836,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#有理函数"><span class="nav-number">1.</span> <span class="nav-text">有理函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#真分式"><span class="nav-number">2.</span> <span class="nav-text">真分式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#假分式"><span class="nav-number">3.</span> <span class="nav-text">假分式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定理"><span class="nav-number">4.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#真分式的分解"><span class="nav-number">5.</span> <span class="nav-text">真分式的分解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用"><span class="nav-number">6.</span> <span class="nav-text">应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">7.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">2.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#偏导函数"><span class="nav-number">3.</span> <span class="nav-text">偏导函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#几何意义"><span class="nav-number">4.</span> <span class="nav-text">几何意义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">5.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二阶偏导数"><span class="nav-number">6.</span> <span class="nav-text">二阶偏导数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#推广"><span class="nav-number">7.</span> <span class="nav-text">推广</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意-1"><span class="nav-number">8.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">9.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
