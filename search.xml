@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>全微分</title>
+      <link href="/2018/12/19/%E5%85%A8%E5%BE%AE%E5%88%86/"/>
+      <url>/2018/12/19/%E5%85%A8%E5%BE%AE%E5%88%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在一元方程中，微分指的是在当自变量和因变量都很小的时候，可以假设很小的那个区域中的一个点上的切线为这一小段图形，因为当自变量因变量变化都很小的时候，可以近似看成是一条直线，也就是近似把这个点上的导数值认为是整个一小段直线的斜率</p><p>推广到多元方程中，也可以有类似的概念</p><h1 id="回顾一元函数微分"><a href="#回顾一元函数微分" class="headerlink" title="回顾一元函数微分"></a>回顾一元函数微分</h1><p>对于一元函数<br>$$<br>y = f(x)<br>$$<br>的微分为<br>$$<br>dy = Adx + o(dx) = f’(x)dx<br>$$<br>其中 o(dx) 为 dx 的一个高阶无穷小 </p><h1 id="全微分"><a href="#全微分" class="headerlink" title="全微分"></a>全微分</h1><p>根据一元函数微分学中增量与微风的关系得到<br>$$<br>f(x+dx,y)-f(x,y)≈f_x(x,y)dx<br>$$</p><p>$$<br>f(x,y+dy)-f(x,y)≈f_y(x,y)dy<br>$$</p><p>上述两个式子分别是二元函数对 $x、y$ 的偏增量 二元函数对 $x、y$ 的偏微分</p><h1 id="全增量"><a href="#全增量" class="headerlink" title="全增量"></a>全增量</h1><p>设函数 $z = f(x,y)$  在点 $P(x,y)$ 某邻域内有定义</p><p>$P’(x+dx,y+dy)$ 为这领域内任意一点，则称 $f(x+dx,y+dy)-f(x,y)$ 为函数在点 P 对应于自变量增量 $dx、dy$ 的<strong>全增量</strong>，记作 $dz$，即<br>$$<br>dz=f(x+dx,y+dy)-f(x,y)<br>$$</p><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>设函数 $z = f(x,y)$  在点 $P(x,y)$ 某邻域内有定义</p><p>如果函数在点 $(x,y)$ 的全增量<br>$$<br>dz=f(x+dx,y+dy)-f(x,y)<br>$$<br>可以表示为<br>$$<br>dz=Adx+Bdy+o(p)<br>$$<br>其中 A、B 不依赖于 dx 和 dy ，而仅仅与 x、y 有关<br>$$<br>p=\sqrt{(dx)^2+(dy)^2}<br>$$<br>则称函数 $z = f(x,y)$  在点 $P(x,y)$ 可微分</p><p>$Adx+Bdy$ 称为函数 $z = f(x,y)$  在点 $P(x,y)$ 的全微分，记作 $dz$，即<br>$$<br>dz=Adx+Bdy<br>$$</p><h1 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h1><p>如果函数在区域 $D$ 内各点处处都可微分,则称这函数在 $D$ 内可微分</p><h1 id="发现"><a href="#发现" class="headerlink" title="发现"></a>发现</h1><p>如果函数 $z = f(x,y)$  在点 $P(x,y)$ 可微分，则函数在该点必定连续</p><h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>因为<br>$$<br>dz=Adx+Bdy+o(p)<br>$$<br>存在<br>$$<br>\lim\limits_{p \to 0 }{dz} = 0<br>$$<br>则有<br>$$<br>\lim\limits_{(dx,dy) \to (0,0) }{f(x+dx,y+dy)} = \lim\limits_{p \to 0 }{f(x,y)+dz} = f(x,y)<br>$$<br>因此函数 $z = f(x,y)$  在点 $P(x,y)$ 必定连续</p><h1 id="可微分的判定方法"><a href="#可微分的判定方法" class="headerlink" title="可微分的判定方法"></a>可微分的判定方法</h1><p>如果函数 $z = f(x,y)$  在点 $P(x,y)$ 可微分，则该函数在点 $(x,y)$ 的<strong>偏导数必定存在</strong>，且该函数在该点的全微分为<br>$$<br>dz = \frac{\partial z}{\partial x}dx = \frac{\partial z}{\partial y}dy<br>$$</p><h1 id="微分的叠加原理"><a href="#微分的叠加原理" class="headerlink" title="微分的叠加原理"></a>微分的叠加原理</h1><p>二元函数的全微分等于它的两个偏微分之和，即<br>$$<br>dz = \frac{\partial z}{\partial x}dx = \frac{\partial z}{\partial y}dy<br>$$<br>称二元函数的微分符合叠加原理</p><h2 id="推广-1"><a href="#推广-1" class="headerlink" title="推广"></a>推广</h2><p>二元以上的多元函数微分也符合叠加原理</p><h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>如果函数 $z = f(x,y)$  的偏导数 $\frac{\partial z}{\partial x}$ 和 $\frac{\partial z}{\partial y}$ 在点 $(x,y)$ 连续, 则该函数在该点可微分 </p><h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><p>低误差的指数式子近似值计算（请看参考资料）</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801019&amp;cid=1004551070" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801019&amp;cid=1004551070</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>偏导数</title>
       <link href="/2018/12/19/%E5%81%8F%E5%AF%BC%E6%95%B0/"/>
       <url>/2018/12/19/%E5%81%8F%E5%AF%BC%E6%95%B0/</url>
