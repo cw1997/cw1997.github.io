@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>多元复合函数求导法则</title>
+      <link href="/2018/12/21/%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99/"/>
+      <url>/2018/12/21/%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99/</url>
+      
+        <content type="html"><![CDATA[<h1 id="回顾一元复合函数"><a href="#回顾一元复合函数" class="headerlink" title="回顾一元复合函数"></a>回顾一元复合函数</h1><p>$$<br>y=f(u),u=g(x)<br>$$</p><h2 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h2><p>$$<br>\frac{dy}{dx}=\frac{dy}{du}\frac{du}{dx}<br>$$</p><h2 id="微分"><a href="#微分" class="headerlink" title="微分"></a>微分</h2><p>$$<br>dy=f’(u)du=f’(u)g’(x)dx<br>$$</p><h1 id="多元复合函数求导法则"><a href="#多元复合函数求导法则" class="headerlink" title="多元复合函数求导法则"></a>多元复合函数求导法则</h1><p>如果函数 $u=g(t)，v=h(t)$ 都在点 t 可导，函数 $z=f(u,v)$ 在对应点 $(u,v)$ 具有连续偏导数，则复合函数 $z=f[g(t),h(t)]$ 在对应点t可导，且其导数可用下列公式计算<br>$$<br>\frac{dz}{dt}=\frac{\partial z}{\partial u}\frac{du}{dt}+\frac{\partial z}{\partial v}\frac{dv}{dt}<br>$$</p><h1 id="全导数"><a href="#全导数" class="headerlink" title="全导数"></a>全导数</h1><p>上述式子中的<br>$$<br>\frac{dz}{dt}<br>$$<br>称为全导数</p><h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>如果 $u=g(x,y)$ 及 $v=h(x,y)$ 都在点 $(x,y)$ 具有 对 x 和 y 的偏导数，且函数 $z=f(u,v)$ 在对应点 $(u,v)$ 具有连续偏导数，则复合函数 $z=f[g(x,y),h(x,y)]$ 在对应点 $(x,y)$ 的两个偏导数存在，且可用下列公式计算<br>$$<br>\frac{dz}{dx}=\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x}<br>$$</p><p>$$<br>\frac{dz}{dy}=\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y}<br>$$</p><h2 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h2><p>对于自变量为两个以上的多元复合函数，上述法则依然成立</p><h1 id="全微分形式不变性"><a href="#全微分形式不变性" class="headerlink" title="全微分形式不变性"></a>全微分形式不变性</h1><p>设 $z=f(u,v)$ 具有连续偏导数， 则有全微分<br>$$<br>dz = \frac{\partial z}{\partial u}du + \frac{\partial z}{\partial v}dv<br>$$<br>如果 $u=g(x,y)$ 及 $v=h(x,y)$ 都具有连续偏导数，则复合函数 $z=f[g(x,y),h(x,y)]$ 的全微分仍然为<br>$$<br>dz = \frac{\partial z}{\partial u}du + \frac{\partial z}{\partial v}dv<br>$$</p><h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>$$<br>dz = \frac{\partial z}{\partial u}du + \frac{\partial z}{\partial v}dv \\<br>= (\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x})dx +<br>(\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y})dy \\<br>= \frac{\partial z}{\partial u}(\frac{\partial u}{\partial x}dx+\frac{\partial u}{\partial y}dy) +<br>\frac{\partial z}{\partial v}(\frac{\partial v}{\partial x}dx+\frac{\partial v}{\partial y}dy) \\<br>= \frac{\partial z}{\partial u}du + \frac{\partial z}{\partial v}dv<br>$$</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801019&amp;cid=1004551075" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801019&amp;cid=1004551075</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>全微分</title>
       <link href="/2018/12/19/%E5%85%A8%E5%BE%AE%E5%88%86/"/>
       <url>/2018/12/19/%E5%85%A8%E5%BE%AE%E5%88%86/</url>
