@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2018/12/22/%E5%A4%9A%E5%85%83%E9%9A%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F/"/>
+      <url>/2018/12/22/%E5%A4%9A%E5%85%83%E9%9A%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>多元隐函数求导分为一个方程的情形和方程组情形</p><p>对于两种情况有不同的解法</p><h1 id="一个方程的情形"><a href="#一个方程的情形" class="headerlink" title="一个方程的情形"></a>一个方程的情形</h1><h2 id="隐函数存在定理-1"><a href="#隐函数存在定理-1" class="headerlink" title="隐函数存在定理 1"></a>隐函数存在定理 1</h2><p>设函数 $F ( x , y )$ 的某一邻域内具有连续的偏导数</p><p>且 $F ( x_0 , y_0 ) = 0 , F_y ( x_0 , y_0 ) = 0$ </p><p>则方程 $F(x,y)=0$ 在点 $P(x_0,y_0)$ 的某一邻域内恒能唯一确定一个连续且具有连续导数的函数 $y=f(x)$  </p><p>他满足方程<br>$$<br>y_0=f(x_0)<br>$$<br>并且有如下隐函数求导公式<br>$$<br>\frac{dy}{dx}=-\frac{F_x}{F_y}<br>$$<br>其中，$F_x,f_y$ 分别为函数 f 对于 x 和 y 的偏导数</p><h2 id="证明推导过程"><a href="#证明推导过程" class="headerlink" title="证明推导过程"></a>证明推导过程</h2><p>将方程 $F(x,y)=0$ 所确定的函数 $y=f(x)$ 代入该方程得 $y=f(x,f(x))=0$ ，利用复合求导法则在<br>两边求导得<br>$$<br>F_x+F_y \cdot \frac{dy}{dx}=0<br>$$<br>移项得到<br>$$<br>\frac{dy}{dx}=-\frac{F_x}{F_y}<br>$$</p><h2 id="隐函数的二阶导数"><a href="#隐函数的二阶导数" class="headerlink" title="隐函数的二阶导数"></a>隐函数的二阶导数</h2><p>若 $F ( x , y )$ 的二阶偏导数也都连续, 则还可求隐函数的二阶导数<br>$$<br>\frac{d^2y}{dx^2} = \frac{\partial (-\frac{F_x}{F_y})}{\partial x} + \frac{\partial (-\frac{F_x}{F_y})}{\partial y} \cdot \frac{dy}{dx} \\<br>= -\frac{F_{xx}F_y-F_{yx}F_x}{F_y^2} -\frac{F_{xy}F_y-F_{yy}F_x}{F_y^2}(-\frac{F_x}F_y) \\<br>= -\frac{F_{xx}F_y^2-2F_{xy}F_xF_y+F_{yy}F_x^2}{F_y^3}<br>$$<br>其实就是对一阶隐函数导数的再次求导</p><h2 id="隐函数存在定理2"><a href="#隐函数存在定理2" class="headerlink" title="隐函数存在定理2"></a>隐函数存在定理2</h2><p>设函数 $F(x,y,z)$ 在点 $P(x_0,y_0,z_0)$ 的 的某一邻域内具有连续的偏导数且<br>$$<br>F ( x_0 , y_0 , z_0 ) = 0 ， F_z ( x_0 , y_0 , z_0 ) ≠ 0<br>$$<br>则方程 $F(x,y,z)=0$ 在点 $P(x_0,y_0,z_0)$ 的某一邻域内恒能唯一确定一个连续且具有连续偏导数的函数 $z=f(x,y)$ ，它满足条件 $z_0=f(x_0,y_0)$ ，并有<br>$$<br>\frac{\partial z}{\partial x} = -\frac{F_x}{F_z} \\<br>\frac{\partial z}{\partial y} = -\frac{F_y}{F_z}<br>$$</p><h1 id="方程组的情形"><a href="#方程组的情形" class="headerlink" title="方程组的情形"></a>方程组的情形</h1><p>略</p><p>## </p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801022&amp;cid=1004551080" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801022&amp;cid=1004551080</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>多元复合函数求导法则</title>
       <link href="/2018/12/21/%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99/"/>
       <url>/2018/12/21/%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99/</url>
