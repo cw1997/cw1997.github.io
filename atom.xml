@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-22T17:02:16.484Z</updated>
+  <updated>2018-12-24T13:14:34.561Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>方向导数</title>
+    <link href="http://blog.changwei.me/2018/12/24/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2018/12/24/方向导数/</id>
+    <published>2018-12-24T12:25:38.000Z</published>
+    <updated>2018-12-24T13:14:34.561Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>多元函数微分学的几何意义</title>
     <link href="http://blog.changwei.me/2018/12/22/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89/"/>
     <id>http://blog.changwei.me/2018/12/22/多元函数微分学的几何意义/</id>
     <published>2018-12-22T14:52:30.000Z</published>
-    <updated>2018-12-22T17:02:16.484Z</updated>
+    <updated>2018-12-22T17:16:27.526Z</updated>
     
     <summary type="html">
     
@@ -45,7 +69,7 @@
     <link href="http://blog.changwei.me/2018/12/22/%E5%A4%9A%E5%85%83%E9%9A%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F/"/>
     <id>http://blog.changwei.me/2018/12/22/多元隐函数的求导公式/</id>
     <published>2018-12-21T18:06:21.000Z</published>
-    <updated>2018-12-22T07:38:03.155Z</updated>
+    <updated>2018-12-24T13:12:09.139Z</updated>
     
     <summary type="html">
     
@@ -472,30 +496,6 @@
         
         
           &lt;h1 id=&quot;二阶线性微分方程&quot;&gt;&lt;a href=&quot;#二阶线性微分方程&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一阶线性微分方程</title>
-    <link href="http://blog.changwei.me/2018/12/13/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
-    <id>http://blog.changwei.me/2018/12/13/一阶线性微分方程/</id>
-    <published>2018-12-13T13:12:49.000Z</published>
-    <updated>2018-12-13T13:14:30.176Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;一阶线性微分方程&quot;&gt;&lt;a href=&quot;#一阶线性微分方程&quot; class=&quot;headerlink&quot;
         
       
     
