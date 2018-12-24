@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="前言我们之前研究过偏导数，指的是一个三元函数，对于每一个坐标轴的导数 但是实际情况中，我们还会研究一个三元函数对于任一方向的导数，而不仅仅是坐标轴方向的导数 所以引出了方向导数的概念 讨论函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 沿某一方向的变化率 设 $l$ 是 $xOy$ 平面上以 $P_0(x_0 ,y_0)$ 为始点的一条射线$$e_l=(cos \alpha, cos \">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-24T13:14:34.561Z">
+<meta property="og:updated_time" content="2018-12-24T13:23:47.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="方向导数">
 <meta name="twitter:description" content="前言我们之前研究过偏导数，指的是一个三元函数，对于每一个坐标轴的导数 但是实际情况中，我们还会研究一个三元函数对于任一方向的导数，而不仅仅是坐标轴方向的导数 所以引出了方向导数的概念 讨论函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 沿某一方向的变化率 设 $l$ 是 $xOy$ 平面上以 $P_0(x_0 ,y_0)$ 为始点的一条射线$$e_l=(cos \alpha, cos \">
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-24T21:14:34+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-24T21:23:47+08:00">
                 2018-12-24
               </time>
             
@@ -469,7 +469,16 @@
 <p>且 $P∈U(P_0)$ 如果函数增量<br>$$<br>f(x_0 + tcos \ \alpha, y_0 + tcos \ \beta)-f(x_0,y_0)<br>$$<br>与 $P$ 到 $P_0$ 的距离 $|PP_0|=t$ 的比值<br>$$<br>\frac{f(x_0 + tcos \ \alpha, y_0 + tcos \ \beta)-f(x_0,y_0)}{t}<br>$$<br>当 $P$ 沿着 $l$ 趋于 $P_0(t \rightarrow o^+ )$ 时的极限存在,则称此 </p>
 <p>极限为函数 $f ( x , y )$ 在点 $P0$ 沿方向 $l$ 的方向导数 </p>
 <p>记作<br>$$<br>\frac{\partial f}{\partial l}|_{(x_0,y_0)} =<br>\lim\limits_{t \to 0^+}{ \frac{f(x_0 + tcos \ \alpha, y_0 + tcos \ \beta)-f(x_0,y_0)}{t} }<br>$$<br> 是函数 $z=f(x,y)$ 在点 $P_0(x_0 ,y_0)$ 处沿方向 $l$ 的变化率</p>
-<h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>如果函数 $z=f(x,y)$ 在点 $P_0(x_0 ,y_0)$ 可微分</p>
+<p>那么函数在该点沿任一方向 $l$ 的方向导数都存在</p>
+<p>且有如下公式成立<br>$$<br>\frac{\partial f}{\partial l}|_{(x_0,y_0)} =<br>f_x(x_0,y_0)cos \ \alpha + f_y(x_0,y_0)cos \ \beta<br>$$<br>其中 $cos \ \alpha, cos \ \beta$ 是方向 $l$ 的方向余弦</p>
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>根据微分定理，有如下公式成立<br>$$<br>f(x_0+dx,y_0+dy)-f(x_0,y_0) \\<br>= f_x(x_0,y_0)dx + f_y(x_0,y_0)dy + o(\sqrt{(dx)^2+(dy)^2})<br>$$<br>令<br>$$<br>dx=tcos \ \alpha, dy=tcos \ \beta<br>$$<br> 则<br>$$<br>\sqrt{(dx)^2+(dy)^2} = t<br>$$<br>当 t 趋于 0 时<br>$$<br>\frac{\partial f}{\partial l}|_{(x_0,y_0)} =<br>\lim\limits_{t \to 0^+}{ \frac{f(x_0 + tcos \ \alpha, y_0 + tcos \ \beta)-f(x_0,y_0)}{t} }<br>$$<br>成立</p>
+<p>证毕</p>
+<h1 id="推广到三元函数"><a href="#推广到三元函数" class="headerlink" title="推广到三元函数"></a>推广到三元函数</h1><p>对于三元函数 $f(x,y,z)$ 来说</p>
+<p>他在空间中的一点 $P_0(x_0,y_0,z_0)$ </p>
+<p>沿着 $e_l=(cos \ \alpha, cos \ \beta, cos \ \gamma )$ 的方向导数为<br>$$<br>\frac{\partial f}{\partial l}|_{(x_0,y_0,z_0)} =<br>\lim\limits_{t \to 0^+}{ \frac{f(x_0 + tcos \ \alpha, y_0 + tcos \ \beta, z_0 + tcos \ \gamma)-f(x_0,y_0,z_0)}{t} }<br>$$<br>如果三元函数 $f(x,y,z)$ 在空间中的一点 $P_0(x_0,y_0,z_0)$ 可微分</p>
+<p>则函数在该点沿着 $e_l=(cos \ \alpha, cos \ \beta, cos \ \gamma )$ 的方向导数为<br>$$<br>\frac{\partial f}{\partial l}|_{(x_0,y_0,z_0)} =<br>\lim\limits_{t \to 0^+}{ \frac{f(x_0 + tcos \ \alpha, y_0 + tcos \ \beta, z_0 + tcos \ \gamma)-f(x_0,y_0,z_0)}{t} } \\<br>= f_x(x_0,y_0,z_0)cos \ \alpha + f_y(x_0,y_0,z_0)cos \ \beta + f_z(x_0,y_0,z_0)cos \ \gamma<br>$$</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
 <li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801023&amp;cid=1004551089" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801023&amp;cid=1004551089</a></li>
 </ul>
 
@@ -819,7 +828,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#讨论"><span class="nav-number">2.</span> <span class="nav-text">讨论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">3.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定理"><span class="nav-number">4.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#讨论"><span class="nav-number">2.</span> <span class="nav-text">讨论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">3.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定理"><span class="nav-number">4.</span> <span class="nav-text">定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">4.1.</span> <span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#推广到三元函数"><span class="nav-number">5.</span> <span class="nav-text">推广到三元函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">6.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
