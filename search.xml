@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>梯度</title>
+      <link href="/2018/12/24/%E6%A2%AF%E5%BA%A6/"/>
+      <url>/2018/12/24/%E6%A2%AF%E5%BA%A6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>设函数 $z=f(x,y)$ 在平面区域 $D$ 内具有一阶连续偏导数</p><p>则对于每一点 $P_0(x_0 ,y_0)∈D$ 都可确定一个向量<br>$$<br>f_x(x_0,y_0)i+f_y(x_0,y_0)j<br>$$<br>称为函数 $z=f(x,y)$ 在 $P_0(x_0 ,y_0)$ 的<strong>梯度</strong></p><p>记作<br>$$<br>gradf(x_0,y_0) , \bigtriangledown f(x_0,y_0)<br>$$<br>则有<br>$$<br>gradf(x_0,y_0) = \bigtriangledown f(x_0,y_0) = f_x(x_0,y_0)i+f_y(x_0,y_0)j<br>$$</p><h1 id="向量微分算子（Nabla算子）"><a href="#向量微分算子（Nabla算子）" class="headerlink" title="向量微分算子（Nabla算子）"></a>向量微分算子（Nabla算子）</h1><p>$$<br>\bigtriangledown = \frac{\partial }{\partial x}i + \frac{\partial }{\partial y}j<br>$$</p><h1 id="梯度与方向导数"><a href="#梯度与方向导数" class="headerlink" title="梯度与方向导数"></a>梯度与方向导数</h1><p>$$<br>\frac{\partial f}{\partial l}|_{(x_0,y_0)} =<br>f_x(x_0,y_0)cos \ \alpha + f_y(x_0,y_0)cos \ \beta = gradf(x_0,y_0) \cdot e_l = |gradf(x_0,y_0)|cos \theta<br>$$</p><p>其中 $\theta$ 是 $gradf(x_0,y_0) , e_l$ 的夹角</p><h1 id="梯度的模"><a href="#梯度的模" class="headerlink" title="梯度的模"></a>梯度的模</h1><p>方向导数与 $e_l$ 的夹角为 0 的时候取得方向导数 $\frac{\partial f}{\partial l}|_{(x_0,y_0)}$ 的最大值，也就是梯度的模</p><p>方向导数与 $e_l$ 的夹角为 π 的时候取得方向导数 $\frac{\partial f}{\partial l}|_{(x_0,y_0)}$ 的最小值，也就是梯度的模的相反数</p><p>方向导数与 $e_l$ 的夹角为 π/2 的时候（正交方向）取得方向导数 $\frac{\partial f}{\partial l}|_{(x_0,y_0)}$ 为0</p><h1 id="等值线"><a href="#等值线" class="headerlink" title="等值线"></a>等值线</h1><p>二元函数 $z=f(x,y)$ 在几何上表示一个曲面</p><p>这曲面被平面 $z = c$ (c是常数)所截得的曲线 L 的方程为<br>$$<br>\begin{equation}<br>\left{<br>             \begin{array}{<strong>lr</strong>}<br>             z=f(x,y) \\<br>             z=c<br>             \end{array}<br>\right.<br>\end{equation}<br>$$<br>这条曲线 L 在 $xOy$ 面上的投影是一条平面曲线 $L^<em>$ ， 它在 $xOy$ 平面上的方程为<br>$$<br>f(x,y)=c<br>$$<br>称平面曲线 $L^</em>$ 为函数 $z=f(x,y)$ 的<strong>等值线</strong></p><p>若 $fx， fy$ 不同时为零</p><p>则等值线 $f(x,y)=c$ 上任一点 $P_0(x_0 ,y_0)$ 处的一个单位法向量为<br>$$<br>n=\frac{(f_x(x_0,y_0),f_y(x_0,y_0))}{\sqrt{f_x^2(x_0,y_0)+f_y^2(x_0,y_0)}}<br>$$</p><h1 id="三元函数的梯度"><a href="#三元函数的梯度" class="headerlink" title="三元函数的梯度"></a>三元函数的梯度</h1><p>三元函数的梯度也是这样一个向量</p><p>它的方向与取得最大方向导数的方向一致</p><p>而它的模为方向导数的最大值 </p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801023&amp;cid=1004551089" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801023&amp;cid=1004551089</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>方向导数</title>
       <link href="/2018/12/24/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0/"/>
       <url>/2018/12/24/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0/</url>

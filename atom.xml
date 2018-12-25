@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-24T13:23:47.601Z</updated>
+  <updated>2018-12-24T15:40:22.476Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>梯度</title>
+    <link href="http://blog.changwei.me/2018/12/24/%E6%A2%AF%E5%BA%A6/"/>
+    <id>http://blog.changwei.me/2018/12/24/梯度/</id>
+    <published>2018-12-24T14:22:39.000Z</published>
+    <updated>2018-12-24T15:40:22.476Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;设函数 $z=f(x,y)$ 在平面区域 $D$ 内具有一阶连续偏导数&lt;/p&gt;
+&lt;p&gt;则对于每一点 $P_0(x_0 ,y_0)∈D$
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>方向导数</title>
     <link href="http://blog.changwei.me/2018/12/24/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0/"/>
     <id>http://blog.changwei.me/2018/12/24/方向导数/</id>
     <published>2018-12-24T12:25:38.000Z</published>
-    <updated>2018-12-24T13:23:47.601Z</updated>
+    <updated>2018-12-24T14:51:27.033Z</updated>
     
     <summary type="html">
     
@@ -267,7 +292,7 @@
     <link href="http://blog.changwei.me/2018/12/16/%E7%A9%BA%E9%97%B4%E7%9B%B4%E7%BA%BF/"/>
     <id>http://blog.changwei.me/2018/12/16/空间直线/</id>
     <published>2018-12-16T08:03:55.000Z</published>
-    <updated>2018-12-17T14:10:49.376Z</updated>
+    <updated>2018-12-24T15:20:15.932Z</updated>
     
     <summary type="html">
     
@@ -472,30 +497,6 @@
         
         
           &lt;h1 id=&quot;高阶线性微分方程&quot;&gt;&lt;a href=&quot;#高阶线性微分方程&quot; class=&quot;headerlink&quot; title=&quot;高阶线性微分方程&quot;&gt;&lt;/a&gt;高阶线性微分方程&lt;/h1&gt;&lt;h2 id=&quot;函数组的线性相关与线性无关&quot;&gt;&lt;a href=&quot;#函数组的线性相关与线性无关&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>二阶线性微分方程</title>
-    <link href="http://blog.changwei.me/2018/12/13/%E4%BA%8C%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
-    <id>http://blog.changwei.me/2018/12/13/二阶线性微分方程/</id>
-    <published>2018-12-13T13:15:03.000Z</published>
-    <updated>2018-12-13T13:15:23.739Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;二阶线性微分方程&quot;&gt;&lt;a href=&quot;#二阶线性微分方程&quot; class=&quot;headerlink&quot;
         
       
     
