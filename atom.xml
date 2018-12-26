@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-25T07:47:22.341Z</updated>
+  <updated>2018-12-26T16:30:13.227Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二重积分</title>
+    <link href="http://blog.changwei.me/2018/12/27/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86/"/>
+    <id>http://blog.changwei.me/2018/12/27/二重积分/</id>
+    <published>2018-12-26T16:05:35.000Z</published>
+    <updated>2018-12-26T16:30:13.227Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>多元函数的极值</title>
@@ -473,30 +497,6 @@
         
         
           &lt;h1 id=&quot;二阶常系数非齐次线性微分方程&quot;&gt;&lt;a href=&quot;#二阶常系数非齐次线性微分方程&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>常系数齐次线性微分方程</title>
-    <link href="http://blog.changwei.me/2018/12/13/%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
-    <id>http://blog.changwei.me/2018/12/13/常系数齐次线性微分方程/</id>
-    <published>2018-12-13T14:28:41.000Z</published>
-    <updated>2018-12-13T15:10:53.294Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;常系数齐次线性微分方程&quot;&gt;&lt;a href=&quot;#常系数齐次线性微分方程&quot; class=&quot;headerlink&quot;
         
       
     
