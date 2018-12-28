@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta name="description" content="前言由于二重积分，是以一个二维平面 D 区域内的点进行积分，所以我们借助直角坐标系来进行二重积分的计算 二重积分的计算法二重积分计算需要根据计算区域 D 的不同来选择不同的方法 X型积分区域条件$${g_1(x)} &amp;lt;= y &amp;lt;= {g_2(x)}, a&amp;lt;=x&amp;lt;=b$$ 其中函数 g1 g2 在区间 [a,b] 上连续 结果$$^{\int\int}_D f(x,y)dxd">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
-<meta property="og:type" content="website">
-<meta property="og:title" content="昌维的博客">
-<meta property="og:url" content="http://blog.changwei.me/archives/2018/11/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="直角坐标系下二重积分的计算方法">
+<meta property="og:url" content="http://blog.changwei.me/2018/12/28/直角坐标系下二重积分的计算方法/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta property="og:description" content="前言由于二重积分，是以一个二维平面 D 区域内的点进行积分，所以我们借助直角坐标系来进行二重积分的计算 二重积分的计算法二重积分计算需要根据计算区域 D 的不同来选择不同的方法 X型积分区域条件$${g_1(x)} &amp;lt;= y &amp;lt;= {g_2(x)}, a&amp;lt;=x&amp;lt;=b$$ 其中函数 g1 g2 在区间 [a,b] 上连续 结果$$^{\int\int}_D f(x,y)dxd">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2018-12-28T06:39:27.693Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="昌维的博客">
-<meta name="twitter:description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta name="twitter:title" content="直角坐标系下二重积分的计算方法">
+<meta name="twitter:description" content="前言由于二重积分，是以一个二维平面 D 区域内的点进行积分，所以我们借助直角坐标系来进行二重积分的计算 二重积分的计算法二重积分计算需要根据计算区域 D 的不同来选择不同的方法 X型积分区域条件$${g_1(x)} &amp;lt;= y &amp;lt;= {g_2(x)}, a&amp;lt;=x&amp;lt;=b$$ 其中函数 g1 g2 在区间 [a,b] 上连续 结果$$^{\int\int}_D f(x,y)dxd">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/archives/2018/11/">
+  <link rel="canonical" href="http://blog.changwei.me/2018/12/28/直角坐标系下二重积分的计算方法/">
 
 
 
 
 
-  <title>Archive | 昌维的博客</title>
+  <title>直角坐标系下二重积分的计算方法 | 昌维的博客</title>
   
 
 
@@ -156,7 +157,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-archive">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -302,740 +303,286 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/28/直角坐标系下二重积分的计算方法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="昌维">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="昌维的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
-         
+          <h2 class="post-title" itemprop="name headline">直角坐标系下二重积分的计算方法</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-28T14:14:02+08:00">
+                2018-12-28
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-28T14:39:27+08:00">
+                2018-12-28
+              </time>
+            
+          </span>
+
           
-        Nice! 73 posts in total. Keep on posting.
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/math/" itemprop="url" rel="index">
+                    <span itemprop="name">math</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2018">2018</h2>
-          </div>
-        
-        
 
-        
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/28/直角坐标系下二重积分的计算方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/28/直角坐标系下二重积分的计算方法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2018/12/28/直角坐标系下二重积分的计算方法/" class="leancloud_visitors" data-flag-title="直角坐标系下二重积分的计算方法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/导数/" itemprop="url">
+          
+
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">导数</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
               
-            </a>
-        
-      </h3>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T20:54:41+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
+              
 
-    </header>
-  </article>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/介值定理/" itemprop="url">
-              
-                <span itemprop="name">介值定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T15:07:17+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/零点定理/" itemprop="url">
-              
-                <span itemprop="name">零点定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T15:04:07+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于二重积分，是以一个二维平面 D 区域内的点进行积分，所以我们借助直角坐标系来进行二重积分的计算</p>
+<h1 id="二重积分的计算法"><a href="#二重积分的计算法" class="headerlink" title="二重积分的计算法"></a>二重积分的计算法</h1><p>二重积分计算需要根据计算区域 D 的不同来选择不同的方法</p>
+<h2 id="X型积分区域"><a href="#X型积分区域" class="headerlink" title="X型积分区域"></a>X型积分区域</h2><h3 id="条件"><a href="#条件" class="headerlink" title="条件"></a>条件</h3><p>$$<br>{g_1(x)} &lt;= y &lt;= {g_2(x)}, a&lt;=x&lt;=b<br>$$</p>
+<p>其中函数 g1 g2 在区间 [a,b] 上连续</p>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p>$$<br>^{\int\int}_D f(x,y)dxdy = \int_a^b dx \int_{g_1(x)}^{g_2(x)} f(x,y)dy<br>$$</p>
+<h2 id="Y型积分区域"><a href="#Y型积分区域" class="headerlink" title="Y型积分区域"></a>Y型积分区域</h2><h3 id="条件-1"><a href="#条件-1" class="headerlink" title="条件"></a>条件</h3><p>$$<br>{g_1(x)} &lt;= y &lt;= {g_2(x)}, a&lt;=x&lt;=b<br>$$</p>
+<p>其中函数 h1 h2 在区间 [c,d] 上连续</p>
+<h3 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h3><p>$$<br>^{\int\int}_D f(x,y)dxdy = \int_c^d dy \int_{h_1(x)}^{h_2(x)} f(x,y)dx<br>$$</p>
+<h2 id="非X非Y型区域"><a href="#非X非Y型区域" class="headerlink" title="非X非Y型区域"></a>非X非Y型区域</h2><p>利用区域可加性质计算</p>
+<p>设闭区域 $D$ 可以分为两个闭区域 $D_1 , D_2$ ，则<br>$$<br>^{\int\int}<em>D f(x,y)d \sigma = ^{\int\int}</em>{D_1} f(x,y)d \sigma = ^{\int\int}_{D_2} f(x,y)d \sigma<br>$$</p>
+<h2 id="即是X型又是Y型区域"><a href="#即是X型又是Y型区域" class="headerlink" title="即是X型又是Y型区域"></a>即是X型又是Y型区域</h2><p>$$<br>^{\int\int}_D f(x,y)dxdy = \int_a^b dx \int_{g_1(x)}^{g_2(x)} f(x,y)dy = ^{\int\int}_D f(x,y)dxdy = \int_c^d dy \int_{h_1(x)}^{h_2(x)} f(x,y)dx<br>$$</p>
+<h1 id="二重积分化为二次积分确定积分限的方法"><a href="#二重积分化为二次积分确定积分限的方法" class="headerlink" title="二重积分化为二次积分确定积分限的方法"></a>二重积分化为二次积分确定积分限的方法</h1><h2 id="X-型"><a href="#X-型" class="headerlink" title="X-型"></a>X-型</h2><p>任取一线穿过区域，上下曲线定 y 限，用域外两线夹区域，左右直线定 x 限</p>
+<h2 id="Y-型"><a href="#Y-型" class="headerlink" title="Y-型"></a>Y-型</h2><p>任取一线穿过区域，左右曲线定 x 限，用域外两线夹区域，上下直线定 y 限</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062593&amp;cid=1004995544" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062593&amp;cid=1004995544</a></li>
+</ul>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/有界性定理/" itemprop="url">
-              
-                <span itemprop="name">有界性定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T14:34:26+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/30/最大值与最小值定理/" itemprop="url">
-              
-                <span itemprop="name">最大值与最小值定理</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-30T14:22:56+08:00" content="2018-11-30">
-          11-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/函数的间断点/" itemprop="url">
-              
-                <span itemprop="name">函数的间断点</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T17:09:42+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/函数的连续性/" itemprop="url">
-              
-                <span itemprop="name">函数的连续性</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T16:34:21+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/无穷小的比较/" itemprop="url">
-              
-                <span itemprop="name">无穷小的比较</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T12:52:33+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/单调有界数列收敛准则/" itemprop="url">
-              
-                <span itemprop="name">单调有界数列收敛准则</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T11:23:53+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/28/利用夹逼准则证明函数极限/" itemprop="url">
-              
-                <span itemprop="name">利用夹逼准则证明函数极限</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-28T10:46:08+08:00" content="2018-11-28">
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/27/夹逼准则/" itemprop="url">
-              
-                <span itemprop="name">夹逼准则</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-27T22:33:44+08:00" content="2018-11-27">
-          11-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/27/极限的运算法则/" itemprop="url">
-              
-                <span itemprop="name">极限的运算法则</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-27T20:38:18+08:00" content="2018-11-27">
-          11-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/27/无穷小与无穷大/" itemprop="url">
-              
-                <span itemprop="name">无穷小与无穷大</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-27T18:28:22+08:00" content="2018-11-27">
-          11-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/26/函数与极限/" itemprop="url">
-              
-                <span itemprop="name">函数与极限</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T19:42:11+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/26/函数/" itemprop="url">
-              
-                <span itemprop="name">函数</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T18:42:02+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/26/设计模式总结/" itemprop="url">
-              
-                <span itemprop="name">设计模式总结</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T14:23:05+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/25/数学归纳法/" itemprop="url">
-              
-                <span itemprop="name">数学归纳法</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-25T15:43:57+08:00" content="2018-11-25">
-          11-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/25/数学叙述/" itemprop="url">
-              
-                <span itemprop="name">数学叙述</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-25T12:35:57+08:00" content="2018-11-25">
-          11-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/24/基尔霍夫电压定律（KVL）/" itemprop="url">
-              
-                <span itemprop="name">基尔霍夫电压定律（KVL）</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-24T22:00:04+08:00" content="2018-11-24">
-          11-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/24/基尔霍夫电流定律（KCL）/" itemprop="url">
-              
-                <span itemprop="name">基尔霍夫电流定律（KCL）</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-24T21:49:02+08:00" content="2018-11-24">
-          11-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    昌维
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://blog.changwei.me/2018/12/28/直角坐标系下二重积分的计算方法/" title="直角坐标系下二重积分的计算方法">http://blog.changwei.me/2018/12/28/直角坐标系下二重积分的计算方法/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/27/二重积分/" rel="next" title="二重积分">
+                <i class="fa fa-chevron-left"></i> 二重积分
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2018/11/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/11/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1043,6 +590,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1065,8 +621,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -1247,6 +812,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二重积分的计算法"><span class="nav-number">2.</span> <span class="nav-text">二重积分的计算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#X型积分区域"><span class="nav-number">2.1.</span> <span class="nav-text">X型积分区域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#条件"><span class="nav-number">2.1.1.</span> <span class="nav-text">条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果"><span class="nav-number">2.1.2.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Y型积分区域"><span class="nav-number">2.2.</span> <span class="nav-text">Y型积分区域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#条件-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果-1"><span class="nav-number">2.2.2.</span> <span class="nav-text">结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非X非Y型区域"><span class="nav-number">2.3.</span> <span class="nav-text">非X非Y型区域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#即是X型又是Y型区域"><span class="nav-number">2.4.</span> <span class="nav-text">即是X型又是Y型区域</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二重积分化为二次积分确定积分限的方法"><span class="nav-number">3.</span> <span class="nav-text">二重积分化为二次积分确定积分限的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#X-型"><span class="nav-number">3.1.</span> <span class="nav-text">X-型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Y-型"><span class="nav-number">3.2.</span> <span class="nav-text">Y-型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">4.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -1403,6 +984,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
