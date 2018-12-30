@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="前言当计算的二重积分的范围是一个类似于圆形的图案，例如是如下表达式对应的范围$$D:1&amp;lt;=x^2+y^2&amp;lt;=4$$我们该怎么计算呢？ 我们可以根据定积分的区域可加性性质来处理$$^{\int\int}D f(x,y)d \sigma = ^{\int\int}{D_1} f(x,y)d \sigma + ^{\int\int}_{D_2} f(x,y)d \sigma + ^{\int">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-29T15:59:25.745Z">
+<meta property="og:updated_time" content="2018-12-30T07:43:11.510Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="极坐标系下二重积分的计算方法">
 <meta name="twitter:description" content="前言当计算的二重积分的范围是一个类似于圆形的图案，例如是如下表达式对应的范围$$D:1&amp;lt;=x^2+y^2&amp;lt;=4$$我们该怎么计算呢？ 我们可以根据定积分的区域可加性性质来处理$$^{\int\int}D f(x,y)d \sigma = ^{\int\int}{D_1} f(x,y)d \sigma + ^{\int\int}_{D_2} f(x,y)d \sigma + ^{\int">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-29T23:59:25+08:00">
-                2018-12-29
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-30T15:43:11+08:00">
+                2018-12-30
               </time>
             
           </span>
@@ -459,8 +459,12 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>当计算的二重积分的范围是一个类似于圆形的图案，例如是如下表达式对应的范围<br>$$<br>D:1&lt;=x^2+y^2&lt;=4<br>$$<br>我们该怎么计算呢？</p>
-<p>我们可以根据定积分的区域可加性性质来处理<br>$$<br>^{\int\int}<em>D f(x,y)d \sigma = ^{\int\int}</em>{D_1} f(x,y)d \sigma + ^{\int\int}_{D_2} f(x,y)d \sigma + ^{\int\int}_{D_3} f(x,y)d \sigma + ^{\int\int}_{D_4} f(x,y)d \sigma<br>$$<br>但是这样计算十分麻烦，我们可以转换成极坐标来计算</p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p>- </p>
+<p>我们可以根据定积分的区域可加性性质来处理<br>$$<br>^{\int\int}<em>D f(x,y)d \sigma = ^{\int\int}</em>{D_1} f(x,y)d \sigma + ^{\int\int}_{D_2} f(x,y)d \sigma + ^{\int\int}_{D_3} f(x,y)d \sigma + ^{\int\int}_{D_4} f(x,y)d \sigma<br>$$<br>但是这样计算十分麻烦，如果二重积分的积分区域使用极坐标来表示比较简单，那么我们可以考虑在极坐标系下计算二重积分</p>
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>计算<br>$$<br>I=^{\int\int}_D f(x,y)d \sigma<br>$$<br>可以可以用一系列的同心圆和一系列的设想划分 D</p>
+<p>此时<br>$$<br>d \sigma_i = \frac{1}{2}(\rho_i + d\rho_i)^2d\theta_i - \frac{1}{2}\rho_i^2d\theta_i = \frac{\rho_i+(\rho_i+d\rho_i)}{2}d\rho_i d\theta<br>$$</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062593&amp;cid=1004995545" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062593&amp;cid=1004995545</a></li>
+</ul>
 
       
     </div>
@@ -512,6 +516,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/30/三重积分/" rel="prev" title="三重积分">
+                三重积分 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -633,7 +641,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-count">75</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -808,7 +816,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">2.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题"><span class="nav-number">2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
