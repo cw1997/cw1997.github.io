@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2018-12-30T15:10:11.431Z</updated>
+  <updated>2019-01-01T09:30:21.925Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>格林公式</title>
+    <link href="http://blog.changwei.me/2019/01/01/%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F/"/>
+    <id>http://blog.changwei.me/2019/01/01/格林公式/</id>
+    <published>2019-01-01T09:00:00.000Z</published>
+    <updated>2019-01-01T09:30:21.925Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我们是否有办法得知某个不规则的平面图形的面积，当围成这个平面图形的曲线函数是已知的情况下？&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>对弧长的曲线积分</title>
@@ -144,7 +169,7 @@
     <link href="http://blog.changwei.me/2018/12/27/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86/"/>
     <id>http://blog.changwei.me/2018/12/27/二重积分/</id>
     <published>2018-12-26T16:05:35.000Z</published>
-    <updated>2018-12-30T09:07:48.801Z</updated>
+    <updated>2019-01-01T09:19:41.921Z</updated>
     
     <summary type="html">
     
@@ -340,7 +365,7 @@
     <link href="http://blog.changwei.me/2018/12/19/%E5%81%8F%E5%AF%BC%E6%95%B0/"/>
     <id>http://blog.changwei.me/2018/12/19/偏导数/</id>
     <published>2018-12-18T18:27:19.000Z</published>
-    <updated>2018-12-19T17:30:07.884Z</updated>
+    <updated>2019-01-01T09:18:54.957Z</updated>
     
     <summary type="html">
     
@@ -472,31 +497,6 @@
         
         
           &lt;h1 id=&quot;空间直线一般方程&quot;&gt;&lt;a href=&quot;#空间直线一般方程&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>平面及其方程</title>
-    <link href="http://blog.changwei.me/2018/12/16/%E5%B9%B3%E9%9D%A2%E5%8F%8A%E5%85%B6%E6%96%B9%E7%A8%8B/"/>
-    <id>http://blog.changwei.me/2018/12/16/平面及其方程/</id>
-    <published>2018-12-15T17:58:30.000Z</published>
-    <updated>2018-12-15T18:27:30.957Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;法线向量&quot;&gt;&lt;a href=&quot;#法线向量&quot; class=&quot;headerlink&quot; title=&quot;法线向量&quot;&gt;&lt;/a&gt;法线向量&lt;/h1&gt;&lt;p&gt;与平面垂直的非零向量&lt;/p&gt;
-&lt;h1 id=&quot;点法式方程&quot;&gt;&lt;a href=&quot;#点法式方程&quot;
         
       
     

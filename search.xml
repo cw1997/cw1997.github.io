@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>格林公式</title>
+      <link href="/2019/01/01/%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F/"/>
+      <url>/2019/01/01/%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们是否有办法得知某个不规则的平面图形的面积，当围成这个平面图形的曲线函数是已知的情况下？</p><h1 id="单连通与复连通区域"><a href="#单连通与复连通区域" class="headerlink" title="单连通与复连通区域"></a>单连通与复连通区域</h1><p>D 为平面区域</p><p><strong>如果 D 内任一闭曲线所围的部分都属于 D</strong> </p><p>则称 D 为平面<strong>单连通区域</strong></p><p>否则称为<strong>复连通区域</strong></p><h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p>也就是说，单连通区域内部没有洞（空心），复连通区域内有洞（空心）</p><h1 id="边界曲线的方向"><a href="#边界曲线的方向" class="headerlink" title="边界曲线的方向"></a>边界曲线的方向</h1><p>围成一个封闭的平面图形的曲线，我们需要对它定义一个正方向来方便我们后续问题讨论</p><p>因此我们定义如下</p><p>对平面区域 D 的边界曲线 L </p><p>规定 L 的正向如下</p><p>当观察者沿 L 的这个方向行走时</p><p>D 内在他近处的那一部分总在他的左边</p><h2 id="理解-1"><a href="#理解-1" class="headerlink" title="理解"></a>理解</h2><p>也就是说，对于一个没有洞的单连通区域，围成它的曲线 L 的正方向为逆时针方向</p><p>顺着逆时针的方向看过去，内部的封闭图形区域 D 永远在左边</p><h1 id="格林公式"><a href="#格林公式" class="headerlink" title="格林公式"></a>格林公式</h1><p>封闭区域 $D$ 由分段光滑的曲线 $L$ 围成</p><p>函数 $P(x,y), Q(x,y)$ 在 $D$ 上具有一阶连续偏导数</p><p>则有如下结论成立<br>$$<br>\iint \limits_D (\frac{\partial q}{\partial x}-\frac{\partial P}{\partial y})dxdy =<br>\oint_L Pdx + Qdy<br>$$</p><p>我们来看下面这个图形</p><p><img src="/Users/changwei/project/blog/source/_posts/格林公式/George_Green.png" alt="image-20190101171330419"></p><p>设区域 $D$ 满足如下关系<br>$$<br>D={ (x,y)|g_1(x)&lt;=y&lt;=g_2(x), a&lt;=x&lt;=b }<br>$$<br>因为 $\frac{\partial P}{\partial y}$ 连续</p><p>所以<br>$$<br>\iint \limits_D \frac{\partial P}{\partial y} dxdy =<br>\int_a^b { \int_{g_1(x)}^{g_2(x)} \frac{\partial P(x,y)}{\partial y} dy } dx =<br>\int_a^b { P[x,g_2(x)] - P[x,g_1(x)] } dx<br>$$<br>围成这个图形的四条边的曲线积分总和为（因为 $L_3$ 和 $L_4$ 在 $x$ 上的积分为 0 ）所以可以直接排除<br>$$<br>\oint_{L} Pdx = \oint_{L_1} + \oint_{L_2} + 0 + 0 \\<br>= \int_a^b P[x,g_1(x)] dx + \int_b^a P[x,g_2(x)] dx \\<br>= \int_a^b { P[x,g_1(x)] - P[x,g_2(x)] } dx \\<br>= -\iint \limits_D \frac{\partial P}{\partial y} dxdy<br>$$</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062598&amp;cid=1004995577" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062598&amp;cid=1004995577</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>对弧长的曲线积分</title>
       <link href="/2018/12/30/%E5%AF%B9%E5%BC%A7%E9%95%BF%E7%9A%84%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86/"/>
       <url>/2018/12/30/%E5%AF%B9%E5%BC%A7%E9%95%BF%E7%9A%84%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86/</url>
