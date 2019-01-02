@@ -90,7 +90,7 @@
 <meta property="og:description" content="前言我们是否有办法得知某个不规则的平面图形的面积，当围成这个平面图形的曲线函数是已知的情况下？ 单连通与复连通区域D 为平面区域 如果 D 内任一闭曲线所围的部分都属于 D  则称 D 为平面单连通区域 否则称为复连通区域 理解也就是说，单连通区域内部没有洞（空心），复连通区域内有洞（空心） 边界曲线的方向围成一个封闭的平面图形的曲线，我们需要对它定义一个正方向来方便我们后续问题讨论 因此我们定义">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://blog.changwei.me/Users/changwei/project/blog/source/_posts/格林公式/George_Green.png">
-<meta property="og:updated_time" content="2019-01-01T09:30:21.925Z">
+<meta property="og:updated_time" content="2019-01-02T12:43:18.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="格林公式">
 <meta name="twitter:description" content="前言我们是否有办法得知某个不规则的平面图形的面积，当围成这个平面图形的曲线函数是已知的情况下？ 单连通与复连通区域D 为平面区域 如果 D 内任一闭曲线所围的部分都属于 D  则称 D 为平面单连通区域 否则称为复连通区域 理解也就是说，单连通区域内部没有洞（空心），复连通区域内有洞（空心） 边界曲线的方向围成一个封闭的平面图形的曲线，我们需要对它定义一个正方向来方便我们后续问题讨论 因此我们定义">
@@ -364,8 +364,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-01-01T17:30:21+08:00">
-                2019-01-01
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-02T20:43:18+08:00">
+                2019-01-02
               </time>
             
           </span>
@@ -477,10 +477,23 @@
 <h1 id="格林公式"><a href="#格林公式" class="headerlink" title="格林公式"></a>格林公式</h1><p>封闭区域 $D$ 由分段光滑的曲线 $L$ 围成</p>
 <p>函数 $P(x,y), Q(x,y)$ 在 $D$ 上具有一阶连续偏导数</p>
 <p>则有如下结论成立<br>$$<br>\iint \limits_D (\frac{\partial q}{\partial x}-\frac{\partial P}{\partial y})dxdy =<br>\oint_L Pdx + Qdy<br>$$</p>
-<p>我们来看下面这个图形</p>
+<h1 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h1><p>我们来看下面这个图形</p>
 <p><img src="/Users/changwei/project/blog/source/_posts/格林公式/George_Green.png" alt="image-20190101171330419"></p>
 <p>设区域 $D$ 满足如下关系<br>$$<br>D={ (x,y)|g_1(x)&lt;=y&lt;=g_2(x), a&lt;=x&lt;=b }<br>$$<br>因为 $\frac{\partial P}{\partial y}$ 连续</p>
 <p>所以<br>$$<br>\iint \limits_D \frac{\partial P}{\partial y} dxdy =<br>\int_a^b { \int_{g_1(x)}^{g_2(x)} \frac{\partial P(x,y)}{\partial y} dy } dx =<br>\int_a^b { P[x,g_2(x)] - P[x,g_1(x)] } dx<br>$$<br>围成这个图形的四条边的曲线积分总和为（因为 $L_3$ 和 $L_4$ 在 $x$ 上的积分为 0 ）所以可以直接排除<br>$$<br>\oint_{L} Pdx = \oint_{L_1} + \oint_{L_2} + 0 + 0 \\<br>= \int_a^b P[x,g_1(x)] dx + \int_b^a P[x,g_2(x)] dx \\<br>= \int_a^b { P[x,g_1(x)] - P[x,g_2(x)] } dx \\<br>= -\iint \limits_D \frac{\partial P}{\partial y} dxdy<br>$$</p>
+<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><h2 id="计算平面区域面积"><a href="#计算平面区域面积" class="headerlink" title="计算平面区域面积"></a>计算平面区域面积</h2><p>设区域 D 的边界曲线为 L </p>
+<p>取 $P=-y, Q=x$ </p>
+<p>则有<br>$$<br>\int_a^b { P[x,g_2(x)] - P[x,g_1(x)] } dx =<br>\int_a^b (x + y) dx<br>$$</p>
+<h1 id="曲线积分与路径无关"><a href="#曲线积分与路径无关" class="headerlink" title="曲线积分与路径无关"></a>曲线积分与路径无关</h1><h2 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h2><p>设开区域 $G$ 是一个单连通域</p>
+<p>函数 $P(x,y),Q(x,y)$ 在 $G$ 内具有一阶连续偏导数</p>
+<p>则曲线积分<br>$$<br>\int_L Pdx + Qdy<br>$$<br>在 $G$ 内与路径无关(或沿 $G$ 内任意闭曲线的曲线积分为零) 的充分必要条件是</p>
+<p>等式<br>$$<br>\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}<br>$$<br>在 $G$ 内恒成立</p>
+<h2 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h2><p>可以通过格林公式来证明</p>
+<h1 id="格林公式的条件"><a href="#格林公式的条件" class="headerlink" title="格林公式的条件"></a>格林公式的条件</h1><ul>
+<li>区域 $G$ 是单连通区域</li>
+<li>函数 $P(x, y),Q(x, y)$ 在 $G$ 内具有一阶连续偏导数，破坏函数 $P , Q$ 及 $\frac{\partial P}{\partial y} , \frac{\partial Q}{\partial x}$ 连续性的点称为<strong>奇点</strong> </li>
+</ul>
+<h1 id="二阶函数的全微分求积"><a href="#二阶函数的全微分求积" class="headerlink" title="二阶函数的全微分求积"></a>二阶函数的全微分求积</h1><p>略</p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
 <li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062598&amp;cid=1004995577" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062598&amp;cid=1004995577</a></li>
 </ul>
@@ -831,7 +844,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单连通与复连通区域"><span class="nav-number">2.</span> <span class="nav-text">单连通与复连通区域</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解"><span class="nav-number">2.1.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#边界曲线的方向"><span class="nav-number">3.</span> <span class="nav-text">边界曲线的方向</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解-1"><span class="nav-number">3.1.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#格林公式"><span class="nav-number">4.</span> <span class="nav-text">格林公式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单连通与复连通区域"><span class="nav-number">2.</span> <span class="nav-text">单连通与复连通区域</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解"><span class="nav-number">2.1.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#边界曲线的方向"><span class="nav-number">3.</span> <span class="nav-text">边界曲线的方向</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解-1"><span class="nav-number">3.1.</span> <span class="nav-text">理解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#格林公式"><span class="nav-number">4.</span> <span class="nav-text">格林公式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#证明"><span class="nav-number">5.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用"><span class="nav-number">6.</span> <span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计算平面区域面积"><span class="nav-number">6.1.</span> <span class="nav-text">计算平面区域面积</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#曲线积分与路径无关"><span class="nav-number">7.</span> <span class="nav-text">曲线积分与路径无关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定理"><span class="nav-number">7.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明-1"><span class="nav-number">7.2.</span> <span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#格林公式的条件"><span class="nav-number">8.</span> <span class="nav-text">格林公式的条件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二阶函数的全微分求积"><span class="nav-number">9.</span> <span class="nav-text">二阶函数的全微分求积</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">10.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
