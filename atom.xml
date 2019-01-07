@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2019-01-06T08:29:05.126Z</updated>
+  <updated>2019-01-07T15:39:59.049Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>常数项级数</title>
+    <link href="http://blog.changwei.me/2019/01/07/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2019/01/07/常数项级数/</id>
+    <published>2019-01-07T06:41:45.000Z</published>
+    <updated>2019-01-07T15:39:59.049Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最早以前计算圆形的面积，采取的是割圆术&lt;/p&gt;
+&lt;p&gt;计算半径为 $R$ 的圆形面积
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>对坐标的曲面积分</title>
     <link href="http://blog.changwei.me/2019/01/03/%E5%AF%B9%E5%9D%90%E6%A0%87%E7%9A%84%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/"/>
     <id>http://blog.changwei.me/2019/01/03/对坐标的曲面积分/</id>
     <published>2019-01-03T15:56:05.000Z</published>
-    <updated>2019-01-06T08:29:05.126Z</updated>
+    <updated>2019-01-07T06:40:42.846Z</updated>
     
     <summary type="html">
     
@@ -473,31 +498,6 @@
         
         
           &lt;h1 id=&quot;坐标平面&quot;&gt;&lt;a href=&quot;#坐标平面&quot; class=&quot;headerlink&quot; title=&quot;坐标平面&quot;&gt;&lt;/a&gt;坐标平面&lt;/h1&gt;&lt;p&gt;建立了直角坐标系的平面称为坐标平面，记作&lt;br&gt;$$&lt;br&gt;R^2=R \times R = { (x,y)|x,y ∈
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>空间曲线</title>
-    <link href="http://blog.changwei.me/2018/12/17/%E7%A9%BA%E9%97%B4%E6%9B%B2%E7%BA%BF/"/>
-    <id>http://blog.changwei.me/2018/12/17/空间曲线/</id>
-    <published>2018-12-17T14:03:45.000Z</published>
-    <updated>2018-12-26T16:49:43.893Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;空间曲线指的是由两个空间曲面相交，得到的交线&lt;/p&gt;
-&lt;h1 id=&quot;方程&quot;&gt;&lt;a href=&quot;#方程&quot;
         
       
     
