@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="曲面的侧一张纸会有两个面，同理我们可以得出结论： 一个曲面，通常会有两个侧面 分别为内外侧，左右侧，上下侧 但是也有一种特殊情况：莫比乌斯带 有向曲面指定了侧的曲面 指定方法 $cos \ \alpha, cos \ \beta, cos \ \gamma $  $cos \ \alpha $ &amp;gt; 0 前侧 &amp;lt; 0 后侧 $cos \ \beta $ &amp;gt; 0 右侧 &amp;lt; 0">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-01-05T16:47:42.253Z">
+<meta property="og:updated_time" content="2019-01-06T08:29:05.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="对坐标的曲面积分">
 <meta name="twitter:description" content="曲面的侧一张纸会有两个面，同理我们可以得出结论： 一个曲面，通常会有两个侧面 分别为内外侧，左右侧，上下侧 但是也有一种特殊情况：莫比乌斯带 有向曲面指定了侧的曲面 指定方法 $cos \ \alpha, cos \ \beta, cos \ \gamma $  $cos \ \alpha $ &amp;gt; 0 前侧 &amp;lt; 0 后侧 $cos \ \beta $ &amp;gt; 0 右侧 &amp;lt; 0">
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-01-06T00:47:42+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-06T16:29:05+08:00">
                 2019-01-06
               </time>
             
@@ -492,7 +492,25 @@
 <p>则流量为<br>$$<br>A|\overrightarrow{v}| = cos \ \theta = A \overrightarrow{v} \cdot \overrightarrow{n}<br>$$</p>
 <h1 id="流向曲面一侧的流量"><a href="#流向曲面一侧的流量" class="headerlink" title="流向曲面一侧的流量"></a>流向曲面一侧的流量</h1><p>对于曲面一侧的流量，我们可以将曲面无限微分成多个小直面来计算，然后最后求和</p>
 <p>假设每个点上的流量为<br>$$<br>\overrightarrow{v_i} = \overrightarrow{v}(x_i,y_i,z_i) = P(x_i,y_i,z_i)\overrightarrow{i} + Q(x_i,y_i,z_i)\overrightarrow{j} + R(x_i,y_i,z_i)\overrightarrow{k}<br>$$<br>则总流量约等于<br>$$<br>\sum_{i=1}^n v_i \cdot n_i dS_i =<br>\sum_{i=1}^n [ P(x_i,y_i,z_i)cos \ \alpha_i + Q(x_i,y_i,z_i)cos \ \beta_i + R(x_i,y_i,z_i)cos \ \gamma_i ] dS_i<br>$$</p>
-<h1 id="对坐标的曲面积分"><a href="#对坐标的曲面积分" class="headerlink" title="对坐标的曲面积分"></a>对坐标的曲面积分</h1><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<h1 id="对坐标的曲面积分"><a href="#对坐标的曲面积分" class="headerlink" title="对坐标的曲面积分"></a>对坐标的曲面积分</h1><p>设 $\sum $ 为光滑的有向曲面</p>
+<p>函数 $R(x,y,z)$ 在 $\sum $ 上有界</p>
+<p>把 $\sum $ 任意分成 $n$ 块小曲面 $dS_i$ ( $dS_i$ 也代表第 $i$ 小块曲面面积)</p>
+<p>在 $xOy$ 面上的投影为 $(dS_i)_{xy}$ ，$(x_i,y_i,z_i)$ 是 $dS_i$ 上任意一点</p>
+<p>如果当各小块曲面的直径的最大值 $\lambda \to 0$ 时</p>
+<p>下列极限总存在<br>$$<br>\lim\limits_{\lambda \to 0} \sum_{i=1}^n R(x_i,y_i,z_i)(dS_i)_{xy}<br>$$<br>称此极限为函数 $R(x,y,z)$ 在有向曲面 $\sum $ 上对坐标 $x,y$ 的曲面积分</p>
+<p>记作<br>$$<br>\iint\limits_{\sum} R(x,y,z)dxdy<br>$$<br>被积函数 $R(x,y,z)$ </p>
+<p>积分曲面 $\sum $ </p>
+<h1 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h1><p>类似的可以推广到 $dydz$ 对坐标 $y,z$ 的曲面积分</p>
+<p>或者 推广到 $dzdx$ 对坐标 $z,x$ 的曲面积分</p>
+<p>以上三个曲面积分也称为<strong>第二类曲面积分</strong></p>
+<h1 id="简记"><a href="#简记" class="headerlink" title="简记"></a>简记</h1><p>$$<br>\iint\limits_{\sum} R(x,y,z)dydz + \iint\limits_{\sum} R(x,y,z)dzdx + \iint\limits_{\sum} R(x,y,z)dxdy =<br>\iint\limits_{\sum}R(x,y,z)dydz + R(x,y,z)dzdx +  R(x,y,z)dxdy<br>$$</p>
+<p>上述表达式表达的也是曲面一侧的流量</p>
+<h1 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h1><p>设积分曲面 $\sum $ 由方程 $z=z(x,y)$ 给出的</p>
+<p>在 $xOy$ 面上的投影区域为 $D_{xy}$ </p>
+<p>函数 $z=z(x,y)$ 在 $D_{xy}$ 上具有一阶连续偏导数</p>
+<p>被积函数 $R(x,y,z)$ 在 $\sum $ 上连续<br>$$<br>\iint\limits_{\sum} R(x,y,z)dxdy = ±\iint\limits_{D_{xy}} R[x,y,z(x,y)]dxdy<br>$$<br>当 $\sum $ 取上侧为正，下侧为负</p>
+<p>其余两种情况也可以以此类推</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
 <li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062601&amp;cid=1004995589" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062601&amp;cid=1004995589</a></li>
 </ul>
 
@@ -842,7 +860,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#曲面的侧"><span class="nav-number">1.</span> <span class="nav-text">曲面的侧</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲面"><span class="nav-number">2.</span> <span class="nav-text">有向曲面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定方法"><span class="nav-number">2.1.</span> <span class="nav-text">指定方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲面法向量"><span class="nav-number">3.</span> <span class="nav-text">有向曲面法向量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-z-z-x-y"><span class="nav-number">3.1.</span> <span class="nav-text">$ \sum : z=z(x,y) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#上侧"><span class="nav-number">3.1.1.</span> <span class="nav-text">上侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下侧"><span class="nav-number">3.1.2.</span> <span class="nav-text">下侧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-y-y-x-z"><span class="nav-number">3.2.</span> <span class="nav-text">$ \sum : y=y(x,z) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#右侧"><span class="nav-number">3.2.1.</span> <span class="nav-text">右侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#左侧"><span class="nav-number">3.2.2.</span> <span class="nav-text">左侧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-x-z-y-z"><span class="nav-number">3.3.</span> <span class="nav-text">$ \sum : x=z(y,z) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前侧"><span class="nav-number">3.3.1.</span> <span class="nav-text">前侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后侧"><span class="nav-number">3.3.2.</span> <span class="nav-text">后侧</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲线投影面积"><span class="nav-number">4.</span> <span class="nav-text">有向曲线投影面积</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流向直面一侧的流量"><span class="nav-number">5.</span> <span class="nav-text">流向直面一侧的流量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流向曲面一侧的流量"><span class="nav-number">6.</span> <span class="nav-text">流向曲面一侧的流量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对坐标的曲面积分"><span class="nav-number">7.</span> <span class="nav-text">对坐标的曲面积分</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">8.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#曲面的侧"><span class="nav-number">1.</span> <span class="nav-text">曲面的侧</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲面"><span class="nav-number">2.</span> <span class="nav-text">有向曲面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定方法"><span class="nav-number">2.1.</span> <span class="nav-text">指定方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲面法向量"><span class="nav-number">3.</span> <span class="nav-text">有向曲面法向量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-z-z-x-y"><span class="nav-number">3.1.</span> <span class="nav-text">$ \sum : z=z(x,y) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#上侧"><span class="nav-number">3.1.1.</span> <span class="nav-text">上侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下侧"><span class="nav-number">3.1.2.</span> <span class="nav-text">下侧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-y-y-x-z"><span class="nav-number">3.2.</span> <span class="nav-text">$ \sum : y=y(x,z) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#右侧"><span class="nav-number">3.2.1.</span> <span class="nav-text">右侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#左侧"><span class="nav-number">3.2.2.</span> <span class="nav-text">左侧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-x-z-y-z"><span class="nav-number">3.3.</span> <span class="nav-text">$ \sum : x=z(y,z) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前侧"><span class="nav-number">3.3.1.</span> <span class="nav-text">前侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后侧"><span class="nav-number">3.3.2.</span> <span class="nav-text">后侧</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲线投影面积"><span class="nav-number">4.</span> <span class="nav-text">有向曲线投影面积</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流向直面一侧的流量"><span class="nav-number">5.</span> <span class="nav-text">流向直面一侧的流量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流向曲面一侧的流量"><span class="nav-number">6.</span> <span class="nav-text">流向曲面一侧的流量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对坐标的曲面积分"><span class="nav-number">7.</span> <span class="nav-text">对坐标的曲面积分</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#推广"><span class="nav-number">8.</span> <span class="nav-text">推广</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#简记"><span class="nav-number">9.</span> <span class="nav-text">简记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算方法"><span class="nav-number">10.</span> <span class="nav-text">计算方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">11.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
