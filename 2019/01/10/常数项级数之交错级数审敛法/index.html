@@ -73,8 +73,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="昌维的博客" type="application/atom+xml">
 
@@ -83,18 +81,18 @@
 
 
 
-<meta name="description" content="昌维是谁？一个从 软件技术 转专业到 电子工程 的大三学生 昌维现在在哪？台北市大安区 台湾科技大学 这个博客的内容有哪些？这个博客主要更新我目前在电子工程学习的笔记。 主要有：  电路分析 模拟电路 算法 博客搭建技巧 常用工具分享 学习技巧分享  本站使用到的插件 hexo-generator-feed  hexo-math  hexo-deployer-git  hexo-generator">
+<meta name="description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于昌维">
-<meta property="og:url" content="http://blog.changwei.me/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常数项级数之交错级数审敛法">
+<meta property="og:url" content="http://blog.changwei.me/2019/01/10/常数项级数之交错级数审敛法/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="昌维是谁？一个从 软件技术 转专业到 电子工程 的大三学生 昌维现在在哪？台北市大安区 台湾科技大学 这个博客的内容有哪些？这个博客主要更新我目前在电子工程学习的笔记。 主要有：  电路分析 模拟电路 算法 博客搭建技巧 常用工具分享 学习技巧分享  本站使用到的插件 hexo-generator-feed  hexo-math  hexo-deployer-git  hexo-generator">
+<meta property="og:description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-11-24T11:52:13.283Z">
+<meta property="og:updated_time" content="2019-01-09T21:43:14.641Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于昌维">
-<meta name="twitter:description" content="昌维是谁？一个从 软件技术 转专业到 电子工程 的大三学生 昌维现在在哪？台北市大安区 台湾科技大学 这个博客的内容有哪些？这个博客主要更新我目前在电子工程学习的笔记。 主要有：  电路分析 模拟电路 算法 博客搭建技巧 常用工具分享 学习技巧分享  本站使用到的插件 hexo-generator-feed  hexo-math  hexo-deployer-git  hexo-generator">
+<meta name="twitter:title" content="常数项级数之交错级数审敛法">
+<meta name="twitter:description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
 
 
 
@@ -124,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/about/">
+  <link rel="canonical" href="http://blog.changwei.me/2019/01/10/常数项级数之交错级数审敛法/">
 
 
 
 
 
-  <title>关于昌维 | 昌维的博客</title>
+  <title>常数项级数之交错级数审敛法 | 昌维的博客</title>
   
 
 
@@ -307,76 +305,245 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2019/01/10/常数项级数之交错级数审敛法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="昌维">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="昌维的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h2 class="post-title" itemprop="name headline">关于昌维</h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="昌维是谁？"><a href="#昌维是谁？" class="headerlink" title="昌维是谁？"></a>昌维是谁？</h1><p>一个从 <strong>软件技术</strong> 转专业到 <strong>电子工程</strong> 的大三学生</p>
-<h1 id="昌维现在在哪？"><a href="#昌维现在在哪？" class="headerlink" title="昌维现在在哪？"></a>昌维现在在哪？</h1><p>台北市大安区 台湾科技大学</p>
-<h1 id="这个博客的内容有哪些？"><a href="#这个博客的内容有哪些？" class="headerlink" title="这个博客的内容有哪些？"></a>这个博客的内容有哪些？</h1><p>这个博客主要更新我目前在电子工程学习的笔记。</p>
-<p>主要有：</p>
-<ul>
-<li>电路分析</li>
-<li>模拟电路</li>
-<li>算法</li>
-<li>博客搭建技巧</li>
-<li>常用工具分享</li>
-<li>学习技巧分享</li>
-</ul>
-<h1 id="本站使用到的插件"><a href="#本站使用到的插件" class="headerlink" title="本站使用到的插件"></a>本站使用到的插件</h1><ul>
-<li><p>hexo-generator-feed</p>
-</li>
-<li><p>hexo-math</p>
-</li>
-<li><p>hexo-deployer-git</p>
-</li>
-<li><p>hexo-generator-search</p>
-</li>
-<li><p>hexo-renderer-marked</p>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>hexo-theme-next (scheme: Gemini)</p>
-</li>
-</ul>
-<h1 id="如何联系到ta？"><a href="#如何联系到ta？" class="headerlink" title="如何联系到ta？"></a>如何联系到ta？</h1><p>QQ：867597730</p>
-<p>WeChat：changwei1006</p>
-<p>Email：<a href="mailto:changwei1006@gmail.com" target="_blank" rel="noopener">changwei1006@gmail.com</a></p>
-<p>或者通过侧边栏的各项社交网络主页找到我</p>
-<p>互换友情链接请联系我的Email</p>
-<ul>
-<li><p>本博客永久URL为：<a href="https://blog.changwei.me">https://blog.changwei.me</a> </p>
-<p>友情链接中文：昌维的博客 </p>
-<p>英文：changwei’s blog</p>
-</li>
-<li><p>本人个人主页永久URL：<a href="http://www.changwei.me" target="_blank" rel="noopener">http://www.changwei.me</a> </p>
-<p>友情链接中文：昌维的网站 </p>
-<p>英文：changwei’s website</p>
-</li>
-</ul>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>无</p>
-<p>b</p>
-<p>ben’re</p>
-
+          <h2 class="post-title" itemprop="name headline">常数项级数之交错级数审敛法</h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-10T05:43:14+08:00">
+                2019-01-10
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-10T05:43:14+08:00">
+                2019-01-10
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/10/常数项级数之交错级数审敛法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/10/常数项级数之交错级数审敛法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/01/10/常数项级数之交错级数审敛法/" class="leancloud_visitors" data-flag-title="常数项级数之交错级数审敛法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    昌维
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://blog.changwei.me/2019/01/10/常数项级数之交错级数审敛法/" title="常数项级数之交错级数审敛法">http://blog.changwei.me/2019/01/10/常数项级数之交错级数审敛法/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/09/常数项级数之正项级数审敛法/" rel="next" title="常数项级数之正项级数审敛法.md">
+                <i class="fa fa-chevron-left"></i> 常数项级数之正项级数审敛法.md
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
   </div>
 
 
@@ -416,17 +583,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -606,22 +764,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#昌维是谁？"><span class="nav-number">1.</span> <span class="nav-text">昌维是谁？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#昌维现在在哪？"><span class="nav-number">2.</span> <span class="nav-text">昌维现在在哪？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#这个博客的内容有哪些？"><span class="nav-number">3.</span> <span class="nav-text">这个博客的内容有哪些？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本站使用到的插件"><span class="nav-number">4.</span> <span class="nav-text">本站使用到的插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">4.1.</span> <span class="nav-text">主题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何联系到ta？"><span class="nav-number">5.</span> <span class="nav-text">如何联系到ta？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他"><span class="nav-number">6.</span> <span class="nav-text">其他</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
