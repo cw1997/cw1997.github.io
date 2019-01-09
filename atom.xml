@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2019-01-08T14:26:54.147Z</updated>
+  <updated>2019-01-09T10:48:56.150Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常数项级数的审敛法</title>
+    <link href="http://blog.changwei.me/2019/01/09/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95/"/>
+    <id>http://blog.changwei.me/2019/01/09/常数项级数的审敛法/</id>
+    <published>2019-01-09T09:02:47.000Z</published>
+    <updated>2019-01-09T10:48:56.150Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;正项级数&quot;&gt;&lt;a href=&quot;#正项级数&quot; class=&quot;headerlink&quot; title=&quot;正项级数&quot;&gt;&lt;/a&gt;正项级数&lt;/h1&gt;&lt;p&gt;一个级数中各项都是正数或者 0 ，这样的级数叫做正项级数&lt;br&gt;$$&lt;br&gt;u_n &amp;gt;=
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>常数项级数</title>
@@ -474,30 +498,6 @@
         
           &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;设 D 是 R^2 的一个非空子集&lt;/p&gt;
 &lt;p&gt;如果对于 D 内的任一点 (x,y)，按照某种法则都有唯一确定的实数z与之对应，
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>多元函数</title>
-    <link href="http://blog.changwei.me/2018/12/18/%E5%B9%B3%E9%9D%A2%E7%82%B9%E9%9B%86/"/>
-    <id>http://blog.changwei.me/2018/12/18/平面点集/</id>
-    <published>2018-12-18T11:27:15.000Z</published>
-    <updated>2018-12-18T13:10:30.565Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;坐标平面&quot;&gt;&lt;a href=&quot;#坐标平面&quot; class=&quot;headerlink&quot; title=&quot;坐标平面&quot;&gt;&lt;/a&gt;坐标平面&lt;/h1&gt;&lt;p&gt;建立了直角坐标系的平面称为坐标平面，记作&lt;br&gt;$$&lt;br&gt;R^2=R \times R = { (x,y)|x,y ∈
         
       
     

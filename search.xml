@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>常数项级数的审敛法</title>
+      <link href="/2019/01/09/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95/"/>
+      <url>/2019/01/09/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%AE%A1%E6%95%9B%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="正项级数"><a href="#正项级数" class="headerlink" title="正项级数"></a>正项级数</h1><p>一个级数中各项都是正数或者 0 ，这样的级数叫做正项级数<br>$$<br>u_n &gt;= 0(n=1,2,…)<br>$$<br>一个正项级数的部分和为 $s_n$ </p><p>则数列 ${ s_n }$ 是一个单调增加的数列<br>$$<br>s_1 &lt;= s_2 &lt;= … &lt;= s_n &lt;= …<br>$$</p><h1 id="正项级数审敛法"><a href="#正项级数审敛法" class="headerlink" title="正项级数审敛法"></a>正项级数审敛法</h1><h2 id="比较审敛法"><a href="#比较审敛法" class="headerlink" title="比较审敛法"></a>比较审敛法</h2><p>设有两个正项级数<br>$$<br>\sum_{n=1}^{\infty} u_n , \sum_{n=1}^{\infty} v_n<br>$$<br>且<br>$$<br>u_n &lt;= v_n(n=1,2,…)<br>$$<br>如果级数 $\sum_{n=1}^{\infty} v_n $ <strong>收敛</strong></p><p>则级数 $\sum_{n=1}^{\infty} u_n $ <strong>收敛</strong></p><p>反之</p><p>如果级数 $\sum_{n=1}^{\infty} u_n $ <strong>发散</strong></p><p>则级数 $\sum_{n=1}^{\infty} v_n $ <strong>发散</strong></p><h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>设两个正项级数<br>$$<br>\sum_{n=1}^{\infty} u_n , \sum_{n=1}^{\infty} v_n<br>$$<br>的和数列分别为<br>$$<br>s_n, t_n<br>$$<br>通过比较两个部分和数列，因为有条件<br>$$<br>u_n &lt;= v_n(n=1,2,…)<br>$$<br>所以<br>$$<br>s_n = u_1 + u_2 + … + u_n &lt;= v_1 + v_2 + … + v_n &lt;= t_n (n=1,2,…)<br>$$<br>当 $\sum_{n=1}^{\infty} v_n$ 收敛于和 $t_n$ 的时候，由于 $s_n$ 更小，所以肯定也有界</p><p>从而级数 $\sum_{n=1}^{\infty} u_n$ 收敛</p><p>现在证明另一个结论</p><p>设级数 $\sum_{n=1}^{\infty} u_n$ 发散</p><p>若级数 $\sum_{n=1}^{\infty} v_n$ 收敛</p><p>将有级数 $\sum_{n=1}^{\infty} u_n$ 也收敛，与假设矛盾</p><p>级数 $\sum_{n=1}^{\infty} v_n$ 必定发散</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995605" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995605</a></li><li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995606" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995606</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>常数项级数</title>
       <link href="/2019/01/07/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/"/>
       <url>/2019/01/07/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/</url>

@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="曲面的侧一张纸会有两个面，同理我们可以得出结论： 一个曲面，通常会有两个侧面 分别为内外侧，左右侧，上下侧 但是也有一种特殊情况：莫比乌斯带 有向曲面指定了侧的曲面 指定方法 $cos \ \alpha, cos \ \beta, cos \ \gamma $  $cos \ \alpha $ &amp;gt; 0 前侧 &amp;lt; 0 后侧 $cos \ \beta $ &amp;gt; 0 右侧 &amp;lt; 0">
+<meta name="description" content="正项级数一个级数中各项都是正数或者 0 ，这样的级数叫做正项级数$$u_n &amp;gt;= 0(n=1,2,…)$$一个正项级数的部分和为 $s_n$  则数列 ${ s_n }$ 是一个单调增加的数列$$s_1 &amp;lt;= s_2 &amp;lt;= … &amp;lt;= s_n &amp;lt;= …$$ 正项级数审敛法比较审敛法设有两个正项级数$$\sum_{n=1}^{\infty} u_n , \sum_{n=1">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="对坐标的曲面积分">
-<meta property="og:url" content="http://blog.changwei.me/2019/01/03/对坐标的曲面积分/index.html">
+<meta property="og:title" content="常数项级数的审敛法">
+<meta property="og:url" content="http://blog.changwei.me/2019/01/09/常数项级数的审敛法/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="曲面的侧一张纸会有两个面，同理我们可以得出结论： 一个曲面，通常会有两个侧面 分别为内外侧，左右侧，上下侧 但是也有一种特殊情况：莫比乌斯带 有向曲面指定了侧的曲面 指定方法 $cos \ \alpha, cos \ \beta, cos \ \gamma $  $cos \ \alpha $ &amp;gt; 0 前侧 &amp;lt; 0 后侧 $cos \ \beta $ &amp;gt; 0 右侧 &amp;lt; 0">
+<meta property="og:description" content="正项级数一个级数中各项都是正数或者 0 ，这样的级数叫做正项级数$$u_n &amp;gt;= 0(n=1,2,…)$$一个正项级数的部分和为 $s_n$  则数列 ${ s_n }$ 是一个单调增加的数列$$s_1 &amp;lt;= s_2 &amp;lt;= … &amp;lt;= s_n &amp;lt;= …$$ 正项级数审敛法比较审敛法设有两个正项级数$$\sum_{n=1}^{\infty} u_n , \sum_{n=1">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-01-07T06:40:42.846Z">
+<meta property="og:updated_time" content="2019-01-09T10:48:56.150Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="对坐标的曲面积分">
-<meta name="twitter:description" content="曲面的侧一张纸会有两个面，同理我们可以得出结论： 一个曲面，通常会有两个侧面 分别为内外侧，左右侧，上下侧 但是也有一种特殊情况：莫比乌斯带 有向曲面指定了侧的曲面 指定方法 $cos \ \alpha, cos \ \beta, cos \ \gamma $  $cos \ \alpha $ &amp;gt; 0 前侧 &amp;lt; 0 后侧 $cos \ \beta $ &amp;gt; 0 右侧 &amp;lt; 0">
+<meta name="twitter:title" content="常数项级数的审敛法">
+<meta name="twitter:description" content="正项级数一个级数中各项都是正数或者 0 ，这样的级数叫做正项级数$$u_n &amp;gt;= 0(n=1,2,…)$$一个正项级数的部分和为 $s_n$  则数列 ${ s_n }$ 是一个单调增加的数列$$s_1 &amp;lt;= s_2 &amp;lt;= … &amp;lt;= s_n &amp;lt;= …$$ 正项级数审敛法比较审敛法设有两个正项级数$$\sum_{n=1}^{\infty} u_n , \sum_{n=1">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/2019/01/03/对坐标的曲面积分/">
+  <link rel="canonical" href="http://blog.changwei.me/2019/01/09/常数项级数的审敛法/">
 
 
 
 
 
-  <title>对坐标的曲面积分 | 昌维的博客</title>
+  <title>常数项级数的审敛法 | 昌维的博客</title>
   
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2019/01/03/对坐标的曲面积分/">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2019/01/09/常数项级数的审敛法/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="昌维">
@@ -334,7 +334,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">对坐标的曲面积分</h2>
+          <h2 class="post-title" itemprop="name headline">常数项级数的审敛法</h2>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-03T23:56:05+08:00">
-                2019-01-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-09T17:02:47+08:00">
+                2019-01-09
               </time>
             
 
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-01-07T14:40:42+08:00">
-                2019-01-07
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-09T18:48:56+08:00">
+                2019-01-09
               </time>
             
           </span>
@@ -399,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/01/03/对坐标的曲面积分/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/03/对坐标的曲面积分/" itemprop="commentCount"></span>
+                <a href="/2019/01/09/常数项级数的审敛法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/09/常数项级数的审敛法/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2019/01/03/对坐标的曲面积分/" class="leancloud_visitors" data-flag-title="对坐标的曲面积分">
+             <span id="/2019/01/09/常数项级数的审敛法/" class="leancloud_visitors" data-flag-title="常数项级数的审敛法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -458,60 +458,23 @@
       
 
       
-        <h1 id="曲面的侧"><a href="#曲面的侧" class="headerlink" title="曲面的侧"></a>曲面的侧</h1><p>一张纸会有两个面，同理我们可以得出结论：</p>
-<p>一个曲面，通常会有两个侧面</p>
-<p>分别为内外侧，左右侧，上下侧</p>
-<p>但是也有一种特殊情况：莫比乌斯带</p>
-<h1 id="有向曲面"><a href="#有向曲面" class="headerlink" title="有向曲面"></a>有向曲面</h1><p>指定了侧的曲面</p>
-<h2 id="指定方法"><a href="#指定方法" class="headerlink" title="指定方法"></a>指定方法</h2><p> $cos \ \alpha, cos \ \beta, cos \ \gamma $</p>
-<ul>
-<li>$cos \ \alpha $ &gt; 0 前侧 &lt; 0 后侧</li>
-<li>$cos \ \beta $ &gt; 0 右侧 &lt; 0 左侧</li>
-<li>$cos \ \gamma $ &gt; 0 上侧 &lt; 0 下侧</li>
-</ul>
-<p>封闭曲面只有内外侧</p>
-<p>方向通过相量表示</p>
-<h1 id="有向曲面法向量"><a href="#有向曲面法向量" class="headerlink" title="有向曲面法向量"></a>有向曲面法向量</h1><h2 id="sum-z-z-x-y"><a href="#sum-z-z-x-y" class="headerlink" title="$ \sum : z=z(x,y) $"></a>$ \sum : z=z(x,y) $</h2><p>曲面为上下侧</p>
-<h3 id="上侧"><a href="#上侧" class="headerlink" title="上侧"></a>上侧</h3><p>法向量为<br>$$<br>\overrightarrow{n} = (-z_x,-z_y,1)<br>$$</p>
-<h3 id="下侧"><a href="#下侧" class="headerlink" title="下侧"></a>下侧</h3><p>法向量为<br>$$<br>\overrightarrow{n} = (z_x,z_y,-1)<br>$$</p>
-<h2 id="sum-y-y-x-z"><a href="#sum-y-y-x-z" class="headerlink" title="$ \sum : y=y(x,z) $"></a>$ \sum : y=y(x,z) $</h2><p>曲面为左右侧</p>
-<h3 id="右侧"><a href="#右侧" class="headerlink" title="右侧"></a>右侧</h3><p>法向量为<br>$$<br>\overrightarrow{n} = (-y_x,1,-y_z)<br>$$</p>
-<h3 id="左侧"><a href="#左侧" class="headerlink" title="左侧"></a>左侧</h3><p>法向量为<br>$$<br>\overrightarrow{n} = (y_x,-1,y_z)<br>$$</p>
-<h2 id="sum-x-z-y-z"><a href="#sum-x-z-y-z" class="headerlink" title="$ \sum : x=z(y,z) $"></a>$ \sum : x=z(y,z) $</h2><p>曲面为前后侧</p>
-<h3 id="前侧"><a href="#前侧" class="headerlink" title="前侧"></a>前侧</h3><p>法向量为<br>$$<br>\overrightarrow{n} = (1,-x_y,-x_z)<br>$$</p>
-<h3 id="后侧"><a href="#后侧" class="headerlink" title="后侧"></a>后侧</h3><p>法向量为<br>$$<br>\overrightarrow{n} = (-1,x_y,x_z)<br>$$</p>
-<h1 id="有向曲线投影面积"><a href="#有向曲线投影面积" class="headerlink" title="有向曲线投影面积"></a>有向曲线投影面积</h1><p>设 $\sum$ 是有向曲面</p>
-<p>在 $\sum$ 上取一小块曲面 $dS$ </p>
-<p>把 $dS$ 投影到 $xOy$ 面上得一投影区域面积记为 $(d \sigma)_{xy}$ </p>
-<p> $dS$ 在 $xOy$ 面上的投影 $(d \sigma)<em>{xy}$ 为<br>$$<br>\begin{equation}<br>\left{<br>             \begin{array}{<strong>lr</strong>}<br>             (d \sigma)</em>{xy}, cos \ \gamma &gt; 0 \\<br>             -(d \sigma)_{xy}, cos \ \gamma &lt; 0 \\<br>             0 , cos \ \gamma = 0<br>             \end{array}<br>\right.<br>\end{equation}<br>$$</p>
-<h1 id="流向直面一侧的流量"><a href="#流向直面一侧的流量" class="headerlink" title="流向直面一侧的流量"></a>流向直面一侧的流量</h1><p>稳定流动，不可压缩流体的速度场由向量 v 给出<br>$$<br>\overrightarrow{v} = (P(x,y,z),Q(x,y,z),R(x,y,z))<br>$$<br> $\sum $ 是速度场中的一片有向曲面</p>
-<p>三个函数 P Q R 都在这个曲面上连续</p>
-<p>求单位时间内通过指定侧的流体质量，也就是流量</p>
-<p>当面是一个直面的时候，他的流量其实就是常数 A 乘以这个流体速度场在面的法线向量上的高</p>
-<p>假设速度场和法线向量的角度为 $\theta$ </p>
-<p>则流量为<br>$$<br>A|\overrightarrow{v}| = cos \ \theta = A \overrightarrow{v} \cdot \overrightarrow{n}<br>$$</p>
-<h1 id="流向曲面一侧的流量"><a href="#流向曲面一侧的流量" class="headerlink" title="流向曲面一侧的流量"></a>流向曲面一侧的流量</h1><p>对于曲面一侧的流量，我们可以将曲面无限微分成多个小直面来计算，然后最后求和</p>
-<p>假设每个点上的流量为<br>$$<br>\overrightarrow{v_i} = \overrightarrow{v}(x_i,y_i,z_i) = P(x_i,y_i,z_i)\overrightarrow{i} + Q(x_i,y_i,z_i)\overrightarrow{j} + R(x_i,y_i,z_i)\overrightarrow{k}<br>$$<br>则总流量约等于<br>$$<br>\sum_{i=1}^n v_i \cdot n_i dS_i =<br>\sum_{i=1}^n [ P(x_i,y_i,z_i)cos \ \alpha_i + Q(x_i,y_i,z_i)cos \ \beta_i + R(x_i,y_i,z_i)cos \ \gamma_i ] dS_i<br>$$</p>
-<h1 id="对坐标的曲面积分"><a href="#对坐标的曲面积分" class="headerlink" title="对坐标的曲面积分"></a>对坐标的曲面积分</h1><p>设 $\sum $ 为光滑的有向曲面</p>
-<p>函数 $R(x,y,z)$ 在 $\sum $ 上有界</p>
-<p>把 $\sum $ 任意分成 $n$ 块小曲面 $dS_i$ ( $dS_i$ 也代表第 $i$ 小块曲面面积)</p>
-<p>在 $xOy$ 面上的投影为 $(dS_i)_{xy}$ ，$(x_i,y_i,z_i)$ 是 $dS_i$ 上任意一点</p>
-<p>如果当各小块曲面的直径的最大值 $\lambda \to 0$ 时</p>
-<p>下列极限总存在<br>$$<br>\lim\limits_{\lambda \to 0} \sum_{i=1}^n R(x_i,y_i,z_i)(dS_i)_{xy}<br>$$<br>称此极限为函数 $R(x,y,z)$ 在有向曲面 $\sum $ 上对坐标 $x,y$ 的曲面积分</p>
-<p>记作<br>$$<br>\iint\limits_{\sum} R(x,y,z)dxdy<br>$$<br>被积函数 $R(x,y,z)$ </p>
-<p>积分曲面 $\sum $ </p>
-<h1 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h1><p>类似的可以推广到 $dydz$ 对坐标 $y,z$ 的曲面积分</p>
-<p>或者 推广到 $dzdx$ 对坐标 $z,x$ 的曲面积分</p>
-<p>以上三个曲面积分也称为<strong>第二类曲面积分</strong></p>
-<h1 id="简记"><a href="#简记" class="headerlink" title="简记"></a>简记</h1><p>$$<br>\iint\limits_{\sum} R(x,y,z)dydz + \iint\limits_{\sum} R(x,y,z)dzdx + \iint\limits_{\sum} R(x,y,z)dxdy =<br>\iint\limits_{\sum}R(x,y,z)dydz + R(x,y,z)dzdx +  R(x,y,z)dxdy<br>$$</p>
-<p>上述表达式表达的也是曲面一侧的流量</p>
-<h1 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h1><p>设积分曲面 $\sum $ 由方程 $z=z(x,y)$ 给出的</p>
-<p>在 $xOy$ 面上的投影区域为 $D_{xy}$ </p>
-<p>函数 $z=z(x,y)$ 在 $D_{xy}$ 上具有一阶连续偏导数</p>
-<p>被积函数 $R(x,y,z)$ 在 $\sum $ 上连续<br>$$<br>\iint\limits_{\sum} R(x,y,z)dxdy = ±\iint\limits_{D_{xy}} R[x,y,z(x,y)]dxdy<br>$$<br>当 $\sum $ 取上侧为正，下侧为负</p>
-<p>其余两种情况也可以以此类推</p>
+        <h1 id="正项级数"><a href="#正项级数" class="headerlink" title="正项级数"></a>正项级数</h1><p>一个级数中各项都是正数或者 0 ，这样的级数叫做正项级数<br>$$<br>u_n &gt;= 0(n=1,2,…)<br>$$<br>一个正项级数的部分和为 $s_n$ </p>
+<p>则数列 ${ s_n }$ 是一个单调增加的数列<br>$$<br>s_1 &lt;= s_2 &lt;= … &lt;= s_n &lt;= …<br>$$</p>
+<h1 id="正项级数审敛法"><a href="#正项级数审敛法" class="headerlink" title="正项级数审敛法"></a>正项级数审敛法</h1><h2 id="比较审敛法"><a href="#比较审敛法" class="headerlink" title="比较审敛法"></a>比较审敛法</h2><p>设有两个正项级数<br>$$<br>\sum_{n=1}^{\infty} u_n , \sum_{n=1}^{\infty} v_n<br>$$<br>且<br>$$<br>u_n &lt;= v_n(n=1,2,…)<br>$$<br>如果级数 $\sum_{n=1}^{\infty} v_n $ <strong>收敛</strong></p>
+<p>则级数 $\sum_{n=1}^{\infty} u_n $ <strong>收敛</strong></p>
+<p>反之</p>
+<p>如果级数 $\sum_{n=1}^{\infty} u_n $ <strong>发散</strong></p>
+<p>则级数 $\sum_{n=1}^{\infty} v_n $ <strong>发散</strong></p>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>设两个正项级数<br>$$<br>\sum_{n=1}^{\infty} u_n , \sum_{n=1}^{\infty} v_n<br>$$<br>的和数列分别为<br>$$<br>s_n, t_n<br>$$<br>通过比较两个部分和数列，因为有条件<br>$$<br>u_n &lt;= v_n(n=1,2,…)<br>$$<br>所以<br>$$<br>s_n = u_1 + u_2 + … + u_n &lt;= v_1 + v_2 + … + v_n &lt;= t_n (n=1,2,…)<br>$$<br>当 $\sum_{n=1}^{\infty} v_n$ 收敛于和 $t_n$ 的时候，由于 $s_n$ 更小，所以肯定也有界</p>
+<p>从而级数 $\sum_{n=1}^{\infty} u_n$ 收敛</p>
+<p>现在证明另一个结论</p>
+<p>设级数 $\sum_{n=1}^{\infty} u_n$ 发散</p>
+<p>若级数 $\sum_{n=1}^{\infty} v_n$ 收敛</p>
+<p>将有级数 $\sum_{n=1}^{\infty} u_n$ 也收敛，与假设矛盾</p>
+<p>级数 $\sum_{n=1}^{\infty} v_n$ 必定发散</p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062601&amp;cid=1004995589" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062601&amp;cid=1004995589</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995605" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995605</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995606" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995606</a></li>
 </ul>
 
       
@@ -533,7 +496,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://blog.changwei.me/2019/01/03/对坐标的曲面积分/" title="对坐标的曲面积分">http://blog.changwei.me/2019/01/03/对坐标的曲面积分/</a>
+    <a href="http://blog.changwei.me/2019/01/09/常数项级数的审敛法/" title="常数项级数的审敛法">http://blog.changwei.me/2019/01/09/常数项级数的审敛法/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -555,8 +518,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/02/对面积的曲面积分/" rel="next" title="对面积的曲面积分">
-                <i class="fa fa-chevron-left"></i> 对面积的曲面积分
+              <a href="/2019/01/07/常数项级数/" rel="next" title="常数项级数">
+                <i class="fa fa-chevron-left"></i> 常数项级数
               </a>
             
           </div>
@@ -564,10 +527,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/07/常数项级数/" rel="prev" title="常数项级数">
-                常数项级数 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -864,7 +823,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#曲面的侧"><span class="nav-number">1.</span> <span class="nav-text">曲面的侧</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲面"><span class="nav-number">2.</span> <span class="nav-text">有向曲面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定方法"><span class="nav-number">2.1.</span> <span class="nav-text">指定方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲面法向量"><span class="nav-number">3.</span> <span class="nav-text">有向曲面法向量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-z-z-x-y"><span class="nav-number">3.1.</span> <span class="nav-text">$ \sum : z=z(x,y) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#上侧"><span class="nav-number">3.1.1.</span> <span class="nav-text">上侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下侧"><span class="nav-number">3.1.2.</span> <span class="nav-text">下侧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-y-y-x-z"><span class="nav-number">3.2.</span> <span class="nav-text">$ \sum : y=y(x,z) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#右侧"><span class="nav-number">3.2.1.</span> <span class="nav-text">右侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#左侧"><span class="nav-number">3.2.2.</span> <span class="nav-text">左侧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sum-x-z-y-z"><span class="nav-number">3.3.</span> <span class="nav-text">$ \sum : x=z(y,z) $</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前侧"><span class="nav-number">3.3.1.</span> <span class="nav-text">前侧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后侧"><span class="nav-number">3.3.2.</span> <span class="nav-text">后侧</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有向曲线投影面积"><span class="nav-number">4.</span> <span class="nav-text">有向曲线投影面积</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流向直面一侧的流量"><span class="nav-number">5.</span> <span class="nav-text">流向直面一侧的流量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流向曲面一侧的流量"><span class="nav-number">6.</span> <span class="nav-text">流向曲面一侧的流量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对坐标的曲面积分"><span class="nav-number">7.</span> <span class="nav-text">对坐标的曲面积分</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#推广"><span class="nav-number">8.</span> <span class="nav-text">推广</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#简记"><span class="nav-number">9.</span> <span class="nav-text">简记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算方法"><span class="nav-number">10.</span> <span class="nav-text">计算方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">11.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#正项级数"><span class="nav-number">1.</span> <span class="nav-text">正项级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正项级数审敛法"><span class="nav-number">2.</span> <span class="nav-text">正项级数审敛法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#比较审敛法"><span class="nav-number">2.1.</span> <span class="nav-text">比较审敛法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#证明"><span class="nav-number">2.1.1.</span> <span class="nav-text">证明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
