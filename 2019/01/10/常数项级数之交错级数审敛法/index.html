@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta name="description" content="交错级数各项是正负交错的级数 形如如下形式$$u_1 - u_2 + u_3 - u_4 + …$$或$$-u_1 + u_2 - u_3 + u_4 - …$$其中 $u_1, u_2, …$ 都是正数 记作$$\sum_{n=1}^{\infty}(-1)^{n-1}u_n \ (u_n&amp;gt;0)$$ $$\sum_{n=1}^{\infty}(-1)^{n}u_n \ (u_n&amp;gt;0)">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常数项级数之交错级数审敛法">
 <meta property="og:url" content="http://blog.changwei.me/2019/01/10/常数项级数之交错级数审敛法/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta property="og:description" content="交错级数各项是正负交错的级数 形如如下形式$$u_1 - u_2 + u_3 - u_4 + …$$或$$-u_1 + u_2 - u_3 + u_4 - …$$其中 $u_1, u_2, …$ 都是正数 记作$$\sum_{n=1}^{\infty}(-1)^{n-1}u_n \ (u_n&amp;gt;0)$$ $$\sum_{n=1}^{\infty}(-1)^{n}u_n \ (u_n&amp;gt;0)">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-01-09T21:43:14.641Z">
+<meta property="og:updated_time" content="2019-01-11T07:21:00.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常数项级数之交错级数审敛法">
-<meta name="twitter:description" content="一个记录编程自学笔记，电子工程自学笔记，的地方。偶尔发发随想。想要了解更多关于我的事情，请转移至 www.changwei.me">
+<meta name="twitter:description" content="交错级数各项是正负交错的级数 形如如下形式$$u_1 - u_2 + u_3 - u_4 + …$$或$$-u_1 + u_2 - u_3 + u_4 - …$$其中 $u_1, u_2, …$ 都是正数 记作$$\sum_{n=1}^{\infty}(-1)^{n-1}u_n \ (u_n&amp;gt;0)$$ $$\sum_{n=1}^{\infty}(-1)^{n}u_n \ (u_n&amp;gt;0)">
 
 
 
@@ -362,12 +362,34 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-01-10T05:43:14+08:00">
-                2019-01-10
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-11T15:21:00+08:00">
+                2019-01-11
               </time>
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/math/" itemprop="url" rel="index">
+                    <span itemprop="name">math</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -436,7 +458,57 @@
       
 
       
-        
+        <h1 id="交错级数"><a href="#交错级数" class="headerlink" title="交错级数"></a>交错级数</h1><p>各项是正负交错的级数</p>
+<p>形如如下形式<br>$$<br>u_1 - u_2 + u_3 - u_4 + …<br>$$<br>或<br>$$<br>-u_1 + u_2 - u_3 + u_4 - …<br>$$<br><strong>其中 $u_1, u_2, …$ 都是正数</strong></p>
+<h1 id="记作"><a href="#记作" class="headerlink" title="记作"></a>记作</h1><p>$$<br>\sum_{n=1}^{\infty}(-1)^{n-1}u_n \ (u_n&gt;0)<br>$$</p>
+<p>$$<br>\sum_{n=1}^{\infty}(-1)^{n}u_n \ (u_n&gt;0)<br>$$</p>
+<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><p>$$<br>\sum_{n=1}^{\infty}(-1)^{n-1}{\frac{1}{n}} = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + … + (-1)^{n-1}{\frac{1}{n}} + …<br>$$</p>
+<p>$$<br>\sum_{n=1}^{\infty}(-1)^{n-1}{\frac{\ln{n}}{n}} = - \frac{\ln{2}}{2} + \frac{\ln{3}}{3} - \frac{\ln{4}}{4} + … + (-1)^{n-1}{\frac{\ln{n}}{n}} + …<br>$$</p>
+<p>这些都是交错级数</p>
+<h1 id="定理（莱布尼茨定理）"><a href="#定理（莱布尼茨定理）" class="headerlink" title="定理（莱布尼茨定理）"></a>定理（莱布尼茨定理）</h1><p>如果交错级数<br>$$<br>\sum_{n=1}^{\infty}(-1)^{n-1}u_n<br>$$<br>满足条件</p>
+<ul>
+<li>$u_n &gt;= u_{n+1} \ (n=1,2,3,…)$</li>
+<li>$\lim\limits_{n \to \infty} u_n = 0$</li>
+</ul>
+<p>那么级数收敛</p>
+<p>且其和 $s&lt;=u_1$ </p>
+<p>余项 $r_n$ 的绝对值 $|r_n|&lt;= u_{n+1}$ </p>
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>先证明前 $2n$ 项的和 $s_{2n}$ 的极限存在<br>$$<br>s_{2n} = (u_1-u_2) + (u_3-u_4) + .. + (u_{2n-1}-u_{2n}), \ { s_{2n} }<br>$$<br>因为括号里面的每一项都大于 $0$ </p>
+<p>所以这个部分和数列增加</p>
+<p>所以就有<br>$$<br>s_{2n} &gt;= 0<br>$$<br>而再把前 $2n$ 项的和 $s_{2n}$ 写成如下形式<br>$$<br>s_{2n} = u_1 - (u_2-u_3) - (u_4-u_5) - … - (u_{2n-2}-u_{2n-1}) - u_{2n}<br>$$<br>由于括号里面每一项都大于 $0$ </p>
+<p>所以 $u_1$ 减去无数个大于 $0$ 的数，结果一定小于 $u_1$ </p>
+<p>所以就有<br>$$<br>s_{2n} &lt;= u_1<br>$$<br>从而有 $0&lt;=s_{2n}&lt;=u_1$ </p>
+<p>即 数列 $s_{2n}$ 有界，而且这个界限一定小于等于 $u_1$<br>$$<br>\lim\limits_{n \to \infty} s_{2n} = s &lt;= u_1<br>$$</p>
+<p>然后再证明<br>$$<br>\lim\limits_{n \to \infty} s_{2n+1} = s<br>$$<br>因为<br>$$<br>s_{2n+1} = s_{2n} + u_{2n+1}<br>$$<br>并且有界数列有如下定理<br>$$<br>\lim\limits_{n \to \infty} s_{2n+1} = 0<br>$$<br>因此<br>$$<br>\lim\limits_{n \to \infty} s_{2n+1} = \lim\limits_{n \to \infty} (s_{2n} + u_{2n+1}) = s<br>$$<br>所以有<br>$$<br>\lim\limits_{n \to \infty} s_n = s<br>$$<br>且<br>$$<br>s &lt;= u_1<br>$$<br>还有<br>$$<br>r_n = ± (u_{n+1}-u_{n+2}+…)<br>$$<br>所以两端加绝对值符号等于<br>$$<br>|r_n| = u_{n+1}-u_{n+2}+…<br>$$</p>
+<h1 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h1><p>判别交错级数<br>$$<br>\sum_{n=1}^{\infty}(-1)^{n-1}u_n<br>$$<br>的收敛性时</p>
+<p>记<br>$$<br>u=f(n)<br>$$<br>如果数列 ${f(n)}$ 单调减少不容易判断, </p>
+<p>可通过验证当 $x$ 充分大时 $f’(x)&lt;=0$ 来判断当 $n$ 充分大时 数列 ${ f (n)}$ 的单调减少</p>
+<p>如果直接求极限<br>$$<br>\lim\limits_{n \to \infty} f(n)<br>$$<br>有困难</p>
+<p>亦可通过求 $f(n)$ 的右侧极限来求得原函数极限  (假定它存在)<br>$$<br>\lim\limits_{n \to +\infty} f(n)<br>$$</p>
+<h1 id="绝对值级数"><a href="#绝对值级数" class="headerlink" title="绝对值级数"></a>绝对值级数</h1><p>假设有一个常数项级数<br>$$<br>\sum_{i=0}^{\infty} u_n = u_1 + u_2 + … + u_n + …<br>$$<br>它的各项为任意实数</p>
+<p>如果将 $u_n$ 加绝对值以后得到的绝对值级数如下<br>$$<br>\sum_{i=0}^{\infty} |u_n| = |u_1| + |u_2| + … + |u_n| + …<br>$$<br>其中每一项都是正项，所以这个级数为正项级数</p>
+<h1 id="绝对收敛"><a href="#绝对收敛" class="headerlink" title="绝对收敛"></a>绝对收敛</h1><p>如果级数 $\sum_{i=0}^{\infty} |u_n|$ 收敛</p>
+<p>则称级数 $\sum_{i=0}^{\infty} u_n$ <strong>绝对收敛</strong></p>
+<h1 id="条件收敛"><a href="#条件收敛" class="headerlink" title="条件收敛"></a>条件收敛</h1><p>如果级数 $\sum_{i=0}^{\infty} u_n$ 收敛</p>
+<p>而 $\sum_{i=0}^{\infty} |u_n|$ 发散</p>
+<p>则称级数 $\sum_{i=0}^{\infty} u_n$ <strong>条件收敛</strong></p>
+<h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>如果级数 $\sum_{i=0}^{\infty} u_n$ <strong>绝对收敛</strong></p>
+<p>则级数 $\sum_{i=0}^{\infty} u_n$ 必定收敛</p>
+<p>证明过程请查看参考资料 第 13 页</p>
+<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><p>根据这个结论，对于一般的级数 $\sum_{i=0}^{\infty} u_n$ </p>
+<p>如果我们用正项级数的审敛法判定级数 $\sum_{i=0}^{\infty} |u_n|$ 收敛</p>
+<p>则此级数收敛</p>
+<p>这就使得一大类级数的收敛性判定问题</p>
+<p>转化为正项级数的收敛性判定问题 </p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>一般来说，如果级数 $\sum_{i=0}^{\infty} |u_n|$ 发散，不能断定级数 $\sum_{i=0}^{\infty} u_n$ 也发散</p>
+<p>但是如果用比值审敛法或者根值审敛法根据<br>$$<br>\lim\limits_{n \to \infty} |\frac{u_{n+1}}{u_n} | = \rho &gt; 1<br>$$<br>或者<br>$$<br>\lim\limits_{n \to \infty} \sqrt[n]{|u_n|} = \rho &gt; 1<br>$$</p>
+<p>判定级数 $\sum_{i=0}^{\infty} |u_n|$ 发散</p>
+<p>则可以断定级数 $\sum_{i=0}^{\infty} u_n$ 必定发散</p>
+<p>因为从 $\rho &gt; 1$ 可推知<br>$$<br>\lim\limits_{n \to \infty} |u_n| ≠ 0<br>$$<br>从而<br>$$<br>\lim\limits_{n \to \infty} u_n ≠ 0<br>$$<br>因此级数 $\sum_{i=0}^{\infty} u_n$ 发散</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995606" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062605&amp;cid=1004995606</a></li>
+</ul>
+
       
     </div>
     
@@ -583,8 +655,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -764,6 +845,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#交错级数"><span class="nav-number">1.</span> <span class="nav-text">交错级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#记作"><span class="nav-number">2.</span> <span class="nav-text">记作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例子"><span class="nav-number">3.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定理（莱布尼茨定理）"><span class="nav-number">4.</span> <span class="nav-text">定理（莱布尼茨定理）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">4.1.</span> <span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技巧"><span class="nav-number">5.</span> <span class="nav-text">技巧</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绝对值级数"><span class="nav-number">6.</span> <span class="nav-text">绝对值级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绝对收敛"><span class="nav-number">7.</span> <span class="nav-text">绝对收敛</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#条件收敛"><span class="nav-number">8.</span> <span class="nav-text">条件收敛</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定理"><span class="nav-number">9.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用"><span class="nav-number">10.</span> <span class="nav-text">应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">11.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">12.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
