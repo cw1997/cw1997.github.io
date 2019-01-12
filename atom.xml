@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2019-01-11T07:21:00.586Z</updated>
+  <updated>2019-01-12T11:00:04.904Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>幂级数</title>
+    <link href="http://blog.changwei.me/2019/01/12/%E5%B9%82%E7%BA%A7%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2019/01/12/幂级数/</id>
+    <published>2019-01-12T08:58:49.000Z</published>
+    <updated>2019-01-12T11:00:04.904Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;函数项级数&quot;&gt;&lt;a href=&quot;#函数项级数&quot; class=&quot;headerlink&quot; title=&quot;函数项级数&quot;&gt;&lt;/a&gt;函数项级数&lt;/h1&gt;&lt;p&gt;给一个定义在区间上的函数数列&lt;br&gt;$$&lt;br&gt;u_1(x), u_1(x), … , u_n(x),
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>常数项级数之交错级数审敛法</title>
     <link href="http://blog.changwei.me/2019/01/10/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E4%B9%8B%E4%BA%A4%E9%94%99%E7%BA%A7%E6%95%B0%E5%AE%A1%E6%95%9B%E6%B3%95/"/>
     <id>http://blog.changwei.me/2019/01/10/常数项级数之交错级数审敛法/</id>
     <published>2019-01-09T21:43:14.000Z</published>
-    <updated>2019-01-11T07:21:00.586Z</updated>
+    <updated>2019-01-11T09:06:50.930Z</updated>
     
     <summary type="html">
     
@@ -473,31 +497,6 @@
         
         
           &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>偏导数</title>
-    <link href="http://blog.changwei.me/2018/12/19/%E5%81%8F%E5%AF%BC%E6%95%B0/"/>
-    <id>http://blog.changwei.me/2018/12/19/偏导数/</id>
-    <published>2018-12-18T18:27:19.000Z</published>
-    <updated>2019-01-01T09:18:54.957Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我们在学习一元函数的时候了解过，一元函数的导数其实就是这个函数在某个点上的变化率，或者切线的斜率。&lt;/p&gt;
-&lt;p&gt;如果这个点是 x
         
       
     
