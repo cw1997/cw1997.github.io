@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="向量的模借助勾股定理，可以得出向量的模的计算方式$$|r| = |\overrightarrow{OM}| = \sqrt{(|\overrightarrow{OP}|^2 + |\overrightarrow{OQ}|^2) + |\overrightarrow{OR}|^2}$$又因为$$\overrightarrow{OP} = xi \\\overrightarrow{OQ} = yj \">
+<meta name="description" content="泰勒级数如果函数 $f(x)​$ 在点 $x_0​$ 的某个领域 $U(x_0)​$ 内有 $n+1​$ 阶导数 则函数在该领域内有泰勒公式$$f(x) = f(x_0) + f’(x_0)(x-x_0)+…+ \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)$$其中的 $R_n(x) $ 是拉格朗日型余项$$R_n(x) = \frac{f^{(n+1)}(\x">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从空间直角坐标系来理解向量">
-<meta property="og:url" content="http://blog.changwei.me/2018/12/15/从空间直角坐标系来理解向量/index.html">
+<meta property="og:title" content="函数展开成幂级数">
+<meta property="og:url" content="http://blog.changwei.me/2019/01/18/函数展开成幂级数/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="向量的模借助勾股定理，可以得出向量的模的计算方式$$|r| = |\overrightarrow{OM}| = \sqrt{(|\overrightarrow{OP}|^2 + |\overrightarrow{OQ}|^2) + |\overrightarrow{OR}|^2}$$又因为$$\overrightarrow{OP} = xi \\\overrightarrow{OQ} = yj \">
+<meta property="og:description" content="泰勒级数如果函数 $f(x)​$ 在点 $x_0​$ 的某个领域 $U(x_0)​$ 内有 $n+1​$ 阶导数 则函数在该领域内有泰勒公式$$f(x) = f(x_0) + f’(x_0)(x-x_0)+…+ \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)$$其中的 $R_n(x) $ 是拉格朗日型余项$$R_n(x) = \frac{f^{(n+1)}(\x">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-15T10:43:16.754Z">
+<meta property="og:updated_time" content="2019-01-18T06:57:37.582Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从空间直角坐标系来理解向量">
-<meta name="twitter:description" content="向量的模借助勾股定理，可以得出向量的模的计算方式$$|r| = |\overrightarrow{OM}| = \sqrt{(|\overrightarrow{OP}|^2 + |\overrightarrow{OQ}|^2) + |\overrightarrow{OR}|^2}$$又因为$$\overrightarrow{OP} = xi \\\overrightarrow{OQ} = yj \">
+<meta name="twitter:title" content="函数展开成幂级数">
+<meta name="twitter:description" content="泰勒级数如果函数 $f(x)​$ 在点 $x_0​$ 的某个领域 $U(x_0)​$ 内有 $n+1​$ 阶导数 则函数在该领域内有泰勒公式$$f(x) = f(x_0) + f’(x_0)(x-x_0)+…+ \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)$$其中的 $R_n(x) $ 是拉格朗日型余项$$R_n(x) = \frac{f^{(n+1)}(\x">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/2018/12/15/从空间直角坐标系来理解向量/">
+  <link rel="canonical" href="http://blog.changwei.me/2019/01/18/函数展开成幂级数/">
 
 
 
 
 
-  <title>从空间直角坐标系来理解向量 | 昌维的博客</title>
+  <title>函数展开成幂级数 | 昌维的博客</title>
   
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/15/从空间直角坐标系来理解向量/">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2019/01/18/函数展开成幂级数/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="昌维">
@@ -334,7 +334,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">从空间直角坐标系来理解向量</h2>
+          <h2 class="post-title" itemprop="name headline">函数展开成幂级数</h2>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-15T16:41:02+08:00">
-                2018-12-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-18T14:27:10+08:00">
+                2019-01-18
               </time>
             
 
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-15T18:43:16+08:00">
-                2018-12-15
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-18T14:57:37+08:00">
+                2019-01-18
               </time>
             
           </span>
@@ -399,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/15/从空间直角坐标系来理解向量/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/15/从空间直角坐标系来理解向量/" itemprop="commentCount"></span>
+                <a href="/2019/01/18/函数展开成幂级数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/18/函数展开成幂级数/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2018/12/15/从空间直角坐标系来理解向量/" class="leancloud_visitors" data-flag-title="从空间直角坐标系来理解向量">
+             <span id="/2019/01/18/函数展开成幂级数/" class="leancloud_visitors" data-flag-title="函数展开成幂级数">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -458,26 +458,16 @@
       
 
       
-        <h1 id="向量的模"><a href="#向量的模" class="headerlink" title="向量的模"></a>向量的模</h1><p>借助勾股定理，可以得出向量的模的计算方式<br>$$<br>|r| = |\overrightarrow{OM}| = \sqrt{(|\overrightarrow{OP}|^2 + |\overrightarrow{OQ}|^2) + |\overrightarrow{OR}|^2}<br>$$<br>又因为<br>$$<br>\overrightarrow{OP} = xi \\<br>\overrightarrow{OQ} = yj \\<br>\overrightarrow{OR} = zk<br>$$<br>所以<br>$$<br>|\overrightarrow{OP}| = |xi| \\<br>|\overrightarrow{OQ}| = |yj| \\<br>|\overrightarrow{OR}| = |zk|<br>$$<br>所以<br>$$<br>|r|= \sqrt{x^2+y^2+z^2}<br>$$</p>
-<h1 id="空间坐标系中两点间的模"><a href="#空间坐标系中两点间的模" class="headerlink" title="空间坐标系中两点间的模"></a>空间坐标系中两点间的模</h1><p>两个点 $M_1(x_1,y_1,z_1),M_2(x_2,y_2,z_2)$<br>$$<br>d = |\overrightarrow{M_1M_2}| = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}<br>$$</p>
-<h1 id="方向角"><a href="#方向角" class="headerlink" title="方向角"></a>方向角</h1><p>非零向量 r 与三条坐标轴的夹角 $\alpha,\beta,\gamma$ 称为向量 r 的方向角</p>
-<h1 id="向量的方向余弦"><a href="#向量的方向余弦" class="headerlink" title="向量的方向余弦"></a>向量的方向余弦</h1><p>$$<br>(cos \ \alpha, cos \ \beta, cos \ \gamma) = (\frac{x}{|r|},\frac{y}{|r|},\frac{z}{|r|}) = \frac{(x,y,z)}{|r|} = e_r<br>$$</p>
-<p>其中 $cos \ \alpha, cos \ \beta, cos \ \gamma$ 叫做 r 的方向余弦<br>$$<br>|r|= \sqrt{x^2+y^2+z^2}<br>$$</p>
-<p>$$<br>cos \ \alpha = \frac{x}{\sqrt{x^2+y^2+z^2}}; \\<br>cos \ \beta = \frac{y}{\sqrt{x^2+y^2+z^2}}; \\<br>cos \ \gamma = \frac{z}{\sqrt{x^2+y^2+z^2}}; \\<br>$$</p>
-<h1 id="方向余弦的重要性质"><a href="#方向余弦的重要性质" class="headerlink" title="方向余弦的重要性质"></a>方向余弦的重要性质</h1><p>$$<br>cos^2 \ \alpha + cos^2 \ \beta + cos^2 \ \gamma = 1<br>$$</p>
-<h1 id="投影"><a href="#投影" class="headerlink" title="投影"></a>投影</h1><p>设点 O 以及单位向量 e 确定轴 u （相当于坐标轴）</p>
-<p>给定向量 r ，作 $r = \overrightarrow{OM}$ ，过点 M 作与轴 u 垂直的平面，与轴 u 相交于点 M’ ，则点 M’ 称为点 M 在轴 u 上的投影</p>
-<p>向量 a 在坐标系 $Oxyz$ 中的坐标 $(a_x,a_y,a_z)$ 为 a 在三条坐标轴上的投影</p>
-<p>记作<br>$$<br>a_x = Prj_xa \\<br>a_y = Prj_ya \\<br>a_z = Prj_za \\<br>$$</p>
-<h1 id="记号"><a href="#记号" class="headerlink" title="记号"></a>记号</h1><p>$$<br>Prj_xa<br>$$</p>
-<p>表示 a 在 x 上的投影</p>
-<h1 id="投影的性质"><a href="#投影的性质" class="headerlink" title="投影的性质"></a>投影的性质</h1><ul>
-<li>$(a_u) = |a|cos \ \theta , Prj_ua = |a|cos \ \theta$ 其中 theta 为向量 a 与 u 轴的夹角</li>
-<li>$(a_u+b_u) = (a_u)+(b_u) , Prj_u(a+b) = Prj_ua + Prj_ub $ 由此可以推广到任意数</li>
-<li>$(\lambda a_u) = \lambda( a_u) , Prj_u(\lambda a) = \lambda Prj_ua$ </li>
-</ul>
+        <h1 id="泰勒级数"><a href="#泰勒级数" class="headerlink" title="泰勒级数"></a>泰勒级数</h1><p>如果函数 $f(x)​$ 在点 $x_0​$ 的某个领域 $U(x_0)​$ 内有 $n+1​$ 阶导数</p>
+<p>则函数在该领域内有泰勒公式<br>$$<br>f(x) = f(x_0) + f’(x_0)(x-x_0)+…+ \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)<br>$$<br>其中的 $R_n(x) $ 是<strong>拉格朗日型余项</strong><br>$$<br>R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1} , \ (x&lt;\xi&lt;x_0)<br>$$<br>定义 $P_n(x)$ 为<strong>泰勒多项式</strong>，它约等于原始函数 $f(x)$<br>$$<br>f(x) ≈ P_n(x) = f(x_0) + f’(x_0)(x-x_0)+…+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n<br>$$</p>
+<p>如果函数 $f(x)$ 在点 $x_0$ 的某个领域 $U(x_0)$ 内有任意阶导数</p>
+<p>则得到<strong>幂级数</strong><br>$$<br>\sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n = f(x_0) + f’(x_0)(x-x_0)+…+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + …<br>$$<br>称这个幂级数为函数 $f(x)$ 在点 $x_0$ 处的<strong>泰勒级数</strong></p>
+<h1 id="幂级数的收敛问题"><a href="#幂级数的收敛问题" class="headerlink" title="幂级数的收敛问题"></a>幂级数的收敛问题</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>若幂级数收敛,其和函数是否为给定的函数 $f (x)$ ?</p>
+<h2 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h2><p>设函数 $f(x)$ 在点 $x_0$ 的某一邻域 $U(x_0)$ 内具有各阶导数 </p>
+<p>则 $f (x)​$ 在该邻域内能展开成泰勒级数的充分必要条件是 </p>
+<p>在该邻域内 lim Rn (x)  0 , x U (x0 ) </p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801010&amp;cid=1004551031" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801010&amp;cid=1004551031</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019#/learn/content?type=detail&amp;id=1004062608&amp;cid=1004995623" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019#/learn/content?type=detail&amp;id=1004062608&amp;cid=1004995623</a></li>
 </ul>
 
       
@@ -499,7 +489,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://blog.changwei.me/2018/12/15/从空间直角坐标系来理解向量/" title="从空间直角坐标系来理解向量">http://blog.changwei.me/2018/12/15/从空间直角坐标系来理解向量/</a>
+    <a href="http://blog.changwei.me/2019/01/18/函数展开成幂级数/" title="函数展开成幂级数">http://blog.changwei.me/2019/01/18/函数展开成幂级数/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -521,8 +511,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/15/空间直角坐标系/" rel="next" title="空间直角坐标系">
-                <i class="fa fa-chevron-left"></i> 空间直角坐标系
+              <a href="/2019/01/12/幂级数/" rel="next" title="幂级数">
+                <i class="fa fa-chevron-left"></i> 幂级数
               </a>
             
           </div>
@@ -530,10 +520,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/15/数量积与向量积/" rel="prev" title="数量积与向量积">
-                数量积与向量积 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -830,7 +816,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#向量的模"><span class="nav-number">1.</span> <span class="nav-text">向量的模</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#空间坐标系中两点间的模"><span class="nav-number">2.</span> <span class="nav-text">空间坐标系中两点间的模</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方向角"><span class="nav-number">3.</span> <span class="nav-text">方向角</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#向量的方向余弦"><span class="nav-number">4.</span> <span class="nav-text">向量的方向余弦</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方向余弦的重要性质"><span class="nav-number">5.</span> <span class="nav-text">方向余弦的重要性质</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#投影"><span class="nav-number">6.</span> <span class="nav-text">投影</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#记号"><span class="nav-number">7.</span> <span class="nav-text">记号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#投影的性质"><span class="nav-number">8.</span> <span class="nav-text">投影的性质</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">9.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#泰勒级数"><span class="nav-number">1.</span> <span class="nav-text">泰勒级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#幂级数的收敛问题"><span class="nav-number">2.</span> <span class="nav-text">幂级数的收敛问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">2.1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定理"><span class="nav-number">2.2.</span> <span class="nav-text">定理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>

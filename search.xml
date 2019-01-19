@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>函数展开成幂级数</title>
+      <link href="/2019/01/18/%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80%E6%88%90%E5%B9%82%E7%BA%A7%E6%95%B0/"/>
+      <url>/2019/01/18/%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80%E6%88%90%E5%B9%82%E7%BA%A7%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="泰勒级数"><a href="#泰勒级数" class="headerlink" title="泰勒级数"></a>泰勒级数</h1><p>如果函数 $f(x)​$ 在点 $x_0​$ 的某个领域 $U(x_0)​$ 内有 $n+1​$ 阶导数</p><p>则函数在该领域内有泰勒公式<br>$$<br>f(x) = f(x_0) + f’(x_0)(x-x_0)+…+ \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + R_n(x)<br>$$<br>其中的 $R_n(x) $ 是<strong>拉格朗日型余项</strong><br>$$<br>R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1} , \ (x&lt;\xi&lt;x_0)<br>$$<br>定义 $P_n(x)$ 为<strong>泰勒多项式</strong>，它约等于原始函数 $f(x)$<br>$$<br>f(x) ≈ P_n(x) = f(x_0) + f’(x_0)(x-x_0)+…+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n<br>$$</p><p>如果函数 $f(x)$ 在点 $x_0$ 的某个领域 $U(x_0)$ 内有任意阶导数</p><p>则得到<strong>幂级数</strong><br>$$<br>\sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n = f(x_0) + f’(x_0)(x-x_0)+…+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + …<br>$$<br>称这个幂级数为函数 $f(x)$ 在点 $x_0$ 处的<strong>泰勒级数</strong></p><h1 id="幂级数的收敛问题"><a href="#幂级数的收敛问题" class="headerlink" title="幂级数的收敛问题"></a>幂级数的收敛问题</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>若幂级数收敛,其和函数是否为给定的函数 $f (x)$ ?</p><h2 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h2><p>设函数 $f(x)$ 在点 $x_0$ 的某一邻域 $U(x_0)$ 内具有各阶导数 </p><p>则 $f (x)​$ 在该邻域内能展开成泰勒级数的充分必要条件是 </p><p>在该邻域内 lim Rn (x)  0 , x U (x0 ) </p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019#/learn/content?type=detail&amp;id=1004062608&amp;cid=1004995623" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019#/learn/content?type=detail&amp;id=1004062608&amp;cid=1004995623</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>幂级数</title>
       <link href="/2019/01/12/%E5%B9%82%E7%BA%A7%E6%95%B0/"/>
       <url>/2019/01/12/%E5%B9%82%E7%BA%A7%E6%95%B0/</url>
