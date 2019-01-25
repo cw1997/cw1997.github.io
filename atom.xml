@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2019-01-23T13:05:38.997Z</updated>
+  <updated>2019-01-24T04:24:19.858Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>三角级数</title>
+    <link href="http://blog.changwei.me/2019/01/24/%E4%B8%89%E8%A7%92%E7%BA%A7%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2019/01/24/三角级数/</id>
+    <published>2019-01-24T03:30:24.000Z</published>
+    <updated>2019-01-24T04:24:19.858Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;三角级数&quot;&gt;&lt;a href=&quot;#三角级数&quot; class=&quot;headerlink&quot; title=&quot;三角级数&quot;&gt;&lt;/a&gt;三角级数&lt;/h1&gt;&lt;p&gt;将一些周期函数展开成由无数个周期函数（例如三角函数）组成的级数&lt;/p&gt;
+&lt;p&gt;如果 $f(t)$ 是周期为
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>函数展开成幂级数</title>
     <link href="http://blog.changwei.me/2019/01/18/%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80%E6%88%90%E5%B9%82%E7%BA%A7%E6%95%B0/"/>
     <id>http://blog.changwei.me/2019/01/18/函数展开成幂级数/</id>
     <published>2019-01-18T06:27:10.000Z</published>
-    <updated>2019-01-23T13:05:38.997Z</updated>
+    <updated>2019-01-23T13:30:36.217Z</updated>
     
     <summary type="html">
     
@@ -472,31 +497,6 @@
           &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;多元隐函数求导分为一个方程的情形和方程组情形&lt;/p&gt;
 &lt;p&gt;对于两种情况有不同的解法&lt;/p&gt;
 &lt;h1 id=&quot;一个方程的情形&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>多元复合函数求导法则</title>
-    <link href="http://blog.changwei.me/2018/12/21/%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99/"/>
-    <id>http://blog.changwei.me/2018/12/21/多元复合函数求导法则/</id>
-    <published>2018-12-20T16:05:40.000Z</published>
-    <updated>2018-12-22T05:32:37.593Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;回顾一元复合函数&quot;&gt;&lt;a href=&quot;#回顾一元复合函数&quot; class=&quot;headerlink&quot; title=&quot;回顾一元复合函数&quot;&gt;&lt;/a&gt;回顾一元复合函数&lt;/h1&gt;&lt;p&gt;$$&lt;br&gt;y=f(u),u=g(x)&lt;br&gt;$$&lt;/p&gt;
-&lt;h2 id=&quot;求导&quot;&gt;&lt;a
         
       
     

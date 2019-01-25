@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>三角级数</title>
+      <link href="/2019/01/24/%E4%B8%89%E8%A7%92%E7%BA%A7%E6%95%B0/"/>
+      <url>/2019/01/24/%E4%B8%89%E8%A7%92%E7%BA%A7%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="三角级数"><a href="#三角级数" class="headerlink" title="三角级数"></a>三角级数</h1><p>将一些周期函数展开成由无数个周期函数（例如三角函数）组成的级数</p><p>如果 $f(t)$ 是周期为 $T=\frac{2\pi}{\omega}$ 的周期函数</p><p>则有如下三角级数函数形式<br>$$<br>f(t) = A_0 + \sum_{n=1}^{\infty} A_n \sin{n \omega t + \phi_n}<br>$$<br>其中 $A_0,A_n,\phi_n(n=1,2,3,…)$ 都是常数 </p><p>将正弦函数经过三角恒等变换<br>$$<br>A_n \sin{(n \omega t + \phi_n)} =<br>A_n \sin{\phi_n}\cos{n \omega t} + A_n \cos{\phi_n}\sin{n \omega t}<br>$$<br>令</p><ul><li>$\frac{a_0}{2}=A_0$</li><li>$a_n = A_n \sin{\phi_n}$</li><li>$b_n=A_n \cos{\phi_n}$</li><li>$\omega t = x$</li></ul><p>则上述三角级数就可以改写为<br>$$<br>f(t) = A_0 + \sum_{n=1}^{\infty} A_n \sin{n \omega t + \phi_n} \\<br>= \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n \cos{nx} + b_n \sin{nx})<br>$$<br>其中 $a_0,a_n,b_n (n=1,2,3,…)$ 都是常数</p><h1 id="正交性"><a href="#正交性" class="headerlink" title="正交性"></a>正交性</h1><p>下面这些三角函数在区间 $[-\pi,\pi]$ 上是正交函数系</p><ul><li>$1$</li><li>$\cos{x}$</li><li>$\sin{x}$</li><li>$\cos{2x}$</li><li>$\sin{2x}$</li><li>$…$</li><li>$\cos{nx}$</li><li>$\sin{nx}$</li></ul><p>所谓正交，也就是这些函数系列在区间 $[-\pi,\pi]$ 上的积分都为 0<br>$$<br>\int_{-\pi}^{\pi} \cos{nx} dx = 0 \ (n=1,2,3,…)<br>$$</p><p>$$<br>\int_{-\pi}^{\pi} \sin{nx} dx = 0 \ (n=1,2,3,…)<br>$$</p><p>$$<br>\int_{-\pi}^{\pi} \sin{kx}\cos{nx} dx = 0 \ (n=1,2,3,…)<br>$$</p><p>$$<br>\int_{-\pi}^{\pi} \cos{kx}\cos{nx} dx = 0 \ (k,n=1,2,3,…,k≠n)<br>$$</p><p>$$<br>\int_{-\pi}^{\pi} \sin{kx}\sin{nx} dx = 0 \ (k,n=1,2,3,…,k≠n)<br>$$</p><h1 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h1><p>当 $k≠n$ 时<br>$$<br>\int_{-pi}^{\pi} \cos{kx}\cos{nx} dx \\<br>= \frac{1}{2} \int_{-\pi}^{\pi} \left[ \cos{(k+n)x}+\cos{(k-n)x} \right] dx \\<br>= \frac{1}{2} \left[ \frac{\sin{(k+n)x}}{k+n} + \frac{\sin{(k-n)x}}{k-n} \right]_{-\pi}^{\pi} \\<br>= 0<br>$$</p><h1 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h1><p>在三角函数系中</p><p>两个相同函数的乘积在区间 $[-\pi,\pi]$ 上的积分不等于零</p><p>且有如下特殊值<br>$$<br>\int_{-\pi}^{\pi} 1^2 dx = 2\pi<br>$$</p><p>$$<br>\int_{-\pi}^{\pi} \sin^2{nx} dx = \pi \ (n=1,2,3,…)<br>$$</p><p>$$<br>\int_{-\pi}^{\pi} \cos^2{nx} dx = \pi \ (n=1,2,3,…)<br>$$</p><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul><li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995634" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995634</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> math </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>函数展开成幂级数</title>
       <link href="/2019/01/18/%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80%E6%88%90%E5%B9%82%E7%BA%A7%E6%95%B0/"/>
       <url>/2019/01/18/%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80%E6%88%90%E5%B9%82%E7%BA%A7%E6%95%B0/</url>
