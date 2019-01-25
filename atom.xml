@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2019-01-24T04:24:19.858Z</updated>
+  <updated>2019-01-24T13:58:37.738Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>傅里叶级数</title>
+    <link href="http://blog.changwei.me/2019/01/24/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0/"/>
+    <id>http://blog.changwei.me/2019/01/24/傅里叶级数/</id>
+    <published>2019-01-24T04:29:53.000Z</published>
+    <updated>2019-01-24T13:58:37.738Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>三角级数</title>
     <link href="http://blog.changwei.me/2019/01/24/%E4%B8%89%E8%A7%92%E7%BA%A7%E6%95%B0/"/>
     <id>http://blog.changwei.me/2019/01/24/三角级数/</id>
     <published>2019-01-24T03:30:24.000Z</published>
-    <updated>2019-01-24T04:24:19.858Z</updated>
+    <updated>2019-01-24T04:40:29.029Z</updated>
     
     <summary type="html">
     
@@ -471,32 +495,6 @@
         
         
           &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://blog.changwei.me/2018/12/22/%E5%A4%9A%E5%85%83%E9%9A%90%E5%87%BD%E6%95%B0%E7%9A%84%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F/"/>
-    <id>http://blog.changwei.me/2018/12/22/多元隐函数的求导公式/</id>
-    <published>2018-12-21T18:06:21.000Z</published>
-    <updated>2018-12-25T07:37:01.585Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;多元隐函数求导分为一个方程的情形和方程组情形&lt;/p&gt;
-&lt;p&gt;对于两种情况有不同的解法&lt;/p&gt;
-&lt;h1 id=&quot;一个方程的情形&quot;&gt;&lt;a
         
       
     

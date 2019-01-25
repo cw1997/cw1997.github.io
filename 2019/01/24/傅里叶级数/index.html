@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="前言多元隐函数求导分为一个方程的情形和方程组情形 对于两种情况有不同的解法 一个方程的情形隐函数存在定理 1设函数 $F ( x , y )$ 的某一邻域内具有连续的偏导数 且 $F ( x_0 , y_0 ) = 0 , F_y ( x_0 , y_0 ) = 0$  则方程 $F(x,y)=0$ 在点 $P(x_0,y_0)$ 的某一邻域内恒能唯一确定一个连续且具有连续导数的函数 $y=f(x">
+<meta name="description" content="前言上一章三角级数中，提到了一个周期函数可以分解成无数个三角函数的相加 也就是周期函数可以转换成三角级数 但是上一章中只是给出了三角级数的形式，其中的系数 $a_0,a_n,b_n$ 仍然还是未知数 傅里叶系数推导$$f(x) = A_0 + \sum_{k=1}^{\infty} A_k \sin{k \omega t + \phi_k} \\= \frac{a_0}{2} + \sum_{k=">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="昌维的博客">
-<meta property="og:url" content="http://blog.changwei.me/2018/12/22/多元隐函数的求导公式/index.html">
+<meta property="og:title" content="傅里叶级数">
+<meta property="og:url" content="http://blog.changwei.me/2019/01/24/傅里叶级数/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="前言多元隐函数求导分为一个方程的情形和方程组情形 对于两种情况有不同的解法 一个方程的情形隐函数存在定理 1设函数 $F ( x , y )$ 的某一邻域内具有连续的偏导数 且 $F ( x_0 , y_0 ) = 0 , F_y ( x_0 , y_0 ) = 0$  则方程 $F(x,y)=0$ 在点 $P(x_0,y_0)$ 的某一邻域内恒能唯一确定一个连续且具有连续导数的函数 $y=f(x">
+<meta property="og:description" content="前言上一章三角级数中，提到了一个周期函数可以分解成无数个三角函数的相加 也就是周期函数可以转换成三角级数 但是上一章中只是给出了三角级数的形式，其中的系数 $a_0,a_n,b_n$ 仍然还是未知数 傅里叶系数推导$$f(x) = A_0 + \sum_{k=1}^{\infty} A_k \sin{k \omega t + \phi_k} \\= \frac{a_0}{2} + \sum_{k=">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-12-25T07:37:01.585Z">
+<meta property="og:updated_time" content="2019-01-24T13:58:37.738Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="昌维的博客">
-<meta name="twitter:description" content="前言多元隐函数求导分为一个方程的情形和方程组情形 对于两种情况有不同的解法 一个方程的情形隐函数存在定理 1设函数 $F ( x , y )$ 的某一邻域内具有连续的偏导数 且 $F ( x_0 , y_0 ) = 0 , F_y ( x_0 , y_0 ) = 0$  则方程 $F(x,y)=0$ 在点 $P(x_0,y_0)$ 的某一邻域内恒能唯一确定一个连续且具有连续导数的函数 $y=f(x">
+<meta name="twitter:title" content="傅里叶级数">
+<meta name="twitter:description" content="前言上一章三角级数中，提到了一个周期函数可以分解成无数个三角函数的相加 也就是周期函数可以转换成三角级数 但是上一章中只是给出了三角级数的形式，其中的系数 $a_0,a_n,b_n$ 仍然还是未知数 傅里叶系数推导$$f(x) = A_0 + \sum_{k=1}^{\infty} A_k \sin{k \omega t + \phi_k} \\= \frac{a_0}{2} + \sum_{k=">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.changwei.me/2018/12/22/多元隐函数的求导公式/">
+  <link rel="canonical" href="http://blog.changwei.me/2019/01/24/傅里叶级数/">
 
 
 
 
 
-  <title> | 昌维的博客</title>
+  <title>傅里叶级数 | 昌维的博客</title>
   
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2018/12/22/多元隐函数的求导公式/">
+    <link itemprop="mainEntityOfPage" href="http://blog.changwei.me/2019/01/24/傅里叶级数/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="昌维">
@@ -334,7 +334,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline"></h2>
+          <h2 class="post-title" itemprop="name headline">傅里叶级数</h2>
         
 
         <div class="post-meta">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-22T02:06:21+08:00">
-                2018-12-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-24T12:29:53+08:00">
+                2019-01-24
               </time>
             
 
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-25T15:37:01+08:00">
-                2018-12-25
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-24T21:58:37+08:00">
+                2019-01-24
               </time>
             
           </span>
@@ -399,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/22/多元隐函数的求导公式/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/22/多元隐函数的求导公式/" itemprop="commentCount"></span>
+                <a href="/2019/01/24/傅里叶级数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/24/傅里叶级数/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2018/12/22/多元隐函数的求导公式/" class="leancloud_visitors" data-flag-title="">
+             <span id="/2019/01/24/傅里叶级数/" class="leancloud_visitors" data-flag-title="傅里叶级数">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -458,19 +458,71 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>多元隐函数求导分为一个方程的情形和方程组情形</p>
-<p>对于两种情况有不同的解法</p>
-<h1 id="一个方程的情形"><a href="#一个方程的情形" class="headerlink" title="一个方程的情形"></a>一个方程的情形</h1><h2 id="隐函数存在定理-1"><a href="#隐函数存在定理-1" class="headerlink" title="隐函数存在定理 1"></a>隐函数存在定理 1</h2><p>设函数 $F ( x , y )$ 的某一邻域内具有连续的偏导数</p>
-<p>且 $F ( x_0 , y_0 ) = 0 , F_y ( x_0 , y_0 ) = 0$ </p>
-<p>则方程 $F(x,y)=0$ 在点 $P(x_0,y_0)$ 的某一邻域内恒能唯一确定一个连续且具有连续导数的函数 $y=f(x)$  </p>
-<p>他满足方程<br>$$<br>y_0=f(x_0)<br>$$<br>并且有如下隐函数求导公式<br>$$<br>\frac{dy}{dx}=-\frac{F_x}{F_y}<br>$$<br>其中，$F_x,f_y$ 分别为函数 f 对于 x 和 y 的偏导数</p>
-<h2 id="证明推导过程"><a href="#证明推导过程" class="headerlink" title="证明推导过程"></a>证明推导过程</h2><p>将方程 $F(x,y)=0$ 所确定的函数 $y=f(x)$ 代入该方程得 $y=f(x,f(x))=0$ ，利用复合求导法则在<br>两边求导得<br>$$<br>F_x+F_y \cdot \frac{dy}{dx}=0<br>$$<br>移项得到<br>$$<br>\frac{dy}{dx}=-\frac{F_x}{F_y}<br>$$</p>
-<h2 id="隐函数的二阶导数"><a href="#隐函数的二阶导数" class="headerlink" title="隐函数的二阶导数"></a>隐函数的二阶导数</h2><p>若 $F ( x , y )$ 的二阶偏导数也都连续, 则还可求隐函数的二阶导数<br>$$<br>\frac{d^2y}{dx^2} = \frac{\partial (-\frac{F_x}{F_y})}{\partial x} + \frac{\partial (-\frac{F_x}{F_y})}{\partial y} \cdot \frac{dy}{dx} \\<br>= -\frac{F_{xx}F_y-F_{yx}F_x}{F_y^2} -\frac{F_{xy}F_y-F_{yy}F_x}{F_y^2}(-\frac{F_x}F_y) \\<br>= -\frac{F_{xx}F_y^2-2F_{xy}F_xF_y+F_{yy}F_x^2}{F_y^3}<br>$$<br>其实就是对一阶隐函数导数的再次求导</p>
-<h2 id="隐函数存在定理2"><a href="#隐函数存在定理2" class="headerlink" title="隐函数存在定理2"></a>隐函数存在定理2</h2><p>设函数 $F(x,y,z)$ 在点 $P(x_0,y_0,z_0)$ 的 的某一邻域内具有连续的偏导数且<br>$$<br>F ( x_0 , y_0 , z_0 ) = 0 ， F_z ( x_0 , y_0 , z_0 ) ≠ 0<br>$$<br>则方程 $F(x,y,z)=0$ 在点 $P(x_0,y_0,z_0)$ 的某一邻域内恒能唯一确定一个连续且具有连续偏导数的函数 $z=f(x,y)$ ，它满足条件 $z_0=f(x_0,y_0)$ ，并有<br>$$<br>\frac{\partial z}{\partial x} = -\frac{F_x}{F_z} \\<br>\frac{\partial z}{\partial y} = -\frac{F_y}{F_z}<br>$$</p>
-<h1 id="方程组的情形"><a href="#方程组的情形" class="headerlink" title="方程组的情形"></a>方程组的情形</h1><p>略</p>
-<p>## </p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上一章三角级数中，提到了一个周期函数可以分解成无数个三角函数的相加</p>
+<p>也就是周期函数可以转换成三角级数</p>
+<p>但是上一章中只是给出了三角级数的形式，其中的系数 $a_0,a_n,b_n$ 仍然还是未知数</p>
+<h1 id="傅里叶系数推导"><a href="#傅里叶系数推导" class="headerlink" title="傅里叶系数推导"></a>傅里叶系数推导</h1><p>$$<br>f(x) = A_0 + \sum_{k=1}^{\infty} A_k \sin{k \omega t + \phi_k} \\<br>= \frac{a_0}{2} + \sum_{k=1}^{\infty}(a_k \cos{kx} + b_k \sin{kx})<br>$$</p>
+<h2 id="先求其中的-a-0"><a href="#先求其中的-a-0" class="headerlink" title="先求其中的 $a_0$"></a>先求其中的 $a_0$</h2><p>对上式从 -\pi 到 \pi 逐项积分有<br>$$<br>\int_{-\pi}^{\pi} f(x)dx =<br>\int_{-\pi}^{\pi} \frac{a_0}{2} dx +<br>\int_{-\pi}^{\pi} \sum_{k=1}^{\infty}(a_k \cos{kx} + b_n \sin{kx}) dx \\<br>=<br>\int_{-\pi}^{\pi} \frac{a_0}{2} +<br>\sum_{k=1}^{\infty}(a_k \int_{-\pi}^{\pi} \cos{kx} dx + b_k \int_{-\pi}^{\pi} \sin{kx} dx) \\<br>$$<br>单独看第二个加数，根据前面学过的正交性可以得出如下公式<br>$$<br>a_k \int_{-\pi}^{\pi} \cos{kx} dx + b_k \int_{-\pi}^{\pi} \sin{kx} dx \\<br>= a_k \cdot 0 + b_k \cdot 0<br>$$<br>所以原始式子如下<br>$$<br>\int_{-\pi}^{\pi} f(x)dx = \frac{a_0}{2} \cdot 2\pi<br>$$<br>移项之后得到<br>$$<br>a_0 = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)dx<br>$$</p>
+<h2 id="其次求-a-n"><a href="#其次求-a-n" class="headerlink" title="其次求 $a_n$"></a>其次求 $a_n$</h2><p>用 $\cos{nx}$ 乘等式两端</p>
+<p>再从 $-π$ 到 $π$ 逐项积分</p>
+<p>得<br>$$<br>\int_{-\pi}^{\pi} f(x) \cos{nx} dx \\<br>= \frac{a_0}{2} \int_{-\pi}^{\pi} \cos{nx} dx </p>
+<ul>
+<li>\sum_{k=1}^{\infty}(a_k \int_{-\pi}^{\pi} \cos{kx}\cos{nx} dx + b_k \int_{-\pi}^{\pi} \sin{kx}\cos{nx} dx)<br>\\<br>= 0 + \sum_{k=1}^{\infty}(a_k \int_{-\pi}^{\pi} \cos{kx}\cos{nx} dx) + 0 \\<br>= \sum_{k=1}^{\infty}(a_k \int_{-\pi}^{\pi} \cos{kx}\cos{nx} dx)<br>$$<br>最后得出<br>$$<br>a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \cos{nx} dx \ (n=1,2,3,…)<br>$$</li>
+</ul>
+<h2 id="最后求-b-n"><a href="#最后求-b-n" class="headerlink" title="最后求 $b_n$"></a>最后求 $b_n$</h2><p>用 $\sin{nx}$ 乘等式两端</p>
+<p>再从 $-π$ 到 $π$ 逐项积分</p>
+<p>根据上述类似的推导步骤</p>
+<p>得<br>$$<br>b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \sin{nx} dx \ (n=1,2,3,…)<br>$$</p>
+<h1 id="傅里叶系数"><a href="#傅里叶系数" class="headerlink" title="傅里叶系数"></a>傅里叶系数</h1><p>$a_n,b_n$ 为函数 $f(x)$ 的<strong>傅里叶系数</strong></p>
+<p>如果三角级数<br>$$<br>f(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty}(a_k \cos{kx} + b_k \sin{kx})<br>$$<br>中的系数是函数 $f(x)$ 的<strong>傅里叶系数</strong></p>
+<p>这样的三角级数叫做函数 $f(x)$ 的<strong>傅里叶级数</strong></p>
+<p>如果函数 $f(x)$ 定义在 $(-\infty, +\infty)$ 上</p>
+<p>$T = 2\pi$</p>
+<p>在一个周期上可积分</p>
+<p>则一定可以做出 $f(x)$ 的傅里叶级数</p>
+<h1 id="收敛定理-（狄利克雷-Dirichlet-充分条件）"><a href="#收敛定理-（狄利克雷-Dirichlet-充分条件）" class="headerlink" title="收敛定理 （狄利克雷(Dirichlet)充分条件）"></a>收敛定理 （狄利克雷(Dirichlet)充分条件）</h1><p>设 $f (x)$ 是周期为 $2π​$ 的周期函数，如果它满足: </p>
+<ul>
+<li>在一个周期内连续或只有有限个第一类间断点</li>
+<li>在一个周期内至多只有有限个极值点</li>
+</ul>
+<p>则 $f(x)$ 的傅里叶级数收敛</p>
+<p>并且当 $x$ 是 $f(x)$ 的连续点时</p>
+<p>级数收敛于 $f(x)$ </p>
+<p>当 $x$ 是 $f(x )$ 的间断点时</p>
+<p>级数收敛于左右极限的平均值<br>$$<br>\frac{1}{2}[f(x^-)+f(x^+)]<br>$$<br>记作<br>$$<br>C={ x|f(x)=\frac{1}{2}[f(x^-)+f(x^+)] }<br>$$<br>在 $C$ 上成立 $f(x)$ 的傅里叶级数展开式<br>$$<br>f(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty}(a_k \cos{kx} + b_k \sin{kx}) ，\ x∈C<br>$$</p>
+<h1 id="非-2-pi-全周期函数的延展"><a href="#非-2-pi-全周期函数的延展" class="headerlink" title="非 $2\pi$ 全周期函数的延展"></a>非 $2\pi$ 全周期函数的延展</h1><p>如果函数 $f(x)$ 仅仅只在 $[-π,π]$ 上有定义</p>
+<p>并且满足收敛定理的条件</p>
+<p> $f (x)$ 仍可以展开成傅里叶级数</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul>
+<li>周期延拓 在 $[-π,π)$ 或 $(-π,π]$ 外补充函数 $f(x)$ 的定义</li>
+<li>使它被拓广成周期为 2π 的周期函数 $F(x)$ </li>
+<li>将 $F(x)​$ 展开成傅里叶级数</li>
+<li>限制 $x∈(-π,π)$ 此时 $F(x)=f(x)$ </li>
+</ul>
+<p>该级数在区间端点处 $x=±\pi$ 收敛与 $f(x)$ 在 $\pi$ 左右值 $\frac{1}{2}[f(\pi^-)+f(\pi^+)]$</p>
+<h1 id="正弦级数"><a href="#正弦级数" class="headerlink" title="正弦级数"></a>正弦级数</h1><p>对于周期为 $2π$ 的函数 $f (x)$ </p>
+<p>当 $f (x)$ 为奇函数时</p>
+<p>傅里叶级数有如下公式成立<br>$$<br>a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \cos{nx} dx = 0 \ (n=1,2,3,…)<br>$$</p>
+<p>$$<br>b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \sin{nx} dx = \frac{2}{\pi}\int_{0}^{\pi} f(x) \sin{nx} dx \ (n=1,2,3,…)<br>$$</p>
+<p>所以原式子为<br>$$<br>f(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty}(b_k \sin{kx})<br>$$</p>
+<h1 id="余弦级数"><a href="#余弦级数" class="headerlink" title="余弦级数"></a>余弦级数</h1><p>对于周期为 $2π$ 的函数 $f (x)$ </p>
+<p>当 $f (x)$ 为奇函数时</p>
+<p>傅里叶级数有如下公式成立<br>$$<br>b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \sin{nx} dx = 0 \ (n=1,2,3,…)<br>$$</p>
+<p>$$<br>a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \cos{nx} dx = \frac{2}{\pi}\int_{0}^{\pi} f(x) \cos{nx} dx \ (n=1,2,3,…)<br>$$</p>
+<p>所以原式子为<br>$$<br>f(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty}(a_k \cos{kx})<br>$$</p>
+<h1 id="延拓"><a href="#延拓" class="headerlink" title="延拓"></a>延拓</h1><p>在实际应用中</p>
+<p>有时还需把定义在区间 $[0,π]$ 上并且满足收敛定理条件的函数 $f (x)$ 展开成正弦级数或余弦级数</p>
+<h2 id="奇延拓-偶延拓"><a href="#奇延拓-偶延拓" class="headerlink" title="奇延拓(偶延拓)"></a>奇延拓(偶延拓)</h2><p>在开区间 $(-π,0)$ 内补充函数 $f(x)$ 的定义</p>
+<p>得到定义在 $(-π,π]$ 上的函数 $F(x)$ </p>
+<p>使 $F(x)$ 在 $(-π,π]$ 上成为奇函数 (偶函数)</p>
+<p>将 $F(x)$ 展开成傅里叶级数</p>
+<p>这个级数必定是正弦级数(余弦级数)</p>
+<p>限制 $x∈(-0,π]$ </p>
+<p>此时 $F(x)=f(x)$ </p>
+<p>这样便得到 $f (x)$ 的正弦级数(余弦级数)展开式</p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801022&amp;cid=1004551080" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-284001?tid=1002750019#/learn/content?type=detail&amp;id=1003801022&amp;cid=1004551080</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995635" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995635</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995636" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995636</a></li>
 </ul>
 
       
@@ -492,7 +544,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://blog.changwei.me/2018/12/22/多元隐函数的求导公式/" title="">http://blog.changwei.me/2018/12/22/多元隐函数的求导公式/</a>
+    <a href="http://blog.changwei.me/2019/01/24/傅里叶级数/" title="傅里叶级数">http://blog.changwei.me/2019/01/24/傅里叶级数/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -514,8 +566,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/21/多元复合函数求导法则/" rel="next" title="多元复合函数求导法则">
-                <i class="fa fa-chevron-left"></i> 多元复合函数求导法则
+              <a href="/2019/01/24/三角级数/" rel="next" title="三角级数">
+                <i class="fa fa-chevron-left"></i> 三角级数
               </a>
             
           </div>
@@ -523,10 +575,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/22/多元函数微分学的几何意义/" rel="prev" title="多元函数微分学的几何意义">
-                多元函数微分学的几何意义 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -823,7 +871,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一个方程的情形"><span class="nav-number">2.</span> <span class="nav-text">一个方程的情形</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#隐函数存在定理-1"><span class="nav-number">2.1.</span> <span class="nav-text">隐函数存在定理 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明推导过程"><span class="nav-number">2.2.</span> <span class="nav-text">证明推导过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#隐函数的二阶导数"><span class="nav-number">2.3.</span> <span class="nav-text">隐函数的二阶导数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#隐函数存在定理2"><span class="nav-number">2.4.</span> <span class="nav-text">隐函数存在定理2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方程组的情形"><span class="nav-number">3.</span> <span class="nav-text">方程组的情形</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">4.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#傅里叶系数推导"><span class="nav-number">2.</span> <span class="nav-text">傅里叶系数推导</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#先求其中的-a-0"><span class="nav-number">2.1.</span> <span class="nav-text">先求其中的 $a_0$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其次求-a-n"><span class="nav-number">2.2.</span> <span class="nav-text">其次求 $a_n$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后求-b-n"><span class="nav-number">2.3.</span> <span class="nav-text">最后求 $b_n$</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#傅里叶系数"><span class="nav-number">3.</span> <span class="nav-text">傅里叶系数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#收敛定理-（狄利克雷-Dirichlet-充分条件）"><span class="nav-number">4.</span> <span class="nav-text">收敛定理 （狄利克雷(Dirichlet)充分条件）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#非-2-pi-全周期函数的延展"><span class="nav-number">5.</span> <span class="nav-text">非 $2\pi$ 全周期函数的延展</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-number">5.1.</span> <span class="nav-text">方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正弦级数"><span class="nav-number">6.</span> <span class="nav-text">正弦级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#余弦级数"><span class="nav-number">7.</span> <span class="nav-text">余弦级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#延拓"><span class="nav-number">8.</span> <span class="nav-text">延拓</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#奇延拓-偶延拓"><span class="nav-number">8.1.</span> <span class="nav-text">奇延拓(偶延拓)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">9.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
