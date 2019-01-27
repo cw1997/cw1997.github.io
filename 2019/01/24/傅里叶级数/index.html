@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="前言上一章三角级数中，提到了一个周期函数可以分解成无数个三角函数的相加 也就是周期函数可以转换成三角级数 但是上一章中只是给出了三角级数的形式，其中的系数 $a_0,a_n,b_n$ 仍然还是未知数 傅里叶系数推导$$f(x) = A_0 + \sum_{k=1}^{\infty} A_k \sin{k \omega t + \phi_k} \\= \frac{a_0}{2} + \sum_{k=">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-01-24T13:58:37.738Z">
+<meta property="og:updated_time" content="2019-01-26T07:45:34.805Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="傅里叶级数">
 <meta name="twitter:description" content="前言上一章三角级数中，提到了一个周期函数可以分解成无数个三角函数的相加 也就是周期函数可以转换成三角级数 但是上一章中只是给出了三角级数的形式，其中的系数 $a_0,a_n,b_n$ 仍然还是未知数 傅里叶系数推导$$f(x) = A_0 + \sum_{k=1}^{\infty} A_k \sin{k \omega t + \phi_k} \\= \frac{a_0}{2} + \sum_{k=">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-01-24T21:58:37+08:00">
-                2019-01-24
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-26T15:45:34+08:00">
+                2019-01-26
               </time>
             
           </span>
@@ -509,7 +509,7 @@
 <p>当 $f (x)$ 为奇函数时</p>
 <p>傅里叶级数有如下公式成立<br>$$<br>b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \sin{nx} dx = 0 \ (n=1,2,3,…)<br>$$</p>
 <p>$$<br>a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \cos{nx} dx = \frac{2}{\pi}\int_{0}^{\pi} f(x) \cos{nx} dx \ (n=1,2,3,…)<br>$$</p>
-<p>所以原式子为<br>$$<br>f(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty}(a_k \cos{kx})<br>$$</p>
+<p>​     　大学,/bgvƒç　所以原式子为<br>$$<br>f(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty}(a_k \cos{kx})<br>$$</p>
 <h1 id="延拓"><a href="#延拓" class="headerlink" title="延拓"></a>延拓</h1><p>在实际应用中</p>
 <p>有时还需把定义在区间 $[0,π]$ 上并且满足收敛定理条件的函数 $f (x)$ 展开成正弦级数或余弦级数</p>
 <h2 id="奇延拓-偶延拓"><a href="#奇延拓-偶延拓" class="headerlink" title="奇延拓(偶延拓)"></a>奇延拓(偶延拓)</h2><p>在开区间 $(-π,0)$ 内补充函数 $f(x)$ 的定义</p>
@@ -520,9 +520,19 @@
 <p>限制 $x∈(-0,π]$ </p>
 <p>此时 $F(x)=f(x)$ </p>
 <p>这样便得到 $f (x)$ 的正弦级数(余弦级数)展开式</p>
+<h1 id="一般周期傅里叶级数"><a href="#一般周期傅里叶级数" class="headerlink" title="一般周期傅里叶级数"></a>一般周期傅里叶级数</h1><p>设周期为 $2l$ 的周期函数 $f (x)$ 满足收敛定理的条件</p>
+<p>则它的傅里叶级数展开式为<br>$$<br>f(x) = \frac{a_0}{2} + \sum_{k=1}^{\infty}(a_k \cos{\frac{n\pi x}{l}} + b_k \sin{\frac{n\pi x}{l}}) ，\ x∈C<br>$$<br>其中傅里叶系数<br>$$<br>a_n = \frac{1}{l} \int_{-l}^{l} f(x) \cos{\frac{n\pi x}{l}} dx, \ (n=0,1,2,…)<br>$$</p>
+<p>$$<br>b_n = \frac{1}{l} \int_{-l}^{l} f(x) \sin{\frac{n\pi x}{l}} dx, \ (n=1,2,3,…)<br>$$</p>
+<p>而 $x$ 的取值范围 $C$ 为函数 $f(x)$ 在 $x$ 左右侧的平均值</p>
+<p>即<br>$$<br>C=\left{ x|f(x)=\frac{1}{2}[f( x^- + f(x)^+ )] \right}<br>$$</p>
+<p>如果函数 $f (x)​$ 为奇函数<br>$$<br>f(x) = \sum_{n=1}^{\infty} b_n \sin{\frac{n\pi x}{l}}  \ (x ∈ C)<br>$$</p>
+<p>$$<br>b_n = \frac{2}{l} \int_{0}^{l} f(x) \sin{\frac{n\pi x}{l}} dx, \ (n=1,2,3,…)<br>$$</p>
+<p>如果函数 $f (x)$ 为偶函数<br>$$<br>f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos{\frac{n\pi x}{l}}  \ (x ∈ C)<br>$$</p>
+<p>$$<br>a_n = \frac{2}{l} \int_{0}^{l} f(x) \cos{\frac{n\pi x}{l}} dx, \ (n=0,1,2,…)<br>$$</p>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
 <li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995635" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995635</a></li>
 <li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995636" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995636</a></li>
+<li><a href="https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995637" target="_blank" rel="noopener">https://www.icourse163.org/learn/TONGJI-1001569002?tid=1002877019&amp;from=study#/learn/content?type=detail&amp;id=1004062609&amp;cid=1004995637</a></li>
 </ul>
 
       
@@ -575,6 +585,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/27/逻辑用语/" rel="prev" title="逻辑用语">
+                逻辑用语 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -696,7 +710,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">87</span>
+                  <span class="site-state-item-count">88</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -871,7 +885,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#傅里叶系数推导"><span class="nav-number">2.</span> <span class="nav-text">傅里叶系数推导</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#先求其中的-a-0"><span class="nav-number">2.1.</span> <span class="nav-text">先求其中的 $a_0$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其次求-a-n"><span class="nav-number">2.2.</span> <span class="nav-text">其次求 $a_n$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后求-b-n"><span class="nav-number">2.3.</span> <span class="nav-text">最后求 $b_n$</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#傅里叶系数"><span class="nav-number">3.</span> <span class="nav-text">傅里叶系数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#收敛定理-（狄利克雷-Dirichlet-充分条件）"><span class="nav-number">4.</span> <span class="nav-text">收敛定理 （狄利克雷(Dirichlet)充分条件）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#非-2-pi-全周期函数的延展"><span class="nav-number">5.</span> <span class="nav-text">非 $2\pi$ 全周期函数的延展</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-number">5.1.</span> <span class="nav-text">方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正弦级数"><span class="nav-number">6.</span> <span class="nav-text">正弦级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#余弦级数"><span class="nav-number">7.</span> <span class="nav-text">余弦级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#延拓"><span class="nav-number">8.</span> <span class="nav-text">延拓</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#奇延拓-偶延拓"><span class="nav-number">8.1.</span> <span class="nav-text">奇延拓(偶延拓)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">9.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#傅里叶系数推导"><span class="nav-number">2.</span> <span class="nav-text">傅里叶系数推导</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#先求其中的-a-0"><span class="nav-number">2.1.</span> <span class="nav-text">先求其中的 $a_0$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其次求-a-n"><span class="nav-number">2.2.</span> <span class="nav-text">其次求 $a_n$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后求-b-n"><span class="nav-number">2.3.</span> <span class="nav-text">最后求 $b_n$</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#傅里叶系数"><span class="nav-number">3.</span> <span class="nav-text">傅里叶系数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#收敛定理-（狄利克雷-Dirichlet-充分条件）"><span class="nav-number">4.</span> <span class="nav-text">收敛定理 （狄利克雷(Dirichlet)充分条件）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#非-2-pi-全周期函数的延展"><span class="nav-number">5.</span> <span class="nav-text">非 $2\pi$ 全周期函数的延展</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-number">5.1.</span> <span class="nav-text">方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正弦级数"><span class="nav-number">6.</span> <span class="nav-text">正弦级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#余弦级数"><span class="nav-number">7.</span> <span class="nav-text">余弦级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#延拓"><span class="nav-number">8.</span> <span class="nav-text">延拓</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#奇延拓-偶延拓"><span class="nav-number">8.1.</span> <span class="nav-text">奇延拓(偶延拓)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一般周期傅里叶级数"><span class="nav-number">9.</span> <span class="nav-text">一般周期傅里叶级数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">10.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
 
           </div>
