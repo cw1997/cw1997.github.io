@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="形式语言用计算机处理语言要考虑语言的形式化与规范化，使其具有可计算性和可操作性 如何把语言形式化这就是形式语言理论研究的问题 形式语言诞生于1956年，由 Chomsky 创立 通常研究涉及到  语法 语义 语用  基本观点把语言用符号串表示 研究它如何用符号串表示 ，研究分析他的结构特性，运算规律 定义形式语言是符号串的集合 是至目标上的符号按照一定的规则组成的所有符号串的集合 其中每个符号串成">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-12-30T15:56:03.611Z">
+<meta property="og:updated_time" content="2020-01-01T16:29:39.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="形式语言">
 <meta name="twitter:description" content="形式语言用计算机处理语言要考虑语言的形式化与规范化，使其具有可计算性和可操作性 如何把语言形式化这就是形式语言理论研究的问题 形式语言诞生于1956年，由 Chomsky 创立 通常研究涉及到  语法 语义 语用  基本观点把语言用符号串表示 研究它如何用符号串表示 ，研究分析他的结构特性，运算规律 定义形式语言是符号串的集合 是至目标上的符号按照一定的规则组成的所有符号串的集合 其中每个符号串成">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-12-30T23:56:03+08:00">
-                2019-12-30
+              <time title="Post modified" itemprop="dateModified" datetime="2020-01-02T00:29:39+08:00">
+                2020-01-02
               </time>
             
           </span>
@@ -495,8 +495,58 @@
 <h1 id="文法"><a href="#文法" class="headerlink" title="文法"></a>文法</h1><h2 id="描述方式"><a href="#描述方式" class="headerlink" title="描述方式"></a>描述方式</h2><p>描述形式语言有多种方式</p>
 <ul>
 <li>枚举方式，当语言是有穷集合的时候可以这样做</li>
-<li>使用具体的文法</li>
+<li>使用具体的文法描述</li>
 </ul>
+<h2 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h2><p>文法 grammar 就是规则的有限集合，通常可以表示为四元组</p>
+<p>$G(Z)=V_N, V_T, Z, P$</p>
+<h3 id="V-N"><a href="#V-N" class="headerlink" title="$V_N$"></a>$V_N$</h3><p>非终结符集合（定义的对象集合，例如：语法成分）</p>
+<h3 id="V-T"><a href="#V-T" class="headerlink" title="$V_T$"></a>$V_T$</h3><p>终结符集（字母表）</p>
+<h3 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h3><p>开始符号（研究范畴中最大的定义对象）</p>
+<p>也就是我们推导一个句子的起始符号</p>
+<h3 id="P"><a href="#P" class="headerlink" title="P"></a>P</h3><p>规则集（产生式集）</p>
+<h2 id="终结符产生式"><a href="#终结符产生式" class="headerlink" title="终结符产生式"></a>终结符产生式</h2><p>通常是带有 $\epsilon$ 符号的产生式</p>
+<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>从 开始符号 开始，选择一个产生式，把非终结符按照那个产生式推导出非终结符</p>
+<p>一直这样推导下去，直到把所有的符号都推导成终结符，最后就推导出了一个句子</p>
+<h2 id="产生式"><a href="#产生式" class="headerlink" title="产生式"></a>产生式</h2><p>也就是通过一个非终结符产生另一个符号串，这个符号串可以是终结符也可以是非终结符</p>
+<p>例如下面这个产生式<br>$$<br>S -&gt; aAc<br>A -&gt; bA | \epsilon<br>$$<br>就可以推导出如下符号串<br>$$<br>abc,abbc,abbbc…<br>$$</p>
+<h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><h1 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h1><p>一个文法所定义的语言，就是由该文法开始符号推导出的所有仅含终结符的所有符号串的集合。其中每个符号串都称作句子。</p>
+<p>从开始符号出发，对符号串中的定义对象，采用推导的方法（用它规则右部替换左部）产生新的符号串。如此进行，直到新符号串中不再出现定义的对象（非终极符）为止，则最终的符号串就是一个句子。</p>
+<h1 id="句型"><a href="#句型" class="headerlink" title="句型"></a>句型</h1><p>一类句子的统称，通常是能够产生句子的产生式左端的那个非终结符</p>
+<h1 id="自动机"><a href="#自动机" class="headerlink" title="自动机"></a>自动机</h1><p>FA Finite Automata 有限自动机</p>
+<p>可以处理正规语言</p>
+<p>自动机里面的 1 2 3 4 等等圆圈成为状态集，每一个圆圈表示一个状态</p>
+<p>其中 + 表示开始状态， - 表示结束状态</p>
+<p>其中每条边上的字母，可以组成字母表</p>
+<p>一个边连接的两个或者一个节点组成了一个状态转移，叫做变换，相当于应用了一条产生式</p>
+<h2 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h2><ul>
+<li>Q 有限状态集</li>
+<li>$\sum$ 字母表</li>
+<li>S 开始状态</li>
+<li>F 结束状态</li>
+<li>$\delta$ 状态变换集</li>
+</ul>
+<h2 id="DFA确定有限自动机"><a href="#DFA确定有限自动机" class="headerlink" title="DFA确定有限自动机"></a>DFA确定有限自动机</h2><p>某些特定情况下的正规语言表达，用传统的自动机表会有问题。</p>
+<p>因此引入DFA来解决这个问题</p>
+<h3 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>开始状态唯一</li>
+<li>变换函数单值</li>
+<li>不带空（\epsilon）边</li>
+</ul>
+<h2 id="NFA非确定有限自动机"><a href="#NFA非确定有限自动机" class="headerlink" title="NFA非确定有限自动机"></a>NFA非确定有限自动机</h2><p>还区分带有空边和不带空边的NFA，前面加上 \epsilon </p>
+<h2 id="等价转换"><a href="#等价转换" class="headerlink" title="等价转换"></a>等价转换</h2><h3 id="有限自动机确定化"><a href="#有限自动机确定化" class="headerlink" title="有限自动机确定化"></a>有限自动机确定化</h3><p>NFA 转换到 DFA</p>
+<p>因为</p>
+<p>NFA 较易构造，但不好用</p>
+<p>DFA 较难构造，但是好用</p>
+<p>任何一种 NFA 都可以通过有效算法转换成 DFA（等效转哈，二者描述的语言相通）</p>
+<h1 id="正规语言表示方法"><a href="#正规语言表示方法" class="headerlink" title="正规语言表示方法"></a>正规语言表示方法</h1><ul>
+<li>正规文法</li>
+<li>正规式</li>
+<li>有限自动机FA</li>
+</ul>
+<p>能用这三种方法表示的语言一定是正规语言</p>
+<h2 id="正规文法"><a href="#正规文法" class="headerlink" title="正规文法"></a>正规文法</h2><p>用很多个产生式来定义</p>
+<p>他有局限性，也就是<br>$$<br>L3 = { a^n b^n | n &gt;= 0 }<br>$$<br>是无法被用正规文法表示的</p>
+<h2 id="正规式"><a href="#正规式" class="headerlink" title="正规式"></a>正规式</h2><p>正则表达式，也有类似于Windows通配符一样的表达式</p>
 
       
     </div>
@@ -853,7 +903,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#形式语言"><span class="nav-number">1.</span> <span class="nav-text">形式语言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本观点"><span class="nav-number">2.</span> <span class="nav-text">基本观点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">3.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字母表"><span class="nav-number">4.</span> <span class="nav-text">字母表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#符号串"><span class="nav-number">5.</span> <span class="nav-text">符号串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#符号串集合"><span class="nav-number">6.</span> <span class="nav-text">符号串集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#规则"><span class="nav-number">7.</span> <span class="nav-text">规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算"><span class="nav-number">8.</span> <span class="nav-text">运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#点连接"><span class="nav-number">8.1.</span> <span class="nav-text">点连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#或运算"><span class="nav-number">8.2.</span> <span class="nav-text">或运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方幂"><span class="nav-number">8.3.</span> <span class="nav-text">方幂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#空符号串"><span class="nav-number">8.4.</span> <span class="nav-text">空符号串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包"><span class="nav-number">8.5.</span> <span class="nav-text">闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#正闭包"><span class="nav-number">8.5.1.</span> <span class="nav-text">正闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#星闭包"><span class="nav-number">8.5.2.</span> <span class="nav-text">星闭包</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#符号串运算案例"><span class="nav-number">8.6.</span> <span class="nav-text">符号串运算案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#符号串的运算"><span class="nav-number">8.7.</span> <span class="nav-text">符号串的运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#乘积"><span class="nav-number">8.7.1.</span> <span class="nav-text">乘积</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#和"><span class="nav-number">8.7.2.</span> <span class="nav-text">和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方幂-1"><span class="nav-number">8.7.3.</span> <span class="nav-text">方幂</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包-1"><span class="nav-number">8.7.4.</span> <span class="nav-text">闭包</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文法"><span class="nav-number">9.</span> <span class="nav-text">文法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#描述方式"><span class="nav-number">9.1.</span> <span class="nav-text">描述方式</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#形式语言"><span class="nav-number">1.</span> <span class="nav-text">形式语言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本观点"><span class="nav-number">2.</span> <span class="nav-text">基本观点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">3.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字母表"><span class="nav-number">4.</span> <span class="nav-text">字母表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#符号串"><span class="nav-number">5.</span> <span class="nav-text">符号串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#符号串集合"><span class="nav-number">6.</span> <span class="nav-text">符号串集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#规则"><span class="nav-number">7.</span> <span class="nav-text">规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算"><span class="nav-number">8.</span> <span class="nav-text">运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#点连接"><span class="nav-number">8.1.</span> <span class="nav-text">点连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#或运算"><span class="nav-number">8.2.</span> <span class="nav-text">或运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方幂"><span class="nav-number">8.3.</span> <span class="nav-text">方幂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#空符号串"><span class="nav-number">8.4.</span> <span class="nav-text">空符号串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包"><span class="nav-number">8.5.</span> <span class="nav-text">闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#正闭包"><span class="nav-number">8.5.1.</span> <span class="nav-text">正闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#星闭包"><span class="nav-number">8.5.2.</span> <span class="nav-text">星闭包</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#符号串运算案例"><span class="nav-number">8.6.</span> <span class="nav-text">符号串运算案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#符号串的运算"><span class="nav-number">8.7.</span> <span class="nav-text">符号串的运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#乘积"><span class="nav-number">8.7.1.</span> <span class="nav-text">乘积</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#和"><span class="nav-number">8.7.2.</span> <span class="nav-text">和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方幂-1"><span class="nav-number">8.7.3.</span> <span class="nav-text">方幂</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包-1"><span class="nav-number">8.7.4.</span> <span class="nav-text">闭包</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文法"><span class="nav-number">9.</span> <span class="nav-text">文法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#描述方式"><span class="nav-number">9.1.</span> <span class="nav-text">描述方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-1"><span class="nav-number">9.2.</span> <span class="nav-text">定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#V-N"><span class="nav-number">9.2.1.</span> <span class="nav-text">$V_N$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#V-T"><span class="nav-number">9.2.2.</span> <span class="nav-text">$V_T$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Z"><span class="nav-number">9.2.3.</span> <span class="nav-text">Z</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#P"><span class="nav-number">9.2.4.</span> <span class="nav-text">P</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#终结符产生式"><span class="nav-number">9.3.</span> <span class="nav-text">终结符产生式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推导"><span class="nav-number">9.4.</span> <span class="nav-text">推导</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#产生式"><span class="nav-number">9.5.</span> <span class="nav-text">产生式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#举例"><span class="nav-number">9.6.</span> <span class="nav-text">举例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语言"><span class="nav-number">10.</span> <span class="nav-text">语言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#句型"><span class="nav-number">11.</span> <span class="nav-text">句型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自动机"><span class="nav-number">12.</span> <span class="nav-text">自动机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-2"><span class="nav-number">12.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DFA确定有限自动机"><span class="nav-number">12.2.</span> <span class="nav-text">DFA确定有限自动机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义-3"><span class="nav-number">12.2.1.</span> <span class="nav-text">定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NFA非确定有限自动机"><span class="nav-number">12.3.</span> <span class="nav-text">NFA非确定有限自动机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等价转换"><span class="nav-number">12.4.</span> <span class="nav-text">等价转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有限自动机确定化"><span class="nav-number">12.4.1.</span> <span class="nav-text">有限自动机确定化</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正规语言表示方法"><span class="nav-number">13.</span> <span class="nav-text">正规语言表示方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#正规文法"><span class="nav-number">13.1.</span> <span class="nav-text">正规文法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正规式"><span class="nav-number">13.2.</span> <span class="nav-text">正规式</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -880,7 +930,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
