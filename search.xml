@@ -3,6 +3,40 @@
   
     
     <entry>
+      <title>语法分析</title>
+      <link href="/2020/01/04/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/"/>
+      <url>/2020/01/04/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="语法分析"><a href="#语法分析" class="headerlink" title="语法分析"></a>语法分析</h1><p>对于给定的符号串，判断他是否是某个文法的句子</p><p>可以通过多次推导和规约来判断</p><p>通常使用最左推导和最左规约</p><h1 id="分析方法"><a href="#分析方法" class="headerlink" title="分析方法"></a>分析方法</h1><h2 id="自顶向下"><a href="#自顶向下" class="headerlink" title="自顶向下"></a>自顶向下</h2><h3 id="递归子程序法"><a href="#递归子程序法" class="headerlink" title="递归子程序法"></a>递归子程序法</h3><p>对于每一个非终结符，构造一个子程序，用以识别对该非终极符所定义的符号串。</p><p>每个子程序以产生式左部非终结符命名，以产生式右部构造子程序的内容</p><h2 id="自底向上"><a href="#自底向上" class="headerlink" title="自底向上"></a>自底向上</h2><ul><li></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> compiler </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>词法分析</title>
+      <link href="/2020/01/04/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/"/>
+      <url>/2020/01/04/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="词法分析"><a href="#词法分析" class="headerlink" title="词法分析"></a>词法分析</h1><p>把源代码中的每个单词进行分割然后分析</p><h1 id="token"><a href="#token" class="headerlink" title="token"></a>token</h1><p>我们需要把单词分割成一个一个小的单元，这种单元叫做token</p><h2 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h2><p>token 组成包括 种别码 值</p><p>种别码一般是枚举值，可以取值如下</p><ul><li>关键字</li><li>变量（包括函数，因为函数名本身也是一个内存指针变量）</li><li>常量</li><li>分隔符号，运算符</li><li>空字符</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> compiler </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>形式语言</title>
       <link href="/2019/12/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80/"/>
       <url>/2019/12/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80/</url>
