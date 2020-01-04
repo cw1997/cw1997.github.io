@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="语法分析对于给定的符号串，判断他是否是某个文法的句子 可以通过多次推导和规约来判断 通常使用最左推导和最左规约 分析方法自顶向下递归子程序法对于每一个非终结符，构造一个子程序，用以识别对该非终极符所定义的符号串。 每个子程序以产生式左部非终结符命名，以产生式右部构造子程序的内容 自底向上">
+<meta name="description" content="语法分析对于给定的符号串，判断他是否是某个文法的句子 可以通过多次推导和规约来判断 通常使用最左推导和最左规约 分析方法自顶向下递归子程序法对于每一个非终结符，构造一个子程序，用以识别对该非终极符所定义的符号串。 每个子程序以产生式左部非终结符命名，以产生式右部构造子程序的内容 执行步骤首先读入开始第一个符号，然后扩展文法，判断第一个符号是什么，按照产生式走不同的分支，然后再不同的分支里面，判断如">
 <meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="语法分析">
 <meta property="og:url" content="http://blog.changwei.me/2020/01/04/语法分析/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="语法分析对于给定的符号串，判断他是否是某个文法的句子 可以通过多次推导和规约来判断 通常使用最左推导和最左规约 分析方法自顶向下递归子程序法对于每一个非终结符，构造一个子程序，用以识别对该非终极符所定义的符号串。 每个子程序以产生式左部非终结符命名，以产生式右部构造子程序的内容 自底向上">
+<meta property="og:description" content="语法分析对于给定的符号串，判断他是否是某个文法的句子 可以通过多次推导和规约来判断 通常使用最左推导和最左规约 分析方法自顶向下递归子程序法对于每一个非终结符，构造一个子程序，用以识别对该非终极符所定义的符号串。 每个子程序以产生式左部非终结符命名，以产生式右部构造子程序的内容 执行步骤首先读入开始第一个符号，然后扩展文法，判断第一个符号是什么，按照产生式走不同的分支，然后再不同的分支里面，判断如">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2020-01-04T08:06:10.555Z">
+<meta property="og:updated_time" content="2020-01-04T09:21:56.701Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="语法分析">
-<meta name="twitter:description" content="语法分析对于给定的符号串，判断他是否是某个文法的句子 可以通过多次推导和规约来判断 通常使用最左推导和最左规约 分析方法自顶向下递归子程序法对于每一个非终结符，构造一个子程序，用以识别对该非终极符所定义的符号串。 每个子程序以产生式左部非终结符命名，以产生式右部构造子程序的内容 自底向上">
+<meta name="twitter:description" content="语法分析对于给定的符号串，判断他是否是某个文法的句子 可以通过多次推导和规约来判断 通常使用最左推导和最左规约 分析方法自顶向下递归子程序法对于每一个非终结符，构造一个子程序，用以识别对该非终极符所定义的符号串。 每个子程序以产生式左部非终结符命名，以产生式右部构造子程序的内容 执行步骤首先读入开始第一个符号，然后扩展文法，判断第一个符号是什么，按照产生式走不同的分支，然后再不同的分支里面，判断如">
 
 
 
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-01-04T16:06:10+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-01-04T17:21:56+08:00">
                 2020-01-04
               </time>
             
@@ -463,6 +463,25 @@
 <p>通常使用最左推导和最左规约</p>
 <h1 id="分析方法"><a href="#分析方法" class="headerlink" title="分析方法"></a>分析方法</h1><h2 id="自顶向下"><a href="#自顶向下" class="headerlink" title="自顶向下"></a>自顶向下</h2><h3 id="递归子程序法"><a href="#递归子程序法" class="headerlink" title="递归子程序法"></a>递归子程序法</h3><p>对于每一个非终结符，构造一个子程序，用以识别对该非终极符所定义的符号串。</p>
 <p>每个子程序以产生式左部非终结符命名，以产生式右部构造子程序的内容</p>
+<h4 id="执行步骤"><a href="#执行步骤" class="headerlink" title="执行步骤"></a>执行步骤</h4><p>首先读入开始第一个符号，然后扩展文法，判断第一个符号是什么，按照产生式走不同的分支，然后再不同的分支里面，判断如果是非终结符，就调用非终结符的子程序，如果是终结符就直接判断是否符合产生式要求，不符合就报语法错误，符合就直接读入，然后判断下一个符号。直到所有符号都能够按照文法被接受读入。</p>
+<h4 id="对文法的要求（局限性）"><a href="#对文法的要求（局限性）" class="headerlink" title="对文法的要求（局限性）"></a>对文法的要求（局限性）</h4><p>递归子程序是根据文法各产生式右部的首符号与当前所读单词是否匹配，以决定使用哪个候选产生式进行推导，这就要求文法满足如下两个条件</p>
+<ul>
+<li>具有相同左部的各个产生式，右部的首符号不同（反例：$A-&gt;a \alpha | a \beta$）</li>
+<li>文法不能有左递归（反例：$A-&gt; A \alpha | a $）</li>
+</ul>
+<p><strong>其实满足如上两个条件的就算 LL(1) 文法</strong></p>
+<p>可以做消除左递归操作</p>
+<h3 id="LL-1-分析法"><a href="#LL-1-分析法" class="headerlink" title="LL(1)分析法"></a>LL(1)分析法</h3><h4 id="LL-1-文法"><a href="#LL-1-文法" class="headerlink" title="LL(1)文法"></a>LL(1)文法</h4><p>首先设有如下语言<br>$$<br>G(Z) = (V_N, V_T, Z, P), A -&gt; \alpha 属于 P<br>$$</p>
+<h5 id="first集合"><a href="#first集合" class="headerlink" title="first集合"></a>first集合</h5><p>对于一个产生式 $ A-&gt; \alpha $ 如果有如下<br>$$<br>first(\alpha) = { t | \alpha 经过多次推导=&gt;产生 t… , t属于V_T 终结符 }<br>$$<br>$first(\alpha)$ 是从 $\alpha$ 能够推导出的所有首符号构成的集合</p>
+<h5 id="follow集合"><a href="#follow集合" class="headerlink" title="follow集合"></a>follow集合</h5><p>对于一个产生式 $ A-&gt; \alpha $ 如果有如下<br>$$<br>follow(A) = { t | Z 经过多次推导=&gt;产生 …At… , t属于V_T 终结符 }<br>$$<br>$follow(A)$ 是所有句型中紧跟在 $A$ 之后出现的终结符</p>
+<h6 id="求解方法"><a href="#求解方法" class="headerlink" title="求解方法"></a>求解方法</h6><p>检查所有右部含有 A 的产生式  $B-&gt; …A \beta$ </p>
+<p>看 $\beta$ 的情况</p>
+<ul>
+<li>如果非空，则 $first(\beta) 属于 follow(A)$</li>
+<li>如果可以多步推导到或者直接 $\beta = \epsilon$，则 $follow(B) 属于 follow(A)$</li>
+</ul>
+<h5 id="select集合"><a href="#select集合" class="headerlink" title="select集合"></a>select集合</h5><p>对于一个产生式 $ A-&gt; \alpha $ 如果有如下<br>$$<br>f(x)=<br>\begin{cases}<br>first(\alpha) &amp; \alpha 不可以推导出 \epsilon  \<br>first(\alpha) 并运算 follow(\alpha) &amp; \alpha 可以推导出 \epsilon<br>\end{cases}<br>$$<br>如果 $\alpha = \epsilon$ 则 $first(\alpha)={}$</p>
+<p>设 # 为输入串的结束符，则 # 属于 $follow(Z)$</p>
 <h2 id="自底向上"><a href="#自底向上" class="headerlink" title="自底向上"></a>自底向上</h2><ul>
 <li></li>
 </ul>
@@ -822,7 +841,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#语法分析"><span class="nav-number">1.</span> <span class="nav-text">语法分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分析方法"><span class="nav-number">2.</span> <span class="nav-text">分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#自顶向下"><span class="nav-number">2.1.</span> <span class="nav-text">自顶向下</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#递归子程序法"><span class="nav-number">2.1.1.</span> <span class="nav-text">递归子程序法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自底向上"><span class="nav-number">2.2.</span> <span class="nav-text">自底向上</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#语法分析"><span class="nav-number">1.</span> <span class="nav-text">语法分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分析方法"><span class="nav-number">2.</span> <span class="nav-text">分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#自顶向下"><span class="nav-number">2.1.</span> <span class="nav-text">自顶向下</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#递归子程序法"><span class="nav-number">2.1.1.</span> <span class="nav-text">递归子程序法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#执行步骤"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">执行步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对文法的要求（局限性）"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">对文法的要求（局限性）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LL-1-分析法"><span class="nav-number">2.1.2.</span> <span class="nav-text">LL(1)分析法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LL-1-文法"><span class="nav-number">2.1.2.1.</span> <span class="nav-text">LL(1)文法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#first集合"><span class="nav-number">2.1.2.1.1.</span> <span class="nav-text">first集合</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#follow集合"><span class="nav-number">2.1.2.1.2.</span> <span class="nav-text">follow集合</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#求解方法"><span class="nav-number">2.1.2.1.2.1.</span> <span class="nav-text">求解方法</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#select集合"><span class="nav-number">2.1.2.1.3.</span> <span class="nav-text">select集合</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自底向上"><span class="nav-number">2.2.</span> <span class="nav-text">自底向上</span></a></li></ol></li></ol></div>
             
 
           </div>
