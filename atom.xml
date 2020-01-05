@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2020-01-04T16:50:52.416Z</updated>
+  <updated>2020-01-05T10:01:41.886Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>语义分析</title>
+    <link href="http://blog.changwei.me/2020/01/05/%E8%AF%AD%E4%B9%89%E5%88%86%E6%9E%90/"/>
+    <id>http://blog.changwei.me/2020/01/05/语义分析/</id>
+    <published>2020-01-04T20:35:24.000Z</published>
+    <updated>2020-01-05T10:01:41.886Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;语义分析&quot;&gt;&lt;a href=&quot;#语义分析&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="compiler" scheme="http://blog.changwei.me/categories/compiler/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>语法分析</title>
     <link href="http://blog.changwei.me/2020/01/04/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/"/>
     <id>http://blog.changwei.me/2020/01/04/语法分析/</id>
     <published>2020-01-04T07:53:29.000Z</published>
-    <updated>2020-01-04T16:50:52.416Z</updated>
+    <updated>2020-01-04T20:33:15.910Z</updated>
     
     <summary type="html">
     
@@ -470,31 +494,6 @@
         
         
           &lt;h1 id=&quot;曲面的侧&quot;&gt;&lt;a href=&quot;#曲面的侧&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>对面积的曲面积分</title>
-    <link href="http://blog.changwei.me/2019/01/02/%E5%AF%B9%E9%9D%A2%E7%A7%AF%E7%9A%84%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/"/>
-    <id>http://blog.changwei.me/2019/01/02/对面积的曲面积分/</id>
-    <published>2019-01-02T12:46:37.000Z</published>
-    <updated>2019-01-02T13:17:02.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;当我们需要求一个曲面的质量，且该曲面在不同点上的密度并不一样（面密度不均匀）&lt;/p&gt;
-&lt;p&gt;但是我们已经得知该曲面在 x y z
         
       
     
