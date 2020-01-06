@@ -7,7 +7,7 @@
       <link href="/2020/01/05/%E8%AF%AD%E4%B9%89%E5%88%86%E6%9E%90/"/>
       <url>/2020/01/05/%E8%AF%AD%E4%B9%89%E5%88%86%E6%9E%90/</url>
       
-        <content type="html"><![CDATA[<h1 id="语义分析"><a href="#语义分析" class="headerlink" title="语义分析"></a>语义分析</h1><p>分析语义是否正确</p><p>例如</p><ul><li>变量是否重复声明</li><li>指针是否指向有效地址</li><li>某些数据类型是否正确使用</li></ul><h1 id="中间代码"><a href="#中间代码" class="headerlink" title="中间代码"></a>中间代码</h1><h1 id="符号表"><a href="#符号表" class="headerlink" title="符号表"></a>符号表</h1><p>管理标识符</p><p>包括如下语义信息</p><ul><li>名字 标识符源码，用作查询关键字</li><li>类型 该标识符数据类型以及相关信息</li><li>种类 该标识符的语义角色</li><li>地址 与值单元相关的一些信息，在内存的分布</li></ul><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><ul><li><p>定义和重定义检查</p></li><li><p>类型匹配校验</p></li><li>数据越界和溢出检查（C不做越界检查）</li><li>值单元存储分配</li><li>函数传参校验</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="语义分析"><a href="#语义分析" class="headerlink" title="语义分析"></a>语义分析</h1><p>分析语义是否正确</p><p>例如</p><ul><li>变量是否重复声明</li><li>指针是否指向有效地址</li><li>某些数据类型是否正确使用</li></ul><h1 id="中间代码"><a href="#中间代码" class="headerlink" title="中间代码"></a>中间代码</h1><h1 id="符号表"><a href="#符号表" class="headerlink" title="符号表"></a>符号表</h1><p>管理标识符</p><p>包括如下语义信息</p><ul><li>名字 标识符源码，用作查询关键字</li><li>类型 该标识符数据类型以及相关信息</li><li>种类 该标识符的语义角色</li><li>地址 与值单元相关的一些信息，在内存的分布</li></ul><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><ul><li><p>定义和重定义检查</p></li><li><p>类型匹配校验</p></li><li>数据越界和溢出检查（C不做越界检查）</li><li>值单元存储分配</li><li>函数传参校验</li></ul><h2 id="前端优化"><a href="#前端优化" class="headerlink" title="前端优化"></a>前端优化</h2><ul><li><p>常数表达式节省</p></li><li><p>公共表达式替换</p></li><li><p>无用表达式删除</p></li></ul>]]></content>
       
       
       <categories>
