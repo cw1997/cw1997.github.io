@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="模拟电子技术研究模拟，连续的信号在经过一些电子器件之后的伏安关系分析，电路的设计以及制造。 电子器件分类无源器件对外表现的特性（例如伏安关系，某些器件也有可能有光电效应等等），与外加激励源无关。 例如电阻，电容，电感，无论外加什么激励源，它们都能表现出固定的电阻值，电容值，电感值。 有源器件特性与外加激励源有关。 例如二极管如果不按照PN结的类型加不同的偏置电压，会导致无法正常工作。三极管，场效应">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2020-01-20T12:52:34.723Z">
+<meta property="og:updated_time" content="2020-01-20T15:22:25.073Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="模拟电子">
 <meta name="twitter:description" content="模拟电子技术研究模拟，连续的信号在经过一些电子器件之后的伏安关系分析，电路的设计以及制造。 电子器件分类无源器件对外表现的特性（例如伏安关系，某些器件也有可能有光电效应等等），与外加激励源无关。 例如电阻，电容，电感，无论外加什么激励源，它们都能表现出固定的电阻值，电容值，电感值。 有源器件特性与外加激励源有关。 例如二极管如果不按照PN结的类型加不同的偏置电压，会导致无法正常工作。三极管，场效应">
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-01-20T20:52:34+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-01-20T23:22:25+08:00">
                 2020-01-20
               </time>
             
@@ -463,6 +463,44 @@
 <p>例如电阻，电容，电感，无论外加什么激励源，它们都能表现出固定的电阻值，电容值，电感值。</p>
 <h3 id="有源器件"><a href="#有源器件" class="headerlink" title="有源器件"></a>有源器件</h3><p>特性与外加激励源有关。</p>
 <p>例如二极管如果不按照PN结的类型加不同的偏置电压，会导致无法正常工作。三极管，场效应管等等必须在BE施加正向偏置，CE施加反向偏置，才能呈现放大特性，否则无法正常工作。</p>
+<h1 id="半导体分类"><a href="#半导体分类" class="headerlink" title="半导体分类"></a>半导体分类</h1><ul>
+<li>导体</li>
+<li>绝缘体</li>
+<li>半导体，例如，硅、锗、砷化镓</li>
+</ul>
+<h1 id="半导体特性"><a href="#半导体特性" class="headerlink" title="半导体特性"></a>半导体特性</h1><h2 id="掺杂特性"><a href="#掺杂特性" class="headerlink" title="掺杂特性"></a>掺杂特性</h2><p>掺入杂质则导电率增加几百倍，例如半导体</p>
+<h2 id="温度特性"><a href="#温度特性" class="headerlink" title="温度特性"></a>温度特性</h2><p>温度增加使得导电率大为增加，例如热敏元件</p>
+<h2 id="光照特性"><a href="#光照特性" class="headerlink" title="光照特性"></a>光照特性</h2><p>光照不仅使得导电率大为增加，还可以产生电动势</p>
+<h1 id="半导体"><a href="#半导体" class="headerlink" title="半导体"></a>半导体</h1><h2 id="本征半导体"><a href="#本征半导体" class="headerlink" title="本征半导体"></a>本征半导体</h2><p>完全纯净，纯度达到9个9，也就是 99.9999999%，物理结构上呈现单晶体形态</p>
+<p>晶体特征： 质点的排列有一定规律，空间立体对称</p>
+<p>这类半导体通常对外显现4价</p>
+<p>多个4价元素之间互相形成共价键</p>
+<p>但是本征半导体在受热情况下会产生本征激发，激发出少量的自由电子挣脱原子核束缚往外跑，导致共价键的价带中留下空位，成为空穴，空穴本身不带电，但是在理论分析中我们可以把它视为一个正电荷</p>
+<h2 id="载流子"><a href="#载流子" class="headerlink" title="载流子"></a>载流子</h2><p>运载电荷的例子，例如自由电子和空穴</p>
+<p>本征半导体中有两种载流子，自由电子和空穴，他们成对出现</p>
+<p>电子流和空穴流：在外电场作用下，自由电子和空穴和的定向运动产生电流，分别成为电子流和空穴流。</p>
+<p>电子流是自由电子做定向运动形成的，方向与外电场相反，自由电子始终在导带内运动</p>
+<p>空血流是加点字递补空穴形成的，方向与外电场相同，始终在价带内运动</p>
+<p>本征半导体在热力学0K温度的情况下没有和外界能量激发，不会本征激发出自由电子，所以不导电</p>
+<p>载流子浓度（单位体积内的自由电子数=单位体积内的空穴数）有如下公式<br>$$<br>n_i = p_i = A_0T^{\frac{3}{2}}e^{\frac{-E_{G0}}{2kT}}<br>$$</p>
+<ul>
+<li>A_0 与材料有关的常数</li>
+<li>E_{G0} 禁带宽度</li>
+<li>T 绝对温度</li>
+<li>k 玻尔曼常数</li>
+</ul>
+<p>载流子的产生和复合速率为每秒成对产生的空穴对浓度</p>
+<p>产生率是 g ，复合率是 R </p>
+<p>当达到动态平衡时 g=R<br>$$<br>R=r n_i p_i<br>$$<br>其中 r 是复合系数，与材料有关</p>
+<h2 id="杂质半导体"><a href="#杂质半导体" class="headerlink" title="杂质半导体"></a>杂质半导体</h2><p>杂质半导体的载流子浓度主要取决于多子（掺杂杂质）的浓度</p>
+<p>尽管杂质含量很少，但提供的载流子数量仍远大于本征半导体中的载流子数量，所以导电能力剧增</p>
+<p>并且半导体的掺杂、温度等都可以人为控制</p>
+<h3 id="P形半导体"><a href="#P形半导体" class="headerlink" title="P形半导体"></a>P形半导体</h3><p>掺入三价元素，例如 B（硼）、Al（铝）等，形成 P形半导体，也称空穴型半导体。</p>
+<p>由于三价元素会留下空穴，很容易俘获电子，因此将其成为受主杂质，原子因俘获自由电子而带负电荷成为负离子</p>
+<p>空穴 + 是多子（多数载流子），自由电子 - 是少子</p>
+<h3 id="N型半导体"><a href="#N型半导体" class="headerlink" title="N型半导体"></a>N型半导体</h3><p>掺入五价元素，例如 P（磷）、砷等，形成 N型半导体，也称电子型半导体</p>
+<p>由于五价元素很容易贡献电子，因此将其成为施主杂质，原子因提供自由电子而带正电荷成为正离子</p>
+<p>自由电子 - 是多子（多数载流子），空穴 + 是少子</p>
 
       
     </div>
@@ -819,7 +857,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#模拟电子技术"><span class="nav-number">1.</span> <span class="nav-text">模拟电子技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#电子器件"><span class="nav-number">2.</span> <span class="nav-text">电子器件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">2.1.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无源器件"><span class="nav-number">2.1.1.</span> <span class="nav-text">无源器件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有源器件"><span class="nav-number">2.1.2.</span> <span class="nav-text">有源器件</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#模拟电子技术"><span class="nav-number">1.</span> <span class="nav-text">模拟电子技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#电子器件"><span class="nav-number">2.</span> <span class="nav-text">电子器件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">2.1.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无源器件"><span class="nav-number">2.1.1.</span> <span class="nav-text">无源器件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有源器件"><span class="nav-number">2.1.2.</span> <span class="nav-text">有源器件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体分类"><span class="nav-number">3.</span> <span class="nav-text">半导体分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体特性"><span class="nav-number">4.</span> <span class="nav-text">半导体特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#掺杂特性"><span class="nav-number">4.1.</span> <span class="nav-text">掺杂特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#温度特性"><span class="nav-number">4.2.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#光照特性"><span class="nav-number">4.3.</span> <span class="nav-text">光照特性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体"><span class="nav-number">5.</span> <span class="nav-text">半导体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#本征半导体"><span class="nav-number">5.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#载流子"><span class="nav-number">5.2.</span> <span class="nav-text">载流子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂质半导体"><span class="nav-number">5.3.</span> <span class="nav-text">杂质半导体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#P形半导体"><span class="nav-number">5.3.1.</span> <span class="nav-text">P形半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#N型半导体"><span class="nav-number">5.3.2.</span> <span class="nav-text">N型半导体</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
