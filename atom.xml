@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2020-01-05T10:15:25.929Z</updated>
+  <updated>2020-01-20T12:52:34.723Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -17,11 +17,58 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>模拟电子</title>
+    <link href="http://blog.changwei.me/2020/01/20/%E6%A8%A1%E6%8B%9F%E7%94%B5%E5%AD%90/"/>
+    <id>http://blog.changwei.me/2020/01/20/模拟电子/</id>
+    <published>2020-01-20T12:34:08.000Z</published>
+    <updated>2020-01-20T12:52:34.723Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;模拟电子技术&quot;&gt;&lt;a href=&quot;#模拟电子技术&quot; class=&quot;headerlink&quot; title=&quot;模拟电子技术&quot;&gt;&lt;/a&gt;模拟电子技术&lt;/h1&gt;&lt;p&gt;研究模拟，连续的信号在经过一些电子器件之后的伏安关系分析，电路的设计以及制造。&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="electric" scheme="http://blog.changwei.me/categories/electric/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.changwei.me/2020/01/20/hello-world/"/>
+    <id>http://blog.changwei.me/2020/01/20/hello-world/</id>
+    <published>2020-01-19T17:27:24.366Z</published>
+    <updated>2018-11-21T16:15:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>语义分析</title>
     <link href="http://blog.changwei.me/2020/01/05/%E8%AF%AD%E4%B9%89%E5%88%86%E6%9E%90/"/>
     <id>http://blog.changwei.me/2020/01/05/语义分析/</id>
     <published>2020-01-04T20:35:24.000Z</published>
-    <updated>2020-01-05T10:15:25.929Z</updated>
+    <updated>2020-01-05T10:15:25.000Z</updated>
     
     <summary type="html">
     
@@ -45,7 +92,7 @@
     <link href="http://blog.changwei.me/2020/01/04/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/"/>
     <id>http://blog.changwei.me/2020/01/04/语法分析/</id>
     <published>2020-01-04T07:53:29.000Z</published>
-    <updated>2020-01-05T22:46:58.687Z</updated>
+    <updated>2020-01-05T22:46:58.000Z</updated>
     
     <summary type="html">
     
@@ -69,7 +116,7 @@
     <link href="http://blog.changwei.me/2020/01/04/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/"/>
     <id>http://blog.changwei.me/2020/01/04/词法分析/</id>
     <published>2020-01-03T16:50:23.000Z</published>
-    <updated>2020-01-03T16:58:21.978Z</updated>
+    <updated>2020-01-03T16:58:21.000Z</updated>
     
     <summary type="html">
     
@@ -94,7 +141,7 @@
     <link href="http://blog.changwei.me/2019/12/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80/"/>
     <id>http://blog.changwei.me/2019/12/30/形式语言/</id>
     <published>2019-12-30T08:38:38.000Z</published>
-    <updated>2020-01-03T16:50:07.078Z</updated>
+    <updated>2020-01-03T16:50:07.000Z</updated>
     
     <summary type="html">
     
@@ -118,7 +165,7 @@
     <link href="http://blog.changwei.me/2019/12/30/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/"/>
     <id>http://blog.changwei.me/2019/12/30/编译原理介绍/</id>
     <published>2019-12-30T07:38:21.000Z</published>
-    <updated>2019-12-30T08:38:41.293Z</updated>
+    <updated>2019-12-30T08:38:41.000Z</updated>
     
     <summary type="html">
     
@@ -139,33 +186,11 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://blog.changwei.me/2019/12/30/hello-world/"/>
-    <id>http://blog.changwei.me/2019/12/30/hello-world/</id>
-    <published>2019-12-30T07:31:26.824Z</published>
-    <updated>2018-11-21T16:15:40.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title></title>
     <link href="http://blog.changwei.me/2019/06/25/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
     <id>http://blog.changwei.me/2019/06/25/编译原理/</id>
     <published>2019-06-25T06:49:22.000Z</published>
-    <updated>2019-12-30T19:19:27.485Z</updated>
+    <updated>2019-12-30T19:19:27.000Z</updated>
     
     <summary type="html">
     
@@ -470,30 +495,6 @@
         
           &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最早以前计算圆形的面积，采取的是割圆术&lt;/p&gt;
 &lt;p&gt;计算半径为 $R$ 的圆形面积
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>对坐标的曲面积分</title>
-    <link href="http://blog.changwei.me/2019/01/03/%E5%AF%B9%E5%9D%90%E6%A0%87%E7%9A%84%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/"/>
-    <id>http://blog.changwei.me/2019/01/03/对坐标的曲面积分/</id>
-    <published>2019-01-03T15:56:05.000Z</published>
-    <updated>2019-01-07T06:40:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;曲面的侧&quot;&gt;&lt;a href=&quot;#曲面的侧&quot; class=&quot;headerlink&quot;
         
       
     
