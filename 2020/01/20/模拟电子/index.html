@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="模拟电子技术研究模拟，连续的信号在经过一些电子器件之后的伏安关系分析，电路的设计以及制造。 电子器件分类无源器件对外表现的特性（例如伏安关系，某些器件也有可能有光电效应等等），与外加激励源无关。 例如电阻，电容，电感，无论外加什么激励源，它们都能表现出固定的电阻值，电容值，电感值。 有源器件特性与外加激励源有关。 例如二极管如果不按照PN结的类型加不同的偏置电压，会导致无法正常工作。三极管，场效应">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2020-01-20T15:22:25.073Z">
+<meta property="og:updated_time" content="2020-01-21T09:01:18.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="模拟电子">
 <meta name="twitter:description" content="模拟电子技术研究模拟，连续的信号在经过一些电子器件之后的伏安关系分析，电路的设计以及制造。 电子器件分类无源器件对外表现的特性（例如伏安关系，某些器件也有可能有光电效应等等），与外加激励源无关。 例如电阻，电容，电感，无论外加什么激励源，它们都能表现出固定的电阻值，电容值，电感值。 有源器件特性与外加激励源有关。 例如二极管如果不按照PN结的类型加不同的偏置电压，会导致无法正常工作。三极管，场效应">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-01-20T23:22:25+08:00">
-                2020-01-20
+              <time title="Post modified" itemprop="dateModified" datetime="2020-01-21T17:01:18+08:00">
+                2020-01-21
               </time>
             
           </span>
@@ -484,10 +484,10 @@
 <p>本征半导体在热力学0K温度的情况下没有和外界能量激发，不会本征激发出自由电子，所以不导电</p>
 <p>载流子浓度（单位体积内的自由电子数=单位体积内的空穴数）有如下公式<br>$$<br>n_i = p_i = A_0T^{\frac{3}{2}}e^{\frac{-E_{G0}}{2kT}}<br>$$</p>
 <ul>
-<li>A_0 与材料有关的常数</li>
-<li>E_{G0} 禁带宽度</li>
-<li>T 绝对温度</li>
-<li>k 玻尔曼常数</li>
+<li>$A_0$ 与材料有关的常数</li>
+<li>$E_{G0}$ 禁带宽度</li>
+<li>$T$ 绝对温度</li>
+<li>$k$ 玻尔曼常数</li>
 </ul>
 <p>载流子的产生和复合速率为每秒成对产生的空穴对浓度</p>
 <p>产生率是 g ，复合率是 R </p>
@@ -501,6 +501,108 @@
 <h3 id="N型半导体"><a href="#N型半导体" class="headerlink" title="N型半导体"></a>N型半导体</h3><p>掺入五价元素，例如 P（磷）、砷等，形成 N型半导体，也称电子型半导体</p>
 <p>由于五价元素很容易贡献电子，因此将其成为施主杂质，原子因提供自由电子而带正电荷成为正离子</p>
 <p>自由电子 - 是多子（多数载流子），空穴 + 是少子</p>
+<h3 id="PN結"><a href="#PN結" class="headerlink" title="PN結"></a>PN結</h3><h4 id="前置概念"><a href="#前置概念" class="headerlink" title="前置概念"></a>前置概念</h4><h5 id="扩散运动"><a href="#扩散运动" class="headerlink" title="扩散运动"></a>扩散运动</h5><p>物质总是从浓度高的地方向浓度低的地方运动，由于浓度差产生的运动</p>
+<h5 id="漂移运动"><a href="#漂移运动" class="headerlink" title="漂移运动"></a>漂移运动</h5><p>载流子（自由电子和空穴）在电场力的作用下产生的定向移动，称为漂移运动</p>
+<h4 id="形成原理"><a href="#形成原理" class="headerlink" title="形成原理"></a>形成原理</h4><p>通过往一个半导体基底（例如硅片）的两端进行掺杂，一端掺入3价元素形成 P 端，另一端掺入5价元素形成 N 端。</p>
+<p>其中由于 N 端有较多的自由电子，所以会向 P 端自由电子较少的地方扩散。与此相对， P 端有较多的正离子，所以会向 N 端正离子较少的地方扩散（本质上是不断的递补）</p>
+<p>同时本征激发的少子也会有类似运动</p>
+<p>在中间由于不断的扩散所以会将自由电子和空穴全部中和，最后全部耗尽，产生耗尽层。</p>
+<p>由于耗尽层的两端仍然有正负离子，所以在耗尽层区域附近形成了内电场，内电场从 N 指向 P</p>
+<p>内电场阻碍多子向对方的扩散，同时促进了少子向对方漂移产生了漂移运动</p>
+<p>当扩散运动=漂移运动时，达到动态平衡</p>
+<p>由于内电场的建立，使 PN结 中产生了电位差，从而形成接触电位 $U_{\phi}$  </p>
+<p>硅 ≈ 0.7V</p>
+<p>锗 ≈ 0.3V</p>
+<h4 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h4><p>当外加电源时，如果 P 电位高于 N 电位，称为外界正向电压，也称为正向偏置</p>
+<p>原因是外电场方向与 PN 结内电场方向相反，削弱了内电场。于是内电场对于多子的扩散运动减弱，扩散电流加大。扩散电流远大于漂移电流，可以忽略漂移电流的影响。呈现低阻抗。</p>
+<p>反向偏置时外电场与 PN 结内电场方向相同，增强内电场。内电场对于多子阻碍增强，扩散电流大大减小。少子在内电场的作用下形成的漂移电流加大。呈现高阻抗。</p>
+<p>所以 PN 结具有单向导电性</p>
+<h4 id="PN节点流方程"><a href="#PN节点流方程" class="headerlink" title="PN节点流方程"></a>PN节点流方程</h4><p>$$<br>i_D = I_S(e^{\frac{u_D}{U_T}}-1)<br>$$</p>
+<ul>
+<li>I_S 反向保和电流</li>
+<li>U_T=kT/q 等效电压</li>
+<li>k 玻尔兹曼常数，q为电子的电量</li>
+<li>u_D 为 PN 结两端的电压</li>
+<li>i_D 为 PN 结的电流</li>
+</ul>
+<p>当 T = 300 K  室温时， U_T = 26mV</p>
+<p>其中可以做一下近似，由于其中的 u_D 远大于 U_T 所以 e 指数远大于 1，所以可以把括号内的 1 给去掉</p>
+<p>近似成一个以 e 为底的指数函数</p>
+<p>加正向电压时<br>$$<br>i_D = I_S(e^{\frac{u_D}{U_T}}) \ \ ( u_D &gt;&gt; U_T )<br>$$<br>加反向电压时<br>$$<br>i_D ≈ -I_S \ \ ( U_{BR} &lt; u_D  &lt; 0)<br>$$</p>
+<h4 id="击穿"><a href="#击穿" class="headerlink" title="击穿"></a>击穿</h4><p>反向击穿，当PN结上所加的反向电压达到某一数值时（u_D &lt; U_{BR}）反向电流激增的现象</p>
+<h5 id="可逆击穿"><a href="#可逆击穿" class="headerlink" title="可逆击穿"></a>可逆击穿</h5><p>可以恢复</p>
+<h6 id="雪崩击穿"><a href="#雪崩击穿" class="headerlink" title="雪崩击穿"></a>雪崩击穿</h6><p>当反向电压增高时，少子获得能量高速运动，在空间电荷区与原子发生碰撞，产生碰撞电离。形成连锁反应，像雪崩一样。</p>
+<p>使得反向电流激增。</p>
+<p>掺杂浓度小的二极管容易发生。</p>
+<h6 id="齐纳击穿"><a href="#齐纳击穿" class="headerlink" title="齐纳击穿"></a>齐纳击穿</h6><p>当反向电压较大时，强电场直接从共价键中将电子拉出来，形成大量载流子。</p>
+<p>使得反向电流激增。</p>
+<p>掺杂浓度大的二极管容易发生。</p>
+<h5 id="不可逆击穿"><a href="#不可逆击穿" class="headerlink" title="不可逆击穿"></a>不可逆击穿</h5><p>不可恢复</p>
+<h6 id="热击穿"><a href="#热击穿" class="headerlink" title="热击穿"></a>热击穿</h6><p>电流电压过大，耗散功率超过极限值，PN 结温度升高，导致过热永久损坏。</p>
+<h4 id="电容特性"><a href="#电容特性" class="headerlink" title="电容特性"></a>电容特性</h4><h5 id="势垒电容-C-B"><a href="#势垒电容-C-B" class="headerlink" title="势垒电容 C_B"></a>势垒电容 C_B</h5><p>当外加电压不同时，耗尽层的电荷量随外加电压而增多或减少，与电容的充放电过程相同。</p>
+<p>耗尽层宽窄变化所等效的电容为势垒电容。</p>
+<h5 id="扩散电容-C-D"><a href="#扩散电容-C-D" class="headerlink" title="扩散电容 C_D"></a>扩散电容 C_D</h5><p>外加电压不同的情况下，P区 N区的少子浓度分布将发生变化，扩散区内电荷的积累与释放过程与电容充放电过程相同</p>
+<h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><p>势垒电容和扩散电容都是非线性电容，并且同时存在。</p>
+<p>在外加电压变化缓慢时可以忽略，但是变化较快时不容忽略。</p>
+<h4 id="电光效应（电导致发光）"><a href="#电光效应（电导致发光）" class="headerlink" title="电光效应（电导致发光）"></a>电光效应（电导致发光）</h4><p>如果在 PN 结加正偏电压 U_D ，外电场将削弱内建电场对载流子的扩散阻挡作用。</p>
+<p>外加电场满足一定条件下，注入到耗尽区内的电子和空穴通过辐射复合而产生光子的速率将大于材料对光子的吸收速率，从而产生光电效应。</p>
+<h4 id="光电效应（光导致发电）"><a href="#光电效应（光导致发电）" class="headerlink" title="光电效应（光导致发电）"></a>光电效应（光导致发电）</h4><p>PN 结用导线连接成回路时。载流子面临 PN结势垒的阻挡，在回路中不产生电流。</p>
+<p>当有光照射 PN 结材料上时，若光子能量大于半导体的禁带宽度，则在 PN结的耗尽区 P区 N区内产生光生的电子空穴对，耗尽区内的载流子在内建电场的作用下电子迅速移向 N区，空穴移向 P区，在回路内形成光电流，而 P N区内产生的光子无内建电场的作用只进行自由的扩散运动，多数因复合而消失，对光电流基本没有贡献。</p>
+<h4 id="二极管"><a href="#二极管" class="headerlink" title="二极管"></a>二极管</h4><p>把 PN结 加上封装引线</p>
+<h5 id="等效电阻"><a href="#等效电阻" class="headerlink" title="等效电阻"></a>等效电阻</h5><p>二极管在导通时会有小的电阻，我们通常把一个固定直流电压情况下的电压除以电流之比成为二极管的静态等效电阻。</p>
+<p>可以用解析法，也就是列方程求得。</p>
+<p>也可以使用作图法，查看交点位置</p>
+<h5 id="交流电阻-r-D"><a href="#交流电阻-r-D" class="headerlink" title="交流电阻 r_D"></a>交流电阻 r_D</h5><p>定义<br>$$<br>r_D = \frac{du_D}{di_D} 当I=I_Q时<br>$$</p>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><ol>
+<li><p>最大整流电流IF：指二极管长期运行时，允许通过的 最大正向平均电流。 </p>
+</li>
+<li><p>最高反向工作电压UBR：管子工作时所允许的最高反 向电压 </p>
+</li>
+<li><p>反向电流IR ：二极管未击穿时的反向电流，近似为IS。 </p>
+</li>
+<li><p>最高工作频率 fM ：二极管工作的上限频率。</p>
+</li>
+</ol>
+<h5 id="分析模型"><a href="#分析模型" class="headerlink" title="分析模型"></a>分析模型</h5><h6 id="理想模型"><a href="#理想模型" class="headerlink" title="理想模型"></a>理想模型</h6><p>伏安特性曲线是一条 L 型曲线</p>
+<p>正向偏置导通，压降为0V</p>
+<p>反向偏置时截至，电流为0A</p>
+<p>适用于大信号时的近似分析，或者电路简化定性分析</p>
+<h6 id="折线模型"><a href="#折线模型" class="headerlink" title="折线模型"></a>折线模型</h6><p>伏安特性曲线是一条竖线为斜线的 L 型，并且 L 的折角在坐标轴纵轴的右边</p>
+<p>有一定的电阻 r_D = \frac{du_D}{di_D}</p>
+<p>特点是正偏电压 &gt; U_{on} 时导通</p>
+<p>特点是反偏电压 &lt; U_{on} 时截肢</p>
+<p>主要是工程上近似计算，如果忽略小电阻则就是恒压降模型</p>
+<h6 id="交流模型"><a href="#交流模型" class="headerlink" title="交流模型"></a>交流模型</h6><p>当二极管在正偏情况下，若叠加的交流为低频小信号仍能 保持二极管正偏，若忽略二极管结电容和体电阻，其等效 模型就是一个交流电阻r_D。</p>
+<h4 id="其他类型的二极管"><a href="#其他类型的二极管" class="headerlink" title="其他类型的二极管"></a>其他类型的二极管</h4><h5 id="稳压二极管"><a href="#稳压二极管" class="headerlink" title="稳压二极管"></a>稳压二极管</h5><p>工作在反向击穿区域</p>
+<p>由于反向击穿时，电流急剧增加而 PN结两端的电压基本保持不变</p>
+<p>正向部分与普通二极管相同</p>
+<p>参数有</p>
+<ol>
+<li>稳定电压U_Z: 反向击穿电压。</li>
+<li>稳定电流I_z: 稳压时的参考电流，变化范围是（ I_zmin ， I_zmax ) </li>
+<li>额定功率P_{ZM}:就是最大工作电流和稳定电压的乘积。 </li>
+<li>动态电阻r_Z: 在稳压范围内，很小，一般十几</li>
+</ol>
+<p>稳压管使用方法：稳压二 极管在稳压电路工作时应 反接,并串入一只电阻。 稳压电路要求：输入电压ui 要求大于输出电压uo。</p>
+<h5 id="变容二极管"><a href="#变容二极管" class="headerlink" title="变容二极管"></a>变容二极管</h5><p>主要利用PN结势垒电容 C_T 随外电压变化而变化的特性</p>
+<h5 id="发光二极管"><a href="#发光二极管" class="headerlink" title="发光二极管"></a>发光二极管</h5><p>正向导通时可以发光</p>
+<h5 id="光电二极管"><a href="#光电二极管" class="headerlink" title="光电二极管"></a>光电二极管</h5><p>有光照射时有电流产生的二极管</p>
+<p>如果施加反向偏置电压和电阻会效果更更好，因为增加PN结面积</p>
+<p>（通常在反压下工作）</p>
+<h5 id="肖特基二极管"><a href="#肖特基二极管" class="headerlink" title="肖特基二极管"></a>肖特基二极管</h5><p>利用金属和半导体之间的接触势垒而制成的元件</p>
+<p>N型结构和普通二极管一样，但是P型结构部分用的是金属</p>
+<p>符号有区别</p>
+<p>肖特基二极管特点</p>
+<ol>
+<li>具有与PN结相似的伏安特性。</li>
+<li>依靠一种载流子工作的器件</li>
+<li>串联电阻低。</li>
+<li>正向导通电压和反向击穿电压均比PN结低。</li>
+</ol>
+<p>应用： 适用于高频高速电路。</p>
+<h4 id="半导体命名型号规范"><a href="#半导体命名型号规范" class="headerlink" title="半导体命名型号规范"></a>半导体命名型号规范</h4><p>略过，网上参考资料</p>
+<h4 id="二极管应用"><a href="#二极管应用" class="headerlink" title="二极管应用"></a>二极管应用</h4><h5 id="限幅电路"><a href="#限幅电路" class="headerlink" title="限幅电路"></a>限幅电路</h5><p>略</p>
+<h5 id="钳位电路"><a href="#钳位电路" class="headerlink" title="钳位电路"></a>钳位电路</h5><p>略</p>
 
       
     </div>
@@ -857,7 +959,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#模拟电子技术"><span class="nav-number">1.</span> <span class="nav-text">模拟电子技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#电子器件"><span class="nav-number">2.</span> <span class="nav-text">电子器件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">2.1.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无源器件"><span class="nav-number">2.1.1.</span> <span class="nav-text">无源器件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有源器件"><span class="nav-number">2.1.2.</span> <span class="nav-text">有源器件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体分类"><span class="nav-number">3.</span> <span class="nav-text">半导体分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体特性"><span class="nav-number">4.</span> <span class="nav-text">半导体特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#掺杂特性"><span class="nav-number">4.1.</span> <span class="nav-text">掺杂特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#温度特性"><span class="nav-number">4.2.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#光照特性"><span class="nav-number">4.3.</span> <span class="nav-text">光照特性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体"><span class="nav-number">5.</span> <span class="nav-text">半导体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#本征半导体"><span class="nav-number">5.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#载流子"><span class="nav-number">5.2.</span> <span class="nav-text">载流子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂质半导体"><span class="nav-number">5.3.</span> <span class="nav-text">杂质半导体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#P形半导体"><span class="nav-number">5.3.1.</span> <span class="nav-text">P形半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#N型半导体"><span class="nav-number">5.3.2.</span> <span class="nav-text">N型半导体</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#模拟电子技术"><span class="nav-number">1.</span> <span class="nav-text">模拟电子技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#电子器件"><span class="nav-number">2.</span> <span class="nav-text">电子器件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">2.1.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无源器件"><span class="nav-number">2.1.1.</span> <span class="nav-text">无源器件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有源器件"><span class="nav-number">2.1.2.</span> <span class="nav-text">有源器件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体分类"><span class="nav-number">3.</span> <span class="nav-text">半导体分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体特性"><span class="nav-number">4.</span> <span class="nav-text">半导体特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#掺杂特性"><span class="nav-number">4.1.</span> <span class="nav-text">掺杂特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#温度特性"><span class="nav-number">4.2.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#光照特性"><span class="nav-number">4.3.</span> <span class="nav-text">光照特性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#半导体"><span class="nav-number">5.</span> <span class="nav-text">半导体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#本征半导体"><span class="nav-number">5.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#载流子"><span class="nav-number">5.2.</span> <span class="nav-text">载流子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂质半导体"><span class="nav-number">5.3.</span> <span class="nav-text">杂质半导体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#P形半导体"><span class="nav-number">5.3.1.</span> <span class="nav-text">P形半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#N型半导体"><span class="nav-number">5.3.2.</span> <span class="nav-text">N型半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PN結"><span class="nav-number">5.3.3.</span> <span class="nav-text">PN結</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前置概念"><span class="nav-number">5.3.3.1.</span> <span class="nav-text">前置概念</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#扩散运动"><span class="nav-number">5.3.3.1.1.</span> <span class="nav-text">扩散运动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#漂移运动"><span class="nav-number">5.3.3.1.2.</span> <span class="nav-text">漂移运动</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#形成原理"><span class="nav-number">5.3.3.2.</span> <span class="nav-text">形成原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工作原理"><span class="nav-number">5.3.3.3.</span> <span class="nav-text">工作原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PN节点流方程"><span class="nav-number">5.3.3.4.</span> <span class="nav-text">PN节点流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#击穿"><span class="nav-number">5.3.3.5.</span> <span class="nav-text">击穿</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#可逆击穿"><span class="nav-number">5.3.3.5.1.</span> <span class="nav-text">可逆击穿</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#雪崩击穿"><span class="nav-number">5.3.3.5.1.1.</span> <span class="nav-text">雪崩击穿</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#齐纳击穿"><span class="nav-number">5.3.3.5.1.2.</span> <span class="nav-text">齐纳击穿</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#不可逆击穿"><span class="nav-number">5.3.3.5.2.</span> <span class="nav-text">不可逆击穿</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#热击穿"><span class="nav-number">5.3.3.5.2.1.</span> <span class="nav-text">热击穿</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容特性"><span class="nav-number">5.3.3.6.</span> <span class="nav-text">电容特性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#势垒电容-C-B"><span class="nav-number">5.3.3.6.1.</span> <span class="nav-text">势垒电容 C_B</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#扩散电容-C-D"><span class="nav-number">5.3.3.6.2.</span> <span class="nav-text">扩散电容 C_D</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意"><span class="nav-number">5.3.3.6.3.</span> <span class="nav-text">注意</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电光效应（电导致发光）"><span class="nav-number">5.3.3.7.</span> <span class="nav-text">电光效应（电导致发光）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#光电效应（光导致发电）"><span class="nav-number">5.3.3.8.</span> <span class="nav-text">光电效应（光导致发电）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二极管"><span class="nav-number">5.3.3.9.</span> <span class="nav-text">二极管</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#等效电阻"><span class="nav-number">5.3.3.9.1.</span> <span class="nav-text">等效电阻</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#交流电阻-r-D"><span class="nav-number">5.3.3.9.2.</span> <span class="nav-text">交流电阻 r_D</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#参数"><span class="nav-number">5.3.3.9.3.</span> <span class="nav-text">参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分析模型"><span class="nav-number">5.3.3.9.4.</span> <span class="nav-text">分析模型</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#理想模型"><span class="nav-number">5.3.3.9.4.1.</span> <span class="nav-text">理想模型</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#折线模型"><span class="nav-number">5.3.3.9.4.2.</span> <span class="nav-text">折线模型</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#交流模型"><span class="nav-number">5.3.3.9.4.3.</span> <span class="nav-text">交流模型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他类型的二极管"><span class="nav-number">5.3.3.10.</span> <span class="nav-text">其他类型的二极管</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#稳压二极管"><span class="nav-number">5.3.3.10.1.</span> <span class="nav-text">稳压二极管</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#变容二极管"><span class="nav-number">5.3.3.10.2.</span> <span class="nav-text">变容二极管</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#发光二极管"><span class="nav-number">5.3.3.10.3.</span> <span class="nav-text">发光二极管</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#光电二极管"><span class="nav-number">5.3.3.10.4.</span> <span class="nav-text">光电二极管</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#肖特基二极管"><span class="nav-number">5.3.3.10.5.</span> <span class="nav-text">肖特基二极管</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#半导体命名型号规范"><span class="nav-number">5.3.3.11.</span> <span class="nav-text">半导体命名型号规范</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二极管应用"><span class="nav-number">5.3.3.12.</span> <span class="nav-text">二极管应用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#限幅电路"><span class="nav-number">5.3.3.12.1.</span> <span class="nav-text">限幅电路</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#钳位电路"><span class="nav-number">5.3.3.12.2.</span> <span class="nav-text">钳位电路</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
