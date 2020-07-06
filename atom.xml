@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.changwei.me/"/>
-  <updated>2020-01-21T09:01:18.039Z</updated>
+  <updated>2020-07-06T09:03:35.653Z</updated>
   <id>http://blog.changwei.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据库系统（上）：模型与语言</title>
+    <link href="http://blog.changwei.me/2020/07/05/database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%AF%AD%E8%A8%80/"/>
+    <id>http://blog.changwei.me/2020/07/05/database/数据库系统（上）：模型与语言/</id>
+    <published>2020-07-04T19:47:03.000Z</published>
+    <updated>2020-07-06T09:03:35.653Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Table&quot;&gt;&lt;a href=&quot;#Table&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="database" scheme="http://blog.changwei.me/categories/database/"/>
+    
+    
+      <category term="database" scheme="http://blog.changwei.me/tags/database/"/>
+    
+  </entry>
   
   <entry>
     <title>模拟电子</title>
@@ -214,7 +240,7 @@
     <link href="http://blog.changwei.me/2019/06/19/%E7%94%B5%E7%A3%81%E5%AD%A6/"/>
     <id>http://blog.changwei.me/2019/06/19/电磁学/</id>
     <published>2019-06-19T04:24:05.000Z</published>
-    <updated>2019-06-21T12:50:52.000Z</updated>
+    <updated>2020-02-29T08:30:23.568Z</updated>
     
     <summary type="html">
     
@@ -470,31 +496,6 @@
         
         
           &lt;h1 id=&quot;正项级数&quot;&gt;&lt;a href=&quot;#正项级数&quot; class=&quot;headerlink&quot; title=&quot;正项级数&quot;&gt;&lt;/a&gt;正项级数&lt;/h1&gt;&lt;p&gt;一个级数中各项都是正数或者 0 ，这样的级数叫做正项级数&lt;br&gt;$$&lt;br&gt;u_n &amp;gt;=
-        
-      
-    
-    </summary>
-    
-      <category term="math" scheme="http://blog.changwei.me/categories/math/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>常数项级数</title>
-    <link href="http://blog.changwei.me/2019/01/07/%E5%B8%B8%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0/"/>
-    <id>http://blog.changwei.me/2019/01/07/常数项级数/</id>
-    <published>2019-01-07T06:41:45.000Z</published>
-    <updated>2019-01-11T07:06:08.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最早以前计算圆形的面积，采取的是割圆术&lt;/p&gt;
-&lt;p&gt;计算半径为 $R$ 的圆形面积
         
       
     
