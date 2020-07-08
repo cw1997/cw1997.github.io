@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="Table表 具有表名，表标题，表内容 表内容有行（元组，记录） 列（字段，属性，数据项，column，field，attribute） Database数据库 相互之间有关联关系的Table集合 数据库的工作环境有DB，DBMS，DBAP，DBA几种 DBAP就是平时的数据库应用程序，例如一个网站，一个ERP，CRM程序 数据库的几大功能DDL（Data Definition Language）">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2020-07-06T09:03:35.653Z">
+<meta property="og:updated_time" content="2020-07-08T08:40:45.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库系统（上）：模型与语言">
 <meta name="twitter:description" content="Table表 具有表名，表标题，表内容 表内容有行（元组，记录） 列（字段，属性，数据项，column，field，attribute） Database数据库 相互之间有关联关系的Table集合 数据库的工作环境有DB，DBMS，DBAP，DBA几种 DBAP就是平时的数据库应用程序，例如一个网站，一个ERP，CRM程序 数据库的几大功能DDL（Data Definition Language）">
@@ -362,8 +362,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-07-06T17:03:35+08:00">
-                2020-07-06
+              <time title="Post modified" itemprop="dateModified" datetime="2020-07-08T16:40:45+08:00">
+                2020-07-08
               </time>
             
           </span>
@@ -481,8 +481,81 @@
 <p>通常是数据库最底层落到硬盘上面的文件内容。在MSSQL中是mdf，Access中是mdb等，他们是按照C语言中的某些数据结构进行存储，例如索引按照Hash或者B+Tree的数据结构存储到硬盘。</p>
 <h2 id="数据视图与模式"><a href="#数据视图与模式" class="headerlink" title="数据视图与模式"></a>数据视图与模式</h2><h3 id="模式（Schema）"><a href="#模式（Schema）" class="headerlink" title="模式（Schema）"></a>模式（Schema）</h3><p>对数据库中的数据所进行的一种结构性描述</p>
 <p>所观察到数据的结构信息</p>
-<h3 id="视图（View）-数据（Data）"><a href="#视图（View）-数据（Data）" class="headerlink" title="视图（View） / 数据（Data）"></a>视图（View） / 数据（Data）</h3><p>某一种表现形式下表现出来的数据库中的数据</p>
-
+<h4 id="外模式（External-Schema）"><a href="#外模式（External-Schema）" class="headerlink" title="外模式（External Schema）"></a>外模式（External Schema）</h4><p>某一用户能够看到与处理的数据的结构描述</p>
+<h4 id="概念模式（Conceptual-Schema）"><a href="#概念模式（Conceptual-Schema）" class="headerlink" title="概念模式（Conceptual Schema）"></a>概念模式（Conceptual Schema）</h4><p>体现数据之间的内在本质联系</p>
+<h4 id="内模式（Internal-Schema）"><a href="#内模式（Internal-Schema）" class="headerlink" title="内模式（Internal Schema）"></a>内模式（Internal Schema）</h4><p>存储在介质上的数据的结构描述</p>
+<h3 id="视图（View）-数据（Data）"><a href="#视图（View）-数据（Data）" class="headerlink" title="视图（View） / 数据（Data）"></a>视图（View） / 数据（Data）</h3><p>某一种表现形式下表现出来的数据库中的数据是视图</p>
+<p>数据是数据库中所有数据的统称，视图是从所有数据中挑选一中表现形式表现出来的部分数据</p>
+<h2 id="三级模式两层映像"><a href="#三级模式两层映像" class="headerlink" title="三级模式两层映像"></a>三级模式两层映像</h2><h4 id="E-C-Mapping"><a href="#E-C-Mapping" class="headerlink" title="E-C Mapping"></a>E-C Mapping</h4><p>DBAP通常是做这个工作的</p>
+<h4 id="C-I-Mapping"><a href="#C-I-Mapping" class="headerlink" title="C-I Mapping"></a>C-I Mapping</h4><p>DB通常是做这个工作的</p>
+<p>三级模式分层有个好处就是保证物理数据和逻辑数据的独立性，例如修改其中一层，只要保证mapping正常工作，那么另外一层可以不做修改的情况下继续工作</p>
+<p>例如MySQL到Maria DB就是保证了E-C Mapping可以不发生任何变化</p>
+<h2 id="三大经典数据模型"><a href="#三大经典数据模型" class="headerlink" title="三大经典数据模型"></a>三大经典数据模型</h2><p>关系模型：表</p>
+<p>层次模型：树</p>
+<p>网状模型：图</p>
+<h1 id="关系模型"><a href="#关系模型" class="headerlink" title="关系模型"></a>关系模型</h1><p>关系模型是大多数商业化数据库系统仍然使用的数据模型</p>
+<p>它是从表以及表的处理方式抽象出来，是对传统表以及操作进行数学化严格定义基础上，引入集合理论与逻辑学理论</p>
+<p>一个Relation就是一个Table</p>
+<h2 id="关系模型由三个部分组成"><a href="#关系模型由三个部分组成" class="headerlink" title="关系模型由三个部分组成"></a>关系模型由三个部分组成</h2><ul>
+<li>描述DB各种数据的基本结构形式</li>
+<li>描述Table与Table之间所有可能发生的各种操作（关系运算）</li>
+<li>描述这些操作应该遵循的约束条件（完整性约束）</li>
+</ul>
+<h2 id="三个要素"><a href="#三个要素" class="headerlink" title="三个要素"></a>三个要素</h2><ul>
+<li>基本结构：Relation/Table</li>
+<li>基本操作：Relation Operator</li>
+</ul>
+<p>基本操作：并（Union），差（Difference），广义乘积（Product），选择（Selection），投影（Projection）</p>
+<p>扩展操作：交（Intersection），连接（Join），除（Division）</p>
+<ul>
+<li>完整性约束：实体完整性，参照完整性，用户自定义完整性（域完整性）</li>
+</ul>
+<p>关系运算</p>
+<p>关系代数和关系演算，关系演算：元组验算，域验算</p>
+<h1 id="表的严格定义——关系"><a href="#表的严格定义——关系" class="headerlink" title="表的严格定义——关系"></a>表的严格定义——关系</h1><h2 id="域（列的取值范围）"><a href="#域（列的取值范围）" class="headerlink" title="域（列的取值范围）"></a>域（列的取值范围）</h2><ul>
+<li>一组值的集合，这组值具有相同的数据类型，例如整数的集合，字符串的集合，全体学生集合</li>
+</ul>
+<p>集合中元素的个数成为域的基数（Cardinality）</p>
+<h2 id="笛卡尔积（Cartesian-Product）"><a href="#笛卡尔积（Cartesian-Product）" class="headerlink" title="笛卡尔积（Cartesian Product）"></a>笛卡尔积（Cartesian Product）</h2><p>对一组域D1，D2，。。。，Dn做笛卡尔积运算，可以求出多个域能够组合出来的所有可能的元组</p>
+<p>笛卡尔积的每个元素 $$ (d_1, d_2, … , d_n) $$ 成为一个n元组（n-tuple）</p>
+<p>笛卡尔积的基数就是每个域的基数相乘</p>
+<h2 id="关系（Relation）"><a href="#关系（Relation）" class="headerlink" title="关系（Relation）"></a>关系（Relation）</h2><p>接着上面的笛卡尔积来深入理解</p>
+<p>要明白一个道理：对一组域求笛卡尔积，所得到的元组里面并不一定所有元组都有意义，例如（男人，女人，子女）这三个域做笛卡尔积，里面会出现张三的父亲和李四的母亲和王五这个儿童所组成的一个元组，而他们三个人其实并没有任何血缘关系也不是属于同一个家庭。</p>
+<p>而只有真正男人女人子女能够组成家庭的那个元组才有意义。其中这个有意义的元组组合我们称为一个关系。</p>
+<p>对于一个关系的列，我们要重新给它起一个名字，叫做列名（属性名），里面的值叫做列值，列值来自一个域。</p>
+<h3 id="关系模式的描述"><a href="#关系模式的描述" class="headerlink" title="关系模式的描述"></a>关系模式的描述</h3><p>$$<br>R(A_1:D_1, A_2:D_2, …, A_n:D_n)<br>$$</p>
+<p>上面成为关系模式（Schema）或者表标题（head）</p>
+<p>R是关系名字，A_i 是属性，D_i 是属性所对应的域，n是关系的度或者目（degree，关系元组的数目成为关系的基数（Cardinality））</p>
+<p>一个实际的关系模式例子<br>$$<br>家庭（丈夫：男人，妻子：女人，子女：儿童）<br>$$<br>在数据库中域通常就是数据类型</p>
+<p>例如<br>$$<br>Student(Sid\ char(8), Sname\ char(10))<br>$$</p>
+<h2 id="关系模式与关系"><a href="#关系模式与关系" class="headerlink" title="关系模式与关系"></a>关系模式与关系</h2><ul>
+<li>同一个关系模式下可能有很多关系</li>
+<li>关系模式是关系的结构，关系是关系模式在某一时刻的数据</li>
+<li>关系模式是稳定的，关系是某一时刻的值，它可能随着时间变化（因为数据会有增删改查）</li>
+</ul>
+<h3 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h3><p>列是同质的，也就是列中的每个量都是来自同一个域，是同一个类型的数据</p>
+<p>不同的列可以来自同一个域，例如一个家庭关系里面的丈夫和爷爷都来自男人这个域</p>
+<p>关系是具有行列位置的互换性，也就是行和列是靠名字和值来区分，不靠顺序区分</p>
+<h3 id="表和关系的区别"><a href="#表和关系的区别" class="headerlink" title="表和关系的区别"></a>表和关系的区别</h3><p>理论上关系的任意两个元组不能完全相同（集合内不能有相同的两个元素），现实中的Table可能并不完全遵循关系的特性，这也是关系和表的区别。</p>
+<p>属性不可再分：又被称为关系第一范式。例如姓名有姓氏和名字（中国和美国都有），那么就应该把Full Name这个列拆分成First Name和Last Name或者合并成一个列</p>
+<h2 id="候选码-候选键（Candidate-Key）"><a href="#候选码-候选键（Candidate-Key）" class="headerlink" title="候选码/候选键（Candidate Key）"></a>候选码/候选键（Candidate Key）</h2><p>例如学号就是学生中的候选码</p>
+<p>选课关系中，学号和课号可以唯一确定一个选课关系</p>
+<p>关系当中并不一定只有一个候选码，例如雇员的工号是一个候选码，但是雇员的手机号也是一个候选码（因为不可能有两个员工的手机号一模一样）</p>
+<h2 id="主键（Primary-Key）"><a href="#主键（Primary-Key）" class="headerlink" title="主键（Primary Key）"></a>主键（Primary Key）</h2><p>主码是从多个候选码中选定一个作为主码</p>
+<p>选定主码需要深思熟虑，例如上面的雇员关系中，通常不会选择用手机号作为主码，因为员工可能会更换手机号，同一个手机号也有可能在更换之后被别的员工使用，也有可能一个员工有多个手机号。所以通常这种情况下我们另外定义一个工号（通常是自增ID）作为主码</p>
+<h2 id="主属性"><a href="#主属性" class="headerlink" title="主属性"></a>主属性</h2><p>包含在任何一个候选码中的属性被称作主属性，也就是说在联合主键中，每个单独的列都是一个主属性。而其他属性是非主属性</p>
+<p>简单的情况下主键只有一个列，所以主键列就是主属性</p>
+<p>极端情况下所有属性都构成这个关系的候选码，成为全码（All-Key），全码通常在多对多关联表中出现。</p>
+<h2 id="外键（Foreign-Key）"><a href="#外键（Foreign-Key）" class="headerlink" title="外键（Foreign Key）"></a>外键（Foreign Key）</h2><p>关系R中的一个属性组它不是R的候选码，但它与另外一个关系S的候选码相对应，则称这个属性组为R的外键</p>
+<p>例如合同关系中标识这个合同的甲方客户是谁，就需要通过客户表的主键来建立连接，因此就需要在合同关系中记录客户表主键，这个合同关系中的客户表主键就是一个外键、</p>
+<h1 id="关系模型的完整性约束"><a href="#关系模型的完整性约束" class="headerlink" title="关系模型的完整性约束"></a>关系模型的完整性约束</h1><h2 id="实体完整性"><a href="#实体完整性" class="headerlink" title="实体完整性"></a>实体完整性</h2><p>关系主码属性值不能为空</p>
+<p>空值是不知道或者无意义的值</p>
+<p>关系中元组对应到现实世界相互之间可区分的各地，这些个体是通过主码唯一标识。如果主码为空则出现不可标识的个体，这是不容许的。</p>
+<p>非主属性出现空值需要特殊处理：例如成绩表中，有个学生没有成绩，那么统计全班平均分到底怎么考虑呢，所以遇到空值需要特殊处理。</p>
+<h2 id="参照完整性"><a href="#参照完整性" class="headerlink" title="参照完整性"></a>参照完整性</h2><p>外键可以取空值，但是如果不取空值的话，那么外键必须是参照表中的其中一个主码</p>
+<h2 id="用户定义完整性（域完整性）"><a href="#用户定义完整性（域完整性）" class="headerlink" title="用户定义完整性（域完整性）"></a>用户定义完整性（域完整性）</h2><p>也就是取值范围的约束，例如生理性别通常只有男女，姓氏通常最大只有五个字符，通常不会有其他情况。</p>
+<p>不符合完整性约束的表通常无法存储进数据库中</p>
+<h1 id="关系代数"><a href="#关系代数" class="headerlink" title="关系代数"></a>关系代数</h1>
       
     </div>
     
@@ -844,7 +917,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Table"><span class="nav-number">1.</span> <span class="nav-text">Table</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Database"><span class="nav-number">2.</span> <span class="nav-text">Database</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库的几大功能"><span class="nav-number">3.</span> <span class="nav-text">数据库的几大功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DDL（Data-Definition-Language）"><span class="nav-number">3.1.</span> <span class="nav-text">DDL（Data Definition Language）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DML（Data-Manipulation-Language）"><span class="nav-number">3.2.</span> <span class="nav-text">DML（Data Manipulation Language）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DCL（Data-Control-Language）"><span class="nav-number">3.3.</span> <span class="nav-text">DCL（Data Control Language）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库维护"><span class="nav-number">3.4.</span> <span class="nav-text">数据库维护</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库系统标准结构"><span class="nav-number">4.</span> <span class="nav-text">数据库系统标准结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库的分层抽象"><span class="nav-number">4.1.</span> <span class="nav-text">数据库的分层抽象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#External-Level-User-Level"><span class="nav-number">4.1.1.</span> <span class="nav-text">External Level = User Level</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Conceptual-Level-Logic-Level"><span class="nav-number">4.1.2.</span> <span class="nav-text">Conceptual Level = Logic Level</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Internal-Level-Physical-Level"><span class="nav-number">4.1.3.</span> <span class="nav-text">Internal Level = Physical Level</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据视图与模式"><span class="nav-number">4.2.</span> <span class="nav-text">数据视图与模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#模式（Schema）"><span class="nav-number">4.2.1.</span> <span class="nav-text">模式（Schema）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视图（View）-数据（Data）"><span class="nav-number">4.2.2.</span> <span class="nav-text">视图（View） / 数据（Data）</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Table"><span class="nav-number">1.</span> <span class="nav-text">Table</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Database"><span class="nav-number">2.</span> <span class="nav-text">Database</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库的几大功能"><span class="nav-number">3.</span> <span class="nav-text">数据库的几大功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DDL（Data-Definition-Language）"><span class="nav-number">3.1.</span> <span class="nav-text">DDL（Data Definition Language）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DML（Data-Manipulation-Language）"><span class="nav-number">3.2.</span> <span class="nav-text">DML（Data Manipulation Language）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DCL（Data-Control-Language）"><span class="nav-number">3.3.</span> <span class="nav-text">DCL（Data Control Language）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库维护"><span class="nav-number">3.4.</span> <span class="nav-text">数据库维护</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库系统标准结构"><span class="nav-number">4.</span> <span class="nav-text">数据库系统标准结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库的分层抽象"><span class="nav-number">4.1.</span> <span class="nav-text">数据库的分层抽象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#External-Level-User-Level"><span class="nav-number">4.1.1.</span> <span class="nav-text">External Level = User Level</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Conceptual-Level-Logic-Level"><span class="nav-number">4.1.2.</span> <span class="nav-text">Conceptual Level = Logic Level</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Internal-Level-Physical-Level"><span class="nav-number">4.1.3.</span> <span class="nav-text">Internal Level = Physical Level</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据视图与模式"><span class="nav-number">4.2.</span> <span class="nav-text">数据视图与模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#模式（Schema）"><span class="nav-number">4.2.1.</span> <span class="nav-text">模式（Schema）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#外模式（External-Schema）"><span class="nav-number">4.2.1.1.</span> <span class="nav-text">外模式（External Schema）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#概念模式（Conceptual-Schema）"><span class="nav-number">4.2.1.2.</span> <span class="nav-text">概念模式（Conceptual Schema）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内模式（Internal-Schema）"><span class="nav-number">4.2.1.3.</span> <span class="nav-text">内模式（Internal Schema）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视图（View）-数据（Data）"><span class="nav-number">4.2.2.</span> <span class="nav-text">视图（View） / 数据（Data）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三级模式两层映像"><span class="nav-number">4.3.</span> <span class="nav-text">三级模式两层映像</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#E-C-Mapping"><span class="nav-number">4.3.0.1.</span> <span class="nav-text">E-C Mapping</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#C-I-Mapping"><span class="nav-number">4.3.0.2.</span> <span class="nav-text">C-I Mapping</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三大经典数据模型"><span class="nav-number">4.4.</span> <span class="nav-text">三大经典数据模型</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#关系模型"><span class="nav-number">5.</span> <span class="nav-text">关系模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关系模型由三个部分组成"><span class="nav-number">5.1.</span> <span class="nav-text">关系模型由三个部分组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三个要素"><span class="nav-number">5.2.</span> <span class="nav-text">三个要素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表的严格定义——关系"><span class="nav-number">6.</span> <span class="nav-text">表的严格定义——关系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#域（列的取值范围）"><span class="nav-number">6.1.</span> <span class="nav-text">域（列的取值范围）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#笛卡尔积（Cartesian-Product）"><span class="nav-number">6.2.</span> <span class="nav-text">笛卡尔积（Cartesian Product）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系（Relation）"><span class="nav-number">6.3.</span> <span class="nav-text">关系（Relation）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关系模式的描述"><span class="nav-number">6.3.1.</span> <span class="nav-text">关系模式的描述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系模式与关系"><span class="nav-number">6.4.</span> <span class="nav-text">关系模式与关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关系"><span class="nav-number">6.4.1.</span> <span class="nav-text">关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表和关系的区别"><span class="nav-number">6.4.2.</span> <span class="nav-text">表和关系的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#候选码-候选键（Candidate-Key）"><span class="nav-number">6.5.</span> <span class="nav-text">候选码/候选键（Candidate Key）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主键（Primary-Key）"><span class="nav-number">6.6.</span> <span class="nav-text">主键（Primary Key）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主属性"><span class="nav-number">6.7.</span> <span class="nav-text">主属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#外键（Foreign-Key）"><span class="nav-number">6.8.</span> <span class="nav-text">外键（Foreign Key）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关系模型的完整性约束"><span class="nav-number">7.</span> <span class="nav-text">关系模型的完整性约束</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实体完整性"><span class="nav-number">7.1.</span> <span class="nav-text">实体完整性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参照完整性"><span class="nav-number">7.2.</span> <span class="nav-text">参照完整性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户定义完整性（域完整性）"><span class="nav-number">7.3.</span> <span class="nav-text">用户定义完整性（域完整性）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关系代数"><span class="nav-number">8.</span> <span class="nav-text">关系代数</span></a></li></div>
             
 
           </div>
