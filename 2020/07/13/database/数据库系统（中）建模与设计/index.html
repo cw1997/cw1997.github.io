@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="昌维,博客,技术,blog,electric,電子,电子,电路,工程,模电,数电,编程,电脑,计算机,代码,程序,软件">
+  <meta name="keywords" content="database,">
 
 
 
@@ -82,14 +82,14 @@
 
 
 <meta name="description" content="数据建模思想是抽象 抽象是理解-区分-命名-表达 E-R模型Entity-Relationship Model 世界是由一组称作实体的基本对象和这些对象之间的联系构成 是表达方法 给出概念 实体 属性 联系 关键字  实体与实例实体的形态成为类，一个具体的个体是一个实例 属性单一属性与复合属性 多值属性和单值属性 多值属性和复合属性一定要转化成单一属性，因为为了满足关系数据库第一范式 可空属性和非">
-<meta name="keywords" content="编程,电子,电脑,计算机,电子工程,工程,软件工程,计算机科学,计算机科学与技术,笔记,读书,学习,自学">
+<meta name="keywords" content="database">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库系统（中）：建模与设计">
 <meta property="og:url" content="http://blog.changwei.me/2020/07/13/database/数据库系统（中）建模与设计/index.html">
 <meta property="og:site_name" content="昌维的博客">
 <meta property="og:description" content="数据建模思想是抽象 抽象是理解-区分-命名-表达 E-R模型Entity-Relationship Model 世界是由一组称作实体的基本对象和这些对象之间的联系构成 是表达方法 给出概念 实体 属性 联系 关键字  实体与实例实体的形态成为类，一个具体的个体是一个实例 属性单一属性与复合属性 多值属性和单值属性 多值属性和复合属性一定要转化成单一属性，因为为了满足关系数据库第一范式 可空属性和非">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2020-07-13T08:50:14.863Z">
+<meta property="og:updated_time" content="2020-07-16T05:40:15.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库系统（中）：建模与设计">
 <meta name="twitter:description" content="数据建模思想是抽象 抽象是理解-区分-命名-表达 E-R模型Entity-Relationship Model 世界是由一组称作实体的基本对象和这些对象之间的联系构成 是表达方法 给出概念 实体 属性 联系 关键字  实体与实例实体的形态成为类，一个具体的个体是一个实例 属性单一属性与复合属性 多值属性和单值属性 多值属性和复合属性一定要转化成单一属性，因为为了满足关系数据库第一范式 可空属性和非">
@@ -362,12 +362,34 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-07-13T16:50:14+08:00">
-                2020-07-13
+              <time title="Post modified" itemprop="dateModified" datetime="2020-07-16T13:40:15+08:00">
+                2020-07-16
               </time>
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/database/" itemprop="url" rel="index">
+                    <span itemprop="name">database</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -550,6 +572,82 @@
 <h3 id="非确定联系"><a href="#非确定联系" class="headerlink" title="非确定联系"></a>非确定联系</h3><p>非确定是多对多联系</p>
 <p>例如图书和读者就是多对多</p>
 <p>需要引入一个相关实体或者相交实体 </p>
+<h1 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h1><p>需求分析：收集理解需求，构建源表</p>
+<p>概念数据库设计：建立概念模型：E-R图/IDEF1x图</p>
+<p>逻辑数据库设计：建立逻辑模型（关系模型），包括全局模式和用户模式外模式</p>
+<p>物理数据库设计：和具体DBS相结合，进行建表</p>
+<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p>需求分析报告</p>
+<p>分析清除数据表之间的处理关系和业务关系，具有前瞻性的分析未来可能实施的需求</p>
+<h2 id="概念设计"><a href="#概念设计" class="headerlink" title="概念设计"></a>概念设计</h2><p>对源表进行分析，分析出信息属性之间的内在本质联系，分析是否要把属性进一步拆分</p>
+<p>可以通过E-R图进行分析</p>
+<p>确定属性和联系的分析与定义</p>
+<p>外部视图和概念视图的定义</p>
+<p>可以先局部到全局</p>
+<p>确定局部结构范围然后合并两个局部E-R模式，检查并且消除冲突之后就进行全局模式优化，最后生成全局概念设计</p>
+<p>实体联系矩阵的绘制</p>
+<h2 id="逻辑设计"><a href="#逻辑设计" class="headerlink" title="逻辑设计"></a>逻辑设计</h2><p>逻辑数据库设计报告</p>
+<p>将E-R或者IDEF1x转换成逻辑模式</p>
+<p>遵循关系范式的设计原则</p>
+<p>也要注意折中（适当的反范式设计）</p>
+<p>外模式和概念模式的定义</p>
+<p>考虑用关系模型、网状模型或者层次模型规定的模式描述方法进行描述</p>
+<p>E-R图（Chen方法）</p>
+<p>关系模式（Schema）给出关系模式的属性和取值域</p>
+<p>E-R图实体转换为关系，属性转换为关系的关键字，关键字转换为关系的关键字</p>
+<p>复合属性的转换将每个分量数据合并或者拆分</p>
+<p>多值属性与所在实体的关键字构成新的属性</p>
+<p>联系的转换</p>
+<p>一对多可以把多方的id放到单方</p>
+<p>泛化和具体属性的区分，具体化的关系继承父级关系的关键字</p>
+<h2 id="不正确设计数据库引发的问题"><a href="#不正确设计数据库引发的问题" class="headerlink" title="不正确设计数据库引发的问题"></a>不正确设计数据库引发的问题</h2><p>冗余</p>
+<p>非受控冗余</p>
+<p>非受控冗余</p>
+<p>插入异常：插入的时候有一些关联的信息没有存在，违反完整性约束，无法插入</p>
+<p>删除异常：删除某些数据，连带导致其他关联数据删除，导致关联关系丢失</p>
+<p>更新异常</p>
+<p>规范的数据库设计需要遵循数据库设计理论</p>
+<ul>
+<li>数据依赖理论</li>
+<li>关系范式理论</li>
+<li>模式分解理论</li>
+</ul>
+<h2 id="物理设计"><a href="#物理设计" class="headerlink" title="物理设计"></a>物理设计</h2><p>提交物理数据库设计报告</p>
+<p>确定DBMS选型</p>
+<p>确定数据库的存储结构，文件类型</p>
+<h1 id="函数依赖"><a href="#函数依赖" class="headerlink" title="函数依赖"></a>函数依赖</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>设R(U)是属性集合 {A_1, A_2, …, A_n} 上的一个关系模式，X Y 是U上的两个子集，若对R(U)的任何一个可能的关系 r ， r 中不可能有两个元组满足在X中的属性值相等而在Y中的属性值不等，则称“X函数决定Y”或“Y函数依赖于X”，记作X→Y</p>
+<p>函数依赖的分析取决于问题领域的限定和分析</p>
+<h2 id="非平凡的函数依赖"><a href="#非平凡的函数依赖" class="headerlink" title="非平凡的函数依赖"></a>非平凡的函数依赖</h2><p>X推导出Y，但是Y不包含于X（Y有不同于X的属性）</p>
+<h2 id="X为决定因素"><a href="#X为决定因素" class="headerlink" title="X为决定因素"></a>X为决定因素</h2><p>X推导出Y，则任意两个元组，若X上的值相等，则Y上面的值必然相等</p>
+<h2 id="X和Y互相决定"><a href="#X和Y互相决定" class="headerlink" title="X和Y互相决定"></a>X和Y互相决定</h2><p>X决定Y，Y决定X</p>
+<h2 id="Y不依赖于Y"><a href="#Y不依赖于Y" class="headerlink" title="Y不依赖于Y"></a>Y不依赖于Y</h2><p>若Y不依赖于函数X</p>
+<p>X决定Y，有基于模式R的，则要求对任意的关系r成立</p>
+<p>有基于具体关系r的，则要求对某一关系r成立</p>
+<h2 id="部分函数依赖与完全函数依赖"><a href="#部分函数依赖与完全函数依赖" class="headerlink" title="部分函数依赖与完全函数依赖"></a>部分函数依赖与完全函数依赖</h2><p>在R(U)中，如果X→Y并且对于X的任何真子集X’都有X’不依赖于Y，则称Y完全函数依赖于X，记为X→(full)Y，否则称Y部分函数依赖于X，记为X→(P)Y</p>
+<h2 id="传递函数依赖"><a href="#传递函数依赖" class="headerlink" title="传递函数依赖"></a>传递函数依赖</h2><p>在R(U)中，若X→Y，Y→Z，且Y不包含于X，Z不包含于Y，Z不包含于X，X不形成Y，则称Z传递函数依赖于X</p>
+<h2 id="候选键"><a href="#候选键" class="headerlink" title="候选键"></a>候选键</h2><p>K是R(U)中的属性或者属性组合，如果K能够完全决定U，则称K为R(U)上的候选键（Candidate Key）</p>
+<p>可以任选一个候选键作为R的组件</p>
+<p>包含在任意候选键中的属性称为主属性，其他属性称为非主属性</p>
+<p>若K是R的一个候选键，S包含K，则S为R的一个超键，超键就是包含候选键的属性组</p>
+<h2 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h2><p>若R(U)中的属性或属性组合X并非R的候选键，但X却是另一关系的候选键，则称X为R的外来键，简称外键</p>
+<h2 id="逻辑蕴涵"><a href="#逻辑蕴涵" class="headerlink" title="逻辑蕴涵"></a>逻辑蕴涵</h2><p>设F是关系模式R(U)中的一个函数依赖集合，X Y是R的属性子集，如果从F中的函数依赖能够推导出X→Y，则称F逻辑蕴涵X→Y，或称X→Y是F的逻辑蕴涵</p>
+<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><p>被F逻辑蕴涵的所有函数依赖集合称为F的闭包（Closure），记作F^+</p>
+<p>如果F^+=F，则说F是一个全函数依赖族（函数依赖完备集）</p>
+<h2 id="Armstrong-Axioms"><a href="#Armstrong-Axioms" class="headerlink" title="Armstrong Axioms"></a>Armstrong Axioms</h2><p>R(U, F)，F是R(U)的一组函数依赖</p>
+<h2 id="属性集闭包"><a href="#属性集闭包" class="headerlink" title="属性集闭包"></a>属性集闭包</h2><h2 id="属性闭包的计算算法与覆盖"><a href="#属性闭包的计算算法与覆盖" class="headerlink" title="属性闭包的计算算法与覆盖"></a>属性闭包的计算算法与覆盖</h2><h2 id="函数依赖集的最小覆盖"><a href="#函数依赖集的最小覆盖" class="headerlink" title="函数依赖集的最小覆盖"></a>函数依赖集的最小覆盖</h2><h1 id="关系范式"><a href="#关系范式" class="headerlink" title="关系范式"></a>关系范式</h1><h2 id="1NF"><a href="#1NF" class="headerlink" title="1NF"></a>1NF</h2><p>若关系R(U)中的关系<strong>每个分量都是不可分的数据项</strong>（值，原子），则称R(U)属于第一范式，记为：R(U)属于1NF</p>
+<p>不符合1NF的处理，进行转换，继续分割或者组合</p>
+<h2 id="2NF"><a href="#2NF" class="headerlink" title="2NF"></a>2NF</h2><p>若R(U)属于1NF，且U中的每一个<strong>非主属性完全函数依赖于候选键</strong>，则称R(U)属于第二范式，记为：R(U)属于2NF</p>
+<h2 id="3NF"><a href="#3NF" class="headerlink" title="3NF"></a>3NF</h2><p>若R(U, F)属于2NF，且R中不存在这样的情况：<strong>候选键X，属性组Y包含于U和非主属性A，且A不属于X，A不属于Y，Y不属于X，Y无法函数推导出X，使得X→Y，Y→Z成立</strong></p>
+<p>满足以上条件则称R(U)属于第三范式，记为R(U)属于3NF</p>
+<h2 id="BCNF"><a href="#BCNF" class="headerlink" title="BCNF"></a>BCNF</h2><p>若R(U)属于1NF，若对于任何X→Y属于F或者X→A属于F，当Y不包含于X或者A不真子集包含于X时，X必含有候选键，则称R(U)属于Boyce-Codd范式，记为R(U)属于BCNF</p>
+<h2 id="多值依赖"><a href="#多值依赖" class="headerlink" title="多值依赖"></a>多值依赖</h2><p>对于R(U)，有X和Y属于U，若对于R(U)的任意关系式r，若元组t属于r，s属于r，t[X]=s[X]则必有u属于r，v属于r使得</p>
+<ul>
+<li>u[X]=v[X]=t[X]=s[X]</li>
+<li>u[Y]=t[Y] &amp;&amp; u[U-X-Y]=s[U-X-Y]</li>
+<li>v[Y]=s[Y] &amp;&amp; v[U-X-Y]=t[U-X-Y]</li>
+</ul>
+<p>同一个课同一个老师可以有多个上课时间和教室的属性组合</p>
+<h2 id="4NF"><a href="#4NF" class="headerlink" title="4NF"></a>4NF</h2><p>设R(U)属于1NF，D是其上的一组依赖（函数依赖，多值依赖），对任意的X多值依赖Y属于D，Y不包含于X，XY≠U，比有X为超键，则称R(U)满足第四范式</p>
+<p>针对多值依赖的范式</p>
 
       
     </div>
@@ -582,6 +680,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/database/" rel="tag"># database</a>
+          
+        </div>
       
 
       
@@ -906,7 +1010,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据建模"><span class="nav-number">1.</span> <span class="nav-text">数据建模</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#E-R模型"><span class="nav-number">2.</span> <span class="nav-text">E-R模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#给出概念"><span class="nav-number">2.1.</span> <span class="nav-text">给出概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实体与实例"><span class="nav-number">2.2.</span> <span class="nav-text">实体与实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性"><span class="nav-number">2.3.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联系"><span class="nav-number">2.4.</span> <span class="nav-text">联系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#联系种类"><span class="nav-number">2.4.1.</span> <span class="nav-text">联系种类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#联系的基数"><span class="nav-number">2.4.2.</span> <span class="nav-text">联系的基数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#E-R模型表达方法之Chen方法"><span class="nav-number">3.</span> <span class="nav-text">E-R模型表达方法之Chen方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#E-R模型表达方法之Crow’s-foot方法"><span class="nav-number">4.</span> <span class="nav-text">E-R模型表达方法之Crow’s foot方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#联系的基数-1"><span class="nav-number">4.1.</span> <span class="nav-text">联系的基数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库设计中的抽象"><span class="nav-number">5.</span> <span class="nav-text">数据库设计中的抽象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据模型"><span class="nav-number">5.1.</span> <span class="nav-text">数据模型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IDEF1x"><span class="nav-number">6.</span> <span class="nav-text">IDEF1x</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实体"><span class="nav-number">6.1.</span> <span class="nav-text">实体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#独立实体"><span class="nav-number">6.1.1.</span> <span class="nav-text">独立实体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从属实体"><span class="nav-number">6.1.2.</span> <span class="nav-text">从属实体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于属性的工程化要求"><span class="nav-number">6.1.3.</span> <span class="nav-text">关于属性的工程化要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#外来关键字"><span class="nav-number">6.1.4.</span> <span class="nav-text">外来关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标定联系"><span class="nav-number">6.1.5.</span> <span class="nav-text">标定联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非标定联系"><span class="nav-number">6.1.6.</span> <span class="nav-text">非标定联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分类联系"><span class="nav-number">6.1.7.</span> <span class="nav-text">分类联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非确定联系"><span class="nav-number">6.1.8.</span> <span class="nav-text">非确定联系</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据建模"><span class="nav-number">1.</span> <span class="nav-text">数据建模</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#E-R模型"><span class="nav-number">2.</span> <span class="nav-text">E-R模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#给出概念"><span class="nav-number">2.1.</span> <span class="nav-text">给出概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实体与实例"><span class="nav-number">2.2.</span> <span class="nav-text">实体与实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性"><span class="nav-number">2.3.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联系"><span class="nav-number">2.4.</span> <span class="nav-text">联系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#联系种类"><span class="nav-number">2.4.1.</span> <span class="nav-text">联系种类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#联系的基数"><span class="nav-number">2.4.2.</span> <span class="nav-text">联系的基数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#E-R模型表达方法之Chen方法"><span class="nav-number">3.</span> <span class="nav-text">E-R模型表达方法之Chen方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#E-R模型表达方法之Crow’s-foot方法"><span class="nav-number">4.</span> <span class="nav-text">E-R模型表达方法之Crow’s foot方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#联系的基数-1"><span class="nav-number">4.1.</span> <span class="nav-text">联系的基数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库设计中的抽象"><span class="nav-number">5.</span> <span class="nav-text">数据库设计中的抽象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据模型"><span class="nav-number">5.1.</span> <span class="nav-text">数据模型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IDEF1x"><span class="nav-number">6.</span> <span class="nav-text">IDEF1x</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实体"><span class="nav-number">6.1.</span> <span class="nav-text">实体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#独立实体"><span class="nav-number">6.1.1.</span> <span class="nav-text">独立实体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从属实体"><span class="nav-number">6.1.2.</span> <span class="nav-text">从属实体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于属性的工程化要求"><span class="nav-number">6.1.3.</span> <span class="nav-text">关于属性的工程化要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#外来关键字"><span class="nav-number">6.1.4.</span> <span class="nav-text">外来关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标定联系"><span class="nav-number">6.1.5.</span> <span class="nav-text">标定联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非标定联系"><span class="nav-number">6.1.6.</span> <span class="nav-text">非标定联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分类联系"><span class="nav-number">6.1.7.</span> <span class="nav-text">分类联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非确定联系"><span class="nav-number">6.1.8.</span> <span class="nav-text">非确定联系</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库设计"><span class="nav-number">7.</span> <span class="nav-text">数据库设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求分析"><span class="nav-number">7.1.</span> <span class="nav-text">需求分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概念设计"><span class="nav-number">7.2.</span> <span class="nav-text">概念设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑设计"><span class="nav-number">7.3.</span> <span class="nav-text">逻辑设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不正确设计数据库引发的问题"><span class="nav-number">7.4.</span> <span class="nav-text">不正确设计数据库引发的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物理设计"><span class="nav-number">7.5.</span> <span class="nav-text">物理设计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数依赖"><span class="nav-number">8.</span> <span class="nav-text">函数依赖</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">8.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非平凡的函数依赖"><span class="nav-number">8.2.</span> <span class="nav-text">非平凡的函数依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#X为决定因素"><span class="nav-number">8.3.</span> <span class="nav-text">X为决定因素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#X和Y互相决定"><span class="nav-number">8.4.</span> <span class="nav-text">X和Y互相决定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Y不依赖于Y"><span class="nav-number">8.5.</span> <span class="nav-text">Y不依赖于Y</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部分函数依赖与完全函数依赖"><span class="nav-number">8.6.</span> <span class="nav-text">部分函数依赖与完全函数依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#传递函数依赖"><span class="nav-number">8.7.</span> <span class="nav-text">传递函数依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#候选键"><span class="nav-number">8.8.</span> <span class="nav-text">候选键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#外键"><span class="nav-number">8.9.</span> <span class="nav-text">外键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑蕴涵"><span class="nav-number">8.10.</span> <span class="nav-text">逻辑蕴涵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包"><span class="nav-number">8.11.</span> <span class="nav-text">闭包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Armstrong-Axioms"><span class="nav-number">8.12.</span> <span class="nav-text">Armstrong Axioms</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性集闭包"><span class="nav-number">8.13.</span> <span class="nav-text">属性集闭包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性闭包的计算算法与覆盖"><span class="nav-number">8.14.</span> <span class="nav-text">属性闭包的计算算法与覆盖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数依赖集的最小覆盖"><span class="nav-number">8.15.</span> <span class="nav-text">函数依赖集的最小覆盖</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关系范式"><span class="nav-number">9.</span> <span class="nav-text">关系范式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1NF"><span class="nav-number">9.1.</span> <span class="nav-text">1NF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2NF"><span class="nav-number">9.2.</span> <span class="nav-text">2NF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3NF"><span class="nav-number">9.3.</span> <span class="nav-text">3NF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BCNF"><span class="nav-number">9.4.</span> <span class="nav-text">BCNF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多值依赖"><span class="nav-number">9.5.</span> <span class="nav-text">多值依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4NF"><span class="nav-number">9.6.</span> <span class="nav-text">4NF</span></a></li></ol></li></ol></div>
             
 
           </div>
