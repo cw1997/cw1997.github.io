@@ -106,3 +106,7 @@ deploy:
   repo: https://github.com/cw1997/cw1997.github.io
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
+
+# Disqus comments
+disqus_enabled: true
+disqus_shortname: changwei
