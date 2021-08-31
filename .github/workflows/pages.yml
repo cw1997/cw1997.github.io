@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 12.x
+      - name: Use Node.js 14.17.x
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '14.17.x'
       - name: Cache NPM dependencies
         uses: actions/cache@v2
         with:
@@ -22,7 +22,7 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
-        run: npm install -f
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Deploy

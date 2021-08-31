@@ -1,12 +1,14 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
+  "name": "changwei-blog-website",
+  "version": "1.1.0",
+  "private": false,
+  "repository": "https://github.com/cw1997/cw1997.github.io",
+  "license": "",
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "start": "hexo server"
   },
   "hexo": {
     "version": "5.4.0"
@@ -23,5 +25,9 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-landscape": "^0.0.3"
+  },
+  "engines": {
+    "node": ">=14.15.0",
+    "npm": ">=6.14.0"
   }
 }
