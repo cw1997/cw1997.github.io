@@ -48,16 +48,43 @@ tag: [Free5GC,Code Tracing,5G,5GC,5G核心网,5G核心網,云核心网,AMF]
                 * ServiceName_NAMF_EVTS
                 * ServiceName_NAMF_MT
                 * ServiceName_NAMF_LOC
+                
             * `self := context.AMF_Self()` 將 /amf/context/context.go@struct context賦值給self並且調用 /amf/util/init_context@InitAmfContext
                 * 該流程中主要是讀取配置文件並且將配置信息注入struct context中，對不合法的配置項設定缺省值（default value）
                 * context 包含 NFs/amf/context/context.go@struct AMFContext和一些methods
+                
             * `addr := fmt.Sprintf("%s:%d", self.BindingIPv4, self.SBIPort)` 組裝IPv4和port為inet addr格式的字符串
+            
             * 在NgapIpList配置和38412端口運行ngap服務
                 * 該服務包含的handler
                     * ngap.Dispatch
                     * ngap.HandleSCTPNotification
+                
             * 將本服務即AMF註冊至NRF (Register to NRF)
-                * 
+                * 調用 /consumer/BuildNFInstance() 構建 AMF 需要在 NRF 中註冊的資料結構(一個 type為 NfProfile 的 model 對象)
+                * 註冊 NF 後獲取 nfId 並且寫入當前 context 中
+                
+            * 偵聽 os signal，當signal 為 interrupt 時執行 amf.Terminate() 並且退出進程，返回 0 號錯誤碼給 OS
+            
+                * amf.Terminate()
+            
+                    * ```
+                        TODO: forward registered UE contexts to target AMF in the same AMF set if there is one
+                        ```
+            
+                        根據此項 TODO 看，未來工作中將要引入自動 AMF 遷移機制，當一個 AMF 停機後，需要遷移連接至該 AMF 的所有 UE 到其他 AMF 上，實現自動故障轉移和負載均衡
+            
+                    * 執行 SendDeregisterNFInstance 流程，從 NF 中移除當前實例
+            
+                    * 執行 BuildUnavailableGUAMIList 流程(暫不清楚該流程的作用和內容)
+            
+                    * 執行 ngap_message.SendAMFStatusIndication(ran, unavailableGuamiList) 動作
+            
+                    * 停止 ngap_service 服務
+            
+                    *  向其他subscription 宣告自己將要停止服務
+    
+    
     
 * factory
     * config.go
