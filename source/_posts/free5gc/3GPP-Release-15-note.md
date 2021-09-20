@@ -8,8 +8,3 @@ tag: [5G,3GPP,Release15]
 # 3GPP Release-15 閱讀筆記
 
 
-
-
-
-
-
