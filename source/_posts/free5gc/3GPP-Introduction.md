@@ -17,7 +17,7 @@ tag: [3GPP,Specification]
 - Services & Systems Aspects ([SA](https://www.3gpp.org/SA))
 - Core Network & Terminals ([CT](https://www.3gpp.org/rubrique34)) 
 
-![2021 3gpp Organigram](./3GPP-Introduction/2021_new-Organigram_3gpp.jpg)
+![2021 3gpp Organigram](3GPP-Introduction/2021_new-Organigram_3gpp.jpg)
 
 3GPP 組織主要負責制定以上 3 個部分的電信網路標準
 
@@ -39,7 +39,7 @@ tag: [3GPP,Specification]
 
 如下圖所示，這是最近的 Release 發佈時間表（寫稿時間為：2021-09-21）
 
-![Release timeline R16 R17](./3GPP-Introduction/Release_timeline_R16_R17.jpg)
+![Release timeline R16 R17](3GPP-Introduction/Release_timeline_R16_R17.jpg)
 
 在 https://portal.3gpp.org/#/55934-releases 可以查看所有 Release 標準的進度
 
