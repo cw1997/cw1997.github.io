@@ -67,7 +67,7 @@ TS 22.261 描述了不同需求類型對應的 5G 使用場景
 
 中定義的 EPS(4G) 功能
 
-**References**
+### References
 
 [1]             TS 22.261, "Service requirements for the 5G system".
 
@@ -117,7 +117,7 @@ NRF 基站（邏輯節點gNB）之間使用 Xn 接口互聯
 
 ![SA Architecture](3GPP-Release-15-note/SA_Architecture.png)
 
-## Core Network 核心網
+## Core Network 核心網概述
 
 5G 獨立組網系統中，5G System（5GS）由
 
@@ -139,6 +139,14 @@ TR 23.799 開始定義了架構規格（stage 2），也稱為 NextGen TR
 
 中完全定義
 
+### Service-Based Architecture (SBA)
+
+5G 架構依賴於 SBA 框架
+
+一系列的 Network Function 替代了 傳統 Network Entities 組成架構內的元素
+
+通過公共框架的一些接口，任何給定的 NF （服務提供者）都可以提供服務給被授權的其他 NFs 或者服務消費者。
+
 ![5G_System_architecture](3GPP-Release-15-note/5G_System_architecture.png)
 
 在當前 stage，只有如下的 NF（Network Function）和元素將被重點提到
@@ -153,3 +161,69 @@ TR 23.799 開始定義了架構規格（stage 2），也稱為 NextGen TR
   - The Session Management Function (SMF), that accesses the UPF.
 
 其他 NF 之後會提到
+
+#### 特性
+
+SBA 服務允許虛擬化部署
+
+服務可以分佈式部署，做冗餘或者彈性伸縮
+
+同一功能可以由多個 NF 同時提供（冗餘）並且部署在多個位置
+
+UE 的消息將被路由至任何一個具有處理能力的 NF
+
+因此 NF 必須盡可能保持無狀態特性，這樣才能過很方便地水平擴展或者允許請求消息被任意路由至不同的 NF
+
+由於 NF 提供了冗餘能力，因此任何指定的 NF 都可以有計劃性的進行停機維護，當維護完畢後他們也可以自動恢復
+
+## Access Network 接入網概述
+
+5G AN 架構非常簡單，因為它只包含一個實體，也就是 gNB
+
+- gNB 通過 NG Interface 連接至 5G CN
+- gNB 通過 Xn Interface 連接至 5G's gNB
+- gNB 通過 X2 Interface 連接至 4G's eNB
+
+![AN_interfaces](3GPP-Release-15-note/AN_interfaces.png)
+
+### References for 5GS Stage 2
+
+The main Stage 2 specifications for the 5G System are:
+
+[1]             TS 23.501, "System Architecture for the 5G System", Stage 2. It specifies the overall 5GS Stage 2: the architecture reference model, including the network functions and the description of high level functions.
+
+[2]             TS 23.502, "Procedures for the 5G System", Stage 2. It specifies the 5GS Stage 2 for roaming and non-roaming scenarios, for the policy and charging related control framework.
+
+[3]             TS 23.503, "Policy and Charging Control Framework for the 5G System", Stage 2. It is the companion specification to TS 23.501 and TS 23.503, and specifies the Stage 2 procedures and Network Function Services.
+
+[4]             TR 23.799 "Study on Architecture for Next Generation System", Stage 2
+
+[5]             TS 38.401 " NG-RAN; Architecture description"
+
+[6]             TS 38.420 " NG-RAN; Xn general aspects and principles"
+
+[7]             TS 36.401 "Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Architecture description"
+
+### Abbreviation applicable to this section:
+
+NR             New Radio (5G Radio)
+
+NSA            Non Stand-Alone
+
+PBCH          Physical Broadcast Channel
+
+PDCCH         Physical Downlink Control Channel
+
+PDSCH         Physical Downlink Shared Channel
+
+PRACH         Physical Random Access Channel
+
+PSS            Primary Synchronisation Signal
+
+PUCCH         Physical Uplink Control Channel
+
+PUSCH         Physical Uplink Shared Channel
+
+SA             Stand-Alone
+
+SSS            Secondary Synchronisation Signal
