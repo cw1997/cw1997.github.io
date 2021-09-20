@@ -6,20 +6,27 @@
   
   <title>3GPP Release-15 閱讀筆記 | 昌维的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="3GPP Release-15 閱讀筆記">
+  <meta name="description" content="3GPP Release-15 閱讀筆記3GPP Release-15 簡稱 3GPP R15 或者 R15 官方介紹： https:&#x2F;&#x2F;www.3gpp.org&#x2F;release-15 規格詳情頁： https:&#x2F;&#x2F;portal.3gpp.org&#x2F;desktopmodules&#x2F;Specifications&#x2F;SpecificationDetails.aspx?specificationId&#x3D;3389">
 <meta property="og:type" content="article">
 <meta property="og:title" content="3GPP Release-15 閱讀筆記">
 <meta property="og:url" content="https://blog.changwei.me/free5gc/3GPP-Release-15-note/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="3GPP Release-15 閱讀筆記">
+<meta property="og:description" content="3GPP Release-15 閱讀筆記3GPP Release-15 簡稱 3GPP R15 或者 R15 官方介紹： https:&#x2F;&#x2F;www.3gpp.org&#x2F;release-15 規格詳情頁： https:&#x2F;&#x2F;portal.3gpp.org&#x2F;desktopmodules&#x2F;Specifications&#x2F;SpecificationDetails.aspx?specificationId&#x3D;3389">
 <meta property="og:locale">
+<meta property="og:image" content="https://blog.changwei.me/free5gc/3GPP-Release-15-note/3GPP-Release-15-note/NSA_Architecture.png">
+<meta property="og:image" content="https://blog.changwei.me/free5gc/3GPP-Release-15-note/3GPP-Release-15-note/SA_Architecture.png">
+<meta property="og:image" content="https://blog.changwei.me/free5gc/3GPP-Release-15-note/3GPP-Release-15-note/5G_System_architecture.png">
 <meta property="article:published_time" content="2021-09-21T05:02:14.000Z">
-<meta property="article:modified_time" content="2021-09-20T21:26:14.596Z">
+<meta property="article:modified_time" content="2021-09-20T22:35:24.015Z">
 <meta property="article:author" content="cw1997">
 <meta property="article:tag" content="3GPP">
 <meta property="article:tag" content="5G">
+<meta property="article:tag" content="Release-15">
 <meta property="article:tag" content="Release15">
+<meta property="article:tag" content="R15">
+<meta property="article:tag" content="Rel-15">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.changwei.me/free5gc/3GPP-Release-15-note/3GPP-Release-15-note/NSA_Architecture.png">
   
     <link rel="alternate" href="/atom.xml" title="昌维的博客" type="application/atom+xml">
   
@@ -106,17 +113,119 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="3GPP-Release-15-閱讀筆記"><a href="#3GPP-Release-15-閱讀筆記" class="headerlink" title="3GPP Release-15 閱讀筆記"></a>3GPP Release-15 閱讀筆記</h1>
+        <h1 id="3GPP-Release-15-閱讀筆記"><a href="#3GPP-Release-15-閱讀筆記" class="headerlink" title="3GPP Release-15 閱讀筆記"></a>3GPP Release-15 閱讀筆記</h1><p>3GPP Release-15 簡稱 3GPP R15 或者 R15</p>
+<p>官方介紹： <a target="_blank" rel="noopener" href="https://www.3gpp.org/release-15">https://www.3gpp.org/release-15</a></p>
+<p>規格詳情頁： <a target="_blank" rel="noopener" href="https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3389">https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3389</a></p>
+<p>15.0.0 版本鏈接： <a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp//Specs/archive/21_series/21.915/21915-f00.zip">https://www.3gpp.org/ftp//Specs/archive/21_series/21.915/21915-f00.zip</a> （發佈日期 2019-10-01）截至寫稿時（2021-09-21）該版本為 3GPP Release-15 最新版本</p>
+<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p>3GPP Release-15 為 5G 的第一個 3GPP 規格</p>
+<p>R15 定義了 5G 系統的 Phase 1</p>
+<p>R16 將定義 5G 系統的 Phase 2</p>
+<h2 id="The-5GS-service-aspects（5G-服務場景）"><a href="#The-5GS-service-aspects（5G-服務場景）" class="headerlink" title="The 5GS service aspects（5G 服務場景）"></a>The 5GS service aspects（5G 服務場景）</h2><p>在 SMARTER 工作組下，SA1 定義了 5G 的需求和新服務</p>
+<p>TS 22.261 描述了不同需求類型對應的 5G 使用場景</p>
+<p>主要包括：</p>
+<ul>
+<li><strong>Enhanced Mobile Broadband (eMBB)</strong></li>
+<li><strong>Critical Communications (CC) and Ultra Reliable and Low Latency Communications (URLLC)</strong></li>
+<li><strong>Massive Internet of Things (mIoT)</strong></li>
+<li><strong>Flexible network operations</strong></li>
+</ul>
+<p>一些 5G 能夠應用的垂直行業領域包括：</p>
+<ul>
+<li>Automotive and other transport (trains, maritime communications)</li>
+<li>Transport, logistics, IoT</li>
+<li>Discrete automation</li>
+<li>Electricity distribution</li>
+<li>Public Safety</li>
+<li>Health and wellness</li>
+<li>Smart cities</li>
+<li>Media and entertainment</li>
+</ul>
+<p>其中還有一些垂直行業在 TS 22.261 中有提及</p>
+<p>還有一些方面，例如 鐵路，eV2X 和相關聯的需求在 TS 22.186 中有提及</p>
+<h2 id="5G-兼容性"><a href="#5G-兼容性" class="headerlink" title="5G 兼容性"></a>5G 兼容性</h2><p>5G 除了支持新的 5G 標準服務以外，還支持所有在</p>
+<ul>
+<li><p>TS 22.278</p>
+</li>
+<li><p>TSs 22.011</p>
+</li>
+<li><p>22.101</p>
+</li>
+<li><p>22.185</p>
+</li>
+<li><p>22.071</p>
+</li>
+<li><p>22.115</p>
+</li>
+<li><p>22.153</p>
+</li>
+<li><p>22.173</p>
+</li>
+</ul>
+<p>中定義的 EPS(4G) 功能</p>
+<p><strong>References</strong></p>
+<p>[1]             TS 22.261, “Service requirements for the 5G system”.</p>
+<p>[2]             TS 22.278, “Service requirements for the Evolved Packet System (EPS)”.</p>
+<p>[3]             TS 22.011, “Service accessibility”.</p>
+<p>[4]             TS 22.101, “Service aspects; Service principles”.</p>
+<p>[5]             TS 22.185, “Service requirements for V2X services”.</p>
+<p>[6]             TS 22.071, “Location Services (LCS); Service description”.</p>
+<p>[7]             TS 22.115, “Service aspects; Charging and billing”.</p>
+<p>[8]             TS 22.153, “Multimedia priority service”.</p>
+<p>[9]             TS 22.173, “IP Multimedia Core Network Subsystem (IMS) Multimedia Telephony Service and supplementary services”.</p>
+<p>[10]            TS 22.186, “Service requirements for enhanced V2X scenarios”.</p>
+<h2 id="NSA-非獨立組網架構-VS-SA-獨立組網架構"><a href="#NSA-非獨立組網架構-VS-SA-獨立組網架構" class="headerlink" title="NSA 非獨立組網架構 VS SA 獨立組網架構"></a>NSA 非獨立組網架構 VS SA 獨立組網架構</h2><h3 id="Non-Stand-Alone-NSA-非獨立組網架構"><a href="#Non-Stand-Alone-NSA-非獨立組網架構" class="headerlink" title="Non-Stand Alone(NSA) 非獨立組網架構"></a>Non-Stand Alone(NSA) 非獨立組網架構</h3><p>5G RAN 和 NRF 接口連接至 LTE 和 EPC 核心網（分別對應4G Radio 和 4G Core）</p>
+<p>這樣可以充分利用 5G NR，但是又無需替換核心網</p>
+<p>這種情況下只能使用 4G 服務，但是又可以享受到 NR 帶來的低延遲能力</p>
+<p>The NSA is also known as “E-UTRA-NR Dual Connectivity (EN-DC)” or “Architecture Option 3”. See also the clause on EDCE5.</p>
+<p>In EN-DC, the 4G’s eNB is the Master Node (MN) while the 5G’s en-gNB is the Secondary Node (SN).</p>
+<p><img src="3GPP-Release-15-note/NSA_Architecture.png" alt="NSA Architecture"></p>
+<h3 id="Stand-Alone-SA-獨立組網架構"><a href="#Stand-Alone-SA-獨立組網架構" class="headerlink" title="Stand Alone(SA) 獨立組網架構"></a>Stand Alone(SA) 獨立組網架構</h3><p>5G NR(New Radio) 連接至 5G CN(Core Network)</p>
+<p>這種配置下，全部的 5G Phase 1 都將被支持</p>
+<p>NRF 基站（邏輯節點gNB）之間使用 Xn 接口互聯</p>
+<p>並且 AN(Access Network (called the “NG-RAN for SA architecture”)) 使用 NG 接口連接至 5GC</p>
+<p><img src="3GPP-Release-15-note/SA_Architecture.png" alt="SA Architecture"></p>
+<h2 id="Core-Network-核心網"><a href="#Core-Network-核心網" class="headerlink" title="Core Network 核心網"></a>Core Network 核心網</h2><p>5G 獨立組網系統中，5G System（5GS）由</p>
+<ul>
+<li>User Equipment</li>
+<li>Access Network（New Radio，NRF）</li>
+<li>Core Network</li>
+</ul>
+<p>組成</p>
+<p>之前提到的服務需求將作為架構定義的基礎</p>
+<p>TR 23.799 開始定義了架構規格（stage 2），也稱為 NextGen TR</p>
+<p>之後在</p>
+<ul>
+<li>TS 23.501</li>
+<li>TS 23.502</li>
+<li>TS 23.503</li>
+</ul>
+<p>中完全定義</p>
+<p><img src="3GPP-Release-15-note/5G_System_architecture.png" alt="5G_System_architecture"></p>
+<p>在當前 stage，只有如下的 NF（Network Function）和元素將被重點提到</p>
+<ul>
+<li>The User Equipment (UE);</li>
+<li>The (Radio) Access Network [(R)AN];</li>
+<li>The User Plane Function (UPF), handling the user data;</li>
+<li>The (external) Data Network (DN);</li>
+<li>Some remarkable Network Functions (NFs): <ul>
+<li>The Application Function (AF), handling the application(s);</li>
+<li>The Access and Mobility management Function (AMF), that accesses the UE and the (R)AN;</li>
+<li>The Session Management Function (SMF), that accesses the UPF.</li>
+</ul>
+</li>
+</ul>
+<p>其他 NF 之後會提到</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/3GPP-Release-15-note/" data-id="cktt5rri300058bnbbv5h8da7" data-title="3GPP Release-15 閱讀筆記" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/3GPP-Release-15-note/" data-id="cktt88p3j00058jnb5m8x0jly" data-title="3GPP Release-15 閱讀筆記" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/3GPP-Release-15-note/#disqus_thread" class="article-comment-link">Kommentare</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/3GPP/" rel="tag">3GPP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5G/" rel="tag">5G</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release15/" rel="tag">Release15</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/3GPP/" rel="tag">3GPP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5G/" rel="tag">5G</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R15/" rel="tag">R15</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rel-15/" rel="tag">Rel-15</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release-15/" rel="tag">Release-15</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release15/" rel="tag">Release15</a></li></ul>
 
     </footer>
   </div>
@@ -160,7 +269,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3GPP/" rel="tag">3GPP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G/" rel="tag">5G</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5GC/" rel="tag">5GC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" rel="tag">5G核心網</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">5G核心网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AMF/" rel="tag">AMF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Code-Tracing/" rel="tag">Code Tracing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Free5GC/" rel="tag">Free5GC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release15/" rel="tag">Release15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Specification/" rel="tag">Specification</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/about/" rel="tag">about</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">云核心网</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3GPP/" rel="tag">3GPP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G/" rel="tag">5G</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5GC/" rel="tag">5GC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" rel="tag">5G核心網</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">5G核心网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AMF/" rel="tag">AMF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Code-Tracing/" rel="tag">Code Tracing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Free5GC/" rel="tag">Free5GC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R15/" rel="tag">R15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rel-15/" rel="tag">Rel-15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release-15/" rel="tag">Release-15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release15/" rel="tag">Release15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Specification/" rel="tag">Specification</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/about/" rel="tag">about</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">云核心网</a></li></ul>
     </div>
   </div>
 
@@ -170,7 +279,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/3GPP/" style="font-size: 15px;">3GPP</a> <a href="/tags/5G/" style="font-size: 20px;">5G</a> <a href="/tags/5GC/" style="font-size: 15px;">5GC</a> <a href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" style="font-size: 15px;">5G核心網</a> <a href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" style="font-size: 15px;">5G核心网</a> <a href="/tags/AMF/" style="font-size: 10px;">AMF</a> <a href="/tags/Code-Tracing/" style="font-size: 15px;">Code Tracing</a> <a href="/tags/Free5GC/" style="font-size: 15px;">Free5GC</a> <a href="/tags/Release15/" style="font-size: 10px;">Release15</a> <a href="/tags/Specification/" style="font-size: 10px;">Specification</a> <a href="/tags/about/" style="font-size: 10px;">about</a> <a href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" style="font-size: 15px;">云核心网</a>
+      <a href="/tags/3GPP/" style="font-size: 15px;">3GPP</a> <a href="/tags/5G/" style="font-size: 20px;">5G</a> <a href="/tags/5GC/" style="font-size: 15px;">5GC</a> <a href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" style="font-size: 15px;">5G核心網</a> <a href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" style="font-size: 15px;">5G核心网</a> <a href="/tags/AMF/" style="font-size: 10px;">AMF</a> <a href="/tags/Code-Tracing/" style="font-size: 15px;">Code Tracing</a> <a href="/tags/Free5GC/" style="font-size: 15px;">Free5GC</a> <a href="/tags/R15/" style="font-size: 10px;">R15</a> <a href="/tags/Rel-15/" style="font-size: 10px;">Rel-15</a> <a href="/tags/Release-15/" style="font-size: 10px;">Release-15</a> <a href="/tags/Release15/" style="font-size: 10px;">Release15</a> <a href="/tags/Specification/" style="font-size: 10px;">Specification</a> <a href="/tags/about/" style="font-size: 10px;">about</a> <a href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" style="font-size: 15px;">云核心网</a>
     </div>
   </div>
 
