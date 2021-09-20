@@ -153,8 +153,7 @@
 </li>
 </ul>
 <p>中定義的 EPS(4G) 功能</p>
-<p><strong>References</strong></p>
-<p>[1]             TS 22.261, “Service requirements for the 5G system”.</p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><p>[1]             TS 22.261, “Service requirements for the 5G system”.</p>
 <p>[2]             TS 22.278, “Service requirements for the Evolved Packet System (EPS)”.</p>
 <p>[3]             TS 22.011, “Service accessibility”.</p>
 <p>[4]             TS 22.101, “Service aspects; Service principles”.</p>
@@ -175,7 +174,7 @@
 <p>NRF 基站（邏輯節點gNB）之間使用 Xn 接口互聯</p>
 <p>並且 AN(Access Network (called the “NG-RAN for SA architecture”)) 使用 NG 接口連接至 5GC</p>
 <p><img src="3GPP-Release-15-note/SA_Architecture.png" alt="SA Architecture"></p>
-<h2 id="Core-Network-核心網"><a href="#Core-Network-核心網" class="headerlink" title="Core Network 核心網"></a>Core Network 核心網</h2><p>5G 獨立組網系統中，5G System（5GS）由</p>
+<h2 id="Core-Network-核心網概述"><a href="#Core-Network-核心網概述" class="headerlink" title="Core Network 核心網概述"></a>Core Network 核心網概述</h2><p>5G 獨立組網系統中，5G System（5GS）由</p>
 <ul>
 <li>User Equipment</li>
 <li>Access Network（New Radio，NRF）</li>
@@ -191,6 +190,9 @@
 <li>TS 23.503</li>
 </ul>
 <p>中完全定義</p>
+<h3 id="Service-Based-Architecture-SBA"><a href="#Service-Based-Architecture-SBA" class="headerlink" title="Service-Based Architecture (SBA)"></a>Service-Based Architecture (SBA)</h3><p>5G 架構依賴於 SBA 框架</p>
+<p>一系列的 Network Function 替代了 傳統 Network Entities 組成架構內的元素</p>
+<p>通過公共框架的一些接口，任何給定的 NF （服務提供者）都可以提供服務給被授權的其他 NFs 或者服務消費者。</p>
 <p><img src="3GPP-Release-15-note/5G_System_architecture.png" alt="5G_System_architecture"></p>
 <p>在當前 stage，只有如下的 NF（Network Function）和元素將被重點提到</p>
 <ul>
@@ -206,11 +208,43 @@
 </li>
 </ul>
 <p>其他 NF 之後會提到</p>
+<h4 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h4><p>SBA 服務允許虛擬化部署</p>
+<p>服務可以分佈式部署，做冗餘或者彈性伸縮</p>
+<p>同一功能可以由多個 NF 同時提供（冗餘）並且部署在多個位置</p>
+<p>UE 的消息將被路由至任何一個具有處理能力的 NF</p>
+<p>因此 NF 必須盡可能保持無狀態特性，這樣才能過很方便地水平擴展或者允許請求消息被任意路由至不同的 NF</p>
+<p>由於 NF 提供了冗餘能力，因此任何指定的 NF 都可以有計劃性的進行停機維護，當維護完畢後他們也可以自動恢復</p>
+<h2 id="Access-Network-接入網概述"><a href="#Access-Network-接入網概述" class="headerlink" title="Access Network 接入網概述"></a>Access Network 接入網概述</h2><p>5G AN 架構非常簡單，因為它只包含一個實體，也就是 gNB</p>
+<ul>
+<li>gNB 通過 NG Interface 連接至 5G CN</li>
+<li>gNB 通過 Xn Interface 連接至 5G’s gNB</li>
+<li>gNB 通過 X2 Interface 連接至 4G’s eNB</li>
+</ul>
+<p><img src="3GPP-Release-15-note/AN_interfaces.png" alt="AN_interfaces"></p>
+<h3 id="References-for-5GS-Stage-2"><a href="#References-for-5GS-Stage-2" class="headerlink" title="References for 5GS Stage 2"></a>References for 5GS Stage 2</h3><p>The main Stage 2 specifications for the 5G System are:</p>
+<p>[1]             TS 23.501, “System Architecture for the 5G System”, Stage 2. It specifies the overall 5GS Stage 2: the architecture reference model, including the network functions and the description of high level functions.</p>
+<p>[2]             TS 23.502, “Procedures for the 5G System”, Stage 2. It specifies the 5GS Stage 2 for roaming and non-roaming scenarios, for the policy and charging related control framework.</p>
+<p>[3]             TS 23.503, “Policy and Charging Control Framework for the 5G System”, Stage 2. It is the companion specification to TS 23.501 and TS 23.503, and specifies the Stage 2 procedures and Network Function Services.</p>
+<p>[4]             TR 23.799 “Study on Architecture for Next Generation System”, Stage 2</p>
+<p>[5]             TS 38.401 “ NG-RAN; Architecture description”</p>
+<p>[6]             TS 38.420 “ NG-RAN; Xn general aspects and principles”</p>
+<p>[7]             TS 36.401 “Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Architecture description”</p>
+<h3 id="Abbreviation-applicable-to-this-section"><a href="#Abbreviation-applicable-to-this-section" class="headerlink" title="Abbreviation applicable to this section:"></a>Abbreviation applicable to this section:</h3><p>NR             New Radio (5G Radio)</p>
+<p>NSA            Non Stand-Alone</p>
+<p>PBCH          Physical Broadcast Channel</p>
+<p>PDCCH         Physical Downlink Control Channel</p>
+<p>PDSCH         Physical Downlink Shared Channel</p>
+<p>PRACH         Physical Random Access Channel</p>
+<p>PSS            Primary Synchronisation Signal</p>
+<p>PUCCH         Physical Uplink Control Channel</p>
+<p>PUSCH         Physical Uplink Shared Channel</p>
+<p>SA             Stand-Alone</p>
+<p>SSS            Secondary Synchronisation Signal</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/3GPP-Release-15-note/" data-id="cktt88p3j00058jnb5m8x0jly" data-title="3GPP Release-15 閱讀筆記" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/3GPP-Release-15-note/" data-id="ckttb4ujs0005b8ncbn621ww0" data-title="3GPP Release-15 閱讀筆記" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/3GPP-Release-15-note/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -294,7 +328,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/3GPP-Introduction/" data-id="cktt88p3i00048jnbeift855t" data-title="3GPP 與 3GPP 規格介紹" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/3GPP-Introduction/" data-id="ckttb4ujq0004b8nc4e7y3vhu" data-title="3GPP 與 3GPP 規格介紹" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/3GPP-Introduction/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -313,7 +347,7 @@
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-09-20T22:35:24.019Z" itemprop="datePublished">2021-09-20</time>
+  <time class="dt-published" datetime="2021-09-20T23:56:22.317Z" itemprop="datePublished">2021-09-20</time>
 </a>
     
   </div>
@@ -349,7 +383,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/hello-world/" data-id="cktt88p3e00018jnb2v42hmlm" data-title="Hello World" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/hello-world/" data-id="ckttb4ujm0001b8ncbfdeeb52" data-title="Hello World" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/hello-world/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -504,7 +538,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/AMF-v3.0.5/" data-id="cktt88p3k00068jnbdchs8hyi" data-title="Tracing Source Code of AMF of Free5GC" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/AMF-v3.0.5/" data-id="ckttb4ujt0006b8nccpgs4cnr" data-title="Tracing Source Code of AMF of Free5GC" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/AMF-v3.0.5/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -592,7 +626,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/Free5GC-Code-Tracing/" data-id="cktt88p3n000a8jnb39yf961j" data-title="Free5GC Code Tracing" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/Free5GC-Code-Tracing/" data-id="ckttb4uk90019b8ncen09033q" data-title="Free5GC Code Tracing" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/Free5GC-Code-Tracing/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -638,7 +672,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/about/" data-id="cktt88p3900008jnb9acza3en" data-title="关于我" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/about/" data-id="ckttb4ujg0000b8nc3yk5ced3" data-title="关于我" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/about/#disqus_thread" class="article-comment-link">Kommentare</a>
       
