@@ -5,7 +5,7 @@ date: 2021-09-21 05:02:14
 tag: [5G,3GPP,Release-15,Release15,R15,Rel-15]
 ---
 
-# 3GPP Release-15 閱讀筆記
+# 簡介
 
 3GPP Release-15 簡稱 3GPP R15 或者 R15
 
@@ -15,15 +15,13 @@ tag: [5G,3GPP,Release-15,Release15,R15,Rel-15]
 
 15.0.0 版本鏈接： https://www.3gpp.org/ftp//Specs/archive/21_series/21.915/21915-f00.zip （發佈日期 2019-10-01）截至寫稿時（2021-09-21）該版本為 3GPP Release-15 最新版本
 
-## 簡介
-
 3GPP Release-15 為 5G 的第一個 3GPP 規格
 
 R15 定義了 5G 系統的 Phase 1
 
 R16 將定義 5G 系統的 Phase 2
 
-## The 5GS service aspects（5G 服務場景）
+# The 5GS service aspects（5G 服務場景）
 
 在 SMARTER 工作組下，SA1 定義了 5G 的需求和新服務
 
@@ -51,7 +49,7 @@ TS 22.261 描述了不同需求類型對應的 5G 使用場景
 
 還有一些方面，例如 鐵路，eV2X 和相關聯的需求在 TS 22.186 中有提及
 
-## 5G 兼容性
+# 5G 兼容性
 
 5G 除了支持新的 5G 標準服務以外，還支持所有在
 
@@ -67,7 +65,7 @@ TS 22.261 描述了不同需求類型對應的 5G 使用場景
 
 中定義的 EPS(4G) 功能
 
-### References
+## References
 
 [1]             TS 22.261, "Service requirements for the 5G system".
 
@@ -89,9 +87,9 @@ TS 22.261 描述了不同需求類型對應的 5G 使用場景
 
 [10]            TS 22.186, "Service requirements for enhanced V2X scenarios".
 
-## NSA 非獨立組網架構 VS SA 獨立組網架構
+# NSA 非獨立組網架構 VS SA 獨立組網架構
 
-### Non-Stand Alone(NSA) 非獨立組網架構
+## Non-Stand Alone(NSA) 非獨立組網架構
 
 5G RAN 和 NRF 接口連接至 LTE 和 EPC 核心網（分別對應4G Radio 和 4G Core）
 
@@ -105,7 +103,7 @@ In EN-DC, the 4G's eNB is the Master Node (MN) while the 5G's en-gNB is the Seco
 
 ![NSA Architecture](./NSA_Architecture.png)
 
-### Stand Alone(SA) 獨立組網架構
+## Stand Alone(SA) 獨立組網架構
 
 5G NR(New Radio) 連接至 5G CN(Core Network)
 
@@ -117,7 +115,7 @@ NRF 基站（邏輯節點gNB）之間使用 Xn 接口互聯
 
 ![SA Architecture](./SA_Architecture.png)
 
-## Core Network 核心網概述
+# Core Network 核心網概述
 
 5G 獨立組網系統中，5G System（5GS）由
 
@@ -139,7 +137,7 @@ TR 23.799 開始定義了架構規格（stage 2），也稱為 NextGen TR
 
 中完全定義
 
-### Service-Based Architecture (SBA)
+## Service-Based Architecture (SBA)
 
 5G 架構依賴於 SBA 框架
 
@@ -162,7 +160,7 @@ TR 23.799 開始定義了架構規格（stage 2），也稱為 NextGen TR
 
 其他 NF 之後會提到
 
-#### 特性
+### 特性
 
 SBA 服務允許虛擬化部署
 
@@ -176,7 +174,7 @@ UE 的消息將被路由至任何一個具有處理能力的 NF
 
 由於 NF 提供了冗餘能力，因此任何指定的 NF 都可以有計劃性的進行停機維護，當維護完畢後他們也可以自動恢復
 
-## Access Network 接入網概述
+# Access Network 接入網概述
 
 5G AN 架構非常簡單，因為它只包含一個實體，也就是 gNB，具體可以參考 TS 38.401
 
@@ -189,7 +187,7 @@ UE 的消息將被路由至任何一個具有處理能力的 NF
 
 AN 架構在原理上和 4G  LTE 和 eNB 組網的方式相近，可以參考 TS 36.401 和 TS 38.420
 
-### References for 5GS Stage 2
+## References for 5GS Stage 2
 
 The main Stage 2 specifications for the 5G System are:
 
@@ -207,7 +205,7 @@ The main Stage 2 specifications for the 5G System are:
 
 [7]             TS 36.401 "Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Architecture description"
 
-### Abbreviation applicable to this section:
+## Abbreviation applicable to this section:
 
 NR             New Radio (5G Radio)
 
@@ -231,7 +229,7 @@ SA             Stand-Alone
 
 SSS            Secondary Synchronisation Signal
 
-## Radio 和 Core 之間的功能劃分
+# Radio 和 Core 之間的功能劃分
 
 進一步了解 AN 和 CN 提供的功能
 
@@ -243,7 +241,7 @@ AN 和 CN 之間交換數據是通過 CN 側的 AMF，UPF 和 SMF，而 AN 側�
 
 黃色方框為 NF，白色方框為其所負責的任務
 
-### CN 側
+## CN 側
 
 所有和用戶數據無關的信令都將經過 AMF ("Access and Mobility management Function") ，例如可移動性或者安全性
 
@@ -251,7 +249,7 @@ SMF ("Session Management Function") 負責與用戶數據有關的信令，例�
 
 UPF 負責處理用戶數據
 
-### AN 側面
+## AN 側
 
 gNB (5G Node B) 執行所有 AN 相關的主要任務，包括
 
@@ -261,7 +259,9 @@ gNB (5G Node B) 執行所有 AN 相關的主要任務，包括
 * 移動連接控制
 * 為 UE 動態分配資源
 
-## 5G 核心網
+# 5G 核心網
+
+## NF (Network Function)
 
 ### AMF (Access and Mobility management Function)
 
