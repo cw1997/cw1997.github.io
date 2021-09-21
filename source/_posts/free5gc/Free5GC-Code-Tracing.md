@@ -34,7 +34,7 @@ refer to https://github.com/free5gc/free5gc#readme
     - extract some codes from a big function to some small functions. 
         - Why we need do this? 
             - Because many IDEs and code editors like Goland, VSCode, Eclipse have a panel names "Structure", the UI screenshot is at below:
-                - ![](goland_structure_panel_screenshot.png)
+                - ![goland_structure_panel_screenshot](./Free5GC-Code-Tracing/goland_structure_panel_screenshot.png)
             - We can easily watch all functions in the panel, so we can quickly understand what functions are included in the code and its role or duty in the Network Function(NF) by the function name, but not only a Start() function(We can't quickly understand what actions are done in the Start() function unless tracing every code line in this function)
             - We can easily test many small functions by automatic unit test framework like [gotest](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/chapter09/09.1.html), so we could develop new features and refoactor old codes efficienly.
     - move the hard-code and magic number to the configuration or constant with description comment

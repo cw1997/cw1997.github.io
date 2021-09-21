@@ -103,7 +103,7 @@ The NSA is also known as "E-UTRA-NR Dual Connectivity (EN-DC)" or "Architecture 
 
 In EN-DC, the 4G's eNB is the Master Node (MN) while the 5G's en-gNB is the Secondary Node (SN).
 
-![NSA Architecture](3GPP-Release-15-note/NSA_Architecture.png)
+![NSA Architecture](./3GPP-Release-15-note/NSA_Architecture.png)
 
 ### Stand Alone(SA) 獨立組網架構
 
@@ -115,7 +115,7 @@ NRF 基站（邏輯節點gNB）之間使用 Xn 接口互聯
 
 並且 AN(Access Network (called the "NG-RAN for SA architecture")) 使用 NG 接口連接至 5GC
 
-![SA Architecture](3GPP-Release-15-note/SA_Architecture.png)
+![SA Architecture](./3GPP-Release-15-note/SA_Architecture.png)
 
 ## Core Network 核心網概述
 
@@ -147,7 +147,7 @@ TR 23.799 開始定義了架構規格（stage 2），也稱為 NextGen TR
 
 通過公共框架的一些接口，任何給定的 NF （服務提供者）都可以提供服務給被授權的其他 NFs 或者服務消費者。
 
-![5G_System_architecture](3GPP-Release-15-note/5G_System_architecture.png)
+![5G_System_architecture](./3GPP-Release-15-note/5G_System_architecture.png)
 
 在當前 stage，只有如下的 NF（Network Function）和元素將被重點提到
 
@@ -184,7 +184,7 @@ UE 的消息將被路由至任何一個具有處理能力的 NF
 - gNB 通過 Xn Interface 連接至 5G's gNB
 - gNB 通過 X2 Interface 連接至 4G's eNB
 
-![AN_interfaces](3GPP-Release-15-note/AN_interfaces.png)
+![AN_interfaces](./3GPP-Release-15-note/AN_interfaces.png)
 
 ### References for 5GS Stage 2
 
