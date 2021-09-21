@@ -178,13 +178,16 @@ UE 的消息將被路由至任何一個具有處理能力的 NF
 
 ## Access Network 接入網概述
 
-5G AN 架構非常簡單，因為它只包含一個實體，也就是 gNB
+5G AN 架構非常簡單，因為它只包含一個實體，也就是 gNB，具體可以參考 TS 38.401
 
 - gNB 通過 NG Interface 連接至 5G CN
 - gNB 通過 Xn Interface 連接至 5G's gNB
 - gNB 通過 X2 Interface 連接至 4G's eNB
+- gNB 通過 NR interface 連接至 UE
 
 ![AN_interfaces](./AN_interfaces.png)
+
+AN 架構在原理上和 4G  LTE 和 eNB 組網的方式相近，可以參考 TS 36.401 和 TS 38.420
 
 ### References for 5GS Stage 2
 
@@ -227,4 +230,125 @@ PUSCH         Physical Uplink Shared Channel
 SA             Stand-Alone
 
 SSS            Secondary Synchronisation Signal
+
+## Radio 和 Core 之間的功能劃分
+
+進一步了解 AN 和 CN 提供的功能
+
+![The_5G_System_architecture](./The_5G_System_architecture.svg)
+
+AN 和 CN 之間交換數據是通過 CN 側的 AMF，UPF 和 SMF，而 AN 側則是 gNB
+
+![Functional_Split_between_NG-RAN_and_5GC](./Functional_Split_between_NG-RAN_and_5GC.svg)
+
+黃色方框為 NF，白色方框為其所負責的任務
+
+### CN 側
+
+所有和用戶數據無關的信令都將經過 AMF ("Access and Mobility management Function") ，例如可移動性或者安全性
+
+SMF ("Session Management Function") 負責與用戶數據有關的信令，例如會話的建立
+
+UPF 負責處理用戶數據
+
+### AN 側面
+
+gNB (5G Node B) 執行所有 AN 相關的主要任務，包括
+
+* 無線電資源管理
+* 無線電承載控制
+* 無線電權限控制
+* 移動連接控制
+* 為 UE 動態分配資源
+
+## 5G 核心網
+
+### AMF (Access and Mobility management Function)
+
+支援不同移動性管理需求的 UE
+
+它主要處理如下工作
+
+* Non-Access Stratum (NAS) 信令處理
+* NASA 信令安全
+* Access Stratum (AS) 安全控制
+* CN 節點之間處理 3GPP AN 的信令
+* 空閒模式下 UE 設備的可達性，包括控制和控制重傳
+* 區域管理註冊
+* 支援系統內外的可移動性
+* 訪問認證
+* 檢測漫遊權限
+* 支援網路切片
+* SMF 選擇
+
+### SMF (Session Management Function)
+
+和 AMF 共同配合，客製化移動管理模式，例如 "Mobile Initiated Connection Only" (MICO) 僅允許移動連接初始化或者 RAN enhancements RAN 增強，類似於 RRC Inactive 狀態
+
+它主要處理如下任務
+
+* 會話管理
+* UE IP 地址分配和管理
+* UPF 的選擇與控制
+* 為 UPF 設定流量轉發策略，將數據包路由到正確位置
+* 策略，QoS
+* 下行數據通知
+
+### UPF (User Plane Function)
+
+主要負責的處理任務
+
+* RAT 內外的可移動性的錨點
+
+* 外部 PDU 會話與 Data Network 互聯
+* 封包路由和轉發
+* 封包偵測與用戶面的部分策略規則
+* 流量報告
+* 上行流量分類，將流量路由到數據網路
+* 支援多宿主的 PDU 會話分支點
+* 用戶面的 QoS 處理，包括封包過濾，門控，上下行速率控制
+* 上行封包校驗（SDF 到 QoS flow 的映射）
+* 下行封包緩衝和下行數據通知觸發
+
+### Network Repository Function" (NRF)
+
+提供 NF 服務管理，包括
+
+- 服務註冊
+- 服務註銷
+- 服務驗證
+- 服務發現
+
+### Network Exposure Function" (NEF)
+
+對外輸出 NF 的處理能力數據
+
+這些“能力”包括
+
+* 監控能力
+* 供應能力
+* 路由流量的應用影響能力
+* 策略與計費能力
+
+### Unified Data Management" (UDM)
+
+5GC 資源的數據存儲架構為“計算和存儲分離”
+
+Unified Data Repository (UDR) 是主要數據庫
+
+Unstructured Data Storage Function (UDSF) 存儲非結構化的動態數據
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

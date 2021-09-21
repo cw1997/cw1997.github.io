@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 Functional_Split_between_NG-RAN_and_5GC.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="4.8295in" height="2.97276in"
+		viewBox="0 0 347.724 214.038" xml:space="preserve" color-interpolation-filters="sRGB" class="st9">
+	<v:documentProperties v:langID="1033" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvConvertTheme"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:#808080;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st2 {fill:#808080;font-family:Arial;font-size:0.666664em}
+		.st3 {fill:#ffffcc;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st4 {fill:#000000;font-family:Arial;font-size:0.666664em}
+		.st5 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st6 {font-size:1em}
+		.st7 {stroke:#262626;stroke-dasharray:5.04,3.6;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st8 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st9 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Page-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Annotations" v:index="0"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" v:layerMember="0" transform="translate(234.098,-6.27118)">
+			<title>Revision cloud</title>
+			<desc>internet</desc>
+			<v:userDefs>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.748" cy="184.157" width="81.5" height="59.7638"/>
+			<path d="M3.11 181.69 A10.172 9.33212 -180 0 0 8.02 197.53 A12.4269 11.4008 -180 0 0 27.11 207.44 A12.5746 11.5364 -180
+						 0 0 49.28 208.41 A14.9531 13.7184 -180 0 0 72.51 196.94 A11.5471 10.5937 -180 0 0 77.87 178.9 A9.05831 8.31039
+						 -180 0 0 70.72 165.78 A15.4921 14.2129 -180 0 0 43.92 160.86 A15.225 13.9679 -180 0 0 17.11 162.5 A14.2608
+						 13.0833 -180 0 0 3.11 181.69 Z" class="st1"/>
+			<text x="27.41" y="186.56" class="st2" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>internet</text>		</g>
+		<g id="shape2-4" v:mID="2" v:groupContext="shape" transform="translate(0.24,-29.0665)">
+			<title>Rectangle.2</title>
+			<desc>gNB</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="60.2362" cy="128.999" width="120.48" height="170.079"/>
+			<rect x="0" y="43.9597" width="120.472" height="170.079" class="st3"/>
+			<text x="4" y="55.16" class="st4" v:langID="2057"><v:paragraph/><v:tabList/>gNB</text>		</g>
+		<g id="shape3-7" v:mID="3" v:groupContext="shape" transform="translate(7.32661,-142.452)">
+			<title>Rectangle</title>
+			<desc>RB Control</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="53.1496" cy="206.952" width="106.3" height="14.1732"/>
+			<rect x="0" y="199.865" width="106.299" height="14.1732" class="st5"/>
+			<text x="33.59" y="209.35" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>RB Control</text>		</g>
+		<g id="shape4-10" v:mID="4" v:groupContext="shape" transform="translate(7.32661,-121.192)">
+			<title>Rectangle.4</title>
+			<desc>Connection Mobility Cont.</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="53.1496" cy="206.952" width="106.3" height="14.1732"/>
+			<rect x="0" y="199.865" width="106.299" height="14.1732" class="st5"/>
+			<text x="7.57" y="209.35" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Connection Mobility Cont.</text>		</g>
+		<g id="shape5-13" v:mID="5" v:groupContext="shape" transform="translate(7.32661,-70.1688)">
+			<title>Rectangle.5</title>
+			<desc>Measurement Configuration &#38; Provision</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="53.1496" cy="202.7" width="106.3" height="22.6772"/>
+			<rect x="0" y="191.361" width="106.299" height="22.6772" class="st5"/>
+			<text x="28.69" y="200.3" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Measurement<v:lf/><tspan
+						x="8.02" dy="1.2em" class="st6">Configuration </tspan>&#38; Provision</text>		</g>
+		<g id="shape6-17" v:mID="6" v:groupContext="shape" transform="translate(7.32661,-36.1531)">
+			<title>Rectangle.6</title>
+			<desc>Dynamic Resource Allocation (Scheduler)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="53.1496" cy="199.865" width="106.3" height="28.3465"/>
+			<rect x="0" y="185.692" width="106.299" height="28.3465" class="st5"/>
+			<text x="19.36" y="197.47" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Dynamic Resource <tspan
+						x="14.02" dy="1.2em" class="st6">Allocation </tspan>(Scheduler)</text>		</g>
+		<g id="shape9-21" v:mID="9" v:groupContext="shape" transform="translate(149.059,-114.106)">
+			<title>Rectangle.9</title>
+			<desc>AMF</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="49.6063" cy="171.519" width="99.22" height="85.0394"/>
+			<rect x="0" y="128.999" width="99.2126" height="85.0394" class="st3"/>
+			<text x="4" y="140.2" class="st4" v:langID="2057"><v:paragraph/><v:tabList/>AMF</text>		</g>
+		<g id="shape10-24" v:mID="10" v:groupContext="shape" transform="translate(149.059,-29.0665)">
+			<title>Rectangle.11</title>
+			<desc>UPF</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="49.6063" cy="175.062" width="99.22" height="77.9528"/>
+			<rect x="0" y="136.086" width="99.2126" height="77.9528" class="st3"/>
+			<text x="4" y="147.29" class="st4" v:langID="2057"><v:paragraph/><v:tabList/>UPF</text>		</g>
+		<g id="shape12-27" v:mID="12" v:groupContext="shape" transform="translate(348.924,0.72) rotate(90)">
+			<title>工作表.12</title>
+			<path d="M0 214.04 L212.6 214.04" class="st7"/>
+		</g>
+		<g id="shape15-30" v:mID="15" v:groupContext="shape" transform="translate(7.32661,-163.712)">
+			<title>Rectangle.15</title>
+			<desc>Inter Cell RRM</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="53.1496" cy="206.952" width="106.3" height="14.1732"/>
+			<rect x="0" y="199.865" width="106.299" height="14.1732" class="st5"/>
+			<text x="26.92" y="209.35" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Inter Cell RRM</text>		</g>
+		<g id="shape16-33" v:mID="16" v:groupContext="shape" transform="translate(7.32661,-99.9326)">
+			<title>Rectangle.16</title>
+			<desc>Radio Admission Control</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="53.1496" cy="206.952" width="106.3" height="14.1732"/>
+			<rect x="0" y="199.865" width="106.299" height="14.1732" class="st5"/>
+			<text x="9.13" y="209.35" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Radio Admission Control</text>		</g>
+		<g id="shape18-36" v:mID="18" v:groupContext="shape" transform="translate(0.24,-0.72)">
+			<title>Rectangle.18</title>
+			<desc>NG-RAN</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="60.2362" cy="203.409" width="120.48" height="21.2598"/>
+			<rect x="0" y="192.779" width="120.472" height="21.2598" class="st8"/>
+			<text x="44.46" y="205.81" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>NG-RAN</text>		</g>
+		<g id="shape19-39" v:mID="19" v:groupContext="shape" transform="translate(149.059,-0.72)">
+			<title>Rectangle.19</title>
+			<desc>5GC</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="49.6063" cy="203.409" width="99.22" height="21.2598"/>
+			<rect x="0" y="192.779" width="99.2126" height="21.2598" class="st8"/>
+			<text x="41.38" y="205.81" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>5GC</text>		</g>
+		<g id="shape21-42" v:mID="21" v:groupContext="shape" transform="translate(156.146,-64.4995)">
+			<title>Rectangle.21</title>
+			<desc>Mobility Anchoring</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="42.5197" cy="203.409" width="85.04" height="21.2598"/>
+			<rect x="0" y="192.779" width="85.0394" height="21.2598" class="st5"/>
+			<text x="9.84" y="205.81" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Mobility Anchoring</text>		</g>
+		<g id="shape23-45" v:mID="23" v:groupContext="shape" transform="translate(156.146,-121.192)">
+			<title>Rectangle.23</title>
+			<desc>Idle State Mobility Handling</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="42.5197" cy="199.865" width="85.04" height="28.3465"/>
+			<rect x="0" y="185.692" width="85.0394" height="28.3465" class="st5"/>
+			<text x="10.95" y="197.47" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Idle State Mobility <tspan
+						x="26.73" dy="1.2em" class="st6">Handling</tspan></text>		</g>
+		<g id="shape24-49" v:mID="24" v:groupContext="shape" transform="translate(156.146,-156.626)">
+			<title>Rectangle.24</title>
+			<desc>NAS Security</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="42.5197" cy="203.409" width="85.04" height="21.2598"/>
+			<rect x="0" y="192.779" width="85.0394" height="21.2598" class="st5"/>
+			<text x="18.73" y="205.81" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>NAS Security</text>		</g>
+		<g id="shape25-52" v:mID="25" v:groupContext="shape" transform="translate(262.445,-107.019)">
+			<title>Rectangle.25</title>
+			<desc>SMF</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="42.5197" cy="167.975" width="85.04" height="92.126"/>
+			<rect x="0" y="121.912" width="85.0394" height="92.126" class="st3"/>
+			<text x="4" y="133.11" class="st4" v:langID="2057"><v:paragraph/><v:tabList/>SMF</text>		</g>
+		<g id="shape26-55" v:mID="26" v:groupContext="shape" transform="translate(269.531,-149.539)">
+			<title>Rectangle.26</title>
+			<desc>UE IP address allocation</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="199.865" width="70.87" height="28.3465"/>
+			<rect x="0" y="185.692" width="70.8661" height="28.3465" class="st5"/>
+			<text x="9.64" y="197.47" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>UE IP address <tspan
+						x="18.53" dy="1.2em" class="st6">allocation</tspan></text>		</g>
+		<g id="shape27-59" v:mID="27" v:groupContext="shape" transform="translate(269.531,-114.106)">
+			<title>Rectangle.27</title>
+			<desc>PDU Session Control</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="199.334" width="70.87" height="29.4094"/>
+			<rect x="0" y="184.629" width="70.8661" height="29.4094" class="st5"/>
+			<text x="11.65" y="196.93" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>PDU Session <tspan
+						x="22.54" dy="1.2em" class="st6">Control</tspan></text>		</g>
+		<g id="shape7-63" v:mID="7" v:groupContext="shape" transform="translate(156.146,-36.1531)">
+			<title>Rectangle.7</title>
+			<desc>PDU Handling</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(11):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="42.5197" cy="203.409" width="85.04" height="21.2598"/>
+			<rect x="0" y="192.779" width="85.0394" height="21.2598" class="st5"/>
+			<text x="17.17" y="205.81" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>PDU Handling</text>		</g>
+	</g>
+</svg>
