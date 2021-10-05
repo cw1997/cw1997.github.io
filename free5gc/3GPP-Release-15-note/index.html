@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://blog.changwei.me/free5gc/3GPP-Release-15-note/The_5G_System_architecture.svg">
 <meta property="og:image" content="https://blog.changwei.me/free5gc/3GPP-Release-15-note/Functional_Split_between_NG-RAN_and_5GC.svg">
 <meta property="article:published_time" content="2021-09-21T05:02:14.000Z">
-<meta property="article:modified_time" content="2021-09-22T07:38:43.922Z">
+<meta property="article:modified_time" content="2021-10-05T10:45:13.775Z">
 <meta property="article:author" content="cw1997">
 <meta property="article:tag" content="3GPP">
 <meta property="article:tag" content="5G">
@@ -336,11 +336,187 @@
 <h3 id="Unified-Data-Management”-UDM"><a href="#Unified-Data-Management”-UDM" class="headerlink" title="Unified Data Management” (UDM)"></a>Unified Data Management” (UDM)</h3><p>5GC 資源的數據存儲架構為“計算和存儲分離”</p>
 <p>Unified Data Repository (UDR) 是主要數據庫</p>
 <p>Unstructured Data Storage Function (UDSF) 存儲非結構化的動態數據</p>
+<h2 id="5G-核心網路標準與相關的-Network-Functions"><a href="#5G-核心網路標準與相關的-Network-Functions" class="headerlink" title="5G 核心網路標準與相關的 Network Functions"></a>5G 核心網路標準與相關的 Network Functions</h2><h3 id="託管服務與邊緣計算-Local-hosting-of-services-and-Edge-Computing"><a href="#託管服務與邊緣計算-Local-hosting-of-services-and-Edge-Computing" class="headerlink" title="託管服務與邊緣計算 Local hosting of services and Edge Computing"></a>託管服務與邊緣計算 Local hosting of services and Edge Computing</h3><p>“Service Hosting Environment”，中文譯名“服務託管環境”，是位於運營商內部的網路，5G 使用該網路支援多種類型的服務</p>
+<p>為了滿足</p>
+<ul>
+<li>降低延遲</li>
+<li>降低帶寬壓力</li>
+</ul>
+<p>等目標，這些 Hosted Services（託管服務） 將建置在靠近用戶端的位置</p>
+<p>Hosted Services（託管服務） 包含運營商，以及可信任的第三方服務</p>
+<p>Hosted Services（託管服務） 支援靈活的用戶面路由策略，當用戶在通訊會話中移動位置時，其允許為了提升用戶體驗和網路負載均衡的情況下改變路由路徑</p>
+<p>為了利用邊緣計算節點中的託管服務降低延遲，5G 核心網路將會選擇靠近 UE 的 UPF ，並且通過 N6 Interface 自行 UPF 到本地網路的路由策略</p>
+<p>一部分邊緣計算節點將具有如下特性：</p>
+<ul>
+<li>本地與遠端服務可以同時訪問數據網路，這是構成低延遲網路的方案</li>
+<li>應用可以主動影響路由策略</li>
+<li>支援 URLLC (Ultra Reliable Low-Latency) 超低延遲服務</li>
+<li>支援本地區域數據網路</li>
+</ul>
+<h3 id="網路切片-Network-slicing"><a href="#網路切片-Network-slicing" class="headerlink" title="網路切片 Network slicing"></a>網路切片 Network slicing</h3><p>網路切片是為提供某種特定類型服務的網路而命名的一種元素</p>
+<p>例如，可以分別為 IoT 設備，經典 UE 手機設備，V2X 等設備分別提供網路切片</p>
+<p>通常情況下，不同的服務功能具有不同的網路要求</p>
+<p>包括優先級要求和策略控制要求</p>
+<p>網路能效要求，包括延遲，移動性，傳輸速率</p>
+<p>或者這些服務僅僅針對特定的用戶類型，例如 MPS 用戶群，公共安全用戶，企業客戶，漫遊客戶，託管的 MVNO</p>
+<p>不同的網路切片可以同時使用</p>
+<p>端到端的網絡切片是 5G 系統的一大特點。在與其他 PLMN 互操作所需的範圍內，每個已經部署的 PLMN 都支持它</p>
+<p>例如運營商 A 的物聯網切片可以直接與運營商 B 的物聯網切片互聯，運營商可以根據業務場景決定部署多少個網絡切片以及跨多個切片共享哪些功能/特性</p>
+<p>每個切片的特性根據 QoS、比特率、延遲等進行定義</p>
+<p>對於給定的切片，這些特性要么在 3GPP 標準中預先定義，要么由運營商定義</p>
+<p>預定義切片分為三種類型：</p>
+<ul>
+<li>類型 1 專用於支援 eMBB</li>
+<li>類型 2 用於 URLLC</li>
+<li>類型 3 用於 MIoT 支持</li>
+</ul>
+<p>這些預定義的網路切片允許在 PLMN 間互相操作，同時減少運營商之間的協調工作</p>
+<p>對於運營商定義的切片，它們可以在網絡切片之間實現更多差異化</p>
+<p>為切片處理引入了專用 NF：“網絡切片選擇功能”（”Network Slice Selection Function” (NSSF)），它可以選擇適當的切片</p>
+<p>UE 可以同時使用多個網絡切片。</p>
+<p>UE 中的網絡切片選擇策略將應用程序鏈接到網絡切片</p>
+<p>網絡切片還支持漫遊場景</p>
+<p>最後，網絡切片可以與 EPS 互通，無論器是否支援 4G’s Dedicated Core Networks Selection Mechanism (e)DECOR</p>
+<h3 id="統一接入控制-Unified-access-control"><a href="#統一接入控制-Unified-access-control" class="headerlink" title="統一接入控制 Unified access control"></a>統一接入控制 Unified access control</h3><p>當在 5G 系統中發生網路擁塞，會使用不同的標準決定是否應該阻止或允許訪問</p>
+<p>標準取決於運營商策略，部署方案，訂閱客戶資料以及可用服務</p>
+<p>5G 系統提供單一的統一訪問控制，運營商根據這些與所謂的“訪問身份和訪問類別”相關聯的標準來控制接入與否</p>
+<p>5G 系統也提供</p>
+<ul>
+<li>基於移動性管理擁塞控制</li>
+<li>基於 DNN 的擁塞控制</li>
+<li>基於切片的擁塞控制</li>
+</ul>
+<h3 id="支援-3GPP-與-非-3GPP-的接入"><a href="#支援-3GPP-與-非-3GPP-的接入" class="headerlink" title="支援 3GPP 與 非 3GPP 的接入"></a>支援 3GPP 與 非 3GPP 的接入</h3><p>5G 系統支援 3GPP 技術雞兒，包括一種或多種 5G NR 以及 4G’s E-UTRA</p>
+<p>他也支援非 3GPP 技術接入，甚至包括不可信設備</p>
+<p>為了優化和資源效率，5G 系統能夠為一個服務選擇最適當的 3GPP 或者 non-3GPP 技術進行接入</p>
+<p>潛在地允許多種接入技術同時用於 UE 上活動的一項或多項服務</p>
+<p>還支援不同接入之間的無縫移動</p>
+<p>名為 “Authentication Server Function “(AUSF) 的 NF 允許一個統一框架支援 3GPP 和 non-3GPP 接入</p>
+<p>當同時透過 3GPP 和non-3GPP 接入時，5G Globally Unique Temporary Identifier (5G-GUTI) 將唯一標識一個 UE</p>
+<h3 id="策略框架與-QoS-支援"><a href="#策略框架與-QoS-支援" class="headerlink" title="策略框架與 QoS 支援"></a>策略框架與 QoS 支援</h3><p>策略框架用於支援</p>
+<ul>
+<li>會話</li>
+<li>接入</li>
+<li>移動性控制</li>
+<li>QoS</li>
+<li>計費</li>
+</ul>
+<p>和 UE 中分發的策略類似</p>
+<p>UE 使用兩種機制連接到 QoS 和策略</p>
+<ul>
+<li>UE 路由選擇策略，政策一個應用是否可以被關聯到已經存在的 PDU 會話，能夠卸載到 PDU 會話外部的 non-3GPP 訪問，能夠觸發簡歷一個新的 PDU 會話</li>
+<li>接入網路發現與策略選擇，用於選擇非 3GPP 訪問</li>
+</ul>
+<p>在網絡中，使用名為“網絡數據分析功能”（NWDAF）的 NF 來提供數據分析支持，即提供每個網絡切片的負載</p>
+<p>對於QoS，系統定義了一個基於流的QoS框架，有兩種基本模式：有或沒有QoS專用信令</p>
+<p>對於沒有任何特定 QoS 信令流的選項將會應用標準化的數據包標記，用於通知應該提供何種 QoS </p>
+<p>帶有 QoS 專用協商的選項提供了更大的靈活性和更細粒度的 QoS 支持。</p>
+<p>此外，還引入了一種新的 QoS 類型：“反射 QoS”，其中 UE 請求上行鏈路流量與其接收的下行鏈路流量相同的 QoS 規則。 在這種模式下，通過最少的控制平面信令支援下行鏈路和上行鏈路上的對稱 QoS 差異</p>
+<h3 id="網路容量公開"><a href="#網路容量公開" class="headerlink" title="網路容量公開"></a>網路容量公開</h3><p>運營商公開網路容量（例如 QoS 策略）給第三方 ISP ICP 的機制包括</p>
+<ul>
+<li>Service Exposure and Enablement Support (SEES)</li>
+<li>(enhanced) Flexible Mobile Service Steering ((e)FMSS)</li>
+</ul>
+<p>在 5G 網路中，新的網路容量將被公開給第三方，例如允許第三方針對不同使用案例客製化一個特定的網路切片</p>
+<p>為提升用戶體驗，允許第三方在可行的託管服務環境中管理第三方應用，有效利用回源流程和用戶資源</p>
+<p>關於網路容量公開的更多部分，請參考 Northbound APIs</p>
+<h3 id="其他特殊服務"><a href="#其他特殊服務" class="headerlink" title="其他特殊服務"></a>其他特殊服務</h3><p>5GS 中還支援其他一些特殊服務，包括</p>
+<h4 id="Short-Message-Service-SMS"><a href="#Short-Message-Service-SMS" class="headerlink" title="Short Message Service (SMS)"></a>Short Message Service (SMS)</h4><p>支援 SMS over NAS，包括 SMS over non-3GPP 接入</p>
+<h4 id="IP-Multimedia-Subsystem-IMS"><a href="#IP-Multimedia-Subsystem-IMS" class="headerlink" title="IP-Multimedia Subsystem (IMS)"></a>IP-Multimedia Subsystem (IMS)</h4><p>大部分 5G 部署初級階段並不可用，如果連接在沒有 IMS 的 5GS 的 UE 設備執行了 IMS 業務，將會觸發網路切換到關聯的 EPS 或者適當的 RAT</p>
+<p>這也適用於 IMS 緊急服務</p>
+<h4 id="Multi-Operator-Core-Network-MOCN"><a href="#Multi-Operator-Core-Network-MOCN" class="headerlink" title="Multi-Operator Core Network (MOCN)"></a>Multi-Operator Core Network (MOCN)</h4><p>一個 RAN 被多個 Core Network 共享使用</p>
+<h4 id="Public-Warning-System-PWS"><a href="#Public-Warning-System-PWS" class="headerlink" title="Public Warning System (PWS)"></a>Public Warning System (PWS)</h4><p>在 Cell Broadcast Centre (CBC) Function (CBCF) 和 AMF 之間透過服務化接口互聯進行支援</p>
+<h4 id="Multimedia-Priority-Services-MPS"><a href="#Multimedia-Priority-Services-MPS" class="headerlink" title="Multimedia Priority Services (MPS)"></a>Multimedia Priority Services (MPS)</h4><p>透過 MPS-specific exemptions 支援 5GS 移動性管理與會話管理</p>
+<h4 id="Mission-Critical-Services-MCS"><a href="#Mission-Critical-Services-MCS" class="headerlink" title="Mission Critical Services (MCS)"></a>Mission Critical Services (MCS)</h4><p>透過訂閱 5G QoS 配置和必要的策略進行支援</p>
+<p>一些標準的 QoS 指標在未來將為 MCS 定義</p>
+<h4 id="PS-Data-Off"><a href="#PS-Data-Off" class="headerlink" title="PS Data Off"></a>PS Data Off</h4><p>向後兼容</p>
+<p>提供：</p>
+<ul>
+<li><p>Control Plane Load Control</p>
+</li>
+<li><p>Congestion and Overload control‘’</p>
+</li>
+</ul>
+<p>包括</p>
+<ul>
+<li>AMF Load-rebalancing</li>
+<li>TNL (Transport Network Layer between 5GC and 5G-AN) Load (re-)balancing</li>
+</ul>
+<p>和</p>
+<ul>
+<li><p>AMF Overload Control</p>
+</li>
+<li><p>SMF Overload Control</p>
+</li>
+</ul>
+<p>類似</p>
+<h3 id="其他-5G-規格"><a href="#其他-5G-規格" class="headerlink" title="其他 5G 規格"></a>其他 5G 規格</h3><p>當漫遊在 VPLMN 中，UE 在 VPLMN 中的漫遊策略允許 HPLMN 為 UE 提供和更新一個首選 PLMN 或者接入技術的組合。這些行為配置透過預先在 USIM 卡中寫入或者透過 NAS 信令的方式提供</p>
+<h2 id="核心網路協定"><a href="#核心網路協定" class="headerlink" title="核心網路協定"></a>核心網路協定</h2><p>摘要基於中國移動、諾基亞、愛立信、華為在 SP-180595 中提供的內容</p>
+<p>5G NF 提供的服務被設計為一組基於以下協議棧的 API：</p>
+<ul>
+<li>傳輸層協議是 IETF RFC 793 中規定的 TCP</li>
+<li>使用 TLS 支持傳輸層安全保護</li>
+<li>應用層協議是 IETF RFC 7540 中規定的 HTTP/2</li>
+<li>序列化協議是 IETF RFC 8259 中指定的 JSON</li>
+<li>採用 OpenAPI 3.0.0 作為接口定義語言</li>
+</ul>
+<h3 id="協議棧"><a href="#協議棧" class="headerlink" title="協議棧"></a>協議棧</h3><ul>
+<li>Application</li>
+<li>HTTP/2</li>
+<li>TLS</li>
+<li>TCP</li>
+<li>IP</li>
+<li>L2</li>
+</ul>
+<p>為了減少客戶端和服務器之間的耦合，API設計採用RESTful框架如下：</p>
+<ul>
+<li>the REST-style service operations implement the Level 2 of the Richardson maturity model</li>
+<li>Level 3 (HATEOAS) of the Richardson maturity model is optional</li>
+</ul>
+<p>OAuth2（在 IETF RFC 6749 中指定）用於授權 NF 訪問其他服務，NRF 充當授權服務器</p>
+<p>基於服務的接口還支援過載控制和優先級消息</p>
+<p>在 N4 Interface 上使用 PFCP（Packet Forwarding Control Protocol），用於在 5GC 中分離 Control Plane 和 User Plane。這與 EPC 中 CUPS 支持的協議相同，但有一些擴展以支持所有 5GC 要求（例如以太網流量、QoS 流）</p>
+<p>GTPv2 通過 N26 Interface 用於 EPC 和 5GC 之間的移動性。這與 EPC 中通過 S10 支持的協議相同，只需進行最少的擴展即可支持 5GS 要求（例如 5GS TAI、gNB ID）</p>
+<p>對於與外部 DN（即 N6 Interface）的 5G 網絡互通，TS 29.061 中規定的那些協議（IP、non-IP、DHCP、RADIUS 和 Diameter 協議）仍然適用於 SMF/UPF 和外部 DN 之間的資料傳輸，並盡可能適配他們。此外，SMF/UPF 還支持以太網流量與外部 DN 互通。</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><strong>References</strong></p>
+<p>The main protocols of the 5G Core Network are specified in:</p>
+<p>TS 24.501      Non-Access-Stratum (NAS) protocol for 5G System (5GS); Stage 3</p>
+<p>TS 24.502      Access to the 5G Core Network (5GCN) via non-3GPP access networks; Stage 3</p>
+<p>TS 24.526      5G System -Phase 1, UE policy; CT WG1 Aspects</p>
+<p>TS 23.527      5G System; Restoration Procedures; Stage 2</p>
+<p>TS 29.500      5G System; Technical Realization of Service Based Architecture; Stage 3</p>
+<p>TS 29.501      5G System; Principles and Guidelines for Services Definition; Stage 3</p>
+<p>TS 29.502      5G System; Session Management Services; Stage 3</p>
+<p>TS 29.503      5G System; Unified Data Management Services; Stage 3</p>
+<p>TS 29.504      5G System; Unified Data Repository Services; Stage 3</p>
+<p>TS 29.505      5G System; Usage of the Unified Data Repository services for Subscription Data; Stage 3</p>
+<p>TS 29.507      5G System; Access and Mobility Policy Control Service; Stage 3</p>
+<p>TS 29.508      5G System; Session Management Event Exposure Service; Stage 3</p>
+<p>TS 29.509      5G System; Authentication Server Services; Stage 3</p>
+<p>TS 29.510      5G System; Network Function Repository Services; Stage 3</p>
+<p>TS 29.511      5G System; Equipment Identity Register Services; Stage 3</p>
+<p>TS 29.512      5G System; Session Management Policy Control Service; Stage 3</p>
+<p>TS 29.513      5G System; Policy and Charging Control signalling flows and QoS parameter mapping; Stage 3</p>
+<p>TS 29.514      5G System; Policy Authorization Service; Stage 3</p>
+<p>TS 29.518      5G System; Access and Mobility Management Services; Stage 3</p>
+<p>TS 29.519      5G System; Usage of the Unified Data Repository Service for Policy Data, Application Data and Structured Data for Exposure; Stage 3</p>
+<p>TS 29.520      5G System; Network Data Analytics Services; Stage 3</p>
+<p>TS 29.521      5G System; Binding Support Management Service; Stage 3</p>
+<p>TS 29.522      5G System; Network Exposure Function Northbound APIs; Stage 3</p>
+<p>TS 29.531      5G System; Network Slice Selection Services; Stage 3</p>
+<p>TS 29.540      5G System; SMS Services; Stage 3</p>
+<p>TS 29.551      5G System; Packet Flow Description Management Service; Stage 3</p>
+<p>TS 29.554      5G System; Background Data Transfer Policy Control Service; Stage 3</p>
+<p>TS 29.561      5G System; Interworking between 5G Network and external Data Networks; Stage 3</p>
+<p>TS 29.571      5G System; Common Data Types for Service Based Interfaces; Stage 3</p>
+<p>TS 29.572      5G System; Location Management Services; Stage 3</p>
+<p>TS 29.594      5G System; Spending Limit Control Service; Stage 3</p>
+<p>The corresponding Security aspects of 5G System are defined by SA3 (UID: 750016). The work also serves as the basis for related charging and management, i.e., Data Charging in 5G System Architecture Phase 1 (UID: 780035), Service Based Interface for 5G Charging (UID: 780034), Management and orchestration of 5G networks and network slicing (UID: 760066).</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/3GPP-Release-15-note/" data-id="cktv73csc000594nahwf1eewe" data-title="3GPP Release-15 閱讀筆記" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/3GPP-Release-15-note/" data-id="ckudyh73j000w9eniayx7h0it" data-title="3GPP Release-15 閱讀筆記" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/3GPP-Release-15-note/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -418,7 +594,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archiv</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li></ul>
     </div>
   </div>
 
