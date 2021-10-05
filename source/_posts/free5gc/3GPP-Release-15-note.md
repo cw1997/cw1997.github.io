@@ -408,11 +408,128 @@ UE 中的網絡切片選擇策略將應用程序鏈接到網絡切片
 
 最後，網絡切片可以與 EPS 互通，無論器是否支援 4G's Dedicated Core Networks Selection Mechanism (e)DECOR
 
+### 統一接入控制 Unified access control
 
+當在 5G 系統中發生網路擁塞，會使用不同的標準決定是否應該阻止或允許訪問
 
+標準取決於運營商策略，部署方案，訂閱客戶資料以及可用服務
 
+5G 系統提供單一的統一訪問控制，運營商根據這些與所謂的“訪問身份和訪問類別”相關聯的標準來控制接入與否
 
+5G 系統也提供
 
+- 基於移動性管理擁塞控制
+- 基於 DNN 的擁塞控制
+- 基於切片的擁塞控制
 
+### 支援 3GPP 與 非 3GPP 的接入
 
+5G 系統支援 3GPP 技術雞兒，包括一種或多種 5G NR 以及 4G's E-UTRA
+
+他也支援非 3GPP 技術接入，甚至包括不可信設備
+
+為了優化和資源效率，5G 系統能夠為一個服務選擇最適當的 3GPP 或者 non-3GPP 技術進行接入
+
+潛在地允許多種接入技術同時用於 UE 上活動的一項或多項服務
+
+還支援不同接入之間的無縫移動
+
+名為 "Authentication Server Function "(AUSF) 的 NF 允許一個統一框架支援 3GPP 和 non-3GPP 接入
+
+當同時透過 3GPP 和non-3GPP 接入時，5G Globally Unique Temporary Identifier (5G-GUTI) 將唯一標識一個 UE
+
+### 策略框架與 QoS 支援
+
+策略框架用於支援
+
+- 會話
+- 接入
+- 移動性控制
+- QoS
+- 計費
+
+和 UE 中分發的策略類似
+
+UE 使用兩種機制連接到 QoS 和策略
+
+- UE 路由選擇策略，政策一個應用是否可以被關聯到已經存在的 PDU 會話，能夠卸載到 PDU 會話外部的 non-3GPP 訪問，能夠觸發簡歷一個新的 PDU 會話
+- 接入網路發現與策略選擇，用於選擇非 3GPP 訪問
+
+在網絡中，使用名為“網絡數據分析功能”（NWDAF）的 NF 來提供數據分析支持，即提供每個網絡切片的負載
+
+對於QoS，系統定義了一個基於流的QoS框架，有兩種基本模式：有或沒有QoS專用信令
+
+對於沒有任何特定 QoS 信令流的選項將會應用標準化的數據包標記，用於通知應該提供何種 QoS 
+
+帶有 QoS 專用協商的選項提供了更大的靈活性和更細粒度的 QoS 支持。
+
+此外，還引入了一種新的 QoS 類型：“反射 QoS”，其中 UE 請求上行鏈路流量與其接收的下行鏈路流量相同的 QoS 規則。 在這種模式下，通過最少的控制平面信令支援下行鏈路和上行鏈路上的對稱 QoS 差異
+
+### 網路容量公開
+
+運營商公開網路容量（例如 QoS 策略）給第三方 ISP ICP 的機制包括
+
+- Service Exposure and Enablement Support (SEES)
+- (enhanced) Flexible Mobile Service Steering ((e)FMSS)
+
+在 5G 網路中，新的網路容量將被公開給第三方，例如允許第三方針對不同使用案例客製化一個特定的網路切片
+
+為提升用戶體驗，允許第三方在可行的託管服務環境中管理第三方應用，有效利用回源流程和用戶資源
+
+關於網路容量公開的更多部分，請參考 Northbound APIs
+
+### 其他特殊服務
+
+5GS 中還支援其他一些特殊服務，包括
+
+#### Short Message Service (SMS)
+
+支援 SMS over NAS，包括 SMS over non-3GPP 接入
+
+#### IP-Multimedia Subsystem (IMS)
+
+大部分 5G 部署初級階段並不可用，如果連接在沒有 IMS 的 5GS 的 UE 設備執行了 IMS 業務，將會觸發網路切換到關聯的 EPS 或者適當的 RAT
+
+這也適用於 IMS 緊急服務
+
+#### Multi-Operator Core Network (MOCN)
+
+一個 RAN 被多個 Core Network 共享使用
+
+#### Public Warning System (PWS)
+
+在 Cell Broadcast Centre (CBC) Function (CBCF) 和 AMF 之間透過服務化接口互聯進行支援
+
+#### Multimedia Priority Services (MPS)
+
+透過 MPS-specific exemptions 支援 5GS 移動性管理與會話管理
+
+#### Mission Critical Services (MCS)
+
+透過訂閱 5G QoS 配置和必要的策略進行支援
+
+一些標準的 QoS 指標在未來將為 MCS 定義
+
+#### PS Data Off
+
+向後兼容
+
+提供：
+
+- Control Plane Load Control
+
+- Congestion and Overload control‘’
+
+包括
+
+- AMF Load-rebalancing
+- TNL (Transport Network Layer between 5GC and 5G-AN) Load (re-)balancing
+
+和
+
+- AMF Overload Control
+
+- SMF Overload Control
+
+類似
 
