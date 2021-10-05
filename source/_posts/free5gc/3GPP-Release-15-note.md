@@ -537,3 +537,110 @@ UE 使用兩種機制連接到 QoS 和策略
 
 當漫遊在 VPLMN 中，UE 在 VPLMN 中的漫遊策略允許 HPLMN 為 UE 提供和更新一個首選 PLMN 或者接入技術的組合。這些行為配置透過預先在 USIM 卡中寫入或者透過 NAS 信令的方式提供
 
+## 核心網路協定
+
+摘要基於中國移動、諾基亞、愛立信、華為在 SP-180595 中提供的內容
+
+5G NF 提供的服務被設計為一組基於以下協議棧的 API：
+
+- 傳輸層協議是 IETF RFC 793 中規定的 TCP
+- 使用 TLS 支持傳輸層安全保護
+- 應用層協議是 IETF RFC 7540 中規定的 HTTP/2
+- 序列化協議是 IETF RFC 8259 中指定的 JSON
+- 採用 OpenAPI 3.0.0 作為接口定義語言
+
+### 協議棧
+
+- Application
+- HTTP/2
+- TLS
+- TCP
+- IP
+- L2
+
+為了減少客戶端和服務器之間的耦合，API設計採用RESTful框架如下：
+
+- the REST-style service operations implement the Level 2 of the Richardson maturity model
+- Level 3 (HATEOAS) of the Richardson maturity model is optional
+
+OAuth2（在 IETF RFC 6749 中指定）用於授權 NF 訪問其他服務，NRF 充當授權服務器
+
+基於服務的接口還支援過載控制和優先級消息
+
+在 N4 Interface 上使用 PFCP（Packet Forwarding Control Protocol），用於在 5GC 中分離 Control Plane 和 User Plane。這與 EPC 中 CUPS 支持的協議相同，但有一些擴展以支持所有 5GC 要求（例如以太網流量、QoS 流）
+
+GTPv2 通過 N26 Interface 用於 EPC 和 5GC 之間的移動性。這與 EPC 中通過 S10 支持的協議相同，只需進行最少的擴展即可支持 5GS 要求（例如 5GS TAI、gNB ID）
+
+對於與外部 DN（即 N6 Interface）的 5G 網絡互通，TS 29.061 中規定的那些協議（IP、non-IP、DHCP、RADIUS 和 Diameter 協議）仍然適用於 SMF/UPF 和外部 DN 之間的資料傳輸，並盡可能適配他們。此外，SMF/UPF 還支持以太網流量與外部 DN 互通。
+
+## Reference
+
+**References**
+
+The main protocols of the 5G Core Network are specified in:
+
+TS 24.501      Non-Access-Stratum (NAS) protocol for 5G System (5GS); Stage 3
+
+TS 24.502      Access to the 5G Core Network (5GCN) via non-3GPP access networks; Stage 3
+
+TS 24.526      5G System -Phase 1, UE policy; CT WG1 Aspects
+
+TS 23.527      5G System; Restoration Procedures; Stage 2
+
+TS 29.500      5G System; Technical Realization of Service Based Architecture; Stage 3
+
+TS 29.501      5G System; Principles and Guidelines for Services Definition; Stage 3
+
+TS 29.502      5G System; Session Management Services; Stage 3
+
+TS 29.503      5G System; Unified Data Management Services; Stage 3
+
+TS 29.504      5G System; Unified Data Repository Services; Stage 3
+
+TS 29.505      5G System; Usage of the Unified Data Repository services for Subscription Data; Stage 3
+
+TS 29.507      5G System; Access and Mobility Policy Control Service; Stage 3
+
+TS 29.508      5G System; Session Management Event Exposure Service; Stage 3
+
+TS 29.509      5G System; Authentication Server Services; Stage 3
+
+TS 29.510      5G System; Network Function Repository Services; Stage 3
+
+TS 29.511      5G System; Equipment Identity Register Services; Stage 3
+
+TS 29.512      5G System; Session Management Policy Control Service; Stage 3
+
+TS 29.513      5G System; Policy and Charging Control signalling flows and QoS parameter mapping; Stage 3
+
+TS 29.514      5G System; Policy Authorization Service; Stage 3
+
+TS 29.518      5G System; Access and Mobility Management Services; Stage 3
+
+TS 29.519      5G System; Usage of the Unified Data Repository Service for Policy Data, Application Data and Structured Data for Exposure; Stage 3
+
+TS 29.520      5G System; Network Data Analytics Services; Stage 3
+
+TS 29.521      5G System; Binding Support Management Service; Stage 3
+
+TS 29.522      5G System; Network Exposure Function Northbound APIs; Stage 3
+
+TS 29.531      5G System; Network Slice Selection Services; Stage 3
+
+TS 29.540      5G System; SMS Services; Stage 3
+
+TS 29.551      5G System; Packet Flow Description Management Service; Stage 3
+
+TS 29.554      5G System; Background Data Transfer Policy Control Service; Stage 3
+
+TS 29.561      5G System; Interworking between 5G Network and external Data Networks; Stage 3
+
+TS 29.571      5G System; Common Data Types for Service Based Interfaces; Stage 3
+
+TS 29.572      5G System; Location Management Services; Stage 3
+
+TS 29.594      5G System; Spending Limit Control Service; Stage 3
+
+ 
+
+The corresponding Security aspects of 5G System are defined by SA3 (UID: 750016). The work also serves as the basis for related charging and management, i.e., Data Charging in 5G System Architecture Phase 1 (UID: 780035), Service Based Interface for 5G Charging (UID: 780034), Management and orchestration of 5G networks and network slicing (UID: 760066).
