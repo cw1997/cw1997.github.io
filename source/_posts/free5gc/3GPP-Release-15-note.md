@@ -644,3 +644,246 @@ TS 29.594      5G System; Spending Limit Control Service; Stage 3
  
 
 The corresponding Security aspects of 5G System are defined by SA3 (UID: 750016). The work also serves as the basis for related charging and management, i.e., Data Charging in 5G System Architecture Phase 1 (UID: 780035), Service Based Interface for 5G Charging (UID: 780034), Management and orchestration of 5G networks and network slicing (UID: 760066).
+
+
+
+# 5G 接入網
+
+## 簡介
+
+![NG-RAN_architecture.jpg](./NG-RAN_architecture.jpg)
+
+NG-RAN 包括一組透過 NG Interface 連接到 5GC 的 gNB 組成，基於（或者說非常類似） LTE 網路的 S1 Interface
+
+gNB (5G Node B)  能夠和其他 gNB 之間透過 Xn Interface 互相連接，基於（或者說非常類似）LTE 的 X2 Interface
+
+Distributed Unit(s) (gNB-DU) 透過 Free5GC1 Interface 連接
+
+一個 gNB-DU 僅鏈接一個 gNB-CU
+
+gNB 處理如下任務
+
+- 無線資源管理功能：無線承載控制、無線接納控制、連接移動性控制、上下行資源動態分配給 UE（調度）
+
+- IP 報頭壓縮、加密和數據完整性保護
+- 當無法根據 UE 提供的信息確定到 AMF 的路由時，在 UE 連接時選擇 AMF
+- 將用戶平面數據路由至 UPF
+- 將控制平面信息路由至 AMF
+- 連接建立和釋放
+- 尋呼消息的調度和傳輸
+- 系統廣播信息的調度和傳輸（源自 AMF或 O&M）
+- 移動性和調度的測量和測量報告配置
+- 上行鏈路中的傳輸級數據包標記
+- 會話管理
+- 支持網絡切片
+- QoS 流管理和映射到數據無線承載
+- 支持處於 RRC_INACTIVE 狀態的 UE
+- NAS 消息分發功能
+- 無線接入網絡共享
+- 雙連接
+- NR 和 E-UTRA 之間的緊密互通
+
+## AN 控制面
+
+下圖展示了控制平面的協議棧
+
+![Access_Network_Control_Plane_Protocol_Stack](./Access_Network_Control_Plane_Protocol_Stack.svg)
+
+其中：
+
+- PHY 層（物理層）在第 5.5.5 節中描述。
+  - 它的作用是對無線電接口上的信號進行調製和解調
+- PDCP、RLC 和 MAC 子層（終止於網絡側的 gNB）
+  - 執行“第 2 層相關方面”列表中列出的服務
+- RRC（終止於網絡側的gNB）
+  - 執行“RRC相關方面”列表中列出的服務
+- NAS（非接入層）控制協議（在網絡側終止於 AMF ）
+  - 指所有未鏈接到接入網絡並由接入網絡“透明”傳輸的方面和協議，即沒有解釋
+  - TS 23.501 中列出的服務，例如身份驗證、移動性管理和安全控制
+
+## AN 用戶面
+
+下圖展示了用戶平面的協議棧
+
+![Access_Network_User_Plane_Protocol_Stack](./Access_Network_User_Plane_Protocol_Stack.svg)
+
+SDAP, PDCP, RLC 和 MAC 子層，在網路側終結於 gNB
+
+提供在 " Layer 2 related aspects" 部分列出的服務
+
+## AN 頂層
+
+### Layer 2 相關部分: MAC, RLC, PDCP 用戶面, PCP 控制面 和 SDAP 
+
+#### MAC（媒體訪問控制）子層的主要服務和功能包括：
+
+- 邏輯信道和傳輸信道之間的映射
+- 屬於一個或不同邏輯信道的 MAC SDU 復用/解復用到/從傳輸塊 (TB) 傳輸到/從傳輸信道上的物理層
+- 調度信息報告
+- 通過混合自動重複請求 (HARQ) 進行糾錯，在載波聚合的情況下，每個小區一個 HARQ 實體
+- UE之間通過動態調度的優先級處理
+- 通過邏輯信道優先級處理一個UE的邏輯信道之間的優先級
+- 填充
+
+#### RLC（Radio Link Control）子層的主要服務和功能取決於傳輸模式，包括：
+
+- 上層 PDUs 的傳輸
+- 獨立於 PDCP 中的序列編號[僅用於未確認模式 (UM) 和確認模式 (AM)，不適用於透明模式 (TM)]
+- 通過 ARQ 糾錯（僅限 AM）
+- RLC SDU 的分段（AM 和 UM）和重新分段（僅 AM）
+- 重新組裝 SDU（AM 和 UM）
+- 重複檢測（僅限 AM）
+- RLC SDU丟棄（AM和UM）
+- RLC 重建
+- 協議錯誤檢測（僅限 AM）
+
+#### PDCP（Packet Data Convergence Protocol）子層為用戶面提供的主要服務和功能包括：
+
+- 序列編號
+- 頭部壓縮和解壓：僅限 ROHC
+- 用戶數據的傳輸
+- 重新排序和重複檢測
+- PDCP PDU 路由（在拆分承載的情況下）
+- PDCP SDU 的重傳
+- 加密、解密
+- PDCP SDU丟棄
+- RLC AM的PDCP重建和數據恢復
+- PDCP PDU 的重複
+
+#### PDCP 子層對控制平面的主要服務和功能包括：
+
+- 序列編號
+- 加密、解密和完整性保護
+- 控制平面數據的傳輸
+- 重新排序和重複檢測
+- PDCP PDU 的重複
+
+#### SDAP（Service Data Adaptation Protocol）的主要服務和功能包括
+
+- QoS流和數據無線承載之間的映射
+- 在 DL 和 UL 數據包中標記 QoS 流 ID (QFI)
+
+### RRC 相關部分
+
+RRC（Radio Resource Control）子層的主要服務和功能包括：
+- 廣播與 AS 和 NAS 相關的系統信息；
+- 由 5GC 或 NG-RAN 發起的尋呼
+- UE 和 NG-RAN 之間 RRC 連接的建立、維護和釋放，包括：
+- 載波聚合的添加、修改和發布；
+- 添加、修改和發布 NR 中或 E-UTRA 和 NR 之間的雙連接。
+- 安全功能，包括密鑰管理；
+- 信令無線電承載（SRB）和數據無線電承載（DRB）的建立、配置、維護和釋放；
+- 移動功能包括：
+- 切換和上下文傳輸；
+- UE小區選擇和重選以及小區選擇和重選的控制；
+- RAT間移動性。
+- QoS管理功能；
+- UE測量報告和報告控制；
+- 無線電鏈路故障的檢測和恢復；
+- NAS 消息傳輸到/從 NAS 從/到 UE。
+
+## AN 接口
+
+包括
+
+- Xn
+- NG
+- F1
+
+每個接口都包括自己的管理操作，包括：
+
+- 設置
+
+- 重置
+
+- 錯誤指示
+
+- 刪除（僅適用於 Xn）
+
+### Xn Interface & X2 Interface
+
+5G 的 Xn Interface 非常依賴於與之等效的 4G Interface 即 X2 Interface
+
+X2 被更新到包括如下功能
+
+- E-UTRA-NR 雙連接功能。 該功能允許 eNB 請求另一個 en-gNB 為某個 UE 提供無線電資源，同時保持對該 UE 的響應
+- 二級 RAT 數據使用報告功能。 此功能允許 eNB 在每個 E-RAB 的基礎上獲取輔助 RAT 的上行鏈路和下行鏈路數據量。
+
+XnAP 協定提供如下功能：
+
+- Xn 配置數據更新功能。該功能允許兩個 NG-RAN 節點隨時更新應用級數據。
+- 交接準備功能。該功能允許在源和目標 NG-RAN 節點之間交換信息，以啟動某個 UE 到目標的切換。
+- 切換取消功能。該功能允許通知已經準備好的目標 NG-RAN 節點準備好的切換不會發生。它允許釋放在準備期間分配的資源。
+- 檢索 UE 上下文功能。檢索 UE 上下文功能用於 NG-RAN 節點從另一個節點檢索 UE 上下文。
+- RAN 尋呼功能。 RAN尋呼功能允許NG-RAN節點為處於非活動狀態的UE發起尋呼。
+- 數據轉發控制功能。數據轉發控制功能允許在源和目標 NG-RAN 節點之間建立和釋放傳輸承載以進行數據轉發。
+- 節能功能。此功能可通過 Xn 接口上的小區激活/停用指示來降低能耗。
+
+### NG & S1 Interface
+
+5G 的 NG 接口與其等效的 4G 接口 S1 接口密切相關。 S1 更新為包括以下新增功能：次要 RAT 數據量報告功能。該功能使 eNB 能夠在 EN-DC 的情況下報告輔助 RAT 數據使用信息。
+NGAP 協議提供以下功能：
+- 分頁功能。尋呼功能支持向尋呼區域中涉及的 NG-RAN 節點發送尋呼請求，例如UE註冊的TA的NG-RAN節點。
+- UE上下文管理功能。 UE上下文管理功能允許AMF在AMF和NG-RAN節點中建立、修改或釋放UE上下文。支持 NG 上的用戶個人信令。
+- 移動管理功能。 ECM-CONNECTED 中 UE 的移動性功能包括系統內切換功能以支持 NG-RAN 內的移動性和系統間切換功能以支持從/到 EPS 系統的移動性。它包括通過NG接口準備、執行和完成切換。
+- PDU 會話管理功能。一旦 UE 上下文在 NG-RAN 節點中可用，PDU 會話功能負責為用戶數據傳輸建立、修改和釋放所涉及的 PDU 會話 NG-RAN 資源。
+- NAS傳輸功能。 NAS 信令傳輸功能提供了通過 NG 接口為特定 UE 傳輸或重新路由 NAS 消息（例如，用於 NAS 移動性管理）的方法。
+- NAS 節點選擇功能。 5GS 架構支持 NG-RAN 節點與多個 AMF 的互連。因此，NAS節點選擇功能位於NG-RAN節點中，以基於由AMF分配給UE的UE的臨時標識符來確定UE的AMF關聯。當 UE 的臨時標識符尚未分配或不再有效時，NG-RAN 節點可以改為考慮切片信息來確定 AMF。此功能位於 NG-RAN 節點中，可通過 NG 接口實現正確路由。在NG上，沒有具體的過程對應於NAS節點選擇功能。
+- 警告信息傳輸功能。警告消息傳輸功能提供了通過NG接口傳輸警告消息或取消警告消息正在進行的廣播的手段。它還為 NG-RAN 提供了通知 AMF 一個或多個區域正在進行的 PWS 操作失敗的能力，或者 CBC 可能重新加載一個或多個區域。
+- 配置傳輸功能。配置傳輸功能是一種通用機制，允許通過核心網絡在兩個 RAN 節點之間請求和傳輸 RAN 配置信息（例如 SON 信息）。
+- 跟踪功能。跟踪功能提供了控制 NG-RAN 節點中跟踪會話的方法。
+- AMF 管理功能。 AMF 管理功能支持 AMF 計劃刪除和 AMF 自動恢復。
+- 多個 TNL 關聯支持功能。當NG-RAN節點和AMF之間存在多個TNL關聯時，NG-RAN節點根據從AMF接收到的每個TNL關聯的使用情況和權重因子，為NGAP信令選擇TNL關聯，並使用TNL關聯.如果 AMF 釋放 TNL 關聯，NG-RAN 節點會選擇一個新的關聯
+- AMF 負載平衡功能。 NG 接口支持 AMF 向 NG-RAN 節點指示其相對容量，以便在池區域內實現負載均衡的 AMF。
+- 位置報告功能。該功能使 AMF 能夠請求 NG-RAN 節點報告 UE 的當前位置，或帶有時間戳的 UE 最後已知位置，或 UE 在配置的感興趣區域中的存在。
+- AMF 重新分配功能。該功能允許將 NG-RAN 節點發出的初始連接請求從初始 AMF 重定向到 5GC 選擇的目標 AMF。在這種情況下，NG-RAN 節點在一個 NG 接口實例上發起初始 UE 消息過程，並接收第一個下行鏈路消息以通過不同的 NG 接口實例關閉與 UE 相關的邏輯連接。
+
+### F1 Interface
+
+將 en-gNB 進一步細分為 gNB-CU 和 gNB-DU 兩個邏輯節點
+
+定義 F1 Interface 為連接這兩個邏輯節點的接口
+
+在這種情況下
+
+- gNB-CU 託管 RRC 和 PDCP 協議
+- 而 gNB-DU 託管 RLC、MAC 和 PHY 功能
+
+F1AP協議提供以下功能：
+
+- 系統信息管理功能
+- F1 UE 上下文管理功能
+- RRC 消息傳輸功能
+- 尋呼功能
+
+# 無線物理層
+
+和 LTE 類似，NR 下行波使用 OFDM wit Cyclic Prefix
+
+與 LTE 相比，OFDM 還可用於 NR 上行鏈路 (UL) 方向
+
+為應對各種部署場景，NR 支持廣泛的載頻（在兩個可能的範圍內）和信道帶寬，如下表所示
+
+| Frequency range | Frequency range       | Supported  channel bandwidth [MHz]              |
+| --------------- | --------------------- | ----------------------------------------------- |
+| FR1             | 410 MHz – 7125 MHz    | 5, 10, 15, 20,  25, 30, 40, 50, 60, 80, 90, 100 |
+| FR2             | 24250 MHz – 52600 MHz | 50, 100, 200,  400                              |
+
+
+
+為了實現這種靈活性，NR 使用靈活的幀結構，具有不同的子載波間距 (SCS)
+
+SCS 是兩個連續子載波中心之間的距離，SCS 的可能值是（以 kHz 為單位）：
+
+- 15
+- 30
+- 60
+- 120
+- 240
+
+一系列連續的 12 個子載波形成一個資源塊 (RB)。 NR 信道帶寬由多個 RB 組成。 資源元素（RE）被定義為一個子載波（頻域）和一個 OFDM 符號（時域）的單位
+
+至於時域，分為10ms的無線幀，每幀包含10個1ms的子幀，如下圖所示
+
+![Frame_structure_in_NR](./Frame_structure_in_NR.png)
+
