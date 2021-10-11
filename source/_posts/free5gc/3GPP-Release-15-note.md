@@ -310,7 +310,7 @@ gNB (5G Node B) 執行所有 AN 相關的主要任務，包括
 * 上行封包校驗（SDF 到 QoS flow 的映射）
 * 下行封包緩衝和下行數據通知觸發
 
-### Network Repository Function" (NRF)
+### Network Repository Function (NRF)
 
 提供 NF 服務管理，包括
 
@@ -319,7 +319,7 @@ gNB (5G Node B) 執行所有 AN 相關的主要任務，包括
 - 服務驗證
 - 服務發現
 
-### Network Exposure Function" (NEF)
+### Network Exposure Function (NEF)
 
 對外輸出 NF 的處理能力數據
 
@@ -330,7 +330,7 @@ gNB (5G Node B) 執行所有 AN 相關的主要任務，包括
 * 路由流量的應用影響能力
 * 策略與計費能力
 
-### Unified Data Management" (UDM)
+### Unified Data Management (UDM)
 
 5GC 資源的數據存儲架構為“計算和存儲分離”
 
