@@ -78,10 +78,124 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-free5gc/Network-Functions-In-5G-Core-Network" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/free5gc/Network-Functions-In-5G-Core-Network/" class="article-date">
+  <time class="dt-published" datetime="2021-10-11T19:07:49.000Z" itemprop="datePublished">2021-10-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/telecommunication-network/">telecommunication network</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/free5gc/Network-Functions-In-5G-Core-Network/">Network Functions in 5G Core Network</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="5G-核心網路中的網路元件"><a href="#5G-核心網路中的網路元件" class="headerlink" title="5G 核心網路中的網路元件"></a>5G 核心網路中的網路元件</h1><p>Network Function 即 網路元件，指的是 5G 核心網路中負責執行各種功能的軟體程式</p>
+<p>這些程式將透過 SBI(Service-Based Interface) 接口進行通訊</p>
+<h2 id="3GPP-Release-15"><a href="#3GPP-Release-15" class="headerlink" title="3GPP Release-15"></a>3GPP Release-15</h2><p>3GPP Release-15 的 Specification 文檔對應編號為 <code>3GPP TR 21.915 V15.0.0 (2019-09) </code>     </p>
+<p>其全名為 <code>Release 15 Description;  Summary of Rel-15 Work Items  (Release 15)</code></p>
+<p>在 3GPP Release-15 的 Specification 文檔中，<code>5.5.2 The 5G Core Network</code> 部分描述了 5G 核心網路中的各類 NF 對應的 specification 規格文檔，以及其主要功能</p>
+<h2 id="Interface"><a href="#Interface" class="headerlink" title="Interface"></a>Interface</h2><p>在 5G 核心網路中，各類 NF 為應用程式軟體，而非傳統的硬體網路元件，因此這些應用程式軟體之間並沒有實際的物理接口進行互聯，而是透過網路的方式互相通訊</p>
+<p>由於有可能存在一台物理伺服器上安裝多個 NF 並且運行，因此有可能多個 NF 共用同一張網路卡在同一個網段內進行通訊，因此稱 5G 核心網路的 NF 為總線型通訊，意味著多個 NF 的資料有可能在同一條網路線上進行傳輸</p>
+<p>為了解釋方便起見，雖然 NF 都共用同一個網路線進行傳輸資料，但是我們仍然為 NF 之間定義一些邏輯接口 (logical interface) ，例如 </p>
+<ul>
+<li>Namf 為 AMF 這個 NF 對外的通訊接口</li>
+<li>N1 為 AMF 這個 NF 和 UE 之間的通訊接口</li>
+</ul>
+<p>等等</p>
+<h2 id="協定"><a href="#協定" class="headerlink" title="協定"></a>協定</h2><p>在  3GPP Release-15 中定義了其通訊協定為 HTTP2，並且 3GPP 使用 OpenAPI 3.0 對 NF 的標準 API 格式進行了定義，這些格式包括 DTO(Data Transport Object 數據傳輸對象)，以及 request / respone 應該具有的內容</p>
+<p>其在 R15 原文中有如下定義</p>
+<blockquote>
+<p>The services provided by 5G NFs are designed as a set of APIs based on the following protocol stack:</p>
+<p>-   the transport layer protocol is TCP as specified in IETF RFC 793;</p>
+<p>-   transport layer security protection is supported with TLS;</p>
+<p>-   the application layer protocol is HTTP/2 as specified in IETF RFC 7540;</p>
+<p>-   the serialization protocol is JSON as specified in IETF RFC 8259;</p>
+<p>-   the OpenAPI 3.0.0 is adopted as the Interface Definition Language.</p>
+</blockquote>
+<h2 id="網元與其協定"><a href="#網元與其協定" class="headerlink" title="網元與其協定"></a>網元與其協定</h2><h3 id="TS-24-501-Non-Access-Stratum-NAS-protocol-for-5G-System-5GS-Stage-3"><a href="#TS-24-501-Non-Access-Stratum-NAS-protocol-for-5G-System-5GS-Stage-3" class="headerlink" title="TS 24.501      Non-Access-Stratum (NAS) protocol for 5G System (5GS); Stage 3"></a>TS 24.501      Non-Access-Stratum (NAS) protocol for 5G System (5GS); Stage 3</h3><p>描述 NAS 協定</p>
+<h3 id="TS-24-502-Access-to-the-5G-Core-Network-5GCN-via-non-3GPP-access-networks-Stage-3"><a href="#TS-24-502-Access-to-the-5G-Core-Network-5GCN-via-non-3GPP-access-networks-Stage-3" class="headerlink" title="TS 24.502      Access to the 5G Core Network (5GCN) via non-3GPP access networks; Stage 3"></a>TS 24.502      Access to the 5G Core Network (5GCN) via non-3GPP access networks; Stage 3</h3><p>描述非 3GPP 如何接入 5G 核心網路</p>
+<h3 id="TS-24-526-5G-System-Phase-1-UE-policy-CT-WG1-Aspects"><a href="#TS-24-526-5G-System-Phase-1-UE-policy-CT-WG1-Aspects" class="headerlink" title="TS 24.526      5G System -Phase 1, UE policy; CT WG1 Aspects"></a>TS 24.526      5G System -Phase 1, UE policy; CT WG1 Aspects</h3><p>TODO，描述一些 UE 策略</p>
+<h3 id="TS-23-527-5G-System-Restoration-Procedures-Stage-2"><a href="#TS-23-527-5G-System-Restoration-Procedures-Stage-2" class="headerlink" title="TS 23.527      5G System; Restoration Procedures; Stage 2"></a>TS 23.527      5G System; Restoration Procedures; Stage 2</h3><p>TODO</p>
+<h3 id="TS-29-500-5G-System-Technical-Realization-of-Service-Based-Architecture-Stage-3"><a href="#TS-29-500-5G-System-Technical-Realization-of-Service-Based-Architecture-Stage-3" class="headerlink" title="TS 29.500      5G System; Technical Realization of Service Based Architecture; Stage 3"></a>TS 29.500      5G System; Technical Realization of Service Based Architecture; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-501-5G-System-Principles-and-Guidelines-for-Services-Definition-Stage-3"><a href="#TS-29-501-5G-System-Principles-and-Guidelines-for-Services-Definition-Stage-3" class="headerlink" title="TS 29.501      5G System; Principles and Guidelines for Services Definition; Stage 3"></a>TS 29.501      5G System; Principles and Guidelines for Services Definition; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-502-5G-System-Session-Management-Services-Stage-3"><a href="#TS-29-502-5G-System-Session-Management-Services-Stage-3" class="headerlink" title="TS 29.502      5G System; Session Management Services; Stage 3"></a>TS 29.502      5G System; Session Management Services; Stage 3</h3><p>描述 SMF 的規格</p>
+<p>SMF 主要處理 UE 到 DN(Data Network) 的資料傳輸，以及為 UE 分配 IP 等操作</p>
+<h3 id="TS-29-503-5G-System-Unified-Data-Management-Services-Stage-3"><a href="#TS-29-503-5G-System-Unified-Data-Management-Services-Stage-3" class="headerlink" title="TS 29.503      5G System; Unified Data Management Services; Stage 3"></a>TS 29.503      5G System; Unified Data Management Services; Stage 3</h3><p>描述 UDM 的規格</p>
+<p>UDM 更適合作為無狀態的資料獲取服務，例如緩存</p>
+<h3 id="TS-29-504-5G-System-Unified-Data-Repository-Services-Stage-3"><a href="#TS-29-504-5G-System-Unified-Data-Repository-Services-Stage-3" class="headerlink" title="TS 29.504      5G System; Unified Data Repository Services; Stage 3"></a>TS 29.504      5G System; Unified Data Repository Services; Stage 3</h3><p>描述 UDR 的規格</p>
+<p>UDR 更適合做有狀態的資料獲取服務，例如用於持久化存儲資料的資料庫</p>
+<h3 id="TS-29-505-5G-System-Usage-of-the-Unified-Data-Repository-services-for-Subscription-Data-Stage-3"><a href="#TS-29-505-5G-System-Usage-of-the-Unified-Data-Repository-services-for-Subscription-Data-Stage-3" class="headerlink" title="TS 29.505      5G System; Usage of the Unified Data Repository services for Subscription Data; Stage 3"></a>TS 29.505      5G System; Usage of the Unified Data Repository services for Subscription Data; Stage 3</h3><p>資料用量</p>
+<h3 id="TS-29-507-5G-System-Access-and-Mobility-Policy-Control-Service-Stage-3"><a href="#TS-29-507-5G-System-Access-and-Mobility-Policy-Control-Service-Stage-3" class="headerlink" title="TS 29.507      5G System; Access and Mobility Policy Control Service; Stage 3"></a>TS 29.507      5G System; Access and Mobility Policy Control Service; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-508-5G-System-Session-Management-Event-Exposure-Service-Stage-3"><a href="#TS-29-508-5G-System-Session-Management-Event-Exposure-Service-Stage-3" class="headerlink" title="TS 29.508      5G System; Session Management Event Exposure Service; Stage 3"></a>TS 29.508      5G System; Session Management Event Exposure Service; Stage 3</h3><p>做事件通知</p>
+<h3 id="TS-29-509-5G-System-Authentication-Server-Services-Stage-3"><a href="#TS-29-509-5G-System-Authentication-Server-Services-Stage-3" class="headerlink" title="TS 29.509      5G System; Authentication Server Services; Stage 3"></a>TS 29.509      5G System; Authentication Server Services; Stage 3</h3><p>描述 AUSF 的規格</p>
+<p>用於驗證 UE 是否被允許接入網路</p>
+<h3 id="TS-29-510-5G-System-Network-Function-Repository-Services-Stage-3"><a href="#TS-29-510-5G-System-Network-Function-Repository-Services-Stage-3" class="headerlink" title="TS 29.510      5G System; Network Function Repository Services; Stage 3"></a>TS 29.510      5G System; Network Function Repository Services; Stage 3</h3><p>描述 NRF 的規格</p>
+<p>NRF 主要維護當前正在運行的 NF，主要做服務發現功能</p>
+<h3 id="TS-29-511-5G-System-Equipment-Identity-Register-Services-Stage-3"><a href="#TS-29-511-5G-System-Equipment-Identity-Register-Services-Stage-3" class="headerlink" title="TS 29.511      5G System; Equipment Identity Register Services; Stage 3"></a>TS 29.511      5G System; Equipment Identity Register Services; Stage 3</h3><p>UE 的標識註冊功能</p>
+<h3 id="TS-29-512-5G-System-Session-Management-Policy-Control-Service-Stage-3"><a href="#TS-29-512-5G-System-Session-Management-Policy-Control-Service-Stage-3" class="headerlink" title="TS 29.512      5G System; Session Management Policy Control Service; Stage 3"></a>TS 29.512      5G System; Session Management Policy Control Service; Stage 3</h3><p>描述 PCF 的規格</p>
+<h3 id="TS-29-513-5G-System-Policy-and-Charging-Control-signalling-flows-and-QoS-parameter-mapping-Stage-3"><a href="#TS-29-513-5G-System-Policy-and-Charging-Control-signalling-flows-and-QoS-parameter-mapping-Stage-3" class="headerlink" title="TS 29.513      5G System; Policy and Charging Control signalling flows and QoS parameter mapping; Stage 3"></a>TS 29.513      5G System; Policy and Charging Control signalling flows and QoS parameter mapping; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-514-5G-System-Policy-Authorization-Service-Stage-3"><a href="#TS-29-514-5G-System-Policy-Authorization-Service-Stage-3" class="headerlink" title="TS 29.514      5G System; Policy Authorization Service; Stage 3"></a>TS 29.514      5G System; Policy Authorization Service; Stage 3</h3><p>TODO，驗證策略相關服務</p>
+<h3 id="TS-29-518-5G-System-Access-and-Mobility-Management-Services-Stage-3"><a href="#TS-29-518-5G-System-Access-and-Mobility-Management-Services-Stage-3" class="headerlink" title="TS 29.518      5G System; Access and Mobility Management Services; Stage 3"></a>TS 29.518      5G System; Access and Mobility Management Services; Stage 3</h3><p>描述 AMF 的規格</p>
+<p>AMF 主要負責將 UE 連接至 5G 核心網路，他將透過 N1 接口連接至基地台 gNB，再由 gNB 透過空口連接至 UE</p>
+<h3 id="TS-29-519-5G-System-Usage-of-the-Unified-Data-Repository-Service-for-Policy-Data-Application-Data-and-Structured-Data-for-Exposure-Stage-3"><a href="#TS-29-519-5G-System-Usage-of-the-Unified-Data-Repository-Service-for-Policy-Data-Application-Data-and-Structured-Data-for-Exposure-Stage-3" class="headerlink" title="TS 29.519      5G System; Usage of the Unified Data Repository Service for Policy Data, Application Data and Structured Data for Exposure; Stage 3"></a>TS 29.519      5G System; Usage of the Unified Data Repository Service for Policy Data, Application Data and Structured Data for Exposure; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-520-5G-System-Network-Data-Analytics-Services-Stage-3"><a href="#TS-29-520-5G-System-Network-Data-Analytics-Services-Stage-3" class="headerlink" title="TS 29.520      5G System; Network Data Analytics Services; Stage 3"></a>TS 29.520      5G System; Network Data Analytics Services; Stage 3</h3><p>TODO，網路資料分析服務</p>
+<h3 id="TS-29-521-5G-System-Binding-Support-Management-Service-Stage-3"><a href="#TS-29-521-5G-System-Binding-Support-Management-Service-Stage-3" class="headerlink" title="TS 29.521      5G System; Binding Support Management Service; Stage 3"></a>TS 29.521      5G System; Binding Support Management Service; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-522-5G-System-Network-Exposure-Function-Northbound-APIs-Stage-3"><a href="#TS-29-522-5G-System-Network-Exposure-Function-Northbound-APIs-Stage-3" class="headerlink" title="TS 29.522      5G System; Network Exposure Function Northbound APIs; Stage 3"></a>TS 29.522      5G System; Network Exposure Function Northbound APIs; Stage 3</h3><p>網路能力宣告，北向接口</p>
+<h3 id="TS-29-531-5G-System-Network-Slice-Selection-Services-Stage-3"><a href="#TS-29-531-5G-System-Network-Slice-Selection-Services-Stage-3" class="headerlink" title="TS 29.531      5G System; Network Slice Selection Services; Stage 3"></a>TS 29.531      5G System; Network Slice Selection Services; Stage 3</h3><p>描述 NSSF 的規格</p>
+<p>主要處理網路切片相關功能</p>
+<h3 id="TS-29-540-5G-System-SMS-Services-Stage-3"><a href="#TS-29-540-5G-System-SMS-Services-Stage-3" class="headerlink" title="TS 29.540      5G System; SMS Services; Stage 3"></a>TS 29.540      5G System; SMS Services; Stage 3</h3><p>描述 SMSF 的規格</p>
+<p>主要處理 “簡訊” 相關服務，“簡訊” 在中國大陸地區稱作 “短信”</p>
+<h3 id="TS-29-551-5G-System-Packet-Flow-Description-Management-Service-Stage-3"><a href="#TS-29-551-5G-System-Packet-Flow-Description-Management-Service-Stage-3" class="headerlink" title="TS 29.551      5G System; Packet Flow Description Management Service; Stage 3"></a>TS 29.551      5G System; Packet Flow Description Management Service; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-554-5G-System-Background-Data-Transfer-Policy-Control-Service-Stage-3"><a href="#TS-29-554-5G-System-Background-Data-Transfer-Policy-Control-Service-Stage-3" class="headerlink" title="TS 29.554      5G System; Background Data Transfer Policy Control Service; Stage 3"></a>TS 29.554      5G System; Background Data Transfer Policy Control Service; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-561-5G-System-Interworking-between-5G-Network-and-external-Data-Networks-Stage-3"><a href="#TS-29-561-5G-System-Interworking-between-5G-Network-and-external-Data-Networks-Stage-3" class="headerlink" title="TS 29.561      5G System; Interworking between 5G Network and external Data Networks; Stage 3"></a>TS 29.561      5G System; Interworking between 5G Network and external Data Networks; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-571-5G-System-Common-Data-Types-for-Service-Based-Interfaces-Stage-3"><a href="#TS-29-571-5G-System-Common-Data-Types-for-Service-Based-Interfaces-Stage-3" class="headerlink" title="TS 29.571      5G System; Common Data Types for Service Based Interfaces; Stage 3"></a>TS 29.571      5G System; Common Data Types for Service Based Interfaces; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-572-5G-System-Location-Management-Services-Stage-3"><a href="#TS-29-572-5G-System-Location-Management-Services-Stage-3" class="headerlink" title="TS 29.572      5G System; Location Management Services; Stage 3"></a>TS 29.572      5G System; Location Management Services; Stage 3</h3><p>TODO</p>
+<h3 id="TS-29-594-5G-System-Spending-Limit-Control-Service-Stage-3"><a href="#TS-29-594-5G-System-Spending-Limit-Control-Service-Stage-3" class="headerlink" title="TS 29.594      5G System; Spending Limit Control Service; Stage 3"></a>TS 29.594      5G System; Spending Limit Control Service; Stage 3</h3><p>TODO</p>
+<p>The corresponding Security aspects of 5G System are defined by SA3 (UID: 750016). The work also serves as the basis for related charging and management, i.e., Data Charging in 5G System Architecture Phase 1 (UID: 780035), Service Based Interface for 5G Charging (UID: 780034), Management and orchestration of 5G networks and network slicing (UID: 760066).</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.3gpp.org/release-15">https://www.3gpp.org/release-15</a></li>
+<li><a target="_blank" rel="noopener" href="https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3389">https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3389</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp/Specs/archive/21_series/21.915">https://www.3gpp.org/ftp/Specs/archive/21_series/21.915</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.changwei.me/free5gc/Network-Functions-In-5G-Core-Network/" data-id="ckumwoumn000wd7nm6jv7229a" data-title="Network Functions in 5G Core Network" class="article-share-link">Teilen</a>
+      
+        <a href="https://blog.changwei.me/free5gc/Network-Functions-In-5G-Core-Network/#disqus_thread" class="article-comment-link">Kommentare</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5G/" rel="tag">5G</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5GC/" rel="tag">5GC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" rel="tag">5G核心網</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">5G核心网</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Code-Tracing/" rel="tag">Code Tracing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Core-Network/" rel="tag">Core Network</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Free5GC/" rel="tag">Free5GC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Network-Function/" rel="tag">Network Function</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">云核心网</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-10-06T14:20:59.334Z" itemprop="datePublished">2021-10-06</time>
+  <time class="dt-published" datetime="2021-10-11T17:05:04.842Z" itemprop="datePublished">2021-10-11</time>
 </a>
     
   </div>
@@ -117,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/hello-world/" data-id="ckuflmlkm00019ln6a1vx6n1v" data-title="Hello World" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/hello-world/" data-id="ckumwoum40001d7nm6ztr4vt2" data-title="Hello World" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/hello-world/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -359,14 +473,14 @@
 <li><p>下行封包緩衝和下行數據通知觸發</p>
 </li>
 </ul>
-<h3 id="Network-Repository-Function”-NRF"><a href="#Network-Repository-Function”-NRF" class="headerlink" title="Network Repository Function” (NRF)"></a>Network Repository Function” (NRF)</h3><p>提供 NF 服務管理，包括</p>
+<h3 id="Network-Repository-Function-NRF"><a href="#Network-Repository-Function-NRF" class="headerlink" title="Network Repository Function (NRF)"></a>Network Repository Function (NRF)</h3><p>提供 NF 服務管理，包括</p>
 <ul>
 <li>服務註冊</li>
 <li>服務註銷</li>
 <li>服務驗證</li>
 <li>服務發現</li>
 </ul>
-<h3 id="Network-Exposure-Function”-NEF"><a href="#Network-Exposure-Function”-NEF" class="headerlink" title="Network Exposure Function” (NEF)"></a>Network Exposure Function” (NEF)</h3><p>對外輸出 NF 的處理能力數據</p>
+<h3 id="Network-Exposure-Function-NEF"><a href="#Network-Exposure-Function-NEF" class="headerlink" title="Network Exposure Function (NEF)"></a>Network Exposure Function (NEF)</h3><p>對外輸出 NF 的處理能力數據</p>
 <p>這些“能力”包括</p>
 <ul>
 <li>監控能力</li>
@@ -374,7 +488,7 @@
 <li>路由流量的應用影響能力</li>
 <li>策略與計費能力</li>
 </ul>
-<h3 id="Unified-Data-Management”-UDM"><a href="#Unified-Data-Management”-UDM" class="headerlink" title="Unified Data Management” (UDM)"></a>Unified Data Management” (UDM)</h3><p>5GC 資源的數據存儲架構為“計算和存儲分離”</p>
+<h3 id="Unified-Data-Management-UDM"><a href="#Unified-Data-Management-UDM" class="headerlink" title="Unified Data Management (UDM)"></a>Unified Data Management (UDM)</h3><p>5GC 資源的數據存儲架構為“計算和存儲分離”</p>
 <p>Unified Data Repository (UDR) 是主要數據庫</p>
 <p>Unstructured Data Storage Function (UDSF) 存儲非結構化的動態數據</p>
 <h2 id="5G-核心網路標準與相關的-Network-Functions"><a href="#5G-核心網路標準與相關的-Network-Functions" class="headerlink" title="5G 核心網路標準與相關的 Network Functions"></a>5G 核心網路標準與相關的 Network Functions</h2><h3 id="託管服務與邊緣計算-Local-hosting-of-services-and-Edge-Computing"><a href="#託管服務與邊緣計算-Local-hosting-of-services-and-Edge-Computing" class="headerlink" title="託管服務與邊緣計算 Local hosting of services and Edge Computing"></a>託管服務與邊緣計算 Local hosting of services and Edge Computing</h3><p>“Service Hosting Environment”，中文譯名“服務託管環境”，是位於運營商內部的網路，5G 使用該網路支援多種類型的服務</p>
@@ -786,7 +900,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/3GPP-Release-15-note/" data-id="ckuflmlle001b9ln6dec03hlb" data-title="3GPP Release-15 閱讀筆記" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/3GPP-Release-15-note/" data-id="ckumwoumt001hd7nm28dib9mu" data-title="3GPP Release-15 閱讀筆記" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/3GPP-Release-15-note/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -870,7 +984,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/3GPP-Introduction/" data-id="ckuflmlkr00049ln6828ybviy" data-title="3GPP 與 3GPP 規格介紹" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/3GPP-Introduction/" data-id="ckumwoum90004d7nm967j755z" data-title="3GPP 與 3GPP 規格介紹" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/3GPP-Introduction/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -1027,7 +1141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/AMF-v3.0.5/" data-id="ckuflmlks00059ln6c42l8a5p" data-title="Tracing Source Code of AMF of Free5GC" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/AMF-v3.0.5/" data-id="ckumwouma0005d7nma5itfztw" data-title="Tracing Source Code of AMF of Free5GC" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/AMF-v3.0.5/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -1115,7 +1229,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/Free5GC-Code-Tracing/" data-id="ckuflmlku00069ln69ov5d1o4" data-title="Free5GC Code Tracing" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/Free5GC-Code-Tracing/" data-id="ckumwoumm000vd7nm3x2g5ijm" data-title="Free5GC Code Tracing" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/free5gc/Free5GC-Code-Tracing/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -1161,7 +1275,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/about/" data-id="ckuflmlkg00009ln62a7afi0q" data-title="关于我" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/about/" data-id="ckumwoum00000d7nmc3cybnvd" data-title="关于我" class="article-share-link">Teilen</a>
       
         <a href="https://blog.changwei.me/about/#disqus_thread" class="article-comment-link">Kommentare</a>
       
@@ -1197,7 +1311,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3GPP/" rel="tag">3GPP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G/" rel="tag">5G</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5GC/" rel="tag">5GC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" rel="tag">5G核心網</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">5G核心网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AMF/" rel="tag">AMF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Code-Tracing/" rel="tag">Code Tracing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Free5GC/" rel="tag">Free5GC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R15/" rel="tag">R15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rel-15/" rel="tag">Rel-15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release-15/" rel="tag">Release-15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release15/" rel="tag">Release15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Specification/" rel="tag">Specification</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/about/" rel="tag">about</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">云核心网</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/3GPP/" rel="tag">3GPP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G/" rel="tag">5G</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5GC/" rel="tag">5GC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" rel="tag">5G核心網</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">5G核心网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AMF/" rel="tag">AMF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Code-Tracing/" rel="tag">Code Tracing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Core-Network/" rel="tag">Core Network</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Free5GC/" rel="tag">Free5GC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Network-Function/" rel="tag">Network Function</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R15/" rel="tag">R15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Rel-15/" rel="tag">Rel-15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release-15/" rel="tag">Release-15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release15/" rel="tag">Release15</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Specification/" rel="tag">Specification</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/about/" rel="tag">about</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">云核心网</a></li></ul>
     </div>
   </div>
 
@@ -1207,7 +1321,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/3GPP/" style="font-size: 15px;">3GPP</a> <a href="/tags/5G/" style="font-size: 20px;">5G</a> <a href="/tags/5GC/" style="font-size: 15px;">5GC</a> <a href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" style="font-size: 15px;">5G核心網</a> <a href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" style="font-size: 15px;">5G核心网</a> <a href="/tags/AMF/" style="font-size: 10px;">AMF</a> <a href="/tags/Code-Tracing/" style="font-size: 15px;">Code Tracing</a> <a href="/tags/Free5GC/" style="font-size: 15px;">Free5GC</a> <a href="/tags/R15/" style="font-size: 10px;">R15</a> <a href="/tags/Rel-15/" style="font-size: 10px;">Rel-15</a> <a href="/tags/Release-15/" style="font-size: 10px;">Release-15</a> <a href="/tags/Release15/" style="font-size: 10px;">Release15</a> <a href="/tags/Specification/" style="font-size: 10px;">Specification</a> <a href="/tags/about/" style="font-size: 10px;">about</a> <a href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" style="font-size: 15px;">云核心网</a>
+      <a href="/tags/3GPP/" style="font-size: 13.33px;">3GPP</a> <a href="/tags/5G/" style="font-size: 20px;">5G</a> <a href="/tags/5GC/" style="font-size: 16.67px;">5GC</a> <a href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" style="font-size: 16.67px;">5G核心網</a> <a href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" style="font-size: 16.67px;">5G核心网</a> <a href="/tags/AMF/" style="font-size: 10px;">AMF</a> <a href="/tags/Code-Tracing/" style="font-size: 16.67px;">Code Tracing</a> <a href="/tags/Core-Network/" style="font-size: 10px;">Core Network</a> <a href="/tags/Free5GC/" style="font-size: 16.67px;">Free5GC</a> <a href="/tags/Network-Function/" style="font-size: 10px;">Network Function</a> <a href="/tags/R15/" style="font-size: 10px;">R15</a> <a href="/tags/Rel-15/" style="font-size: 10px;">Rel-15</a> <a href="/tags/Release-15/" style="font-size: 10px;">Release-15</a> <a href="/tags/Release15/" style="font-size: 10px;">Release15</a> <a href="/tags/Specification/" style="font-size: 10px;">Specification</a> <a href="/tags/about/" style="font-size: 10px;">about</a> <a href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" style="font-size: 16.67px;">云核心网</a>
     </div>
   </div>
 
@@ -1229,6 +1343,10 @@
       <ul>
         
           <li>
+            <a href="/free5gc/Network-Functions-In-5G-Core-Network/">Network Functions in 5G Core Network</a>
+          </li>
+        
+          <li>
             <a href="/hello-world/">Hello World</a>
           </li>
         
@@ -1242,10 +1360,6 @@
         
           <li>
             <a href="/free5gc/AMF-v3.0.5/">Tracing Source Code of AMF of Free5GC</a>
-          </li>
-        
-          <li>
-            <a href="/free5gc/Free5GC-Code-Tracing/">Free5GC Code Tracing</a>
           </li>
         
       </ul>
