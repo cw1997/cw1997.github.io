@@ -4,24 +4,28 @@
   <meta charset="utf-8">
   
   
-  <title>3GPP 與 3GPP 規格介紹 | 昌维的博客</title>
+  <title>3GPP Specifications Related to 5G Core Network | 昌维的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="3GPP 與 3GPP 規格介紹3GPP 簡介參考 https:&#x2F;&#x2F;www.3gpp.org&#x2F;about-3gpp&#x2F;about-3gpp 3GPP 總共有三種技術標準化組織 Technical Specification Groups (TSG) ，包括：  Radio Access Networks (RAN) Services &amp; Systems Aspects (SA) Core N">
+  <meta name="description" content="5G 核心網路與其相關的之 3GPP Specs 介紹5G 行動通訊(telecommunication)系統分為   UE(User Equipment)，用戶的 5G 手機，5G IoT 設備等  AN(Access Network)，NR(New Radio) 5G 新空口，主要是基地台(基站，Base Station)部分 CN(Core Network) ,5GC，5G 核心網路，包括很">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3GPP 與 3GPP 規格介紹">
-<meta property="og:url" content="https://blog.changwei.me/free5gc/3GPP-Introduction/index.html">
+<meta property="og:title" content="3GPP Specifications Related to 5G Core Network">
+<meta property="og:url" content="https://blog.changwei.me/free5gc/3GPP-Specifications-Related-to-5G-Core-Network/index.html">
 <meta property="og:site_name" content="昌维的博客">
-<meta property="og:description" content="3GPP 與 3GPP 規格介紹3GPP 簡介參考 https:&#x2F;&#x2F;www.3gpp.org&#x2F;about-3gpp&#x2F;about-3gpp 3GPP 總共有三種技術標準化組織 Technical Specification Groups (TSG) ，包括：  Radio Access Networks (RAN) Services &amp; Systems Aspects (SA) Core N">
+<meta property="og:description" content="5G 核心網路與其相關的之 3GPP Specs 介紹5G 行動通訊(telecommunication)系統分為   UE(User Equipment)，用戶的 5G 手機，5G IoT 設備等  AN(Access Network)，NR(New Radio) 5G 新空口，主要是基地台(基站，Base Station)部分 CN(Core Network) ,5GC，5G 核心網路，包括很">
 <meta property="og:locale">
-<meta property="og:image" content="https://blog.changwei.me/free5gc/3GPP-Introduction/2021_new-Organigram_3gpp.jpg">
-<meta property="og:image" content="https://blog.changwei.me/free5gc/3GPP-Introduction/Release_timeline_R16_R17.jpg">
-<meta property="article:published_time" content="2021-09-21T02:33:42.000Z">
-<meta property="article:modified_time" content="2021-10-20T06:26:23.719Z">
+<meta property="article:published_time" content="2021-10-17T16:39:48.000Z">
+<meta property="article:modified_time" content="2021-10-20T06:26:23.723Z">
 <meta property="article:author" content="cw1997">
-<meta property="article:tag" content="3GPP">
-<meta property="article:tag" content="Specification">
+<meta property="article:tag" content="Free5GC">
+<meta property="article:tag" content="Code Tracing">
+<meta property="article:tag" content="5G">
+<meta property="article:tag" content="5GC">
+<meta property="article:tag" content="5G核心网">
+<meta property="article:tag" content="5G核心網">
+<meta property="article:tag" content="云核心网">
+<meta property="article:tag" content="Core Network">
+<meta property="article:tag" content="Network Function">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.changwei.me/free5gc/3GPP-Introduction/2021_new-Organigram_3gpp.jpg">
   
     <link rel="alternate" href="/atom.xml" title="昌维的博客" type="application/atom+xml">
   
@@ -82,10 +86,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-free5gc/3GPP-Introduction" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-free5gc/3GPP-Specifications-Related-to-5G-Core-Network" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/free5gc/3GPP-Introduction/" class="article-date">
-  <time class="dt-published" datetime="2021-09-21T02:33:42.000Z" itemprop="datePublished">2021-09-21</time>
+    <a href="/free5gc/3GPP-Specifications-Related-to-5G-Core-Network/" class="article-date">
+  <time class="dt-published" datetime="2021-10-17T16:39:48.000Z" itemprop="datePublished">2021-10-17</time>
 </a>
     
   <div class="article-category">
@@ -100,7 +104,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      3GPP 與 3GPP 規格介紹
+      3GPP Specifications Related to 5G Core Network
     </h1>
   
 
@@ -108,55 +112,48 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="3GPP-與-3GPP-規格介紹"><a href="#3GPP-與-3GPP-規格介紹" class="headerlink" title="3GPP 與 3GPP 規格介紹"></a>3GPP 與 3GPP 規格介紹</h1><h2 id="3GPP-簡介"><a href="#3GPP-簡介" class="headerlink" title="3GPP 簡介"></a>3GPP 簡介</h2><p>參考 <a target="_blank" rel="noopener" href="https://www.3gpp.org/about-3gpp/about-3gpp">https://www.3gpp.org/about-3gpp/about-3gpp</a></p>
-<p>3GPP 總共有三種技術標準化組織 <a target="_blank" rel="noopener" href="https://www.3gpp.org/specifications-groups">Technical Specification Groups</a> (TSG) ，包括：</p>
+        <h1 id="5G-核心網路與其相關的之-3GPP-Specs-介紹"><a href="#5G-核心網路與其相關的之-3GPP-Specs-介紹" class="headerlink" title="5G 核心網路與其相關的之 3GPP Specs 介紹"></a>5G 核心網路與其相關的之 3GPP Specs 介紹</h1><p>5G 行動通訊(telecommunication)系統分為 </p>
 <ul>
-<li>Radio Access Networks (<a target="_blank" rel="noopener" href="https://www.3gpp.org/RAN">RAN</a>)</li>
-<li>Services &amp; Systems Aspects (<a target="_blank" rel="noopener" href="https://www.3gpp.org/SA">SA</a>)</li>
-<li>Core Network &amp; Terminals (<a target="_blank" rel="noopener" href="https://www.3gpp.org/rubrique34">CT</a>) </li>
+<li>UE(User Equipment)，用戶的 5G 手機，5G IoT 設備等 </li>
+<li>AN(Access Network)，NR(New Radio) 5G 新空口，主要是基地台(基站，Base Station)部分</li>
+<li>CN(Core Network) ,5GC，5G 核心網路，包括很多服務化網路元件(NF, Network Function)</li>
 </ul>
-<p><img src="./2021_new-Organigram_3gpp.jpg" alt="2021 3gpp Organigram"></p>
-<p>3GPP 組織主要負責制定以上 3 個部分的電信網路標準</p>
-<h2 id="3GPP-標準"><a href="#3GPP-標準" class="headerlink" title="3GPP 標準"></a>3GPP 標準</h2><h3 id="為何需要技術標準？"><a href="#為何需要技術標準？" class="headerlink" title="為何需要技術標準？"></a>為何需要技術標準？</h3><p>電信網路中設備數量和種類眾多，只有當制定了了標準之後，各個電信網路設備製造商才可以按照標準各自生產網路設備，然後可以依照標準中定義的接口互相連通，之後便可以共同協作運行。這裡的設備不僅僅包含電信網路局端設備（運營商），也包括用戶端設備（UE，User Equipment），例如手機，IoT 設備等</p>
-<p>標準不同的情況下，各家製造商生產的設備無法互相連通。便無法實現網路互通。因此標準定義十分重要</p>
-<h3 id="3GPP-Release-規格介紹"><a href="#3GPP-Release-規格介紹" class="headerlink" title="3GPP Release 規格介紹"></a>3GPP Release 規格介紹</h3><p>參考 <a target="_blank" rel="noopener" href="https://www.3gpp.org/releases">https://www.3gpp.org/releases</a></p>
-<p>3GPP 使用名為 “Releases” 的命名方式，定期將一部分技術特性整理在某個指定版本中，並且允許在之後的版本中繼續增加新功能</p>
-<p>例如  <a target="_blank" rel="noopener" href="https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3179">TR 21.914</a> covers Rel-14, <a target="_blank" rel="noopener" href="https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3389">TR 21.915</a> for Rel-15 and now <a target="_blank" rel="noopener" href="https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3493">TR 21.916</a> as the Rel-16 description document. 可以看出規律，TR.219xx，其中 xx 對應 Release-xx 中的 xx 部分</p>
-<p>如下圖所示，這是最近的 Release 發佈時間表（寫稿時間為：2021-09-21）</p>
-<p><img src="./Release_timeline_R16_R17.jpg" alt="Release timeline R16 R17"></p>
-<p>在 <a target="_blank" rel="noopener" href="https://portal.3gpp.org/#/55934-releases">https://portal.3gpp.org/#/55934-releases</a> 可以查看所有 Release 標準的進度</p>
-<h3 id="規格的-stage"><a href="#規格的-stage" class="headerlink" title="規格的 stage"></a>規格的 stage</h3><p>The term “Stage” derives from the ITU-T (originally CCITT) method for categorizing specifications (<a href="https://"http/www.itu.int/rec/T-REC-I.130/en/%22">Recommendation I.130</a>).</p>
-<p>stage 是來自 ITU-T（最初是 CCITT）組織在 I.130 標準建議書中提出的一種標準分類方法</p>
+<p>我的研究工作主要側重在 CN 部分，因此關注點集中在 5GC 相關部分，當然由於 5G 系統本身是一個整體，不可避免也會接觸到 AN 和 UE 部分的內容</p>
+<h2 id="3GPP"><a href="#3GPP" class="headerlink" title="3GPP"></a>3GPP</h2><p>關於 3GPP 是什麼組織可以直接參考 <a target="_blank" rel="noopener" href="https://www.3gpp.org/about-3gpp/about-3gpp">https://www.3gpp.org/about-3gpp/about-3gpp</a></p>
+<p>簡而言之就是技術標準化定義組織，通過定期開會和討論確定移動通訊技術標準，便於各類移動通訊所用的設備可以在同一個標準下互相連接</p>
+<h2 id="全部-3GPP-Specs-檔案"><a href="#全部-3GPP-Specs-檔案" class="headerlink" title="全部 3GPP Specs 檔案"></a>全部 3GPP Specs 檔案</h2><p><a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp/Specs/archive/">https://www.3gpp.org/ftp/Specs/archive/</a></p>
+<h3 id="如果需要查看最新版可以直接在這裡搜尋"><a href="#如果需要查看最新版可以直接在這裡搜尋" class="headerlink" title="如果需要查看最新版可以直接在這裡搜尋"></a>如果需要查看最新版可以直接在這裡搜尋</h3><p><a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp/Specs/latest">https://www.3gpp.org/ftp/Specs/latest</a></p>
+<p>這裡的資料可能會根據 3GPP 相關的會議等行為而發生變化</p>
+<p>目前 3GPP 的 5G 技術標準已經更新至 Release-16 因此可以直接參考 <a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp/Specs/latest/Rel-16">https://www.3gpp.org/ftp/Specs/latest/Rel-16</a></p>
+<h2 id="R15-與-R16-對應的-OpenAPI-yaml-定義文件"><a href="#R15-與-R16-對應的-OpenAPI-yaml-定義文件" class="headerlink" title="R15 與 R16 對應的 OpenAPI yaml 定義文件"></a>R15 與 R16 對應的 OpenAPI yaml 定義文件</h2><p><a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp/Specs/archive/OpenAPI">https://www.3gpp.org/ftp/Specs/archive/OpenAPI</a></p>
+<h2 id="Release-系列的-Summary-部分"><a href="#Release-系列的-Summary-部分" class="headerlink" title="Release 系列的 Summary 部分"></a>Release 系列的 Summary 部分</h2><h3 id="Release-15"><a href="#Release-15" class="headerlink" title="Release-15"></a>Release-15</h3><p>3GPP TR 21.915</p>
+<p><a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp/Specs/latest/Rel-15/21_series">https://www.3gpp.org/ftp/Specs/latest/Rel-15/21_series</a> </p>
+<p>Release 15 Description;  Summary of Rel-15 Work Items  (Release 15)  </p>
+<p>主要對 Rel-15 的工作進行總結</p>
+<h3 id="Release-16"><a href="#Release-16" class="headerlink" title="Release-16"></a>Release-16</h3><p>3GPP TR 21.916</p>
+<p><a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp/Specs/latest/Rel-16/21_series">https://www.3gpp.org/ftp/Specs/latest/Rel-16/21_series</a> </p>
+<p>Release 16 Description;  Summary of Rel-16 Work  Items    (Release 16)  </p>
+<p>主要對 Rel-16 的工作進行總結</p>
+<h2 id="5G-系統架構介紹"><a href="#5G-系統架構介紹" class="headerlink" title="5G 系統架構介紹"></a>5G 系統架構介紹</h2><p>3GPP TS 23.501 System architecture for the 5G System (5GS)</p>
+<p><a target="_blank" rel="noopener" href="https://www.3gpp.org/ftp/Specs/latest/Rel-16/23_series">https://www.3gpp.org/ftp/Specs/latest/Rel-16/23_series</a> </p>
+<p>這部分是從整個宏觀角度介紹 5G 系統的架構和組成部分，是非常重要的學習資料，也是理解 5G 系統中有哪些設備，這些設備如何協同工作的重點資料，對於從事 5G 通訊研究的人是非常好的學習資料</p>
+<p>筆者也看過很多市面上所謂的 5G 通訊培訓相關之付費學習資料或者教學錄影，幾乎都是按照這篇文章翻譯成中文後講解的，所以如果需要學習最原始的權威資料，直接看這邊的內容即可。當然內容也確實有點多，大概 500 頁左右</p>
+<h2 id="5G-業務服務介紹"><a href="#5G-業務服務介紹" class="headerlink" title="5G 業務服務介紹"></a>5G 業務服務介紹</h2><p>5G 包含很多業務，比如</p>
 <ul>
-<li>“Stage 1” refers to the service description from a service-user’s point of view.<ul>
-<li>stage 1 指的是從服務用戶的視角描述服務</li>
+<li>語音通話(IMS, IP Multimedia Subsystem)，對應 Voice over New Radio(VoNR)</li>
+<li>簡訊，短信息(SMS, Short Message Service)</li>
 </ul>
-</li>
-<li>“Stage 2” is a logical analysis, devising an abstract architecture of functional elements and the information flows amongst them across reference points between functional entities.<ul>
-<li>stage 2 是邏輯分析與功能設計元素的抽象架構，以及功能實體之間的信息流參考點（此處描述比較抽象，需要藉助一個具體的標準文件進行解釋）</li>
-</ul>
-</li>
-<li>“Stage 3” is the concrete implementation of the functionality and of the protocols appearing at physical interfaces between physical elements onto which the functional elements have been mapped.<ul>
-<li>stage 3 是功能和協定的具體實現，這些實現體在對應功能元件（一些物理元件）之間的物理通訊接口上</li>
-</ul>
-</li>
-</ul>
-<p>The mechanisms for creating and maintaining specifications are described in <a target="_blank" rel="noopener" href="https://www.3gpp.org/DynaReport/21900.htm">TR 21.900</a>. A presentation outlining the release and change request process can be found <a target="_blank" rel="noopener" href="https://www.3gpp.org/FTP/Inbox/2008_web_files/The_change_control_cycle.ppt">here.</a></p>
-<p>在 TR 21.900 中描述了這些規範的創建和維護機制</p>
-<h3 id="規格的命名"><a href="#規格的命名" class="headerlink" title="規格的命名"></a>規格的命名</h3><p><a target="_blank" rel="noopener" href="https://www.3gpp.org/specifications/specification-numbering">https://www.3gpp.org/specifications/specification-numbering</a></p>
-<p>所有 3GPP 規格都有一個由 4 到 5 位數字的規格名稱（例如 09.02 或者 29.002）</p>
-<p>前 2 位數字定義規格所屬的系列，後面緊跟著 01 至 13 系列對應的 2 個數字，或者 21 至 55 系列的 3 位數字</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.changwei.me/free5gc/3GPP-Introduction/" data-id="ckuz4u5uw0004cpnm38oi9p4m" data-title="3GPP 與 3GPP 規格介紹" class="article-share-link">Teilen</a>
+      <a data-url="https://blog.changwei.me/free5gc/3GPP-Specifications-Related-to-5G-Core-Network/" data-id="ckuz4u5uy0005cpnmbqxy38ms" data-title="3GPP Specifications Related to 5G Core Network" class="article-share-link">Teilen</a>
       
-        <a href="https://blog.changwei.me/free5gc/3GPP-Introduction/#disqus_thread" class="article-comment-link">Kommentare</a>
+        <a href="https://blog.changwei.me/free5gc/3GPP-Specifications-Related-to-5G-Core-Network/#disqus_thread" class="article-comment-link">Kommentare</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/3GPP/" rel="tag">3GPP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Specification/" rel="tag">Specification</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5G/" rel="tag">5G</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5GC/" rel="tag">5GC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%B6%B2/" rel="tag">5G核心網</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/5G%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">5G核心网</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Code-Tracing/" rel="tag">Code Tracing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Core-Network/" rel="tag">Core Network</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Free5GC/" rel="tag">Free5GC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Network-Function/" rel="tag">Network Function</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%91%E6%A0%B8%E5%BF%83%E7%BD%91/" rel="tag">云核心网</a></li></ul>
 
     </footer>
   </div>
@@ -164,19 +161,19 @@
     
 <nav id="article-nav">
   
-    <a href="/free5gc/3GPP-Release-15-note/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Neuer</strong>
       <div class="article-nav-title">
         
-          3GPP Release-15 閱讀筆記
+          Hello World
         
       </div>
     </a>
   
   
-    <a href="/free5gc/AMF-v3.0.5/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/free5gc/3GPP-Release-15-note/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">Tracing Source Code of AMF of Free5GC</div>
+      <div class="article-nav-title">3GPP Release-15 閱讀筆記</div>
     </a>
   
 </nav>
@@ -291,7 +288,7 @@
 <script>
   var disqus_shortname = 'changwei';
   
-  var disqus_url = 'https://blog.changwei.me/free5gc/3GPP-Introduction/';
+  var disqus_url = 'https://blog.changwei.me/free5gc/3GPP-Specifications-Related-to-5G-Core-Network/';
   
   (function(){
     var dsq = document.createElement('script');
